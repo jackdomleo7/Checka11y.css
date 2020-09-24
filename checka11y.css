@@ -1,0 +1,42 @@
+/*! Checka11y.css v1.0.0-beta.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
+
+/**
+ * Checka11y.css customisation
+ */
+
+:root {
+  --checka11y-error-color: #f00;
+  --checka11y-error-border-width: 5px;
+  --checka11y-font: 'Comic Sans MS', cursive !important;
+}
+
+/**
+ * Images
+ */
+
+img:not([alt]) /* All images require an alt attribute, whether it has a value or is null */ {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+/**
+ * iframe
+ */
+
+iframe:not([title]) /* All iframe must have title attribute */ {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+iframe:not([title])::after /* All iframe must have title attribute */ {
+  content: 'ERROR: iframe has no title attribute. ' !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+ * Lists
+ */
+
+ol > *:not(li):after, /* All children of <ol> must only be <li> */
+ul > *:not(li):after /* All children of <ul> must only be <li> */ {
+    content: 'ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>.' !important;
+    font-family: var(--checka11y-font, cursive);
+}
