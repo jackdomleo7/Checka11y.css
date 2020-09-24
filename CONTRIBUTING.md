@@ -1,6 +1,6 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via an issue before making a change. Feel free to create a pull request to resolve an issue, with a solution to an item on our project board or for any of your own ideas. Please provide as much detail and as many resources that will backup why you made the change.
+When contributing to this repository, please first discuss the change you wish to make via an issue before making a change. Feel free to create a pull request to [resolve an issue](https://github.com/jackdomleo7/Checka11y.css/issues), with a solution to an item on our [project board](https://github.com/jackdomleo7/Checka11y.css/projects/1) or for any of your own ideas. Please provide as much detail and as many resources that will backup why you made the change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
