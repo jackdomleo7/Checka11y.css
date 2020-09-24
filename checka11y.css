@@ -40,3 +40,15 @@ ul > *:not(li):after /* All children of <ul> must only be <li> */ {
     content: 'ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>.' !important;
     font-family: var(--checka11y-font, cursive);
 }
+
+/**
+ * Navigation
+ */
+nav + nav /* There must only be one primary navigation on the page */ {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+nav + nav::after {
+  content: 'ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>' !important;
+  font-family: var(--checka11y-font, cursive);
+}
