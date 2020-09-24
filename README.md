@@ -4,6 +4,8 @@
 
 _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; _Simple_
 
+**BETA coming soon!**
+
 <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css "File size - Brotli")
@@ -19,6 +21,8 @@ Our features are influenced by [The A11y Project checklist](https://www.a11yproj
 A list of every a11y concern Checka11y.css will look for and highlight:
 
 - Missing `alt` attributes on images
+- Missing `title` on `<iframe>`
+- Checks `<li>` is the **only** child of `<ol>` and `<ul>`
 
 Other features:
 
