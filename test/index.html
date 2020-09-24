@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checka11y.css test</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../checka11y.css" />
+  </head>
+  <body>
+    <h1>Checka11y.css - test.html</h1>
+    <p>The intention of this file is to test out the new a11y checks you are adding.</p>
+    <hr />
+    <section>
+      <h2>Images: All images require an alt attribute, whether it has a value or is null</h2>
+      <img src="./assets/a11y.png" />
+    </section>
+    <section>
+      <h2>iframe: iframe has title attribute</h2>
+      <iframe src="https://jackdomleo.dev" height="500" width="500"></iframe>
+    </section>
+    <section>
+      <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;</h2>
+      <ol>
+        <div>Hello, I'm a div inside a &lt;ol&gt;</div>
+      </ol>
+    </section>
+    <section>
+      <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;</h2>
+      <ol>
+        <div>Hello, I'm a div inside a &lt;ul&gt;</div>
+      </ol>
+    </section>
+  </body>
+</html>
