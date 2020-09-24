@@ -1,0 +1,33 @@
+{
+  "name": "checka11y-css",
+  "version": "1.0.0-beta.0",
+  "description": "A CSS stylesheet to quickly highlight a11y concerns.",
+  "main": "checka11y.css",
+  "style": "checka11y.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackdomleo7/Checka11y.css.git"
+  },
+  "author": {
+    "name": "Jack Domleo",
+    "url": "https://jackdomleo.dev"
+  },
+  "keywords": [
+    "checka11y",
+    "checkally",
+    "a11y",
+    "ally",
+    "accessibility"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackdomleo7/Checka11y.css/issues"
+  },
+  "homepage": "https://github.com/jackdomleo7/Checka11y.css#readme",
+  "files": [
+    "checka11y.css",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG"
+  ]
+}
