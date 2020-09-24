@@ -2,6 +2,8 @@
 
 **A CSS stylesheet to quickly highlight a11y concerns.**
 
+An alternative testing method to Chrome's Lighthouse.
+
 _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; _Simple_
 
 **BETA coming soon!**
