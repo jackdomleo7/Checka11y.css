@@ -1,0 +1,9 @@
+.DS_Store
+.bundle
+.env
+_public
+public
+node_modules
+tmp
+.cache
+dist

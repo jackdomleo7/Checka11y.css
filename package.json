@@ -4,6 +4,9 @@
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jackdomleo7/Checka11y.css.git"
@@ -12,6 +15,9 @@
     "name": "Jack Domleo",
     "url": "https://jackdomleo.dev"
   },
+  "contributors": [
+    "Dan Spratling <dan@danspratling.dev> (https://github.com/danspratling)"
+  ],
   "keywords": [
     "checka11y",
     "checkally",
