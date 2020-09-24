@@ -19,7 +19,7 @@ html:not([lang]) body{
 }
 
 html:not([lang]) body::after{
-  content: "ERROR: html has no lang attribute. " !important;
+  content: 'ERROR: html has no lang attribute.' !important;
   font-family: var(--checka11y-font, cursive);
 }
 
