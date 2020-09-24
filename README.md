@@ -26,6 +26,7 @@ A list of every a11y concern Checka11y.css will look for and highlight:
 - Missing `title` on `<iframe>`
 - Checks `<li>` is the **only** child of `<ol>` and `<ul>`
 - Checks `<nav>` only exists once on any page
+- Missing `lang` on `<html>`
 
 Other features:
 

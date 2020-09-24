@@ -11,6 +11,19 @@
 }
 
 /**
+* HTML
+*/
+
+html:not([lang]) body{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+html:not([lang]) body::after{
+  content: 'ERROR: html has no lang attribute.' !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
  * Images
  */
 
