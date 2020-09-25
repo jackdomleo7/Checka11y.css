@@ -12,6 +12,10 @@
     <p>The intention of this file is to test out the new a11y checks you are adding, so this web page should try to not comply with a11y as much as possible.</p>
     <hr />
     <section>
+      <h2>HTML: html tag should have a lang attribute</h2>
+      <p>See top of page.</p>
+    </section>
+    <section>
       <h2>Images: All images require an alt attribute, whether it has a value or is null</h2>
       <img src="./assets/a11y.png" />
     </section>
@@ -22,14 +26,18 @@
     <section>
       <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;</h2>
       <ol>
-        <div>Hello, I'm a div inside a &lt;ol&gt;</div>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
+        <div>Hello, I'm a &lt;div&gt; inside a &lt;ol&gt;</div>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
       </ol>
     </section>
     <section>
       <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;</h2>
-      <ol>
-        <div>Hello, I'm a div inside a &lt;ul&gt;</div>
-      </ol>
+      <ul>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+        <div>Hello, I'm a &lt;div&gt; inside a &lt;ul&gt;</div>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+      </ul>
     </section>
     <section>
       <h2>Navigation: Only a single navigation element should exist</h2>
@@ -37,14 +45,11 @@
       <nav>This is the second navigation</nav>
     </section>
     <section>
-      <h2>HTML: html tag should have a lang attribute</h2>
-    </section>
-    <section>
       <h2>Description list: Direct children of a &lt;dl&gt; can only be &lt;dt&gt; and &lt;dd&gt;</h2>
       <dl>
-        <dt>Hello, I'm dt element inside dl element</dt>
-        <dd>Hello, I'm dd element inside dl element</dd>
-        <p>Hello, I'm p(paragraph) element inside dl element. </p>
+        <dt>Hello, I'm &lt;dt&gt; element inside &lt;dl&gt; element</dt>
+        <dd>Hello, I'm &lt;dd&gt; element inside &lt;dl&gt; element</dd>
+        <p>Hello, I'm &lt;p&gt; element inside &lt;dl&gt; element. </p>
       </dl>
     </section>
   </body>
