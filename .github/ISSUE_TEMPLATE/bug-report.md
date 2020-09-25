@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- 🧡 Thanks for your time to make Nuxt better with your feedbacks 🧡
+<!-- 🧡 Thanks for your time to make Checka11y.css better with your feedbacks 🧡
 
 👍 A properly detailed bug report can save a LOT of time and help fixing issues as soon as possible.
 -->

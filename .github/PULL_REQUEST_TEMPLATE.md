@@ -16,7 +16,7 @@
 <!--- If it resolves an open issue, please link to the issue here. For example "Resolves: #1337" -->
 
 ## Link(s)
-<!--Please provide any relevant links used in your investigation in this work. -->
+<!-- Please provide any relevant links used in your investigation in this work. -->
 <!-- Try linking to trusted sites such as w3.org, developer.mozilla.org, a11yproject.com, inclusive-components.design, etc -->
 
 ## Screenshot(s)
