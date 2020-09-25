@@ -54,6 +54,15 @@ ul > *:not( li )::after /* All children of <ul> must only be <li> */ {
   font-family: var(--checka11y-font, cursive);
 }
 
+dl > *:not( dt ):not( dd ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+dl > *:not( dt ):not( dd )::after {
+  content: "ERROR: Ensure that the direct children of a <dl> can only be <dt> and <dd>" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
 /**
  * Navigation
  */
