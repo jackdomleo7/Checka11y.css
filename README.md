@@ -2,7 +2,13 @@
 
 **A CSS stylesheet to quickly highlight a11y concerns.**
 
-An alternative testing method for accessibility.Designed to quickly highlight accessibility errors and warnings that be easily and quickly rectified. Recommended to use as a first line of defence in accessibility testing, before turning to automation tools and scanners such as Lighthouse on Chrome.
+An alternative testing method for accessibility.
+
+Designed to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
+
+Recommended to use as a first line of defence in accessibility testing, before turning to automation tools and scanners such as Lighthouse on Chrome.
+
+Remember not to push this to production!
 
 A great tool for:
 
