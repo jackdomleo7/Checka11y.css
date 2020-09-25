@@ -65,3 +65,16 @@ nav + nav::after {
   content: "ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>" !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+/**
+ * Description list
+ */
+dl > *:not(dt):not(dd)/* The direct children of a <dl> can only be <dt> and <dd> */{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+dl > *:not(dt):not(dd):after { 
+  content:'ERROR: Ensure that the direct children of a <dl> can only be <dt> and <dd>' !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
