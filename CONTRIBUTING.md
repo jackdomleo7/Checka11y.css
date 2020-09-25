@@ -8,7 +8,8 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 2. Update the [README.md Features section](./README.md#Features) and the [test.html](./test.html) with details of changes to the stylesheet and new a11y checks.
-3. You may merge the Pull Request in once you have the sign-off of one other developer with 'owner' permissions.
+3. Optionally, add your name, email address and GitHub profile URL to the `contributors` section in `package.json` in the format of `"Name <email@example.com> (https://github.com/username)"`
+4. You may merge the Pull Request in once you have the sign-off of one other developer with 'owner' permissions.
 
 ## Code of Conduct
 
