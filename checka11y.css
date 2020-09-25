@@ -7,19 +7,19 @@
 :root {
   --checka11y-error-color: #f00;
   --checka11y-error-border-width: 5px;
-  --checka11y-font: "Comic Sans MS", cursive !important;
+  --checka11y-font: 'Comic Sans MS', cursive !important;
 }
 
 /**
 * HTML
 */
 
-html:not( [lang] ) body {
+html:not([lang]) body {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-html:not( [lang] ) body::before {
-  content: "ERROR: html has no lang attribute." !important;
+html:not([lang]) body::before {
+  content: 'ERROR: html has no lang attribute.' !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -40,7 +40,7 @@ iframe:not( [title] ) /* All iframe must have title attribute */ {
 }
 
 iframe:not( [title] )::after /* All iframe must have title attribute */ {
-  content: "ERROR: iframe has no title attribute. " !important;
+  content: 'ERROR: iframe has no title attribute. ' !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -50,7 +50,7 @@ iframe:not( [title] )::after /* All iframe must have title attribute */ {
 
 ol > *:not( li )::after,
 ul > *:not( li )::after /* All children of <ul> must only be <li> */ {
-  content: "ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>." !important;
+  content: 'ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>.' !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -62,6 +62,15 @@ nav + nav /* There must only be one primary navigation on the page */ {
 }
 
 nav + nav::after {
-  content: "ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>" !important;
+  content: 'ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>' !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+ * Links
+ */
+
+a[target='_blank']::after /* Links that open a new page/tab target="_blank" */ {
+  content: " ERROR: Ideally, avoid links that open in a new tab or window. If a link does, ensure the link's behavior will be communicated in a way that is apparent to all users" !important;
   font-family: var(--checka11y-font, cursive);
 }
