@@ -2,7 +2,7 @@
 
 **A CSS stylesheet to quickly highlight a11y concerns.**
 
-An alternative testing method for accessibility.
+The first line of defence for testing accessibility.
 
 Designed to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
 
@@ -29,7 +29,7 @@ _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; 
 
 ## Features
 
-Our features can be influenced by [The A11y Project checklist](https://www.a11yproject.com/checklist).
+Our features are always checked against the W3C accessibility guidelines.
 
 A list of every a11y concern Checka11y.css will check for and highlight:
 
@@ -60,7 +60,13 @@ Watch this repository to stay up to date.
 
 ## Why is accessibility important?
 
-Lorem ipsum...
+Accessibility is important to ensure your website or web application is accessible to as many users and types of users you can cater for.
+
+Often, we can improve the accessibility on our websites and web applications by focusing on the obvious first - these are small quick wins that are easy to implement or rectify and may not require a lot of time investment.
+
+Checka11y.css will instantly highlight as many HTML validity and HTML semantic errors and warnings as we can, to help you to improve your website or web application.
+
+[Click here to read more about web accessibility.](https://www.w3.org/WAI/fundamentals/accessibility-intro)
 
 ---
 
