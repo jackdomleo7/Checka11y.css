@@ -6,7 +6,7 @@ The first line of defence for testing accessibility.
 
 Designed to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
 
-Recommended to use as a first line of defence in accessibility testing, before turning to automation tools and scanners such as Lighthouse on Chrome.
+Recommended before turning to automation tools and scanners such as Lighthouse on Chrome.
 
 Remember not to push this to production!
 
