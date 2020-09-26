@@ -74,3 +74,16 @@ nav + nav::after {
   content: "ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>" !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+/**
+ * Links
+ */
+
+a[target = "_blank"] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */ {
+  content: " WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior" !important;
+  font-family: var(--checka11y-font, cursive);
+}

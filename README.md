@@ -27,6 +27,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 - Checks `<li>` is the **only** child of `<ol>` and `<ul>`
 - Checks `<nav>` only exists once on any page
 - Missing `lang` on `<html>`
+- Checks `<a target="_blank">` and warns about links that open in a new window
 - Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
 
 Other features:
