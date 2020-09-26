@@ -30,6 +30,7 @@
 - [ ] I understand my pull request will be thoroughly reviewed at high detail.
 - [ ] I understand the work in my pull request will **only** be available in the next version release of Checka11y.css and not in the current version release.
 - [ ] I confirm the work in this pull request is valid according to my findings and is not something for anything personal.
+- [ ] I have updated the [README](../README.md) where and if applicable (still put an `x` if you have considered this but thought there was nothing to add or modify).
 - [ ] I have added myself to the `contributors` section in `package.json` (still put an `x` if you have considered this but decided not to add yourself).
 - [ ] I have checked I have **not** committed any **accidental** files.
 - [ ] I have tested all the main modern browsers (I.e. Chrome, Firefox, Edge, Safari - please leave this unchecked if there were any browsers listed you could not test and list them in the [help](#help) section with details why you couldn't test that browser)
