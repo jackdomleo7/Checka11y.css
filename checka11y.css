@@ -4,7 +4,7 @@
  * Checka11y.css customisation
  */
 
- :root {
+:root {
   --checka11y-error-color: #f00;
   --checka11y-error-border-width: 5px;
   --checka11y-font: "Comic Sans MS", cursive !important;
@@ -87,6 +87,7 @@ a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */
   content: " WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior" !important;
   font-family: var(--checka11y-font, cursive);
 }
+
 a > a {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
@@ -150,11 +151,11 @@ a > img[usemap]::after {
   font-family: var(--checka11y-font, cursive);
 }
 
-a > input:not([type="hidden"]) {
+a > input:not( [type = "hidden"] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > input:not([type="hidden"])::after {
+a > input:not( [type = "hidden"] )::after {
   content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
@@ -177,11 +178,11 @@ a > label::after {
   font-family: var(--checka11y-font, cursive);
 }
 
-a > menu[type="toolbar"] {
+a > menu[type = "toolbar"] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > menu[type="toolbar"]::after {
+a > menu[type = "toolbar"]::after {
   content: "ERROR: Ensure that <menu> with type attribute set to toolbar is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
