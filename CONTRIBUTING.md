@@ -2,6 +2,8 @@
 
 When contributing to this repository, please first discuss the change you wish to make via an issue before making a change. Feel free to create a pull request to [resolve an issue](https://github.com/jackdomleo7/Checka11y.css/issues), with a solution to an item on our [project board](https://github.com/jackdomleo7/Checka11y.css/projects/1) or for any of your own ideas. Please provide as much detail and as many resources that will backup why you made the change.
 
+When looking to contribute, please comment on issues asking if you can do that work, and only look at doing work that is **not labelled** as `question` or `needs more info` because these issues require more research and discussion before doing. Please also do not ask to do work that is already assigned to someone (you can see who is assigned to an issue by looking at the "assignee").
+
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
