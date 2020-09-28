@@ -11,8 +11,6 @@
 }
 
 /**
-<<<<<<< HEAD
-=======
 * HTML
 */
 
@@ -28,7 +26,6 @@ html:not( [lang] ) body::before {
 }
 
 /**
->>>>>>> master
  * Images
  */
 
@@ -85,7 +82,7 @@ dl > *:not( dt ):not( dd )::after {
  * Navigation
  */
 
-/* There if more than one primary navigation is available, all navigations must be clearly labelled. */
+/* If more than one primary navigation is available, all navigations must be clearly labelled. */
 nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
 nav ~ nav:not( [aria-label] ):not( [aria-labelledby] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;

@@ -21,9 +21,9 @@ _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; 
 
 <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css "File size - Brotli")
+![Maintenance](https://img.shields.io/maintenance/yes/2020) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
 
-[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
+[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases) [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social)
 
 ---
 
@@ -31,18 +31,22 @@ _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; 
 
 Our features are always checked against the W3C accessibility guidelines.
 
-A list of every a11y concern Checka11y.css will look for and highlight:
+A list of every a11y concern Checka11y.css will check for and highlight:
 
 - Missing `alt` attributes on images
 - Missing `title` on `<iframe>`
 - Checks `<li>` is the **only** child of `<ol>` and `<ul>`
 - Checks `<nav>` only exists once on any page
+- Missing `lang` on `<html>`
+- Checks `<a target="_blank">` and warns about links that open in a new window
+- Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
 
 Other features:
 
 - Clear a11y errors and warnings with informative messages
 - Options to import via CDN, npm or yarn
-- Customise the color of the errors
+- Customise the error and warning colors
+- Customise the font used for error and warning messages
 - No dependencies
 
 ---
