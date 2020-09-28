@@ -7,14 +7,14 @@
 :root {
   --checka11y-error-color: #f00;
   --checka11y-error-border-width: 5px;
-  --checka11y-font: 'Comic Sans MS', cursive !important;
+  --checka11y-font: "Comic Sans MS", cursive !important;
 }
 
 /**
  * Images
  */
 
-img:not([alt]) /* All images require an alt attribute, whether it has a value or is null */ {
+img:not( [alt] ) /* All images require an alt attribute, whether it has a value or is null */ {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
@@ -22,12 +22,12 @@ img:not([alt]) /* All images require an alt attribute, whether it has a value or
  * iframe
  */
 
-iframe:not([title]) /* All iframe must have title attribute */ {
+iframe:not( [title] ) /* All iframe must have title attribute */ {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-iframe:not([title])::after /* All iframe must have title attribute */ {
-  content: 'ERROR: iframe has no title attribute. ' !important;
+iframe:not( [title] )::after /* All iframe must have title attribute */ {
+  content: "ERROR: iframe has no title attribute. " !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -35,20 +35,24 @@ iframe:not([title])::after /* All iframe must have title attribute */ {
  * Lists
  */
 
-ol > *:not(li):after, /* All children of <ol> must only be <li> */
-ul > *:not(li):after /* All children of <ul> must only be <li> */ {
-    content: 'ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>.' !important;
-    font-family: var(--checka11y-font, cursive);
+ol > *:not( li )::after,
+ul > *:not( li )::after /* All children of <ul> must only be <li> */ {
+  content: "ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>." !important;
+  font-family: var(--checka11y-font, cursive);
 }
 
 /**
  * Navigation
  */
-nav + nav /* There must only be one primary navigation on the page */ {
+
+/* There if more than one primary navigation is available, all navigations must be clearly labelled. */
+nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
+nav ~ nav:not( [aria-label] ):not( [aria-labelledby] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-nav + nav::after {
-  content: 'ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>' !important;
+nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav::after,
+nav ~ nav:not( [aria-label] ):not( [aria-labelledby] )::after {
+  content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags" !important;
   font-family: var(--checka11y-font, cursive);
 }
