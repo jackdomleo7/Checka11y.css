@@ -37,7 +37,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 - Missing `title` on `<iframe>`
 - Checks `<li>` is the **only** child of `<ol>` and `<ul>`
 - Checks if `<nav>` exists more than once on a page, that each nav is correctly labelled.
-- Missing `lang` on `<html>`
+- Missing or empty `lang` on `<html>`
 - Checks `<a target="_blank">` and warns about links that open in a new window
 - Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
 

@@ -25,6 +25,15 @@ html:not( [lang] ) body::before {
   font-family: var(--checka11y-font, cursive);
 }
 
+html[lang=""] body{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+html[lang=""] body::before {
+  content: "ERROR: html lang attribute should not be empty" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
 /**
  * Images
  */
