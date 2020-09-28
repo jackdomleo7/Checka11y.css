@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+.bundle
+.env
+_public
+public
+node_modules
+tmp
+.cache
+dist

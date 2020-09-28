@@ -1,7 +1,6 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 html {
-  /* Declare your font family type in the html selector, then your font-family in the body selector */
   font-family: sans-serif;
   box-sizing: border-box;
 }

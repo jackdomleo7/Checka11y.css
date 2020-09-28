@@ -4,6 +4,9 @@
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
+  "scripts": {
+    "lint": "stylelint \"**/*.css\" --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jackdomleo7/Checka11y.css.git"
@@ -12,6 +15,13 @@
     "name": "Jack Domleo",
     "url": "https://jackdomleo.dev"
   },
+  "contributors": [
+    "Jack Domleo <jackdomleo7@gmail.com> (https://github.com/jackdomleo7)",
+    "Dan Spratling <dan@danspratling.dev> (https://github.com/danspratling)",
+    "Savvas Stephanides (https://github.com/SavvasStephanides)",
+    "Veeresh (https://github.com/veerreshr)",
+    "Devin Ford (https://github.com/devindford)"
+  ],
   "keywords": [
     "checka11y",
     "checkally",
@@ -29,5 +39,8 @@
     "README.md",
     "LICENSE",
     "CHANGELOG"
-  ]
+  ],
+  "devDependencies": {
+    "stylelint": "^13.7.1"
+  }
 }
