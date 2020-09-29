@@ -7,7 +7,60 @@
 :root {
   --checka11y-error-color: #f00;
   --checka11y-error-border-width: 5px;
-  --checka11y-font: "Comic Sans MS", cursive !important;
+  
+  /** 
+    * Colors
+    * Colors are broken down into RGB and A variables to be combined for the main color
+    */
+
+  --text-error: #721c24;
+  --bg-error: #ffc6c6;
+  --border-error: #ff0000;
+
+  --text-warn: #721c24;
+  --bg-warn: #ffffd8;
+  --border-warn:#ffff66;
+
+  /* Scale */
+  --space: 0.25rem;
+
+  --space-0: calc(var(--space) * 0);
+  --space-1: calc(var(--space) * 1);
+  --space-2: calc(var(--space) * 2);
+  --space-3: calc(var(--space) * 3);
+  --space-4: calc(var(--space) * 4);
+  --space-5: calc(var(--space) * 5);
+  --space-6: calc(var(--space) * 6);
+  --space-8: calc(var(--space) * 8);
+  --space-10: calc(var(--space) * 10);
+  --space-12: calc(var(--space) * 12);
+  --space-16: calc(var(--space) * 16);
+  --space-20: calc(var(--space) * 20);
+  --space-24: calc(var(--space) * 24);
+  --space-32: calc(var(--space) * 32);
+  --space-40: calc(var(--space) * 48);
+  --space-56: calc(var(--space) * 56);
+  --space-64: calc(var(--space) * 64);
+}
+
+.alert {
+  display: block;
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-2) auto var(--space-6);
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+.alert.error {
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.5rem solid var(--border-error);
+}
+
+.alert.warn {
+  color: var(--text-warn);
+  background-color: var(--bg-warn);
+  border: 0.5rem solid var(--border-warn);
 }
 
 /**
@@ -21,8 +74,16 @@ html:not( [lang] ) body {
 
 /* html element requires a lang attribute */
 html:not( [lang] ) body::before {
+  display: block;
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-2) auto var(--space-6);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.4rem solid var(--border-error);
   content: "ERROR: html has no lang attribute." !important;
-  font-family: var(--checka11y-font, cursive);
 }
 
 html[lang=""] body{
@@ -54,8 +115,16 @@ iframe:not( [title] ) {
 
 /* All iframe must have title attribute */
 iframe:not( [title] )::after {
+  display: block;
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-2) auto var(--space-6);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.4rem solid var(--border-error);
   content: "ERROR: iframe has no title attribute. " !important;
-  font-family: var(--checka11y-font, cursive);
 }
 
 /**
@@ -64,27 +133,42 @@ iframe:not( [title] )::after {
 
 
 /* All children of <ul> and <ol> must only be <li> */
-ol > *:not( li ),
+/* ol > *:not( li ),
 ul > *:not( li ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-}
+} */
 
 /* All children of <ul> and <ol> must only be <li> */
 ol > *:not( li )::after,
 ul > *:not( li )::after {
+  display: block;
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-2) auto var(--space-6);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.4rem solid var(--border-error);
   content: "ERROR: List markup invalid. Ensure <li> is the only direct child of <ul> or <ol>." !important;
-  font-family: var(--checka11y-font, cursive);
 }
 
-/* All children of <dl> must only be <dt> or <dd> */
+/* All children of <dl> must only be <dt> or <dd>
 dl > *:not( dt ):not( dd ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-}
+} */
 
 /* All children of <dl> must only be <dt> or <dd> */
 dl > *:not( dt ):not( dd )::after {
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-4);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.4rem solid var(--border-error);
   content: "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
-  font-family: var(--checka11y-font, cursive);
 }
 
 /**
@@ -92,15 +176,23 @@ dl > *:not( dt ):not( dd )::after {
  */
 
 /* If more than one primary navigation is available, all navigations must be clearly labelled. */
-nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
+/* nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
 nav ~ nav:not( [aria-label] ):not( [aria-labelledby] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-}
+} */
 
 nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav::after,
 nav ~ nav:not( [aria-label] ):not( [aria-labelledby] )::after {
+  display: block;
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-2) auto var(--space-6);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.4rem solid var(--border-error);
   content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags" !important;
-  font-family: var(--checka11y-font, cursive);
 }
 
 /**
@@ -108,14 +200,22 @@ nav ~ nav:not( [aria-label] ):not( [aria-labelledby] )::after {
  */
 
 /* Warn when opening a link in a new tab or window */
-a[target = "_blank"] {
+/* a[target = "_blank"] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-}
+} */
 
 /* Warn when opening a link in a new tab or window */
 a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */ {
+  display: block;
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-2) auto var(--space-6);
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-error);
+  background-color: var(--bg-error);
+  border: 0.4rem solid var(--border-error);
   content: " WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior" !important;
-  font-family: var(--checka11y-font, cursive);
 }
 
 /**
