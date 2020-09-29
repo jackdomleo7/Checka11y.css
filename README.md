@@ -40,6 +40,22 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 - Missing or empty `lang` on `<html>`
 - Checks `<a target="_blank">` and warns about links that open in a new window
 - Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
+- Checks for the following invalid HTML elements nested inside of an <a>:
+  - `<a>`
+  - `<audio controls>`
+  - `<button>`
+  - `<details>`
+  - `<embed>`
+  - `<iframe>`
+  - `<img usemap>`
+  - `any input without type hidden`
+  - `<keygen>`
+  - `<label>`
+  - `<menu type="toolbar">`
+  - `<object usemap>`
+  - `<select>`
+  - `<textarea>`
+  - `<video controls>`
 
 Other features:
 

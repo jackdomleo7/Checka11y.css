@@ -117,3 +117,115 @@ a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */
   content: " WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior" !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+/**
+* Invalid HTML nested inside <a>
+*/
+
+a audio[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a audio[controls]::after {
+  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a button {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a button::after {
+  content: "ERROR: Ensure that button is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a details {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a details::after {
+  content: "ERROR: Ensure that <details> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a embed {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a embed::after {
+  content: "ERROR: Ensure that <embed> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a iframe {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a iframe::after {
+  content: "ERROR: Ensure that <iframe> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a img[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a img[usemap]::after {
+  content: "ERROR: Ensure that <img> with usemap attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a input:not( [type = "hidden"] ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a input:not( [type = "hidden"] )::after {
+  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a label {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a label::after {
+  content: "ERROR: Ensure that <label> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a object[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a object[usemap]::after {
+  content: "ERROR: Ensure that <object> with usemap attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a select {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a select::after {
+  content: "ERROR: Ensure that <select> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a textarea {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a textarea::after {
+  content: "ERROR: Ensure that <textarea> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a video[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a video[controls]::after {
+  content: "ERROR: Ensure that <video> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
