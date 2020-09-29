@@ -88,137 +88,141 @@ a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */
   font-family: var(--checka11y-font, cursive);
 }
 
-a > a {
+/**
+* Invalid HTML nested inside <a>
+*/
+
+a a {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > a::after {
+a a::after {
   content: "ERROR: Ensure that <a> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > audio[controls] {
+a audio[controls] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > audio[controls]::after {
+a audio[controls]::after {
   content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > button {
+a button {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > button::after {
+a button::after {
   content: "ERROR: Ensure that button is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > details {
+a details {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > details::after {
+a details::after {
   content: "ERROR: Ensure that <details> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > embed {
+a embed {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > embed::after {
+a embed::after {
   content: "ERROR: Ensure that <embed> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > iframe {
+a iframe {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > iframe::after {
+a iframe::after {
   content: "ERROR: Ensure that <iframe> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > img[usemap] {
+a img[usemap] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > img[usemap]::after {
+a img[usemap]::after {
   content: "ERROR: Ensure that <img> with usemap attribute is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > input:not( [type = "hidden"] ) {
+a input:not( [type = "hidden"] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > input:not( [type = "hidden"] )::after {
+a input:not( [type = "hidden"] )::after {
   content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > keygen {
+a keygen {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > keygen::after {
+a keygen::after {
   content: "ERROR: Ensure that <keygen> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > label {
+a label {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > label::after {
+a label::after {
   content: "ERROR: Ensure that <label> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > menu[type = "toolbar"] {
+a menu[type = "toolbar"] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > menu[type = "toolbar"]::after {
+a menu[type = "toolbar"]::after {
   content: "ERROR: Ensure that <menu> with type attribute set to toolbar is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > object[usemap] {
+a object[usemap] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > object[usemap]::after {
+a object[usemap]::after {
   content: "ERROR: Ensure that <object> with usemap attribute is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > select {
+a select {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > select::after {
+a select::after {
   content: "ERROR: Ensure that <select> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > textarea {
+a textarea {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > textarea::after {
+a textarea::after {
   content: "ERROR: Ensure that <textarea> is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
-a > video[controls] {
+a video[controls] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-a > video[controls]::after {
+a video[controls]::after {
   content: "ERROR: Ensure that <video> with controls attribute is not a child of <a>" !important;
   font-family: var(--checka11y-font, cursive);
 }

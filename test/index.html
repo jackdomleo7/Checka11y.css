@@ -54,81 +54,44 @@
       <a href="https://github.com/jackdomleo7/Checka11y.css" target="_blank">Checka11y Repo</a>
     </section>
     <section>
-      <h2>Links: &lt;a&gt; can not be a child of &lt;a&gt;</h2>
-      <a href="https://github.com/jackdomleo7/">
-        <a href="https://github.com/jackdomleo7/Checka11y.css">Hello, I am an anchor tag inside an anchor tag</a>
-      </a>
-    </section>
-    <section>
-      <h2>Links: &lt;audio&gt; with controls attribute can not be a child of &lt;a&gt;</h2>
+      <h2>Checks for invalid HTML elements nested inside an &lt;a&gt;</h2>
+      <h3>Links: &lt;audio&gt; with controls attribute can not be a child of &lt;a&gt;</h3>
       <a>
         <audio controls></audio>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;button&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;button&gt; can not be a child of &lt;a&gt;</h3>
       <a>
         <button>Hello, I am a button inside an &lt;a&gt;</button>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;details&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;details&gt; can not be a child of &lt;a&gt;</h3>
       <a>
           <details>Hello, I am a details inside an anchor tag</details>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;embed&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;embed&gt; can not be a child of &lt;a&gt;</h3>
       <a>
         <embed src="./assets/a11y.png" />
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;iframe&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;iframe&gt; can not be a child of &lt;a&gt;</h3>
       <a>
-        <iframe src="https://jackdomleo.dev" height="500" width="500" title="test for anchor tag with iframe as a child"></iframe>
+        <iframe src="https://checka11y.jackdomleo.dev" height="300" width="300" title="Test for anchor tag with iframe as a child"></iframe>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;img&gt; with usemap attribute can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;img&gt; with usemap attribute can not be a child of &lt;a&gt;</h3>
       <a>
-        <img src="./assets/a11y.png" alt="test for anchor tag with usemap attribute" usemap/>
+        <img src="./assets/a11y.png" alt="Test for anchor tag with usemap attribute" usemap>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;input&gt; without type hidden attribute can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;input&gt; without type hidden attribute can not be a child of &lt;a&gt;</h3>
       <a>
-          <input type="text" placeholder="I am an input tag"></input>
+          <input type="text" placeholder="I am an input tag">
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;keygen&gt; can not be a child of &lt;a&gt;</h2>
-      <a>
-          <keygen name="second" />
-      </a>
-    </section>
-    <section>
-      <h2>Links: &lt;label&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;label&gt; can not be a child of &lt;a&gt;</h3>
       <a>
           <label>Hello, I am a label inside an anchor tag</label>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;menu&gt; with type toolbar attribute can not be a child of &lt;a&gt;</h2>
-      <a>
-        <menu type="toolbar" id="mymenu">
-          <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
-        </menu>
-      </a>
-    </section>
-    <section>
-      <h2>Links: &lt;object&gt; with usemap attribute can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;object&gt; with usemap attribute can not be a child of &lt;a&gt;</h3>
       <a>
         <object data="./assets/a11y.png" width="500" height="500" usemap></object> 
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;select&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;select&gt; can not be a child of &lt;a&gt;</h3>
       <a>
           <select>
             <option>Option 1</option>
@@ -136,17 +99,13 @@
             <option>Option 3</option>
           </select>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;textarea&gt; can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;textarea&gt; can not be a child of &lt;a&gt;</h3>
       <a>
           <textarea placeholder="Hello, I am a textarea"></textarea>
       </a>
-    </section>
-    <section>
-      <h2>Links: &lt;video&gt; with controls attribute can not be a child of &lt;a&gt;</h2>
+      <h3>Links: &lt;video&gt; with controls attribute can not be a child of &lt;a&gt;</h3>
       <a>
-        <video controls />
+        <video controls></video>
       </a>
     </section>
   </body>
