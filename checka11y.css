@@ -25,24 +25,15 @@
   --space: 0.25rem;
 
   --space-0: calc(var(--space) * 0);
-  --space-1: calc(var(--space) * 1);
   --space-2: calc(var(--space) * 2);
-  --space-3: calc(var(--space) * 3);
   --space-4: calc(var(--space) * 4);
-  --space-5: calc(var(--space) * 5);
   --space-6: calc(var(--space) * 6);
-  --space-8: calc(var(--space) * 8);
-  --space-10: calc(var(--space) * 10);
-  --space-12: calc(var(--space) * 12);
-  --space-16: calc(var(--space) * 16);
-  --space-20: calc(var(--space) * 20);
-  --space-24: calc(var(--space) * 24);
-  --space-32: calc(var(--space) * 32);
-  --space-40: calc(var(--space) * 48);
-  --space-56: calc(var(--space) * 56);
-  --space-64: calc(var(--space) * 64);
 }
 
+/**
+  * Base Classes
+  * To use in SCSS with the @extend command.
+  */
 .alert {
   display: block;
   padding: var(--space-4) var(--space-6);
@@ -63,14 +54,21 @@
   border: 0.5rem solid var(--border-warn);
 }
 
+.content.error {
+  border-radius: 0.75rem;
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
+}
+
+.content.warn {
+  border-radius: 0.75rem;
+  border: 0.4rem solid var(--border-warn);
+  background-color: var(--bg-warn);
+}
+
 /**
 * HTML
 */
-
-/* html element requires a lang attribute */
-html:not( [lang] ) body {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-}
 
 /* html element requires a lang attribute */
 html:not( [lang] ) body::before {
@@ -101,7 +99,9 @@ html[lang=""] body::before {
 
 /* All images require an alt attribute, whether it has a value or is null */
 img:not( [alt] ) {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+  border-radius: 0.75rem;
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 /**
@@ -110,7 +110,9 @@ img:not( [alt] ) {
 
 /* All iframe must have title attribute */
 iframe:not( [title] ) {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+  border-radius: 0.75rem;
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 /* All iframe must have title attribute */
@@ -131,13 +133,6 @@ iframe:not( [title] )::after {
  * Lists
  */
 
-
-/* All children of <ul> and <ol> must only be <li> */
-/* ol > *:not( li ),
-ul > *:not( li ) {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-} */
-
 /* All children of <ul> and <ol> must only be <li> */
 ol > *:not( li )::after,
 ul > *:not( li )::after {
@@ -153,13 +148,9 @@ ul > *:not( li )::after {
   content: "ERROR: List markup invalid. Ensure <li> is the only direct child of <ul> or <ol>." !important;
 }
 
-/* All children of <dl> must only be <dt> or <dd>
-dl > *:not( dt ):not( dd ) {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-} */
-
 /* All children of <dl> must only be <dt> or <dd> */
 dl > *:not( dt ):not( dd )::after {
+  display: block;
   padding: var(--space-4) var(--space-6);
   margin: var(--space-4);
   border-radius: 0.75rem;
@@ -176,11 +167,6 @@ dl > *:not( dt ):not( dd )::after {
  */
 
 /* If more than one primary navigation is available, all navigations must be clearly labelled. */
-/* nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
-nav ~ nav:not( [aria-label] ):not( [aria-labelledby] ) {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-} */
-
 nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav::after,
 nav ~ nav:not( [aria-label] ):not( [aria-labelledby] )::after {
   display: block;
@@ -200,12 +186,7 @@ nav ~ nav:not( [aria-label] ):not( [aria-labelledby] )::after {
  */
 
 /* Warn when opening a link in a new tab or window */
-/* a[target = "_blank"] {
-  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-} */
-
-/* Warn when opening a link in a new tab or window */
-a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */ {
+a[target = "_blank"]::after {
   display: block;
   padding: var(--space-4) var(--space-6);
   margin: var(--space-2) auto var(--space-6);
