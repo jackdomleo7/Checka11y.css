@@ -5,7 +5,7 @@
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "build": "stylelint \"**/*.scss\" --fix && node-sass src/checka11y.scss ./checka11y.css --output-style expanded"
+    "build": "stylelint \"**/*.scss\" --fix && node-sass src/checka11y.scss ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,9 @@
     "CHANGELOG"
   ],
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "node-sass": "^4.14.1",
+    "postcss-cli": "^8.0.0",
     "stylelint": "^13.7.1",
     "stylelint-scss": "^3.18.0"
   }
