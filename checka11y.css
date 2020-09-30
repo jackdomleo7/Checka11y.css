@@ -14,12 +14,23 @@
 * HTML
 */
 
+/* html element requires a lang attribute */
 html:not( [lang] ) body {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
+/* html element requires a lang attribute */
 html:not( [lang] ) body::before {
   content: "ERROR: html has no lang attribute." !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+html[lang=""] body{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+html[lang=""] body::before {
+  content: "ERROR: html lang attribute should not be empty" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -27,7 +38,8 @@ html:not( [lang] ) body::before {
  * Images
  */
 
-img:not( [alt] ) /* All images require an alt attribute, whether it has a value or is null */ {
+/* All images require an alt attribute, whether it has a value or is null */
+img:not( [alt] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
@@ -35,11 +47,13 @@ img:not( [alt] ) /* All images require an alt attribute, whether it has a value 
  * iframe
  */
 
-iframe:not( [title] ) /* All iframe must have title attribute */ {
+/* All iframe must have title attribute */
+iframe:not( [title] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-iframe:not( [title] )::after /* All iframe must have title attribute */ {
+/* All iframe must have title attribute */
+iframe:not( [title] )::after {
   content: "ERROR: iframe has no title attribute. " !important;
   font-family: var(--checka11y-font, cursive);
 }
@@ -48,9 +62,28 @@ iframe:not( [title] )::after /* All iframe must have title attribute */ {
  * Lists
  */
 
+
+/* All children of <ul> and <ol> must only be <li> */
+ol > *:not( li ),
+ul > *:not( li ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+/* All children of <ul> and <ol> must only be <li> */
 ol > *:not( li )::after,
-ul > *:not( li )::after /* All children of <ul> must only be <li> */ {
-  content: "ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>." !important;
+ul > *:not( li )::after {
+  content: "ERROR: List markup invalid. Ensure <li> is the only direct child of <ul> or <ol>." !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/* All children of <dl> must only be <dt> or <dd> */
+dl > *:not( dt ):not( dd ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+/* All children of <dl> must only be <dt> or <dd> */
+dl > *:not( dt ):not( dd )::after {
+  content: "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -66,11 +99,142 @@ dl > *:not( dt ):not( dd )::after {
 /**
  * Navigation
  */
-nav + nav /* There must only be one primary navigation on the page */ {
+
+/* If more than one primary navigation is available, all navigations must be clearly labelled. */
+nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
+nav ~ nav:not( [aria-label] ):not( [aria-labelledby] ) {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-nav + nav::after {
-  content: "ERROR: <nav> denotes the primary navigation for the page. Other navigations are permitted but should not be wrapped in a <nav>" !important;
+nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav::after,
+nav ~ nav:not( [aria-label] ):not( [aria-labelledby] )::after {
+  content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+ * Links
+ */
+
+/* Warn when opening a link in a new tab or window */
+a[target = "_blank"] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+/* Warn when opening a link in a new tab or window */
+a[target = "_blank"]::after /* Links that open a new page/tab target="_blank" */ {
+  content: " WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+* Invalid HTML nested inside <a>
+*/
+
+a audio[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a audio[controls]::after {
+  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a button {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a button::after {
+  content: "ERROR: Ensure that button is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a details {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a details::after {
+  content: "ERROR: Ensure that <details> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a embed {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a embed::after {
+  content: "ERROR: Ensure that <embed> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a iframe {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a iframe::after {
+  content: "ERROR: Ensure that <iframe> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a img[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a img[usemap]::after {
+  content: "ERROR: Ensure that <img> with usemap attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a input:not( [type = "hidden"] ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a input:not( [type = "hidden"] )::after {
+  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a label {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a label::after {
+  content: "ERROR: Ensure that <label> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a object[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a object[usemap]::after {
+  content: "ERROR: Ensure that <object> with usemap attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a select {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a select::after {
+  content: "ERROR: Ensure that <select> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a textarea {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a textarea::after {
+  content: "ERROR: Ensure that <textarea> is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+a video[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+a video[controls]::after {
+  content: "ERROR: Ensure that <video> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
   font-family: var(--checka11y-font, cursive);
 }

@@ -2,13 +2,24 @@
 
 **A CSS stylesheet to quickly highlight a11y concerns.**
 
-An alternative testing method to Chrome's Lighthouse.
+The first line of defence for testing accessibility.
+
+Designed to quickly highlight some common accessibility errors and warnings that can be easily and quickly rectified.
+
+Recommended before turning to automation tools and scanners such as Lighthouse on Chrome.
+
+Remember not to push this to production!
+
+A great tool for:
+
+- Websites and web applications to begin improving their accessibility.
+- Developers and testers/QA to learn more about accessibility and creating accessible websites and applications.
 
 _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; _Simple_
 
 **BETA coming soon!**
 
-<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
+<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
 
@@ -18,20 +29,44 @@ _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; 
 
 ## Features
 
-Our features are influenced by [The A11y Project checklist](https://www.a11yproject.com/checklist).
+Our features are always checked against the W3C accessibility guidelines.
 
 A list of every a11y concern Checka11y.css will check for and highlight:
 
 - Missing `alt` attributes on images
 - Missing `title` on `<iframe>`
+<<<<<<< HEAD
 - Checks `<li>` is the **only** child of `<ol>` and `<ul>`
 - Checks `<nav>` only exists once on any page
 - Missing `lang` on `<html>`
 - Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
+=======
+- Checks `<li>` is the **only** direct child of `<ol>` and `<ul>`
+- Checks if `<nav>` exists more than once on a page, that each nav is correctly labelled.
+- Missing or empty `lang` on `<html>`
+- Checks `<a target="_blank">` and warns about links that open in a new window
+- Checks `<dt>` and `<dd>` are the **only** direct children of `<dl>`
+- Checks for the following invalid HTML elements nested inside of an <a>:
+  - `<a>`
+  - `<audio controls>`
+  - `<button>`
+  - `<details>`
+  - `<embed>`
+  - `<iframe>`
+  - `<img usemap>`
+  - `any input without type hidden`
+  - `<keygen>`
+  - `<label>`
+  - `<menu type="toolbar">`
+  - `<object usemap>`
+  - `<select>`
+  - `<textarea>`
+  - `<video controls>`
+>>>>>>> 9475de7f1e6a1e533038081d15afe90176e691ba
 
 Other features:
 
-- Clear a11y errors and warnings with imformative messages
+- Clear a11y errors and warnings with informative messages
 - Options to import via CDN, npm or yarn
 - Customise the error and warning colors
 - Customise the font used for error and warning messages
@@ -44,6 +79,18 @@ Other features:
 Coming soon...
 
 Watch this repository to stay up to date.
+
+---
+
+## Why is accessibility important?
+
+Accessibility is important to ensure your website or web application is accessible to as many users and types of users you can cater for.
+
+Often, we can improve the accessibility on our websites and web applications by focusing on the obvious first - these are small quick wins that are easy to implement or rectify and may not require a lot of time investment.
+
+Checka11y.css will instantly highlight as many HTML validity and HTML semantic errors and warnings as we can, to help you to improve your website or web application.
+
+[Click here to read more about web accessibility.](https://www.w3.org/WAI/fundamentals/accessibility-intro)
 
 ---
 
