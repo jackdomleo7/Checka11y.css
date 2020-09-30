@@ -113,3 +113,4 @@ Checka11y.css is licensed under MIT. As a minimum, you are required to KEEP AND 
 2. `git clone https://github.com/jackdomleo7/Checka11y.css.git` or fork the repo
 3. `cd Checka11y.css`
 4. `npm i`
+5. Edit `src/**/*.scss` and run `npm run build` in the root of the project to regenerate the CSS found at `/checka11y.css` and `/checka11y.min.css` (DO NOT edit these files directly).

@@ -4,6 +4,8 @@ When contributing to this repository, please first discuss the change you wish t
 
 When looking to contribute, please comment on issues asking if you can do that work, and only look at doing work that is **not labelled** as `question` or `needs more info` because these issues require more research and discussion before doing. Please also do not ask to do work that is already assigned to someone (you can see who is assigned to an issue by looking at the "assignee").
 
+You cannot be assigned to more than one issue at the same time (unless you are a collaborator). Please complete the issue you are working on before requesting to be assigned to another issue.
+
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
