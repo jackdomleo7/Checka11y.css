@@ -35,11 +35,11 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 
 - Missing `alt` attributes on images
 - Missing `title` on `<iframe>`
-- Checks `<li>` is the **only** child of `<ol>` and `<ul>`
+- Checks `<li>` is the **only** direct child of `<ol>` and `<ul>`
 - Checks if `<nav>` exists more than once on a page, that each nav is correctly labelled.
 - Missing or empty `lang` on `<html>`
 - Checks `<a target="_blank">` and warns about links that open in a new window
-- Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
+- Checks `<dt>` and `<dd>` are the **only** direct children of `<dl>`
 - Checks for the following invalid HTML elements nested inside of an <a>:
   - `<a>`
   - `<audio controls>`
