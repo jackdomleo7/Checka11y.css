@@ -1,0 +1,9 @@
+/* All iframe must have title attribute */
+iframe:not( [title] ) {
+  @extend %alertError;
+
+  &::after {
+    @extend %contentError;
+    @include contentMessage(error, "iframe has no title attribute.");
+  }
+}

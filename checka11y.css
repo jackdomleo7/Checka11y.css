@@ -69,9 +69,6 @@ a[target="_blank"]::after {
   background-color: var(--bg-warning);
 }
 
-/**
-  * HTML
-  */
 /* html element requires a lang attribute */
 html:not([lang]) body {
   border: 0.5rem solid var(--border-error);
@@ -90,21 +87,12 @@ html[lang=""] body::before {
   content: "ERROR: html lang attribute should not be empty." !important;
 }
 
-/**
-  * Images
-  */
 /* All images require an alt attribute */
-/**
-  * iframe
-  */
 /* All iframe must have title attribute */
 iframe:not([title])::after {
   content: "ERROR: iframe has no title attribute." !important;
 }
 
-/**
-  * Lists
-  */
 /* All direct children of <ul> and <ol> must only be <li> */
 ol > *:not(li)::after,
 ul > *:not(li)::after {
@@ -116,26 +104,18 @@ dl > *:not(dt):not(dd)::after {
   content: "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
 }
 
-/**
-  * Navigation
-  */
 /* If more than one primary navigation is available, all navigations must be clearly labelled. */
 nav:not([aria-label]):not([aria-labelledby]) ~ nav::after,
 nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
   content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags." !important;
 }
 
-/**
-  * Links
-  */
 /* Warn when opening a link in a new tab or window */
 a[target="_blank"]::after {
   content: "WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior." !important;
 }
 
-/**
-  * Invalid HTML nested inside <a>
-  */
+/* Invalid HTML nested inside <a> */
 a audio[controls]::after {
   content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML." !important;
 }
