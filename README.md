@@ -56,7 +56,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
   - `<select>`
   - `<textarea>`
   - `<video controls>`
-- Check the dir attribute has the correct values
+- Checks the `dir` attribute is only set to `ltr`, `rtl` or `auto`
 
 Other features:
 
