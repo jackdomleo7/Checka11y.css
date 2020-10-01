@@ -229,3 +229,16 @@ a video[controls]::after {
   content: "ERROR: Ensure that <video> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+/**
+* The dir attribute can only have the values, ltr, rtl and auto.
+*/
+
+[dir]:not( [dir="rtl"] ):not( [dir="ltr"] ):not( [dir="auto"] ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+[dir]:not( [dir="rtl"] ):not( [dir="ltr"] ):not( [dir="auto"] )::after {
+  content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
+  font-family: var(--checka11y-font, cursive);
+}
