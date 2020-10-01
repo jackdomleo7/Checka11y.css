@@ -1,55 +1,116 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Checka11y.css test</title>
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="../checka11y.css" />
-</head>
-<body>
-  <h1>Checka11y.css - test.html</h1>
-  <p>The intention of this file is to test out the new a11y checks you are adding, so this web page should try to not
-    comply with a11y as much as possible.</p>
-  <hr />
-  <section>
-    <h2>Images: All images require an alt attribute, whether it has a value or is null</h2>
-    <img src="./assets/a11y.png" />
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checka11y.css test</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../checka11y.css" />
+  </head>
+  <body>
+    <h1>Checka11y.css playground</h1>
+    <p>The intention of this file is to test out the new a11y checks you are adding, so this web page should try to not comply with a11y as much as possible.</p>
+    <hr />
+    <section>
+      <h2>HTML: html tag should have a lang attribute</h2>
+      <p>See top of page.</p>
+    </section>
+    <section>
+      <h2>Images: All images require an alt attribute, whether it has a value or is null</h2>
+      <img src="./assets/a11y.png" />
+    </section>
+    <section>
+      <h2>iframe: iframe has title attribute</h2>
+      <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
+    </section>
+    <section>
+      <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;</h2>
+      <ol>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
+        <div>Hello, I'm a &lt;div&gt; inside a &lt;ol&gt;</div>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;</h2>
+    <ul>
+      <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+      <div>Hello, I'm a &lt;div&gt; inside a &lt;ul&gt;</div>
+      <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+    </ul>
   </section>
   <section>
-    <h2>iframe: iframe has title attribute</h2>
-    <iframe src="https://jackdomleo.dev" height="500" width="500"></iframe>
-  </section>
-  <section>
-    <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;</h2>
-    <ol>
-      <div>Hello, I'm a div inside a &lt;ol&gt;</div>
-    </ol>
-  </section>
-  <section>
-    <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;</h2>
-    <ol>
-      <div>Hello, I'm a div inside a &lt;ul&gt;</div>
-    </ol>
-  </section>
-  <section>
-    <h2>Navigation: Only a single navigation element should exist</h2>
+    <h2>Navigation: If more than one navigation exists, each navigation should be labelled.</h2>
     <nav>This is the first navigation</nav>
+    <p>This is separating content</p>
     <nav>This is the second navigation</nav>
-  </section>
-  <section>
-    <h2>HTML: html tag should have a lang attribute</h2>
   </section>
   <section>
     <h2>Description list: Direct children of a &lt;dl&gt; can only be &lt;dt&gt; and &lt;dd&gt;</h2>
     <dl>
-      <dt>Hello, I'm dt element inside dl element</dt>
-      <dd>Hello, I'm dd element inside dl element</dd>
-      <p>Hello, I'm p(paragraph) element inside dl element. </p>
+      <dt>Hello, I'm &lt;dt&gt; element inside &lt;dl&gt; element</dt>
+      <dd>Hello, I'm &lt;dd&gt; element inside &lt;dl&gt; element</dd>
+      <p>Hello, I'm &lt;p&gt; element inside &lt;dl&gt; element. </p>
     </dl>
   </section>
   <section>
     <h2>External Links: Provide advanced warning to a user when a link opens in a new window or tab</h2>
     <a href="https://github.com/jackdomleo7/Checka11y.css" target="_blank">Checka11y Repo</a>
   </section>
-</body>
+    <section>
+      <h2>Checks for invalid HTML elements nested inside an &lt;a&gt;</h2>
+      <h3>Links: &lt;audio&gt; with controls attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <audio controls></audio>
+      </a>
+      <h3>Links: &lt;button&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <button>Hello, I am a button inside an &lt;a&gt;</button>
+      </a>
+      <h3>Links: &lt;details&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <details>Hello, I am a details inside an anchor tag</details>
+      </a>
+      <h3>Links: &lt;embed&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <embed src="./assets/a11y.png" />
+      </a>
+      <h3>Links: &lt;iframe&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <iframe src="https://checka11y.jackdomleo.dev" height="300" width="300" title="Test for anchor tag with iframe as a child"></iframe>
+      </a>
+      <h3>Links: &lt;img&gt; with usemap attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <img src="./assets/a11y.png" alt="Test for anchor tag with usemap attribute" usemap>
+      </a>
+      <h3>Links: &lt;input&gt; without type hidden attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <input type="text" placeholder="I am an input tag">
+      </a>
+      <h3>Links: &lt;label&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <label>Hello, I am a label inside an anchor tag</label>
+      </a>
+      <h3>Links: &lt;object&gt; with usemap attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <object data="./assets/a11y.png" width="500" height="500" usemap></object> 
+      </a>
+      <h3>Links: &lt;select&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+      </a>
+      <h3>Links: &lt;textarea&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <textarea placeholder="Hello, I am a textarea"></textarea>
+      </a>
+      <h3>Links: &lt;video&gt; with controls attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <video controls></video>
+      </a>
+    </section>
+  </body>
+</html>
