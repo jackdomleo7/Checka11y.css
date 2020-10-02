@@ -136,7 +136,7 @@ a button {
 }
 
 a button::after {
-  content: "ERROR: Ensure that button is not a child of <a> as it is an invalid HTML" !important;
+  content: "ERROR: Ensure that <button> is not a child of <a> as it is an invalid HTML" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -181,7 +181,7 @@ a input:not( [type = "hidden"] ) {
 }
 
 a input:not( [type = "hidden"] )::after {
-  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  content: "ERROR: Ensure that <input> without type=hidden attribute attribute is not a child of <a> as it is an invalid HTML" !important;
   font-family: var(--checka11y-font, cursive);
 }
 
@@ -430,7 +430,7 @@ iframe[tabindex="-1"]::after {
 }
 
 /**
-* Headings should have (meaningful) content 
+* Headings should have (meaningful) content
 */
 h1:empty,
 h2:empty,
