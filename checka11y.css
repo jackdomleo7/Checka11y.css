@@ -242,3 +242,48 @@ a video[controls]::after {
   content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+
+/**
+* Headings should have (meaningful) content 
+*/
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+h1:empty::after,
+h2:empty::after,
+h3:empty::after,
+h4:empty::after,
+h5:empty::after,
+h6:empty::after {
+  content: "ERROR: headings must not be empty" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+* Headings should be reachable by assistive technologies
+*/
+h1[aria-hidden],
+h2[aria-hidden],
+h3[aria-hidden],
+h4[aria-hidden],
+h5[aria-hidden],
+h6[aria-hidden] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+h1[aria-hidden]::after,
+h2[aria-hidden]::after,
+h3[aria-hidden]::after,
+h4[aria-hidden]::after,
+h5[aria-hidden]::after,
+h6[aria-hidden]::after {
+  content: "ERROR: headings should be reachable by assistive technologies (no aria-hidden)" !important;
+  font-family: var(--checka11y-font, cursive);
+}

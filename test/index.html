@@ -116,5 +116,26 @@
       <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
       <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr</p>
     </section>
+    <section>
+      <h2>Headings: all headings should have (meaningful) content</h2>
+      <div>
+        <p>An empty heading does not make sense from a semantic point of view and is a sign of an underlying problem</p>
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+      </div>
+      <div>
+        <p>Headings should be reachable by assistive technologies (do not use <code>aria-hidden</code> or similars on a heading).</code></p>
+        <h1 aria-hidden="true">H1 with aria-hidden="true"</h1>
+        <h2 aria-hidden="true">H2 with aria-hidden="true"</h2>
+        <h3 aria-hidden="true">H3 with aria-hidden="true"</h3>
+        <h4 aria-hidden="true">H4 with aria-hidden="true"</h4>
+        <h5 aria-hidden="true">H5 with aria-hidden="true"</h5>
+        <h6 aria-hidden="true">H6 with aria-hidden="true"</h6>
+      </div>
+    </section>
   </body>
 </html>
