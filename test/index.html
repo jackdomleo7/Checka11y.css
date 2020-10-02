@@ -122,6 +122,10 @@
       <button>
         <audio controls></audio>
       </button>
+      <h3>Buttons: &lt;button&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <button>A &lt;button&gt;</button>
+      </button>
       <h3>Buttons: &lt;details&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
       <button>
           <details>Hello, I am a details inside a button tag</details>
@@ -166,6 +170,10 @@
       <button>
         <video controls></video>
       </button>
+    </section>
+    <section>
+      <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
+      <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr</p>
     </section>
   </body>
 </html>
