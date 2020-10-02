@@ -40,7 +40,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 - Missing or empty `lang` on `<html>`
 - Checks `<a target="_blank">` and warns about links that open in a new window
 - Checks `<dt>` and `<dd>` are the **only** direct children of `<dl>`
-- Checks for the following invalid HTML elements nested inside of an <a>:
+- Checks for the following invalid HTML elements nested inside of an <a> or a <button>:
   - `<a>`
   - `<audio controls>`
   - `<button>`
@@ -56,6 +56,20 @@ A list of every a11y concern Checka11y.css will check for and highlight:
   - `<select>`
   - `<textarea>`
   - `<video controls>`
+- Checks the `dir` attribute is only set to `ltr`, `rtl` or `auto`
+- Checks for a tab index value of -1 on the following elements:
+  - `<a>[href]`
+  - `<area>[href]`
+  - `<input> that is not disabled`
+  - `<select> that is not disabled`
+  - `<textarea> that is not disabled`
+  - `<button> that is not disabled`
+  - `<iframe>`
+  - `Any HTML element with editable content`
+- Checks the `video and audio` attributes to ensure `autoplay` is not set
+- Checks headings have meaningful content:
+  - They cannot be empty
+  - They are reachable by assistive technologies (no `aria-hidden`)
 
 Other features:
 
