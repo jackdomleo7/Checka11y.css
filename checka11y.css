@@ -368,6 +368,59 @@ button video[controls]::after {
   font-family: var(--checka11y-font, cursive);
 }
 
+/*Ensure that the tab index of commonly tabbed to elements is not -1*/
+
+a[href][tabindex="-1"],
+area[href][tabindex="-1"],
+input:not([disabled])[tabindex="-1"],
+select:not([disabled])[tabindex="-1"],
+textarea:not([disabled])[tabindex="-1"],
+button:not([disabled])[tabindex="-1"],
+iframe[tabindex="-1"],
+[contentEditable="true"][tabindex="-1"] {
+  border: var(--checka11y-error-border-width, 5px) solid
+    var(--checka11y-error-color, red) !important;
+}
+
+a[href][tabindex="-1"]::after {
+  content: "ERROR : Ensure that <a> with an href attribute doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+area[href][tabindex="-1"]::after {
+  content: "ERROR : Ensure that <area> with an href attribute doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+input:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <input> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+select:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <select> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+textarea:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <textarea> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <button> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+iframe[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <iframe> doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+[contentEditable="true"][tabindex="-1"]::after {
+  content: "ERROR : Ensure that HTML elements with editable content don't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
 /**
 * Video/audio with autoplay set
 */
