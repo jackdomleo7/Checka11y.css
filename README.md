@@ -40,7 +40,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 - Missing or empty `lang` on `<html>`
 - Checks `<a target="_blank">` and warns about links that open in a new window
 - Checks `<dt>` and `<dd>` are the **only** direct children of `<dl>`
-- Checks for the following invalid HTML elements nested inside of an <a>:
+- Checks for the following invalid HTML elements nested inside of an <a> or a <button>:
   - `<a>`
   - `<audio controls>`
   - `<button>`

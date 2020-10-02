@@ -231,6 +231,131 @@ a video[controls]::after {
 }
 
 /**
+ * Buttons
+ */
+
+/**
+* Invalid HTML (interactive content) nested inside of <button>
+*/
+
+button a[href] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button a[href]::after {
+  content: "ERROR: Ensure that <a> with href attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button audio[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button audio[controls]::after {
+  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button button {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button button::after {
+  content: "ERROR: Ensure that <button> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button details {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button details::after {
+  content: "ERROR: Ensure that <details> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button embed {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button embed::after {
+  content: "ERROR: Ensure that <embed> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button iframe {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button iframe::after {
+  content: "ERROR: Ensure that <iframe> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button img[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button img[usemap]::after {
+  content: "ERROR: Ensure that <img> with usemap attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button input:not( [type = "hidden"] ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button input:not( [type = "hidden"] )::after {
+  content: "ERROR: Ensure that <input> without type=hidden attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button label {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button label::after {
+  content: "ERROR: Ensure that <label> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button object[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button object[usemap]::after {
+  content: "ERROR: Ensure that <object> with usemap attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button select {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button select::after {
+  content: "ERROR: Ensure that <select> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button textarea {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button textarea::after {
+  content: "ERROR: Ensure that <textarea> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button video[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button video[controls]::after {
+  content: "ERROR: Ensure that <video> with controls attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
 * The dir attribute can only have the values, ltr, rtl and auto.
 */
 
