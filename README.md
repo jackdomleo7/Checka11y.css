@@ -57,6 +57,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
   - `<textarea>`
   - `<video controls>`
 - Checks the `dir` attribute is only set to `ltr`, `rtl` or `auto`
+- Checks the `video and audio` attributes to ensure `autoplay` is not set
 
 Other features:
 
