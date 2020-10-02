@@ -93,7 +93,7 @@
       </a>
       <h3>Links: &lt;object&gt; with usemap attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
       <a>
-        <object data="./assets/a11y.png" width="500" height="500" usemap></object> 
+        <object data="./assets/a11y.png" width="500" height="500" usemap></object>
       </a>
       <h3>Links: &lt;select&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
       <a>
@@ -111,6 +111,65 @@
       <a>
         <video controls></video>
       </a>
+    </section>
+    <section>
+      <h2>Checks for invalid HTML elements nested inside an &lt;button&gt;</h2>
+      <h3>Buttons: &lt;a&gt; with href attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <a href="#">Hello, I am a link inside a &lt;button&gt;</a>
+      </button>
+      <h3>Buttons: &lt;audio&gt; with controls attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <audio controls></audio>
+      </button>
+      <h3>Buttons: &lt;button&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <button>A &lt;button&gt;</button>
+      </button>
+      <h3>Buttons: &lt;details&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <details>Hello, I am a details inside a button tag</details>
+      </button>
+      <h3>Buttons: &lt;embed&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <embed src="./assets/a11y.png" />
+      </button>
+      <h3>Buttons: &lt;iframe&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <iframe src="https://checka11y.jackdomleo.dev" height="300" width="300" title="Test for button tag with iframe as a child"></iframe>
+      </button>
+      <h3>Buttons: &lt;img&gt; with usemap attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <img src="./assets/a11y.png" alt="Test for img tag with usemap attribute" usemap>
+      </button>
+      <h3>Buttons: &lt;input&gt; without type hidden attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <input type="text" placeholder="I am an input tag">
+      </button>
+      <h3>Buttons: &lt;label&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <label>Hello, I am a label inside a button tag</label>
+      </button>
+      <h3>Buttons: &lt;object&gt; with usemap attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <object data="./assets/a11y.png" width="500" height="500" usemap></object>
+      </button>
+      <h3>Buttons: &lt;select&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+      </button>
+      <h3>Buttons: &lt;textarea&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <textarea placeholder="Hello, I am a textarea"></textarea>
+      </button>
+      <h3>Buttons: &lt;video&gt; with controls attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <video controls></video>
+      </button>
     </section>
     <section>
       <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
@@ -141,6 +200,10 @@
       <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
       <h3>HTML elements with editable content cannot have a tab index of -1</h3>
       <p contenteditable="true" tabindex="-1">I am a paragraph tag with editable content</p>
+    </section>
+    <section>
+      <h2>Autoplay enabled: Do not set video/audio on the page to autoplay</h2>
+      <video src="https://cdn.videvo.net/videvo_files/video/free/2016-11/small_watermarked/Smoke_Light_08_Videvo_preview.webm" autoplay controls muted></video>
     </section>
   </body>
 </html>
