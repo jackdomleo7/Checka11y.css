@@ -116,5 +116,31 @@
       <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
       <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr</p>
     </section>
+    <section>
+      <h2>Check the tab index of commonly tabbed to elements and show an error if it is -1</h2>
+      <h3>Links with an href attribute cannot have a tab index of -1</h3>
+      <a href="https://checka11y.jackdomleo.dev" target="_self" tabindex="-1">I am an anchor tag ( with an href attribute ) having a tab index of-1</a>
+      <h3>&lt;area&gt; elements with an href attribute cannot have a tab index of -1</h3>
+      <img src="./assets/a11y.png" alt="Test for area elements with an href attribute" usemap="#workmap" width="400" height="379"/>
+      <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Clickable area" href="https://checka11y.jackdomleo.dev" tabindex="-1"/>
+      </map>
+      <h3>&lt;input&gt; elements that are not disabled cannot have a tab index of-1</h3>
+      <label for="test-input"></label>
+      <input type="text" placeholder="I am input tag" name="test-input" id="test-input" tabindex="-1"/>
+      <h3>&lt;select&gt; elements that are not disabled cannot have a tab index of-1</h3>
+      <select name="options" id="options" tabindex="-1">
+        <option value="first-option">First option</option>
+        <option value="second-option">Second option</option>
+      </select>
+      <h3>&lt;textarea&gt; elements that are not disabled cannot have a tab index of -1</h3>
+      <textarea placeholder="Hello, I am a textarea" tabindex="-1"></textarea>
+      <h3>&lt;button&gt; elements that are not disabled cannot have a tab index of-1</h3>
+      <button tabindex="-1">Hello, I am a button</button>
+      <h3>&lt;iframe&gt; elements cannot have a tab index of -1</h3>
+      <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
+      <h3>HTML elements with editable content cannot have a tab index of -1</h3>
+      <p contenteditable="true" tabindex="-1">I am a paragraph tag with editable content</p>
+    </section>
   </body>
 </html>

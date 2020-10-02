@@ -57,6 +57,15 @@ A list of every a11y concern Checka11y.css will check for and highlight:
   - `<textarea>`
   - `<video controls>`
 - Checks the `dir` attribute is only set to `ltr`, `rtl` or `auto`
+- Checks for a tab index value of -1 on the following elements:
+  - `<a>[href]`
+  - `<area>[href]`
+  - `<input> that is not disabled`
+  - `<select> that is not disabled`
+  - `<textarea> that is not disabled`
+  - `<button> that is not disabled`
+  - `<iframe>`
+  - `Any HTML element with editable content`
 
 Other features:
 
