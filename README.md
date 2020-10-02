@@ -56,6 +56,8 @@ A list of every a11y concern Checka11y.css will check for and highlight:
   - `<select>`
   - `<textarea>`
   - `<video controls>`
+- Missing or empty `for` on `<label>`
+- Missing or empty `name` on `<input>`
 
 Other features:
 

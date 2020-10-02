@@ -229,3 +229,39 @@ a video[controls]::after {
   content: "ERROR: Ensure that <video> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+label:not([for]){
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+label:not([for])::after{
+  content: "ERROR: Ensure that <label> is always provided with a [for] attribute" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+label[for=""]{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+label[for=""]::after{
+  content: "ERROR: Ensure that [for] in a <label> is not empty" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+input:not([name])::after{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+input:not([name])::after{
+  content: "ERROR: Ensure that <input> is always provided with a [name] attribute" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+input[name=""]::after{
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+input[name=""]::after{
+  content: "ERROR: Ensure that [name] in a <input> is not empty" !important;
+  font-family: var(--checka11y-font, cursive);
+}
