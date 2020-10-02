@@ -84,11 +84,11 @@ html:not( [lang] ) body::before {
   content: "ERROR: html has no lang attribute." !important;
 }
 
-html[lang=""] body{
+html[lang = ""] body {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
 
-html[lang=""] body::before {
+html[lang = ""] body::before {
   content: "ERROR: html lang attribute should not be empty" !important;
   font-family: var(--checka11y-font, cursive);
 }
@@ -308,5 +308,248 @@ a video[controls] {
 
 a video[controls]::after {
   content: "ERROR: Ensure that <video> with controls attribute is not a child of <a> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+ * Buttons
+ */
+
+/**
+* Invalid HTML (interactive content) nested inside of <button>
+*/
+
+button a[href] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button a[href]::after {
+  content: "ERROR: Ensure that <a> with href attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button audio[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button audio[controls]::after {
+  content: "ERROR: Ensure that <audio> with controls attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button button {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button button::after {
+  content: "ERROR: Ensure that <button> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button details {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button details::after {
+  content: "ERROR: Ensure that <details> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button embed {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button embed::after {
+  content: "ERROR: Ensure that <embed> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button iframe {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button iframe::after {
+  content: "ERROR: Ensure that <iframe> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button img[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button img[usemap]::after {
+  content: "ERROR: Ensure that <img> with usemap attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button input:not( [type = "hidden"] ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button input:not( [type = "hidden"] )::after {
+  content: "ERROR: Ensure that <input> without type=hidden attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button label {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button label::after {
+  content: "ERROR: Ensure that <label> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button object[usemap] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button object[usemap]::after {
+  content: "ERROR: Ensure that <object> with usemap attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button select {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button select::after {
+  content: "ERROR: Ensure that <select> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button textarea {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button textarea::after {
+  content: "ERROR: Ensure that <textarea> is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button video[controls] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+button video[controls]::after {
+  content: "ERROR: Ensure that <video> with controls attribute is not a child of <button> as it is an invalid HTML" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+* The dir attribute can only have the values, ltr, rtl and auto.
+*/
+
+[dir]:not( [dir="rtl"] ):not( [dir="ltr"] ):not( [dir="auto"] ) {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+[dir]:not( [dir="rtl"] ):not( [dir="ltr"] ):not( [dir="auto"] )::after {
+  content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/*Ensure that the tab index of commonly tabbed to elements is not -1*/
+
+a[href][tabindex="-1"],
+area[href][tabindex="-1"],
+input:not([disabled])[tabindex="-1"],
+select:not([disabled])[tabindex="-1"],
+textarea:not([disabled])[tabindex="-1"],
+button:not([disabled])[tabindex="-1"],
+iframe[tabindex="-1"],
+[contentEditable="true"][tabindex="-1"] {
+  border: var(--checka11y-error-border-width, 5px) solid
+    var(--checka11y-error-color, red) !important;
+}
+
+a[href][tabindex="-1"]::after {
+  content: "ERROR : Ensure that <a> with an href attribute doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+area[href][tabindex="-1"]::after {
+  content: "ERROR : Ensure that <area> with an href attribute doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+input:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <input> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+select:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <select> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+textarea:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <textarea> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+button:not([disabled])[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <button> that is not disabled doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+iframe[tabindex="-1"]::after {
+  content: "ERROR : Ensure that <iframe> doesn't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+[contentEditable="true"][tabindex="-1"]::after {
+  content: "ERROR : Ensure that HTML elements with editable content don't have a tab index of -1" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+/**
+* Video/audio with autoplay set
+*/
+
+[autoplay] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+/**
+* Headings should have (meaningful) content 
+*/
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+h1:empty::after,
+h2:empty::after,
+h3:empty::after,
+h4:empty::after,
+h5:empty::after,
+h6:empty::after {
+  content: "ERROR: headings must not be empty" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
+* Headings should be reachable by assistive technologies
+*/
+h1[aria-hidden],
+h2[aria-hidden],
+h3[aria-hidden],
+h4[aria-hidden],
+h5[aria-hidden],
+h6[aria-hidden] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+h1[aria-hidden]::after,
+h2[aria-hidden]::after,
+h3[aria-hidden]::after,
+h4[aria-hidden]::after,
+h5[aria-hidden]::after,
+h6[aria-hidden]::after {
+  content: "ERROR: headings should be reachable by assistive technologies (no aria-hidden)" !important;
   font-family: var(--checka11y-font, cursive);
 }
