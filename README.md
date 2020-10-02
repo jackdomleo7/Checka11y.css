@@ -58,6 +58,9 @@ A list of every a11y concern Checka11y.css will check for and highlight:
   - `<video controls>`
 - Checks the `dir` attribute is only set to `ltr`, `rtl` or `auto`
 - Checks the `video and audio` attributes to ensure `autoplay` is not set
+- Checks headings have meaningful content:
+  - They cannot be empty
+  - They are reachable by assistive technologies (no `aria-hidden`)
 
 Other features:
 
