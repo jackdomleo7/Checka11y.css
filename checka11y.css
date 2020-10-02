@@ -244,9 +244,9 @@ a video[controls]::after {
 }
 
 /**
-* Video with autoplay set
+* Video/audio with autoplay set
 */
 
-video[autoplay] {
+[autoplay] {
   border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
 }
