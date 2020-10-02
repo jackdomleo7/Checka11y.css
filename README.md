@@ -31,7 +31,7 @@ _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; 
 
 Our features are always checked against the W3C accessibility guidelines.
 
-A list of every a11y concern Checka11y.css will check for and highlight can be found in the [references section](references.md)
+A list of every a11y concern Checka11y.css will check for and highlight can be found in the [references section](./references.md)
 
 ---
 
