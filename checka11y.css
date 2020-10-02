@@ -242,3 +242,11 @@ a video[controls]::after {
   content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
   font-family: var(--checka11y-font, cursive);
 }
+
+/**
+* Video with autoplay set
+*/
+
+video[autoplay] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
