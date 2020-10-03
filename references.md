@@ -40,12 +40,4 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
   - They cannot be empty
   - They are reachable by assistive technologies (no `aria-hidden`)
 
-Other features:
-
-- Clear a11y errors and warnings with informative messages
-- Options to import via CDN, npm or yarn
-- Customise the error and warning colors
-- Customise the font used for error and warning messages
-- No dependencies
-
 ---
