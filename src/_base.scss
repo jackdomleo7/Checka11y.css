@@ -2,25 +2,12 @@
   * Base Styles
   * To use in SCSS with the @extend & @include command.
   */
-%alert {
-  display: block;
-  padding: var(--space-4) var(--space-6);
-  margin: var(--space-2) auto var(--space-6);
-  border-radius: 2rem;
+%voidError {
+  box-shadow: 0 0 0 0.25rem var(--border-error);
 }
 
-%alertError {
-  @extend %alert;
-  color: var(--text-error);
-  background-color: var(--bg-error);
-  border: 0.5rem solid var(--border-error);
-}
-
-%alertWarning {
-  @extend %alert;
-  color: var(--text-warning);
-  background-color: var(--bg-warning);
-  border: 0.5rem solid var(--border-warning);
+%voidWarning {
+  box-shadow: 0 0 0 0.25rem var(--border-warning);
 }
 
 %content {

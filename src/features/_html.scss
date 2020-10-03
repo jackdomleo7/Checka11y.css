@@ -1,7 +1,5 @@
 /* html element requires a lang attribute */
 html:not( [lang] ) body {
-  border: 0.5rem solid var(--border-error);
-
   &::before {
     @extend %contentError;
     @include contentMessage(error, "html has no lang attribute.");
@@ -10,8 +8,6 @@ html:not( [lang] ) body {
 
 /* html element lang attribute must not be empty */
 html[lang = ""] body {
-  border: 0.5rem solid var(--border-error);
-
   &::before {
     @extend %contentError;
     @include contentMessage(error, "html lang attribute should not be empty.");

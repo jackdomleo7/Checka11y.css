@@ -2,8 +2,6 @@
 ol,
 ul {
   > *:not( li ) {
-    @extend %alertError;
-
     &::after {
       @extend %contentError;
       @include contentMessage(error, "List markup invalid. Ensure <li> is the only direct child of <ul> or <ol>.");
@@ -13,8 +11,6 @@ ul {
 
 /* All direct children of <dl> must only be <dt> or <dd> */
 dl > *:not( dt ):not( dd ) {
-  @extend %alertError;
-
   &::after {
     @extend %contentError;
     @include contentMessage(error, "List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>.");

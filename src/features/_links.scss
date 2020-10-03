@@ -1,7 +1,5 @@
 /* Warn when opening a link in a new tab or window */
 a[target = "_blank"] {
-  @extend %alertWarning;
-
   &::after {
     @extend %contentWarning;
     @include contentMessage(warning, "Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.");
@@ -11,98 +9,59 @@ a[target = "_blank"] {
 /* Invalid HTML nested inside <a> */
 a {
   audio[controls] {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <audio> with controls attribute is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   button {
-    @extend %alertError;
-
     &::after {
+      @extend %contentError;
       @include contentMessage(error, "Ensure that <button> is not a child of <a> as it is an invalid HTML.");
     }
   }
 
   details {
-    @extend %alertError;
-
     &::after {
+      @extend %contentError;
       @include contentMessage(error, "Ensure that <details> is not a child of <a> as it is an invalid HTML.");
     }
   }
 
   embed {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <embed> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   iframe {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <iframe> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   img[usemap] {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <img usemap=''> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   input:not( [type = "hidden"] ) {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that non hidden <input> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   label {
-    @extend %alertError;
-
     &::after {
+      @extend %contentError;
       @include contentMessage(error, "Ensure that <label> is not a child of <a> as it is an invalid HTML.");
     }
   }
 
   object[usemap] {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <object usemap=''> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   select {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <select> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   textarea {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <textarea> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 
   video[controls] {
-    @extend %alertError;
-
-    &::after {
-      @include contentMessage(error, "Ensure that <video controls> is not a child of <a> as it is an invalid HTML.");
-    }
+    @extend %voidError;
   }
 }

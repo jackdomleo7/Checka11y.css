@@ -1,4 +1,4 @@
 /* All images require an alt attribute */
 img:not( [alt] ) {
-  @extend %alertError;
+  @extend %voidError;
 }
