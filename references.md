@@ -9,7 +9,7 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - Missing or empty `lang` on `<html>`: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 - Checks `<a target="_blank">` and warns about links that open in a new window: [Read about this here](https://www.w3.org/TR/WCAG20-TECHS/G201.html)
 - Checks `<dt>` and `<dd>` are the **only** direct children of `<dl>`: [Read about this here](https://www.w3.org/TR/WCAG20-TECHS/H40.html)
-- Checks for the following invalid HTML elements nested inside of an <a> or a <button>: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html)
+- Checks for the following invalid HTML elements nested inside of an `<a>` or a `<button>`: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html)
   - `<a>`
   - `<audio controls>`
   - `<button>`
