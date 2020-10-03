@@ -1,0 +1,5 @@
+/* Media should not autoplay */
+
+[autoplay] {
+  @extend %voidError;
+}
