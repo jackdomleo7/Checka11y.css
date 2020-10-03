@@ -83,8 +83,6 @@ Other features:
 
 ---
 
----
-
 ## Usage
 
 Coming soon...
