@@ -5,9 +5,8 @@
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "build": "npm run lint && npm run build:expanded && npm run build:minified",
+    "build": "npm run lint && npm run build:expanded",
     "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
-    "build:minified": "node-sass src/checka11y.scss ./checka11y.min.css --output-style compressed && npx postcss checka11y.min.css --use autoprefixer cssnano --replace --no-map",
     "lint": "stylelint \"**/*.scss\" --fix"
   },
   "repository": {
@@ -45,7 +44,6 @@
   "files": [
     "src/*",
     "checka11y.css",
-    "checka11y.min.css",
     "postcss.config.js",
     "README.md",
     "LICENSE",
@@ -53,7 +51,6 @@
   ],
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "cssnano": "^4.1.10",
     "node-sass": "^4.14.1",
     "postcss-cli": "^8.0.0",
     "stylelint": "^13.7.1",
