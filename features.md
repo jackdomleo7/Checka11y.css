@@ -39,5 +39,6 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - Checks headings have meaningful content: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html)
   - They cannot be empty
   - They are reachable by assistive technologies (no `aria-hidden`)
+- Checks there aren't any `!important` in the inline styles
 
 ---
