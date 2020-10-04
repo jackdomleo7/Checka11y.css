@@ -49,7 +49,6 @@ Other features:
 - Customise the font used for error and warning messages
 - No dependencies
 
-
 ---
 
 ## Usage
