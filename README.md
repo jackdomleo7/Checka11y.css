@@ -31,47 +31,15 @@ _Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; 
 
 Our features are always checked against the W3C accessibility guidelines.
 
-A list of every a11y concern Checka11y.css will check for and highlight :
+A list of common a11y concerns Checka11y.css will check for and highlight :
 
-- Missing `alt` attributes on images
-- Missing `title` on `<iframe>`
-- Checks `<li>` is the **only** direct child of `<ol>` and `<ul>`
-- Checks if `<nav>` exists more than once on a page, that each nav is correctly labelled
-- Missing or empty `lang` on `<html>`
-- Checks `<a target="_blank">` and warns about links that open in a new window
-- Checks `<dt>` and `<dd>` are the **only** direct children of `<dl>`
-- Checks for the following invalid HTML elements nested inside of an `<a>` or a `<button>`:
-  - `<a>`
-  - `<audio controls>`
-  - `<button>`
-  - `<details>`
-  - `<embed>`
-  - `<iframe>`
-  - `<img usemap>`
-  - `any input without type hidden`
-  - `<keygen>`
-  - `<label>`
-  - `<menu type="toolbar">`
-  - `<object usemap>`
-  - `<select>`
-  - `<textarea>`
-  - `<video controls>`
-- Checks the `dir` attribute is only set to `ltr`, `rtl` or `auto`
-- Checks for a tab index value of -1 on the following elements: 
-  - `<a>[href]`
-  - `<area>[href]`
-  - `<input> that is not disabled`
-  - `<select> that is not disabled`
-  - `<textarea> that is not disabled`
-  - `<button> that is not disabled`
-  - `<iframe>`
-  - `Any HTML element with editable content`
-- Checks the `video and audio` attributes to ensure `autoplay` is not set
-- Checks headings have meaningful content: 
-  - They cannot be empty
-  - They are reachable by assistive technologies (no `aria-hidden`)
+- Check for invalid HTML elements nested inside of `<a>` and `<button>`
+- Check for missing `alt` attributes on images
+- Check for media that is set to `autoplay`
+- Check `<li>` is the **only** direct child of `<ol>` and `<ul>`
+- Check for programmable-only `tabindex` attributes on invalid HTML elements
 
-For futher details on the features listed above, please refer to the [references section](./references.md)
+See a full list of features [here](./features.md)
 
 Other features:
 
@@ -80,6 +48,7 @@ Other features:
 - Customise the error and warning colors
 - Customise the font used for error and warning messages
 - No dependencies
+
 
 ---
 
