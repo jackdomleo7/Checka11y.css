@@ -1,16 +1,11 @@
 /*! Checka11y.css v1.0.0-beta.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
-  /**
-    * Colors
-    * Colors are broken down into RGB and A variables to be combined for the main color
-    */
   --text-error: #721c24;
   --bg-error: #ffc6c6;
   --border-error: #f00;
   --text-warning: #856404;
   --bg-warning: #ffffd8;
   --border-warning: #ff6;
-  /* Scale */
   --space: 0.25rem;
   --space-0: calc(var(--space) * 0);
   --space-2: calc(var(--space) * 2);
@@ -18,28 +13,12 @@
   --space-6: calc(var(--space) * 6);
 }
 
-/**
-  * Base Styles
-  * To use in SCSS with the @extend & @include command.
-  */
 [autoplay], button audio[controls], button embed, button iframe, button img[usemap], button input:not([type="hidden"]), button object[usemap], button select, button textarea, button video[controls], iframe:not([title]), img:not([alt]), a audio[controls], a embed, a iframe, a img[usemap], a input:not([type="hidden"]), a object[usemap], a select, a textarea, a video[controls] {
   -webkit-box-shadow: 0 0 0 0.25rem var(--border-error);
           box-shadow: 0 0 0 0.25rem var(--border-error);
 }
 
-button button::after, button details::after, button label::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after,
-h2:empty::after,
-h3:empty::after,
-h4:empty::after,
-h5:empty::after,
-h6:empty::after, h1 [aria-hidden]::after,
-h2 [aria-hidden]::after,
-h3 [aria-hidden]::after,
-h4 [aria-hidden]::after,
-h5 [aria-hidden]::after,
-h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, ol > *:not(li)::after,
-ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after,
-nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after, a[target="_blank"]::after {
+button button::after, button details::after, button label::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after, a[target="_blank"]::after {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
@@ -47,19 +26,7 @@ nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"
   border-radius: 0.75rem;
 }
 
-button button::after, button details::after, button label::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after,
-h2:empty::after,
-h3:empty::after,
-h4:empty::after,
-h5:empty::after,
-h6:empty::after, h1 [aria-hidden]::after,
-h2 [aria-hidden]::after,
-h3 [aria-hidden]::after,
-h4 [aria-hidden]::after,
-h5 [aria-hidden]::after,
-h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, ol > *:not(li)::after,
-ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after,
-nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after {
+button button::after, button details::after, button label::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after {
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
   background-color: var(--bg-error);
@@ -71,9 +38,6 @@ a[target="_blank"]::after {
   background-color: var(--bg-warning);
 }
 
-/* --- */
-/* Media should not autoplay */
-/* Invalid HTML nested inside <button> */
 button button::after {
   content: "ERROR: Ensure that <button> is not a child of <button> as it is an invalid HTML." !important;
 }
@@ -86,57 +50,30 @@ button label::after {
   content: "ERROR: Ensure that <label> is not a child of <button> as it is an invalid HTML." !important;
 }
 
-/* The dir attribute can only have the values, ltr, rtl and auto */
 [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
   content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Headings should have (meaningful) content */
-  /* Headings should be reachable by assistive technologies */
-}
-
-h1:empty::after,
-h2:empty::after,
-h3:empty::after,
-h4:empty::after,
-h5:empty::after,
-h6:empty::after {
+h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after {
   content: "ERROR: Headings must not be empty." !important;
 }
 
-h1 [aria-hidden]::after,
-h2 [aria-hidden]::after,
-h3 [aria-hidden]::after,
-h4 [aria-hidden]::after,
-h5 [aria-hidden]::after,
-h6 [aria-hidden]::after {
+h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after {
   content: "ERROR: Headings should be reachable by assistive technologies (no aria-hidden)." !important;
 }
 
-/* html element requires a lang attribute */
 html:not([lang]) body::before {
   content: "ERROR: html has no lang attribute." !important;
 }
 
-/* html element lang attribute must not be empty */
 html[lang=""] body::before {
   content: "ERROR: html lang attribute should not be empty." !important;
 }
 
-/* All iframe must have title attribute */
-/* All images require an alt attribute */
-/* Warn when opening a link in a new tab or window */
 a[target="_blank"]::after {
   content: "WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior." !important;
 }
 
-/* Invalid HTML nested inside <a> */
 a button::after {
   content: "ERROR: Ensure that <button> is not a child of <a> as it is an invalid HTML." !important;
 }
@@ -149,24 +86,18 @@ a label::after {
   content: "ERROR: Ensure that <label> is not a child of <a> as it is an invalid HTML." !important;
 }
 
-/* All direct children of <ul> and <ol> must only be <li> */
-ol > *:not(li)::after,
-ul > *:not(li)::after {
+ol > *:not(li)::after, ul > *:not(li)::after {
   content: "ERROR: List markup invalid. Ensure <li> is the only direct child of <ul> or <ol>." !important;
 }
 
-/* All direct children of <dl> must only be <dt> or <dd> */
 dl > *:not(dt):not(dd)::after {
   content: "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
 }
 
-/* If more than one primary navigation is available, all navigations must be clearly labelled. */
-nav:not([aria-label]):not([aria-labelledby]) ~ nav::after,
-nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
+nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
   content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags." !important;
 }
 
-/* Ensure that the tab index of commonly tabbed to elements is not -1 */
 a[href][tabindex="-1"]::after {
   content: "ERROR: Ensure that <a> with an href attribute doesn't have a tab index of -1." !important;
 }
