@@ -70,6 +70,7 @@ A list of every a11y concern Checka11y.css will check for and highlight:
 - Checks headings have meaningful content:
   - They cannot be empty
   - They are reachable by assistive technologies (no `aria-hidden`)
+- Checks there aren't any `!important` in the inline styles
 
 Other features:
 
