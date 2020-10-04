@@ -129,3 +129,15 @@ iframe[tabindex="-1"]::after {
 [contentEditable="true"][tabindex="-1"]::after {
   content: "ERROR: Ensure that HTML elements with editable content don't have a tab index of -1." !important;
 }
+
+/**
+* Inline styles with !important should be avoided to allow end-users to had their custom stylesheet
+*/
+[style*="!important"] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+[style*="!important"]::after {
+  content: "WARNING: !important should be avoided in the inline styles" !important;
+  font-family: var(--checka11y-font, cursive);
+}
