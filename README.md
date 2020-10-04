@@ -39,14 +39,13 @@ A list of common a11y concerns Checka11y.css will check for and highlight :
 - Check `<li>` is the **only** direct child of `<ol>` and `<ul>`
 - Check for programmable-only `tabindex` attributes on invalid HTML elements
 
-See a full list of features [here](./features.md)
+See a full list of features [here](./features.md).
 
 Other features:
 
 - Clear a11y errors and warnings with informative messages
 - Options to import via CDN, npm or yarn
 - Customise the error and warning colors
-- Customise the font used for error and warning messages
 - No dependencies
 
 
