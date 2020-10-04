@@ -226,5 +226,12 @@
         <h6 aria-hidden="true">H6 with aria-hidden="true"</h6>
       </div>
     </section>
+    <section>
+      <h2>Inline style: <code>!important</code> should be avoided so end-users can override the default styles</h2>
+      <div>
+        <p style="color: inherit;">This paragraph has inline style without <code>!important</code> (OK).</p>
+        <p style="color: inherit !important;">This paragraph has inline style with <code>!important</code> (Error).</p>
+      </div>
+    </section>
   </body>
 </html>
