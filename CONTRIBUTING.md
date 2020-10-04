@@ -11,7 +11,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the [README.md Features section](./README.md#Features) and the [test/index.html](./test/index.html) with details of changes to the stylesheet and new a11y checks.
+2. Update the [features.md](./features.md) and the [test/index.html](./test/index.html) with details of changes to the stylesheet and new a11y checks.
 3. Optionally, add your name, email address and GitHub profile URL to the `contributors` section in `package.json` in the format of `"Name <email@example.com> (https://github.com/username)"`. All fields are optional, so if you don't want to include your email, you can leave it out, for example `"Name (https://github.com/username)`.
 4. A collaborator will merge the Pull Request in once the Pull Request has been approved by a collaborator and no further modifications are needed.
 
