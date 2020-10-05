@@ -227,6 +227,13 @@
       </div>
     </section>
     <section>
+      <h2>Inline style: <code>!important</code> should be avoided so end-users can override the default styles</h2>
+      <div>
+        <p style="color: inherit;">This paragraph has inline style without <code>!important</code> (OK).</p>
+        <p style="color: inherit !important;">This paragraph has inline style with <code>!important</code> (Error).</p>
+      </div>
+    </section>
+    <section>
       <h2>Accesskey attribute: avoid using attribute accesskey</h2>
       <p>Accesskey attribute could interfere and conflict with screen readers and assistive technologies that use shortcuts or keyboard combinations to facilitate the users</p>
       <div>

@@ -474,6 +474,18 @@ h6[aria-hidden]::after {
 }
 
 /**
+* Inline styles with !important should be avoided to allow end-users to had their custom stylesheet
+*/
+[style*="!important"] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+[style*="!important"]::after {
+  content: "WARNING: !important should be avoided in the inline styles" !important;
+  font-family: var(--checka11y-font, cursive);
+}
+
+/**
 * Accesskey attribute could interfere and conflict with screen readers and assistive technologies
 */
 [accesskey] {
@@ -481,6 +493,6 @@ h6[aria-hidden]::after {
 }
 
 [accesskey]::after {
-  content: "ERROR: accesskey attribute could interfere and conflict with screen readers and assistive technologies" !important;
+  content: "WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies" !important;
   font-family: var(--checka11y-font, cursive);
 }
