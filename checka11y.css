@@ -133,3 +133,15 @@ iframe[tabindex="-1"]::after {
 [contentEditable="true"][tabindex="-1"]::after {
   content: "ERROR: Ensure that HTML elements with editable content don't have a tab index of -1." !important;
 }
+
+/**
+* Accesskey attribute could interfere and conflict with screen readers and assistive technologies
+*/
+[accesskey] {
+  border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+}
+
+[accesskey]::after {
+  content: "WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies" !important;
+  font-family: var(--checka11y-font, cursive);
+}
