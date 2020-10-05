@@ -52,9 +52,51 @@ Other features:
 
 ## Usage
 
-Coming soon...
+### CDN
 
-Watch this repository to stay up to date.
+In the below CDN links:
+- Replace `:version` with a version [listed here](https://www.npmjs.com/package/checka11y-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@:version` completely (Not recommended).
+
+```html
+<!-- HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css" />
+```
+
+```css
+/* Or CSS */
+@import url('https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css');
+```
+
+### Package manager (npm or yarn)
+
+It's best practice to install Checka11y.css as a dev dependency rather than a dependency and ensure you only use it in your local/developer environment (do not push this stylesheet to your production environment). You can install `checka11y-css` via **npm** or **yarn**.
+
+_First_ install via **npm**
+```
+npm install checka11y-css --save
+```
+
+_Or_ install via **yarn**
+```
+yarn add checka11y-css
+```
+
+_Then_ import into your JavaScript
+```js
+import 'checka11y-css';
+```
+
+_Or_ import the SCSS or CSS into your Sass/SCSS
+In the below imports, replace `:file` with one of the options below:
+- `src/checka11y` <sub><sup>(.scss file)</sup></sub>
+- `checka11y.css` <sub><sup>(.css file)</sup></sub>
+```scss
+/* Webpack */
+@import '~checka11y-css/:file';
+
+/* Non-webpack */
+@import 'path/to/node_modules/checka11y-css/:file';
+```
 
 ---
 
