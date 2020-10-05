@@ -1,0 +1,7 @@
+/**
+* Accesskey attribute could interfere and conflict with screen readers and assistive technologies
+*/
+[accesskey]::after {
+  @extend %contentWarning;
+  @include contentMessage(warning, "accesskey attribute could interfere and conflict with screen readers and assistive technologies.");
+}
