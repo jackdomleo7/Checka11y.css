@@ -5,7 +5,9 @@
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "lint": "stylelint \"**/*.css\" --fix"
+    "build": "npm run lint && npm run build:expanded",
+    "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
+    "lint": "stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -42,12 +44,18 @@
   },
   "homepage": "https://github.com/jackdomleo7/Checka11y.css#readme",
   "files": [
+    "src/*",
     "checka11y.css",
+    "postcss.config.js",
     "README.md",
     "LICENSE",
     "CHANGELOG"
   ],
   "devDependencies": {
-    "stylelint": "^13.7.1"
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^8.0.0",
+    "stylelint": "^13.7.1",
+    "stylelint-scss": "^3.18.0"
   }
 }

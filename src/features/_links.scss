@@ -1,0 +1,67 @@
+/* Warn when opening a link in a new tab or window */
+a[target = "_blank"] {
+  &::after {
+    @extend %contentWarning;
+    @include contentMessage(warning, "Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.");
+  }
+}
+
+/* Invalid HTML nested inside <a> */
+a {
+  audio[controls] {
+    @extend %voidError;
+  }
+
+  button {
+    &::after {
+      @extend %contentError;
+      @include contentMessage(error, "Ensure that <button> is not a child of <a> as it is an invalid HTML.");
+    }
+  }
+
+  details {
+    &::after {
+      @extend %contentError;
+      @include contentMessage(error, "Ensure that <details> is not a child of <a> as it is an invalid HTML.");
+    }
+  }
+
+  embed {
+    @extend %voidError;
+  }
+
+  iframe {
+    @extend %voidError;
+  }
+
+  img[usemap] {
+    @extend %voidError;
+  }
+
+  input:not( [type = "hidden"] ) {
+    @extend %voidError;
+  }
+
+  label {
+    &::after {
+      @extend %contentError;
+      @include contentMessage(error, "Ensure that <label> is not a child of <a> as it is an invalid HTML.");
+    }
+  }
+
+  object[usemap] {
+    @extend %voidError;
+  }
+
+  select {
+    @extend %voidError;
+  }
+
+  textarea {
+    @extend %voidError;
+  }
+
+  video[controls] {
+    @extend %voidError;
+  }
+}

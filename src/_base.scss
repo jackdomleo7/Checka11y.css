@@ -1,0 +1,45 @@
+/**
+  * Base Styles
+  * To use in SCSS with the @extend & @include command.
+  */
+%voidError {
+  box-shadow: 0 0 0 0.25rem var(--border-error);
+}
+
+%voidWarning {
+  box-shadow: 0 0 0 0.25rem var(--border-warning);
+}
+
+%content {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
+}
+
+%contentError {
+  @extend %content;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
+}
+
+%contentWarning {
+  @extend %content;
+  color: var(--text-warning);
+  border: 0.4rem solid var(--border-warning);
+  background-color: var(--bg-warning);
+}
+
+@mixin contentMessage($errorType, $message) {
+  @if $errorType == error {
+    content: "ERROR: #{$message}" !important;
+  }
+  @else if $errorType == warning {
+    content: "WARNING: #{$message}" !important;
+  }
+  @else {
+    @error "The errorType must be either error or warning.";
+  }
+}
