@@ -40,5 +40,6 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
   - They cannot be empty
   - They are reachable by assistive technologies (no `aria-hidden`)
 - Checks there aren't any `!important` in the inline styles
+- Checks usage `accesskey` attribute in elements should be avoided
 
 ---
