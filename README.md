@@ -73,7 +73,7 @@ It's best practice to install Checka11y.css as a dev dependency rather than a de
 
 _First_ install via **npm**
 ```
-npm install checka11y-css --save
+npm install checka11y-css --save-dev
 ```
 
 _Or_ install via **yarn**
