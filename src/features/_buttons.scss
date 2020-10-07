@@ -57,3 +57,11 @@ button {
     @extend %voidError;
   }
 }
+
+/* Buttons have meaningful content */
+button:not( [aria-label] ):not( [aria-labelledby] ):empty {
+  &::after {
+    @extend %contentError;
+    @include contentMessage(error, "Ensure that <button> has meaningful content or is labeled appropriately.");
+  }
+}

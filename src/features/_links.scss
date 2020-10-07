@@ -65,3 +65,11 @@ a {
     @extend %voidError;
   }
 }
+
+/* Anchors used as links have meaningful content */
+a[href]:not( [aria-label] ):not( [aria-labelledby] ):empty {
+  &::after {
+    @extend %contentError;
+    @include contentMessage(error, "Ensure that <a> has meaningful content or is labeled appropriately.");
+  }
+}

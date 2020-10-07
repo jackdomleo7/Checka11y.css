@@ -18,7 +18,7 @@
           box-shadow: 0 0 0 0.25rem var(--border-error);
 }
 
-button button::after, button details::after, button label::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after, [accesskey]::after, [style*="!important"]::after, a[target="_blank"]::after {
+button button::after, button details::after, button label::after, button:not([aria-label]):not([aria-labelledby]):empty::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, a[href]:not([aria-label]):not([aria-labelledby]):empty::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after, [accesskey]::after, [style*="!important"]::after, a[target="_blank"]::after {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
@@ -26,7 +26,7 @@ button button::after, button details::after, button label::after, [dir]:not([dir
   border-radius: 0.75rem;
 }
 
-button button::after, button details::after, button label::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after {
+button button::after, button details::after, button label::after, button:not([aria-label]):not([aria-labelledby]):empty::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, a[href]:not([aria-label]):not([aria-labelledby]):empty::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after {
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
   background-color: var(--bg-error);
@@ -52,6 +52,10 @@ button details::after {
 
 button label::after {
   content: "ERROR: Ensure that <label> is not a child of <button> as it is an invalid HTML." !important;
+}
+
+button:not([aria-label]):not([aria-labelledby]):empty::after {
+  content: "ERROR: Ensure that <button> has meaningful content or is labeled appropriately." !important;
 }
 
 [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
@@ -92,6 +96,10 @@ a details::after {
 
 a label::after {
   content: "ERROR: Ensure that <label> is not a child of <a> as it is an invalid HTML." !important;
+}
+
+a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
+  content: "ERROR: Ensure that <a> has meaningful content or is labeled appropriately." !important;
 }
 
 ol > *:not(li)::after, ul > *:not(li)::after {
