@@ -62,6 +62,6 @@ button {
 button:not( [aria-label] ):not( [aria-labelledby] ):empty {
   &::after {
     @extend %contentError;
-    @include contentMessage(error, "Ensure that <button> has meaningful content or is labeled appropriately.");
+    @include contentMessage(error, "Ensure that <button> has meaningful content or is labelled appropriately.");
   }
 }

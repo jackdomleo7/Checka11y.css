@@ -55,7 +55,7 @@ button label::after {
 }
 
 button:not([aria-label]):not([aria-labelledby]):empty::after {
-  content: "ERROR: Ensure that <button> has meaningful content or is labeled appropriately." !important;
+  content: "ERROR: Ensure that <button> has meaningful content or is labelled appropriately." !important;
 }
 
 [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
@@ -99,7 +99,7 @@ a label::after {
 }
 
 a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
-  content: "ERROR: Ensure that <a> has meaningful content or is labeled appropriately." !important;
+  content: "ERROR: Ensure that <a> has meaningful content or is labelled appropriately." !important;
 }
 
 ol > *:not(li)::after, ul > *:not(li)::after {
