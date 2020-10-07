@@ -1,0 +1,4 @@
+/* All iframe must have title attribute */
+iframe:not( [title] ) {
+  @extend %voidError;
+}

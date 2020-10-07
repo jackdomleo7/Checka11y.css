@@ -1,0 +1,19 @@
+:root {
+  /* Colors */
+
+  --text-error: #721c24;
+  --bg-error: #ffc6c6;
+  --border-error: #f00;
+
+  --text-warning: #856404;
+  --bg-warning: #ffffd8;
+  --border-warning: #ff6;
+
+  /* Scale */
+  --space: 0.25rem;
+
+  --space-0: calc(var(--space) * 0);
+  --space-2: calc(var(--space) * 2);
+  --space-4: calc(var(--space) * 4);
+  --space-6: calc(var(--space) * 6);
+}

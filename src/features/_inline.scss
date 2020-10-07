@@ -1,0 +1,5 @@
+/* Inline styles with !important should be avoided to allow end-users to had their custom stylesheet */
+[style *= "!important"]::after {
+  @extend %contentWarning;
+  @include contentMessage(warning, "!important inline styles should be avoided.");
+}
