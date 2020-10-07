@@ -226,5 +226,38 @@
         <h6 aria-hidden="true">H6 with aria-hidden="true"</h6>
       </div>
     </section>
+    <section>
+      <h2>Inline style: <code>!important</code> should be avoided so end-users can override the default styles</h2>
+      <div>
+        <p style="color: inherit;">This paragraph has inline style without <code>!important</code> (OK).</p>
+        <p style="color: inherit !important;">This paragraph has inline style with <code>!important</code> (Error).</p>
+      </div>
+    </section>
+    <section>
+      <h2>Accesskey attribute: avoid using attribute accesskey</h2>
+      <p>Accesskey attribute could interfere and conflict with screen readers and assistive technologies that use shortcuts or keyboard combinations to facilitate the users</p>
+      <div>
+        <p>Press <strong>S</strong> to save the changes</p>
+        <button accesskey="s">Save</button>
+      </div>
+    </section>
+    <section>
+      <h2>Links should have meaningful content or be labelled appropriately for assistive technologies</h2>
+      <div>
+        <a href="https://github.com/jackdomleo7/Checka11y.css"></a>
+        <a>Hello, I am an anchor</a>
+        <a href aria-label="I am empty but have an aria-label"></a>
+        <a href aria-labelledby="id-to-element"></a>
+      </div>
+    </section>
+    <section>
+      <h2>Buttons should have meaningful content or be labelled appropriately for assistive technologies</h2>
+      <div>
+        <button></button>
+        <button>Hello, I am a button</button>
+        <button aria-label="I am empty but have an aria-label"></button>
+        <button aria-labelledby="id-to-element"></button>
+      </div>
+    </section>
   </body>
 </html>

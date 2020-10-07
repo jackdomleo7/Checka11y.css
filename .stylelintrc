@@ -1,5 +1,8 @@
 {
   "defaultSeverity": "warning",
+  "plugins": [
+    "stylelint-scss"
+  ],
   "rules": {
     "color-no-invalid-hex": true,
     "font-family-no-duplicate-names": true,
@@ -114,6 +117,13 @@
     "max-empty-lines": 2,
     "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": true,
-    "no-empty-first-line": true
+    "no-empty-first-line": true,
+    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/declaration-nested-properties": "never",
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/no-duplicate-dollar-variables": true
   }
 }

@@ -39,5 +39,9 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - Checks headings have meaningful content: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html)
   - They cannot be empty
   - They are reachable by assistive technologies (no `aria-hidden`)
-
+- Checks there aren't any `!important` inline styles
+- Checks usage `accesskey` attribute in elements should be avoided
+- Checks if the following have meaningful content:
+  - `<a>[href]` only checks hyperlinks: Read about [Success Criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [Empty links](https://webaim.org/techniques/hypertext/link_text#empty_links)
+  - `<button>`: Read about [Success Criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context)
 ---
