@@ -6,7 +6,7 @@
   "style": "checka11y.css",
   "scripts": {
     "build": "npm run lint && npm run build:expanded",
-    "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
+    "build:expanded": "node-sass src/checka11y.scss ./checka11y.min.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
     "lint": "stylelint \"**/*.scss\" --fix"
   },
   "repository": {
