@@ -15,7 +15,7 @@
 
 [autoplay], button audio[controls], button embed, button iframe, button img[usemap], button input:not([type="hidden"]), button object[usemap], button select, button textarea, button video[controls], iframe:not([title]), img:not([alt]), a audio[controls], a embed, a iframe, a img[usemap], a input:not([type="hidden"]), a object[usemap], a select, a textarea, a video[controls] {
   -webkit-box-shadow: 0 0 0 0.25rem var(--border-error);
-  box-shadow: 0 0 0 0.25rem var(--border-error);
+          box-shadow: 0 0 0 0.25rem var(--border-error);
 }
 
 button button::after, button details::after, button label::after, button:not([aria-label]):not([aria-labelledby]):empty::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, a[href]:not([aria-label]):not([aria-labelledby]):empty::after, ol > *:not(li)::after, ul > *:not(li)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after, [accesskey]::after, [style*="!important"]::after, a[target="_blank"]::after {
