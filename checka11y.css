@@ -38,6 +38,13 @@ button button::after, button details::after, button label::after, button:not([ar
   background-color: var(--bg-warning);
 }
 
+img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="%23ffffd8" stroke-width="0.4rem" stroke="%23ff6" /><g fill="%23856404" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">WARNING: Alt text must describe</text><text x="15" y="60">the content of the image.</text></g></svg>') bottom center no-repeat;
+  border: 0.4rem solid var(--border-warning);
+  min-width: 400px;
+  padding-bottom: 80px;
+}
+
 [accesskey]::after {
   content: "WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies." !important;
 }
