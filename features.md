@@ -44,5 +44,5 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - Checks if the following have meaningful content:
   - `<a>[href]` only checks hyperlinks: Read about [Success Criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context) and [Empty links](https://webaim.org/techniques/hypertext/link_text#empty_links)
   - `<button>`: Read about [Success Criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context)
-  - Checks and warns about the use of `u` attribute: [Read about this and alternative elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#Other_elements_to_consider_using)
+  - Checks and warns about the use of <u> element: [Read about this and alternative elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#Other_elements_to_consider_using)
 ---

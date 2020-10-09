@@ -147,6 +147,6 @@ iframe[tabindex="-1"]::after {
 }
 
 u::after {
-  content: "WARNING: Using <u> -moz-element could be confused as a hyperlink, consider using a different -moz-element such as <em> or <b>" !important;
-  content: "WARNING: Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>" !important;
+  content: "WARNING: Using <u> -moz-element could be confused as a hyperlink, consider using a different -moz-element such as <em> or <b>." !important;
+  content: "WARNING: Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
 }
