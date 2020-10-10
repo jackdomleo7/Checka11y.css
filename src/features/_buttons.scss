@@ -20,6 +20,7 @@ button {
 
   embed {
     @extend %voidError;
+    @extend %embedInsideButton;
   }
 
   iframe {

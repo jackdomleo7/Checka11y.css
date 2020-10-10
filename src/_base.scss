@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 /**
   * Base Styles
   * To use in SCSS with the @extend & @include command.
@@ -32,13 +34,6 @@
   background-color: var(--bg-warning);
 }
 
-%imageMeaningfulAlt {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="%23ffffd8" stroke-width="0.4rem" stroke="%23ff6" /><g fill="%23856404" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">WARNING: Alt text must describe</text><text x="15" y="60">the content of the image.</text></g></svg>') bottom center no-repeat;
-  border: 0.4rem solid var(--border-warning);
-  min-width: 400px;
-  padding-bottom: 80px;
-}
-
 @mixin contentMessage($errorType, $message) {
   @if $errorType == error {
     content: "ERROR: #{$message}" !important;
@@ -49,4 +44,67 @@
   @else {
     @error "The errorType must be either error or warning.";
   }
+}
+
+/**
+* ---------------------------
+* Background image processing
+*/
+@function generate-text-lines($lines) {
+  $textLines: ();
+  @each $line in $lines {
+    // stylelint-disable-next-line scss/no-duplicate-dollar-variables
+    $textLines: append($textLines, '<text x="15" y="#{index($lines, $line) * 25 + 10}">#{$line}</text>');
+  }
+
+  @if length($textLines) == 0 {
+    // stylelint-disable-next-line scss/no-duplicate-dollar-variables
+    $textLines: ('<text x="15" y="35">CAUTION: Unidentified issue</text>');
+  }
+
+  @return $textLines;
+}
+
+/**
+* errorType: type of the notification (error or warning)
+* width: width of the generated image (the whole element will be set to this width)
+* lines: the rest of the parameters as a list (the lines of text to be displayed)
+*
+* ****IMPORTANT****: Avoid special characters (#, <, >) when possible, or replace
+*                    them with HTML entities (< --> &lt; etc)
+*/
+@mixin imageMessage($errorType: "warning", $width: 400, $lines...) {
+  $border-svg: $border-error;
+  $bg-svg: $bg-error;
+  $text-svg: $text-error;
+
+  $textLines: generate-text-lines($lines);
+  $height: length($textLines) * 25 + 30; // number of lines * 25 (line height) + 30 (padding top and bottom)
+
+  @if $errorType == error {
+    border: 0.4rem solid var(--border-error);
+  }
+  @else if $errorType == warning {
+    $border-svg: $border-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $bg-svg: $bg-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $text-svg: $text-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    border: 0.4rem solid var(--border-warning);
+  }
+  @else {
+    @error "The errorType must be either error or warning.";
+  }
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="#{$width}px" height="#{$height}px" viewBox="0 0 #{$width} #{$height}"><rect class="box" x="4" y="4" width="#{$width - 8}" height="#{$height - 8}" rx="12" ry="12" fill="#{transparentize($bg-svg, 0.000001)}" stroke-width="0.4rem" stroke="#{transparentize($border-svg, 0.000001)}" /><g fill="#{transparentize($text-svg, 0.000001)}" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif">#{$textLines}</g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: #{$width}px;
+  padding-bottom: #{$height}px;
+}
+
+%imageMeaningfulAlt {
+  @include imageMessage("warning", 400, "WARNING: Alt text must describe", "the content of the image.");
+}
+
+
+%embedInsideButton {
+  @include imageMessage("error", 350, "ERROR: &lt;embed&gt; can not be", "a child of &lt;button&gt;.");
 }

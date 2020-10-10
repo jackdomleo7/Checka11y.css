@@ -1,13 +1,15 @@
+@import "variables.scss";
+
 :root {
   /* Colors */
 
-  --text-error: #721c24;
-  --bg-error: #ffc6c6;
-  --border-error: #f00;
+  --text-error: #{$text-error};
+  --bg-error: #{$bg-error};
+  --border-error: #{$border-error};
 
-  --text-warning: #856404;
-  --bg-warning: #ffffd8;
-  --border-warning: #ff6;
+  --text-warning: #{$text-warning};
+  --bg-warning: #{$bg-warning};
+  --border-warning: #{$border-warning};
 
   /* Scale */
   --space: 0.25rem;
