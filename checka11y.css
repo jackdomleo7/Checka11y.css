@@ -2,7 +2,7 @@
 :root {
   --text-error: #721c24;
   --bg-error: #ffc6c6;
-  --border-error: #f00;
+  --border-error: red;
   --text-warning: #856404;
   --bg-warning: #ffffd8;
   --border-warning: #ff6;
@@ -36,6 +36,24 @@ button button::after, button details::after, button label::after, button:not([ar
   color: var(--text-warning);
   border: 0.4rem solid var(--border-warning);
   background-color: var(--bg-warning);
+}
+
+img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
+  border: 0.4rem solid var(--border-warning);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">WARNING: Alt text must describe</text> <text x="15" y="60">the content of the image.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
+}
+
+button embed {
+  border: 0.4rem solid var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">ERROR: &lt;embed&gt; can not be</text> <text x="15" y="60">a child of &lt;button&gt;.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 350px;
+  padding-bottom: 80px;
 }
 
 [accesskey]::after {
