@@ -8,3 +8,5 @@ node_modules
 tmp
 .cache
 dist
+cypress/videos
+cypress/fixtures
