@@ -46,4 +46,5 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
   - `<button>`: Read about [Success Criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context)
 - Checks that the alt attributes have meaningful content
 - Checks and warns about the use of <u> element: [Read about this and alternative elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#Other_elements_to_consider_using)
+- Checks and warns about using mouse event handlers on HTML elements that are potentially not reachable from the keyboard: [Read more about Success Criterion 1.3.1 and 2.1.1](https://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/F42)
 ---
