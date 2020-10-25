@@ -7,7 +7,9 @@
   "scripts": {
     "build": "npm run lint && npm run build:expanded",
     "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
-    "lint": "stylelint \"**/*.scss\" --fix"
+    "lint": "stylelint \"**/*.scss\" --fix",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --headless"
   },
   "repository": {
     "type": "git",
@@ -54,6 +56,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "cypress": "^5.3.0",
     "node-sass": "^4.14.1",
     "postcss-cli": "^8.0.0",
     "stylelint": "^13.7.1",
