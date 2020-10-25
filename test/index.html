@@ -299,5 +299,14 @@
         <em><b>I am a bold <code>&lt;em&gt;</code> element to denote stress emphasis</b></em>
       </div>
     </section>
+    <section>
+      <h2>Avoide using mouse event handlers without the appropriate keyboard alternative on HTML Elements</h2>
+      <div>
+        <div onclick="">A div with onclick</div>
+        <div onclick="" onkeydown="">A div with onclick and onkeydown</div>
+        <div onclick="" onkeydown="" role="button">A div with with onclick, onkeydown and role=button</div>
+        <div onclick="" onkeydown="" role="button" tabindex="-1">A div with onclick, onkeydown, role=button and tabindex=-1</div>
+      </div>
+    </section>
   </body>
 </html>
