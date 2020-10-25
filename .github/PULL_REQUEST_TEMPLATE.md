@@ -34,6 +34,7 @@
 - [ ] I have added myself to the `contributors` section in `package.json` (still put an `x` if you have considered this but decided not to add yourself).
 - [ ] I have checked I have **not** committed any **accidental** files.
 - [ ] I have tested all the main modern browsers (I.e. Chrome, Firefox, Edge, Safari - please leave this unchecked if there were any browsers listed you could not test and list them in the [help](#help) section with details why you couldn't test that browser)
+- [ ] I have run the automated tests and added new ones to cover new code.
 - [ ] All new and existing a11y checks still work correctly (compare your local `test/index.html` to the `test/index.html` in the `master` branch).
 
 ## Help
