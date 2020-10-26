@@ -79,7 +79,7 @@ npm install checka11y-css --save-dev
 
 _Or_ install via **yarn**
 ```
-yarn add checka11y-css
+yarn add --dev checka11y-css
 ```
 
 _Then_ import into your JavaScript
