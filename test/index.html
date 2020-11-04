@@ -57,19 +57,23 @@
       <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
     </section>
     <section>
-      <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;</h2>
+      <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;, &lt;template&gt; or &lt;script&gt;</h2>
       <ol>
+        <template><span>Some text</span></template>
         <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
         <div>Hello, I'm a &lt;div&gt; inside a &lt;ol&gt;</div>
         <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
+        <script>// silence</script>
       </ol>
     </section>
     <section>
-      <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;</h2>
+      <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;, &lt;template&gt; or &lt;script&gt</h2>
     <ul>
+      <template><span>Some text</span></template>
       <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
       <div>Hello, I'm a &lt;div&gt; inside a &lt;ul&gt;</div>
       <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+      <script>// silence</script>
     </ul>
   </section>
   <section>
