@@ -1,10 +1,10 @@
 /* All direct children of <ul> and <ol> must only be <li> */
 ol,
 ul {
-  > *:not( li ) {
+  > *:not( li ):not( script ):not( template ) {
     &::after {
       @extend %contentError;
-      @include contentMessage(error, "List markup invalid. Ensure <li> is the only direct child of <ul> or <ol>.");
+      @include contentMessage(error, "List markup invalid. Ensure <li>, <script> or <template> are the only direct child of <ul> or <ol>.");
     }
   }
 }
