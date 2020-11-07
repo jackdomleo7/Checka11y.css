@@ -4,7 +4,7 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 
 - Missing `alt` attributes on images: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 - Missing `title` on `<iframe>`: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html)
-- Checks `<li>` is the **only** direct child of `<ol>` and `<ul>`: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
+- Checks `<li>`, `<script>` and `<template>` are the **only** direct children of `<ol>` and `<ul>`: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
 - Checks if `<nav>` exists more than once on a page, that each nav is correctly labelled: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html)
 - Missing or empty `lang` on `<html>`: [Read about this here](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 - Checks `<a target="_blank">` and warns about links that open in a new window: [Read about this here](https://www.w3.org/TR/WCAG20-TECHS/G201.html)
