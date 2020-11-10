@@ -1,0 +1,76 @@
+.direction {
+  &__examples {
+    display: grid;
+    gap: 0.5rem;
+    grid-template: 1fr 1fr 1fr / auto auto auto;
+    margin: 2rem 0;
+  }
+
+  .required {
+    color: $orange;
+  }
+}
+
+.size {
+  &__examples {
+    display: grid;
+    gap: 0.5rem;
+    grid-template: auto auto auto auto / 1fr;
+    margin: 2rem 0;
+
+    @media screen and (min-width: 36em) {
+      grid-template: auto auto / 1fr 1fr;
+    }
+
+    @media screen and (min-width: 45em) {
+      grid-template: auto / 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+.visible {
+  &__example {
+    margin-top: 2.5rem;
+  }
+}
+
+.feedback {
+  &__share {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+    }
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+
+      &.twitter {
+        color: #1c9cea;
+      }
+
+      &.linkedin {
+        color: #007bb6;
+      }
+
+      &.reddit {
+        color: #ff4500;
+      }
+
+      &.facebook {
+        color: #3b579d;
+      }
+    }
+  }
+}

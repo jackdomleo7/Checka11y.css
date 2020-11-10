@@ -1,0 +1,38 @@
+{
+  "name": "checka11y-css-docs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Documentation website for Checka11y.css.",
+  "main": "index.js",
+  "scripts": {
+    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/checka11y.scss css/checka11y.min.css && node-sass scss/prism.scss css/prism.min.css && npx postcss css --use autoprefixer cssnano --replace && npx sitemap-generator-cli https://checka11y.jackdomleo.dev --last-mod",
+    "serve": "http-server ./ --port 1234 -a localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackdomleo7/Checka11y.css.git"
+  },
+  "author": {
+    "name": "Jack Domleo",
+    "url": "https://jackdomleo.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackdomleo7/Checka11y.css/issues"
+  },
+  "homepage": "https://checka11y.jackdomleo.dev",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "checka11y-css": "^1.1.0",
+    "cssnano": "^4.1.10",
+    "http-server": "^0.12.3",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.2.0",
+    "sitemap-generator-cli": "^7.5.0",
+    "stylelint": "^13.7.2",
+    "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

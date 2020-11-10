@@ -1,0 +1,20 @@
+.link {
+  color: $blue;
+  font-weight: 700;
+  transition: 160ms color ease;
+
+  &:hover,
+  &:focus {
+    color: mix($orange, #fff, 80%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+
+  &--jump {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+  }
+}

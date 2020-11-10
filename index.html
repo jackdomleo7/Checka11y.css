@@ -1,13 +1,280 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Checka11y.css</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Jack Domleo">
+    <meta name="description" content="Checka11y.css is a pure CSS stylesheet to highlight accessibility concerns and is lightweight, modern, accessible and easy to use.">
+    <meta name="keywords" content="checka11y.css, checka11y css, checkally.css, checkally css, checka11y-css, checkally-css, checka11y, a11y, ally, accessibility, css, pure css, jackdomleo, jack domleo, domleo">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jackdomleo7">
+    <meta name="twitter:creator" content="@jackdomleo7">
+    <meta name="twitter:title" content="Checka11y.css - CSS stylesheet to quickly highlight a11y concerns.">
+    <meta name="twitter:description" content="Checka11y.css is a pure CSS stylesheet to highlight accessibility concerns and is lightweight, modern, accessible and easy to use.">
+    <meta name="twitter:image" content="https://checka11y.jackdomleo.dev/img/open-graph.png">
+
+    <meta property="og:url" content="https://checka11y.jackdomleo.dev">
+    <meta property="og:title" content="Checka11y.css - CSS stylesheet to quickly highlight a11y concerns.">
+    <meta property="og:description" content="Checka11y.css is a pure CSS stylesheet to highlight accessibility concerns and is lightweight, modern, accessible and easy to use.">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://checka11y.jackdomleo.dev/img/open-graph.png">
+    <meta property="og:image:url" content="https://checka11y.jackdomleo.dev/img/open-graph.png">
+    <meta property="og:image:secure_url" content="https://checka11y.jackdomleo.dev/img/open-graph.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Checka11y.css logo">
+
+    <!-- Favicons here -->
+
+    <title>Checka11y.css - CSS stylesheet to quickly highlight a11y concerns</title>
+    <link rel="stylesheet" href="./css/docs.min.css" />
+    <link rel="stylesheet" href="./css/prism.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie" />
   </head>
   <body>
-    <h1>Checka11y.css</h1>
-    <p>Coming soon...</p>
-    <a href="https://github.com/jackdomleo7/Checka11y.css">https://github.com/jackdomleo7/Checka11y.css</a>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="./" class="link">Home</a></li>
+          <li><a href="./demo" target="_blank" class="link">Demo</a></li>
+        </ul>
+      </nav>
+      <h1 class="m-0">
+        <img class="header__logo" src="img/checkally.png" alt="Checka11y.css logo" />
+        <span class="sr-only">Checka11y.css</span>
+      </h1>
+      <h2>A CSS stylesheet to quickly highlight a11y concerns. </h2>
+      <div class="language-cli no-label"><pre><code class="language-cli select-all">npm install checka11y-css --save-dev</code></pre></div>
+      <div class="header__badges">
+        <a href="https://github.com/jackdomleo7/Checka11y.css/stargazers" rel="nofollow">
+          <img alt="GitHub stars" src="https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social" />
+          <span class="sr-only">GitHub stars</span>
+        </a>
+        <a href="https://github.com/jackdomleo7/Checka11y.css/releases" rel="nofollow">
+          <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?label=Version&style=social">
+          <span class="sr-only">Latest release</span>
+        </a>
+      </div>
+      <ul class="features">
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-shipping-fast"></use>
+          </svg>
+          <p>Quick setup</p>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-css"></use>
+          </svg>
+          <p>Pure CSS</p>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-universal-access"></use>
+          </svg>
+          <p>Accessible</p>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-smile"></use>
+          </svg>
+          <p>Easy</p>
+        </li>
+      </ul>
+      <a href="https://www.producthunt.com/posts/checka11y-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-checka11y-css" target="_blank">
+        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269866&theme=light" alt="Checka11y.css - A CSS stylesheet to quickly highlight a11y concerns. | Product Hunt" />
+        <span class="sr-only">Join us on Product Hunt</span>
+      </a>
+    </header>
+    <main class="main">
+      <hr/>
+      <section id="getting-started">
+        <h3>
+          Getting started
+          <a href="#getting-started" class="link link--jump" aria-label="Getting started">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>To get started using Checka11y.css in your project, all you need to do is:</p>
+        <ol>
+          <li><a href="#usage" class="link">Install</a> checka11y-css via CDN, npm or yarn</li>
+          <li>Ensure you're not using Checka11y.css in production</li>
+        </ol>
+      </section>
+      <hr/>
+      <section id="usage">
+        <h3>
+          Usage
+          <a href="#usage" class="link link--jump" aria-label="Usage">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <h4>CDN</h4>
+        <img alt="jsDelivr hits (npm)" src="https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=jsDelivr%20hits&logo=jsdelivr&style=social">
+        <p>In the below CDN links:</p>
+        <ul>
+          <li>Replace <code class="code">:version</code> with a version <a href="https://www.npmjs.com/package/checka11y-css?activeTab=versions" rel="nofollow" target="_blank" class="link">listed here</a> (latest version is always recommended). If you always want to get the latest stylesheet, remove <code class="code">@:version</code> completely (Not recommended).</li>
+          <li>Then import via HTML or CSS</li>
+        </ul>
+        <div class="example example--stack">
+          <div class="language-markup"><pre><code class="language-markup select-all">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css" /&gt;</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <div class="language-css"><pre><code class="language-css select-all">@import url('https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css');</code></pre></div>
+        </div>
+        <h4>Package manager (npm or yarn)</h4>
+        <a href="https://www.npmjs.com/package/checka11y-css" rel="nofollow" target="_blank" class="link">
+          <img alt="npm downloads" src="https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social">
+          <span class="sr-only">npm downloads</span>
+        </a>
+        <div class="example example--stack">
+          <p><em>First</em>, install it via npm</p>
+          <div class="language-cli"><pre><code class="language-cli select-all">npm install checka11y-css --save-dev</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><em>Or</em>, install it via yarn</p>
+          <div class="language-cli"><pre><code class="language-cli select-all">yarn add --dev checka11y-css</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><em>Then</em>, import it into your JavaScript</p>
+          <div class="language-js"><pre><code class="language-js select-all">import 'checka11y-css';</code></pre></div>
+        </div>
+        <p><em>Or</em>, import the SCSS or CSS into your Sass/SCSS</p>
+        <p>In the below imports, replace <code class="code">:file</code> with one of the options below:</p>
+        <ul>
+          <li><code class="code">src/checka11y</code> <small>(.scss file)</small></li>
+          <li><code class="code">checka11y.css</code> <small>(Expanded .css)</small></li>
+        </ul>
+        <div class="example example--stack">
+          <div class="language-sass"><pre><code class="language-css">/* Webpack */
+@import '~checka11y-css/:file';
+
+/* Non webpack */
+@import 'path/to/node_modules/checka11y-css/:file';</code></pre></div>
+        </div>
+      </section>
+      <hr/>
+      <section id="drawbacks">
+        <h3>
+          Drawbacks
+          <a href="#drawbacks" class="link link--jump" aria-label="Drawbacks">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <ul>
+          <li>Checka11y.css, just like any other accessibility tool, cannot test 100% of accessibility so consider using one or two more other accessibility tools for good coverage.</li>
+          <li>Checka11y.css is made with the intention to never be used in a production environment - it is only a developer/quality assurance tool - so be sure to never push this stylesheet to production.</li>
+        </ul>
+      </section>
+      <hr/>
+      <section id="feedback" class="feedback">
+        <h3>
+          Feedback and support
+          <a href="#feedback" class="link link--jump" aria-label="Feedback and support">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>We appreciate any feedback, good or bad and are always looking for new ideas to improve the user experience (UX), developer experience (DX) and accessibility of the tool. You may want to consider:</p>
+        <ul>
+          <li>Raising a <a href="https://github.com/jackdomleo7/Checka11y.css/issues" rel="nofollow noopener" class="link">GitHub issue</a></li>
+          <li>Contacting the <a href="https://jackdomleo.dev" rel="nofollow noopener" class="link">author</a> directly</li>
+          <li>Starring the <a href="https://github.com/jackdomleo7/Checka11y.css" rel="nofollow noopener" class="link">GitHub repository</a></li>
+          <li>Giving Checka11y.css an <a href="https://www.producthunt.com/posts/checka11y-css" rel="nofollow noopener" class="link">upvote on Product Hunt</a></li>
+          <li>Mentioning 'Checka11y.css' in a README or footer</li>
+          <li>Supporting Checka11y.css on <a href="https://www.buymeacoffee.com/jackdomleo7" rel="nofollow noopener" class="link">Buy Me a Coffee</a></li>
+          <li>Share on social media</li>
+        </ul>
+        <ul class="feedback__share center" id="social-share">
+          <li>
+            <a href="https://twitter.com/intent/tweet?text=Checka11y.css is a really easy to use CSS stylesheet to highlight accessibility concerns.&via=jackdomleo7&url=https://checka11y.jackdomleo.dev&hashtags=a11y,accessibility" target="_blank" class="link" aria-label="Share on Twitter">
+              <svg class="twitter" aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://checka11y.jackdomleo.dev&title=Checka11y.css is a really easy to use CSS stylesheet to highlight accessibility concerns.&summary=Checka11y.css&source=checka11y.jackdomleo.dev" target="_blank" class="link" aria-label="Share on LinkedIn">
+              <svg class="linkedin" aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/submit?url=https://checka11y.jackdomleo.dev&title=Checka11y.css is a really easy to use CSS stylesheet to highlight accessibility concerns." target="_blank" class="link" aria-label="Share on Reddit">
+              <svg class="reddit" aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-reddit"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://checka11y.jackdomleo.dev" target="_blank" class="link" aria-label="Share on Facebook">
+              <svg class="facebook" aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <hr/>
+      <section id="license">
+        <h3>
+          License
+          <a href="#license" class="link link--jump" aria-label="License">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>Checka11y.css is licensed under <a href="https://github.com/jackdomleo7/Checka11y.css#license" rel="nofollow noopener" class="link">MIT</a>. As a minimum, you are required to KEEP AND NOT REMOVE the following code at the beginning of your downloaded/installed Checka11y.css CSS, where <code class="code">:version</code> is replaced with the version number you are using:</p>
+        <div class="language-css"><pre><code class="language-css">/*! Checka11y.css v:version | MIT License | github.com/jackdomleo7/Checka11y.css */</code></pre></div>
+        <p>Checka11y.css is FREE for personal and commercial use.</p>
+        <p>Commercial use should consider a small donation on <a href="https://www.buymeacoffee.com/jackdomleo7" rel="nofollow noopener" class="link">Buy Me a Coffee</a>.</p>
+      </section>
+      <hr/>
+    </main>
+    <footer class="footer">
+      <div class="center">
+        <img src="/img/footer-icon.png" alt="Checka11y.css icon" />
+        <span id="copyright">&copy; Checka11y.css</span>
+      </div>
+      <p>Made with <span aria-label="love">❤</span> by <a href="https://jackdomleo.dev" rel="nofollow noopener" class="link">Jack Domleo</a>.</p>
+      <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/jackdomleo7" rel="nofollow noopener">
+        <svg aria-hidden="true">
+          <use xlink:href="/assets/sprite.svg#icon-buymeacoffee"></use>
+        </svg>
+        <span>Buy me a coffee</span>
+      </a>
+      <ul>
+        <li>
+          <a href="https://github.com/jackdomleo7/Checka11y.css" rel="nofollow noopener" class="link">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/checka11y-css" rel="nofollow noopener" class="link">npm</a>
+        </li>
+        <li>
+          <a href="https://yarnpkg.com/package/checka11y-css" rel="nofollow noopener" class="link">Yarn</a>
+        </li>
+        <li>
+          <a href="https://github.com/jackdomleo7/Checka11y.css#license" rel="nofollow noopener" class="link">License</a>
+        </li>
+        <li>
+          <a href="https://github.com/jackdomleo7/Checka11y.css/releases" rel="nofollow noopener" class="link">CHANGELOG</a>
+        </li>
+      </ul>
+    </footer>
   </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/prism.js"></script>
 </html>
