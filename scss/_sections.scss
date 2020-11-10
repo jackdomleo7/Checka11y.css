@@ -1,39 +1,3 @@
-.direction {
-  &__examples {
-    display: grid;
-    gap: 0.5rem;
-    grid-template: 1fr 1fr 1fr / auto auto auto;
-    margin: 2rem 0;
-  }
-
-  .required {
-    color: $orange;
-  }
-}
-
-.size {
-  &__examples {
-    display: grid;
-    gap: 0.5rem;
-    grid-template: auto auto auto auto / 1fr;
-    margin: 2rem 0;
-
-    @media screen and (min-width: 36em) {
-      grid-template: auto auto / 1fr 1fr;
-    }
-
-    @media screen and (min-width: 45em) {
-      grid-template: auto / 1fr 1fr 1fr 1fr;
-    }
-  }
-}
-
-.visible {
-  &__example {
-    margin-top: 2.5rem;
-  }
-}
-
 .feedback {
   &__share {
     align-items: center;

@@ -1,10 +1,6 @@
 $blue: #1e80ff;
 $orange: #ff5100;
 
-:root {
-  --cooltipz-fontawesome: fontawesome;
-}
-
 ::selection {
   background-color: mix($blue, #fff, 80%);
   color: #fff;
