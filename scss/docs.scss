@@ -1,0 +1,18 @@
+@import "../node_modules/normalize.css/normalize";
+@import "./global";
+@import "./header";
+@import "./footer";
+@import "./link";
+@import "./buy-me-a-coffee";
+@import "./helpers";
+@import "./sections";
+@import "./code";
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 62.5rem;
+  padding: 0 1.5rem;
+}

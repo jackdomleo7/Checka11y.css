@@ -1,0 +1,91 @@
+$blue: #1e80ff;
+$orange: #ff5100;
+
+::selection {
+  background-color: mix($blue, #fff, 80%);
+  color: #fff;
+  text-shadow: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  width: 100vw;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 45.625em) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  user-select: none;
+}
+
+hr {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  border-top-color: #222;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+ol,
+ul {
+  padding-left: 1.5rem;
+
+  @media (min-width: 48rem) {
+    padding-left: 2.5rem;
+  }
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+svg {
+  fill: currentColor;
+  height: 100%;
+  pointer-events: none;
+  width: 100%;
+}

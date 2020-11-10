@@ -1,0 +1,20 @@
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+
+  img {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+  }
+}

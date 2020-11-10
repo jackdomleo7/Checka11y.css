@@ -8,3 +8,4 @@ node_modules
 tmp
 .cache
 dist
+.vscode

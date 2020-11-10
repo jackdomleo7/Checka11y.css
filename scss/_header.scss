@@ -1,0 +1,67 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  nav ul {
+    display: flex;
+    width: 100;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  &__badges {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    a {
+      height: 1.5rem;
+
+      @media screen and (min-width: 30em) {
+        height: 2rem;
+      }
+
+      &:hover,
+      &:focus {
+        filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)) invert(5%);
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .features {
+    display: grid;
+    font-size: 0.9rem;
+    font-weight: 700;
+    gap: 2rem;
+    grid-template: auto / 1fr 1fr;
+    list-style-type: none;
+    margin: 2rem 0 0;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+
+    @media screen and (min-width: 37.5em) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+}
