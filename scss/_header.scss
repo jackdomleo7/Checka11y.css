@@ -64,4 +64,12 @@
       width: 2.5rem;
     }
   }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }

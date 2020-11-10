@@ -1,0 +1,14 @@
+.button {
+  background-color: $orange;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: 160ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: mix($orange, #fff, 80%);
+  }
+}
