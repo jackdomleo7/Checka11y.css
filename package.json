@@ -1,11 +1,15 @@
 {
   "name": "checka11y-css",
-  "version": "1.0.0-beta.0",
+  "version": "1.1.0",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "lint": "stylelint \"**/*.css\" --fix"
+    "build": "npm run lint && npm run build:expanded",
+    "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
+    "lint": "stylelint \"**/*.scss\" --fix",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --headless"
   },
   "repository": {
     "type": "git",
@@ -20,8 +24,15 @@
     "Dan Spratling <dan@danspratling.dev> (https://github.com/danspratling)",
     "Savvas Stephanides (https://github.com/SavvasStephanides)",
     "Veeresh (https://github.com/veerreshr)",
-    "Devin Ford (https://github.com/devindford)",
+    "Devin Ford <devindford@outlook.com> (https://github.com/devindford)",
     "Shaurya Vardhan <gsshaurya@gmail.com> (https://github.com/wulforr)",
+    "Emma Dawson (https://github.com/emmalearnscode)",
+    "Andrey Kudryavtsev (https://github.com/cat-street)",
+    "Alvaro Montoro <alvaromontoro@gmail.com> (https://github.com/alvaromontoro)",
+    "Manaswini Munuguri (https://github.com/Manaswini1832)",
+    "Shona McKenzie (https://github.com/shonamckenzie)",
+    "Ashar Setiawan (https://github.com/azhsetiawan)",
+    "Bogdan Lazar (https://github.com/tricinel)",
     "Charchit Kapoor <rakshak.kapoor1997@gmail.com> (https://github.com/Being-Maverick)"
   ],
   "keywords": [
@@ -35,14 +46,21 @@
   "bugs": {
     "url": "https://github.com/jackdomleo7/Checka11y.css/issues"
   },
-  "homepage": "https://github.com/jackdomleo7/Checka11y.css#readme",
+  "homepage": "https://checka11y.jackdomleo.dev",
   "files": [
+    "src/*",
     "checka11y.css",
+    "postcss.config.js",
     "README.md",
     "LICENSE",
     "CHANGELOG"
   ],
   "devDependencies": {
-    "stylelint": "^13.7.1"
+    "autoprefixer": "^9.8.6",
+    "cypress": "^5.5.0",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.2.0",
+    "stylelint": "^13.7.2",
+    "stylelint-scss": "^3.18.0"
   }
 }

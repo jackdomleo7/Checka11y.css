@@ -1,6 +1,20 @@
+![Checka11y.css logo](logo/checkally1.png)
+
+<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a>
+
+<a href="https://www.producthunt.com/posts/checka11y-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-checka11y-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269866&theme=light" alt="Checka11y.css - A CSS stylesheet to quickly highlight a11y concerns. | Product Hunt" style="width: 200px; height: auto;"/></a>
+
+![Maintenance](https://img.shields.io/maintenance/yes/2020) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
+
+[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases) [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social)
+
+---
+
 # Checka11y.css
 
 **A CSS stylesheet to quickly highlight a11y concerns.**
+
+_Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; _Simple_
 
 The first line of defence for testing accessibility.
 
@@ -15,65 +29,79 @@ A great tool for:
 - Websites and web applications to begin improving their accessibility.
 - Developers and testers/QA to learn more about accessibility and creating accessible websites and applications.
 
-_Lightweight_ &bull; _Modern_ &bull; _Accessibile_ &bull; _Customisable_ &bull; _Simple_
-
-**BETA coming soon!**
-
-<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
-
-![Maintenance](https://img.shields.io/maintenance/yes/2020) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
-
-[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases) [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social)
-
 ---
 
 ## Features
 
 Our features are always checked against the W3C accessibility guidelines.
 
-A list of every a11y concern Checka11y.css will check for and highlight:
+A list of common a11y concerns Checka11y.css will check for and highlight :
 
-- Missing `alt` attributes on images
-- Missing `title` on `<iframe>`
-- Checks `<li>` is the **only** child of `<ol>` and `<ul>`
-- Checks if `<nav>` exists more than once on a page, that each nav is correctly labelled.
-- Missing or empty `lang` on `<html>`
-- Checks `<a target="_blank">` and warns about links that open in a new window
-- Checks `<dt>` and `<dd>` are the **only** children of `<dl>`
-- Checks for the following invalid HTML elements nested inside of an <a>:
-  - `<a>`
-  - `<audio controls>`
-  - `<button>`
-  - `<details>`
-  - `<embed>`
-  - `<iframe>`
-  - `<img usemap>`
-  - `any input without type hidden`
-  - `<keygen>`
-  - `<label>`
-  - `<menu type="toolbar">`
-  - `<object usemap>`
-  - `<select>`
-  - `<textarea>`
-  - `<video controls>`
-- Missing or empty `for` on `<label>`
-- Missing or empty `name` on `<input>`
+- Check for invalid HTML elements nested inside of `<a>` and `<button>`
+- Check for missing `alt` attributes on images
+- Check for media that is set to `autoplay`
+- Check `<li>` is the **only** direct child of `<ol>` and `<ul>`
+- Check for programmable-only `tabindex` attributes on invalid HTML elements
+
+See a full list of features [here](./features.md).
 
 Other features:
 
 - Clear a11y errors and warnings with informative messages
 - Options to import via CDN, npm or yarn
 - Customise the error and warning colors
-- Customise the font used for error and warning messages
 - No dependencies
+
 
 ---
 
 ## Usage
 
-Coming soon...
+### CDN
 
-Watch this repository to stay up to date.
+In the below CDN links:
+- Replace `:version` with a version [listed here](https://www.npmjs.com/package/checka11y-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@:version` completely (Not recommended).
+
+```html
+<!-- HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css" />
+```
+
+```css
+/* Or CSS */
+@import url('https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css');
+```
+
+### Package manager (npm or yarn)
+
+It's best practice to install Checka11y.css as a dev dependency rather than a dependency and ensure you only use it in your local/developer environment (do not push this stylesheet to your production environment). You can install `checka11y-css` via **npm** or **yarn**.
+
+_First_ install via **npm**
+```
+npm install checka11y-css --save-dev
+```
+
+_Or_ install via **yarn**
+```
+yarn add --dev checka11y-css
+```
+
+_Then_ import into your JavaScript
+```js
+import 'checka11y-css';
+```
+
+_Or_ import the SCSS or CSS into your Sass/SCSS
+In the below imports, replace `:file` with one of the options below:
+- `src/checka11y` <sub><sup>(.scss file)</sup></sub>
+- `checka11y.css` <sub><sup>(.css file)</sup></sub>
+```scss
+/* Webpack */
+@import '~checka11y-css/:file';
+
+/* Non-webpack */
+@import 'path/to/node_modules/checka11y-css/:file';
+```
 
 ---
 
@@ -115,3 +143,7 @@ Checka11y.css is licensed under MIT. As a minimum, you are required to KEEP AND 
 2. `git clone https://github.com/jackdomleo7/Checka11y.css.git` or fork the repo
 3. `cd Checka11y.css`
 4. `npm i`
+5. Edit `src/**/*.scss` and run `npm run build` in the root of the project to regenerate the CSS found at `/checka11y.css` (DO NOT edit this file directly).
+6. To add error/warning styles and messages to your features, `@extend` one of the placeholders and `@include contentMessage()` from `src/_base.scss`.
+7. Add tests to your features in Cypress (at `a11y_spec.js`)
+8. Run tests: `npm run cypress:open` or `npm run cypress:run` (headless)

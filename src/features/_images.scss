@@ -1,0 +1,27 @@
+/* All images require an alt attribute */
+img:not( [alt] ) {
+  @extend %voidError;
+}
+
+/* Images should have a meaningful alt value */
+$suspiciousAltFull: "image", "graphic", "photo", "photograph", "drawing", "painting", "artwork", "logo", "bullet",
+  "button", "arrow", "more", "spacer", "blank", "chart", "table", "diagram", "graph", "*", " ";
+$suspiciousAltEnd: ".png", ".gif", ".jpg", ",jpeg", ".svg", ".bmp", "image", "graphic";
+$suspiciousAltStart: "graphic of", "bullet", "image of";
+
+@each $alt in $suspiciousAltFull {
+  img[alt="#{$alt}"i] {
+    @extend %imageMeaningfulAlt;
+  }
+}
+@each $alt in $suspiciousAltEnd {
+  img[alt$="#{$alt}"i] {
+    @extend %imageMeaningfulAlt;
+  }
+}
+@each $alt in $suspiciousAltStart {
+  img[alt^="#{$alt}"i] {
+    @extend %imageMeaningfulAlt;
+  }
+}
+

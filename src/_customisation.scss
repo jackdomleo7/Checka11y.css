@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+:root {
+  /* Colors */
+
+  --text-error: #{$text-error};
+  --bg-error: #{$bg-error};
+  --border-error: #{$border-error};
+
+  --text-warning: #{$text-warning};
+  --bg-warning: #{$bg-warning};
+  --border-warning: #{$border-warning};
+
+  /* Scale */
+  --space: 0.25rem;
+
+  --space-0: calc(var(--space) * 0);
+  --space-2: calc(var(--space) * 2);
+  --space-4: calc(var(--space) * 4);
+  --space-6: calc(var(--space) * 6);
+}

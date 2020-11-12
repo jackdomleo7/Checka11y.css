@@ -1,0 +1,37 @@
+/*
+  HTMLElements other than <a> and <button> that have mouse event handlers without the appropriate keyboard handlers are not accessible
+*/
+[onclick]:not( a ):not( button ):not( [onkeydown] ):not( [onkeyup] ):not( [onkeypress] )::after,
+[onclick][onkeyup]:not( [tabindex] ):not( a ):not( button )::after,
+[onclick][onkeyup][tabindex = "-1"]:not( a ):not( button )::after,
+[onclick][onkeydown]:not( [tabindex] ):not( a ):not( button )::after,
+[onclick][onkeydown][tabindex = "-1"]:not( a ):not( button )::after,
+[onclick][onkeypress]:not( [tabindex] ):not( a ):not( button )::after,
+[onclick][onkeypress][tabindex = "-1"]:not( a ):not( button )::after,
+[ondblclick]:not( a ):not( button ):not( [onkeydown] ):not( [onkeyup] ):not( [onkeypress] )::after,
+[ondblclick][onkeyup]:not( [tabindex] ):not( a ):not( button )::after,
+[ondblclick][onkeyup][tabindex = "-1"]:not( a ):not( button )::after,
+[ondblclick][onkeydown]:not( [tabindex] ):not( a ):not( button )::after,
+[ondblclick][onkeydown][tabindex = "-1"]:not( a ):not( button )::after,
+[ondblclick][onkeypress]:not( [tabindex] ):not( a ):not( button )::after,
+[ondblclick][onkeypress][tabindex = "-1"]:not( a ):not( button )::after,
+[onmousedown]:not( a ):not( button ):not( [onkeydown] ):not( [onkeyup] ):not( [onkeypress] )::after,
+[onmousedown][onkeyup]:not( [tabindex] ):not( a ):not( button )::after,
+[onmousedown][onkeyup][tabindex = "-1"]:not( a ):not( button )::after,
+[onmousedown][onkeydown]:not( [tabindex] ):not( a ):not( button )::after,
+[onmousedown][onkeydown][tabindex = "-1"]:not( a ):not( button )::after,
+[onmousedown][onkeypress]:not( [tabindex] ):not( a ):not( button )::after,
+[onmousedown][onkeypress][tabindex = "-1"]:not( a ):not( button )::after,
+[onmouseup]:not( a ):not( button ):not( [onkeydown] ):not( [onkeyup] ):not( [onkeypress] )::after,
+[onmouseup][onkeyup]:not( [tabindex] ):not( a ):not( button )::after,
+[onmouseup][onkeyup][tabindex = "-1"]:not( a ):not( button )::after,
+[onmouseup][onkeydown]:not( [tabindex] ):not( a ):not( button )::after,
+[onmouseup][onkeydown][tabindex = "-1"]:not( a ):not( button )::after,
+[onmouseup][onkeypress]:not( [tabindex] ):not( a ):not( button )::after,
+[onmouseup][onkeypress][tabindex = "-1"]:not( a ):not( button )::after,
+[onmouseover]:not( a ):not( button )::after,
+[onmouseenter]:not( a ):not( button )::after,
+[onmouseleave]:not( a ):not( button )::after {
+  @extend %contentWarning;
+  @include contentMessage(warning, "Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative.");
+}

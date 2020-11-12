@@ -1,0 +1,68 @@
+/* Invalid HTML nested inside <button> */
+button {
+  audio[controls] {
+    @extend %voidError;
+  }
+
+  button {
+    &::after {
+      @extend %contentError;
+      @include contentMessage(error, "Ensure that <button> is not a child of <button> as it is an invalid HTML.");
+    }
+  }
+
+  details {
+    &::after {
+      @extend %contentError;
+      @include contentMessage(error, "Ensure that <details> is not a child of <button> as it is an invalid HTML.");
+    }
+  }
+
+  embed {
+    @extend %voidError;
+    @extend %embedInsideButton;
+  }
+
+  iframe {
+    @extend %voidError;
+  }
+
+  img[usemap] {
+    @extend %voidError;
+  }
+
+  input:not( [type = "hidden"] ) {
+    @extend %voidError;
+  }
+
+  label {
+    &::after {
+      @extend %contentError;
+      @include contentMessage(error, "Ensure that <label> is not a child of <button> as it is an invalid HTML.");
+    }
+  }
+
+  object[usemap] {
+    @extend %voidError;
+  }
+
+  select {
+    @extend %voidError;
+  }
+
+  textarea {
+    @extend %voidError;
+  }
+
+  video[controls] {
+    @extend %voidError;
+  }
+}
+
+/* Buttons have meaningful content */
+button:not( [aria-label] ):not( [aria-labelledby] ):empty {
+  &::after {
+    @extend %contentError;
+    @include contentMessage(error, "Ensure that <button> has meaningful content or is labelled appropriately.");
+  }
+}
