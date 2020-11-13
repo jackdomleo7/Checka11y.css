@@ -6,14 +6,12 @@ button {
 
   button {
     &::after {
-      @extend %contentError;
       @include contentMessage(error, "Ensure that <button> is not a child of <button> as it is an invalid HTML.");
     }
   }
 
   details {
     &::after {
-      @extend %contentError;
       @include contentMessage(error, "Ensure that <details> is not a child of <button> as it is an invalid HTML.");
     }
   }
@@ -37,7 +35,6 @@ button {
 
   label {
     &::after {
-      @extend %contentError;
       @include contentMessage(error, "Ensure that <label> is not a child of <button> as it is an invalid HTML.");
     }
   }
@@ -62,7 +59,6 @@ button {
 /* Buttons have meaningful content */
 button:not( [aria-label] ):not( [aria-labelledby] ):empty {
   &::after {
-    @extend %contentError;
     @include contentMessage(error, "Ensure that <button> has meaningful content or is labelled appropriately.");
   }
 }

@@ -1,7 +1,6 @@
 /* Warn when opening a link in a new tab or window */
 a[target = "_blank"] {
   &::after {
-    @extend %contentWarning;
     @include contentMessage(warning, "Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.");
   }
 }
@@ -14,14 +13,12 @@ a {
 
   button {
     &::after {
-      @extend %contentError;
       @include contentMessage(error, "Ensure that <button> is not a child of <a> as it is an invalid HTML.");
     }
   }
 
   details {
     &::after {
-      @extend %contentError;
       @include contentMessage(error, "Ensure that <details> is not a child of <a> as it is an invalid HTML.");
     }
   }
@@ -44,7 +41,6 @@ a {
 
   label {
     &::after {
-      @extend %contentError;
       @include contentMessage(error, "Ensure that <label> is not a child of <a> as it is an invalid HTML.");
     }
   }
