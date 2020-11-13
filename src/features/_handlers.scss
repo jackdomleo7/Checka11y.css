@@ -32,6 +32,5 @@
 [onmouseover]:not( a ):not( button )::after,
 [onmouseenter]:not( a ):not( button )::after,
 [onmouseleave]:not( a ):not( button )::after {
-  @extend %contentWarning;
   @include contentMessage(warning, "Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative.");
 }
