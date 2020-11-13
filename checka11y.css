@@ -18,26 +18,6 @@
           box-shadow: 0 0 0 0.25rem var(--border-error);
 }
 
-button button::after, button details::after, button label::after, button:not([aria-label]):not([aria-labelledby]):empty::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, a[href]:not([aria-label]):not([aria-labelledby]):empty::after, ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after, [accesskey]::after, [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after, [style*="!important"]::after, a[target="_blank"]::after, u::after {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: var(--space-4) var(--space-6);
-  border-radius: 0.75rem;
-}
-
-button button::after, button details::after, button label::after, button:not([aria-label]):not([aria-labelledby]):empty::after, [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after, h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after, h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after, html:not([lang]) body::before, html[lang=""] body::before, a button::after, a details::after, a label::after, a[href]:not([aria-label]):not([aria-labelledby]):empty::after, ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after, dl > *:not(dt):not(dd)::after, nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after, a[href][tabindex="-1"]::after, area[href][tabindex="-1"]::after, input:not([disabled])[tabindex="-1"]::after, select:not([disabled])[tabindex="-1"]::after, textarea:not([disabled])[tabindex="-1"]::after, button:not([disabled])[tabindex="-1"]::after, iframe[tabindex="-1"]::after, [contentEditable="true"][tabindex="-1"]::after {
-  color: var(--text-error);
-  border: 0.4rem solid var(--border-error);
-  background-color: var(--bg-error);
-}
-
-[accesskey]::after, [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after, [style*="!important"]::after, a[target="_blank"]::after, u::after {
-  color: var(--text-warning);
-  border: 0.4rem solid var(--border-warning);
-  background-color: var(--bg-warning);
-}
-
 img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
   border: 0.4rem solid var(--border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">WARNING: Alt text must describe</text> <text x="15" y="60">the content of the image.</text></g></svg>');
@@ -57,118 +37,350 @@ button embed {
 }
 
 [accesskey]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies." !important;
+  color: var(--text-warning);
+  border: 0.4rem solid var(--border-warning);
+  background-color: var(--bg-warning);
 }
 
 button button::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <button> is not a child of <button> as it is an invalid HTML." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 button details::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <details> is not a child of <button> as it is an invalid HTML." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 button label::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <label> is not a child of <button> as it is an invalid HTML." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 button:not([aria-label]):not([aria-labelledby]):empty::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <button> has meaningful content or is labelled appropriately." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "WARNING: Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative." !important;
+  color: var(--text-warning);
+  border: 0.4rem solid var(--border-warning);
+  background-color: var(--bg-warning);
 }
 
 h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Headings must not be empty." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Headings should be reachable by assistive technologies (no aria-hidden)." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 html:not([lang]) body::before {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: html has no lang attribute." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 html[lang=""] body::before {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: html lang attribute should not be empty." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 [style*="!important"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "WARNING: !important inline styles should be avoided." !important;
+  color: var(--text-warning);
+  border: 0.4rem solid var(--border-warning);
+  background-color: var(--bg-warning);
 }
 
 a[target="_blank"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior." !important;
+  color: var(--text-warning);
+  border: 0.4rem solid var(--border-warning);
+  background-color: var(--bg-warning);
 }
 
 a button::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <button> is not a child of <a> as it is an invalid HTML." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 a details::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <details> is not a child of <a> as it is an invalid HTML." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 a label::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <label> is not a child of <a> as it is an invalid HTML." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <a> has meaningful content or is labelled appropriately." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: List markup invalid. Ensure <li>, <script> or <template> are the only direct child of <ul> or <ol>." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 dl > *:not(dt):not(dd)::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 a[href][tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <a> with an href attribute doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 area[href][tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <area> with an href attribute doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 input:not([disabled])[tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <input> that is not disabled doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 select:not([disabled])[tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <select> that is not disabled doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 textarea:not([disabled])[tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <textarea> that is not disabled doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 button:not([disabled])[tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <button> that is not disabled doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 iframe[tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that <iframe> doesn't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 [contentEditable="true"][tabindex="-1"]::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "ERROR: Ensure that HTML elements with editable content don't have a tab index of -1." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
 }
 
 u::after {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
   content: "WARNING: Using <u> -moz-element could be confused as a hyperlink, consider using a different -moz-element such as <em> or <b>." !important;
   content: "WARNING: Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
+  color: var(--text-warning);
+  border: 0.4rem solid var(--border-warning);
+  background-color: var(--bg-warning);
 }
