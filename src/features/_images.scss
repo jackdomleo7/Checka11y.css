@@ -9,6 +9,10 @@ $suspiciousAltFull: "image", "graphic", "photo", "photograph", "drawing", "paint
 $suspiciousAltEnd: ".png", ".gif", ".jpg", ",jpeg", ".svg", ".bmp", "image", "graphic";
 $suspiciousAltStart: "graphic of", "bullet", "image of";
 
+%imageMeaningfulAlt {
+  @include vectorMessage(warning, 400, "Alt text must", "describe the content of the image.");
+}
+
 @each $alt in $suspiciousAltFull {
   img[alt="#{$alt}"i] {
     @extend %imageMeaningfulAlt;

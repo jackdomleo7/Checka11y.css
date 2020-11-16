@@ -1,8 +1,9 @@
 /* To only be used on ::before or ::after */
 @mixin contentMessage($errorType, $message) {
   display: block;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
 

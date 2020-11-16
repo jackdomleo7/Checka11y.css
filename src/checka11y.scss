@@ -2,8 +2,9 @@
 
 @import "./customisation";
 @import "./messages/content";
-@import "./messages/vectorMessage";
+@import "./messages/vector";
 @import "./base";
+@import "./helpers";
 /* --- */
 @import "./features/accesskey";
 @import "./features/autoplay";

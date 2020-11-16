@@ -1,0 +1,72 @@
+/**
+* -- Vector processing --
+* To only ever be called from @mixin vectorMessage() {}
+*/
+@function generate-vector-text($errorType, $lines) {
+  $textLines: ();
+
+  @if length($lines) == 0 {
+    // stylelint-disable-next-line scss/no-duplicate-dollar-variables
+    $textLines: append('<text x="15" y="35">CAUTION: Unidentified issue</text>');
+  }
+  @else {
+    $errorMessage: null;
+    @if $errorType == error {
+      $errorMessage: "ERROR: ";
+    }
+    @else if $errorType == warning {
+      $errorMessage: "WARNING: ";
+    }
+
+    $lines: replace-nth($lines, 1, "#{$errorMessage}#{nth($lines, 1)}");
+
+    @each $line in $lines {
+      // stylelint-disable-next-line scss/no-duplicate-dollar-variables
+      $textLines: append($textLines, '<text x="15" y="#{index($lines, $line) * 25 + 10}">#{$line}</text>');
+    }
+  }
+
+  @return $textLines;
+}
+
+/**
+* -- Vector message --
+* To only be used with elements that cannot render a ::before or an ::after
+* @include vectorMessage(params)
+*
+* PARAMS
+* - errorType: type of the message (error or warning)
+* - width: width of the generated image (the whole element will be set to this width)
+* - lines: the rest of the parameters as a list (the lines of text to be displayed)
+*
+* ****IMPORTANT****:
+* - Avoid special characters (#, <, >) when possible, or replace them with HTML entities (< --> &lt; etc)
+* - lines needs to be an array of text otherwise it won't fit on one line (you may have to do a few attempts)
+*/
+@mixin vectorMessage($errorType, $width: 400, $lines...) {
+  border: 0.4rem solid;
+
+  $border-svg: $border-error;
+  $bg-svg: $bg-error;
+  $text-svg: $text-error;
+  $textLines: generate-vector-text($errorType, $lines);
+  $height: length($textLines) * 25 + 30; // number of lines * 25 (line height) + 30 (padding top and bottom)
+
+  @if $errorType == error {
+    border-color: var(--border-error);
+  }
+  @else if $errorType == warning {
+    $border-svg: $border-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $bg-svg: $bg-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $text-svg: $text-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    border-color: var(--border-warning);
+  }
+  @else {
+    @error "The errorType must be either error or warning.";
+  }
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="#{$width}px" height="#{$height}px" viewBox="0 0 #{$width} #{$height}"><rect class="box" x="4" y="4" width="#{$width - 8}" height="#{$height - 8}" rx="12" ry="12" fill="#{transparentize($bg-svg, 0.000001)}" stroke-width="0.4rem" stroke="#{transparentize($border-svg, 0.000001)}" /><g fill="#{transparentize($text-svg, 0.000001)}" font-size="#{$font-size}" font-weight="#{$font-weight}" font-family="#{$font-family}">#{$textLines}</g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: #{$width}px;
+  padding-bottom: #{$height}px;
+}

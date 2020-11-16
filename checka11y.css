@@ -18,27 +18,10 @@
           box-shadow: 0 0 0 0.25rem var(--border-error);
 }
 
-img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
-  border: 0.4rem solid var(--border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">WARNING: Alt text must describe</text> <text x="15" y="60">the content of the image.</text></g></svg>');
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  min-width: 400px;
-  padding-bottom: 80px;
-}
-
-button embed {
-  border: 0.4rem solid var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="bold" font-family="Verdana, Geneva, Tahoma, sans-serif"><text x="15" y="35">ERROR: &lt;embed&gt; can not be</text> <text x="15" y="60">a child of &lt;button&gt;.</text></g></svg>');
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
-}
-
 [accesskey]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -51,6 +34,7 @@ button embed {
 button button::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -63,6 +47,7 @@ button button::after {
 button details::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -72,9 +57,20 @@ button details::after {
   background-color: var(--bg-error);
 }
 
+button embed {
+  border: 0.4rem solid;
+  border-color: var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: &lt;embed&gt; cannot</text> <text x="15" y="60">be a child of &lt;button&gt;.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 350px;
+  padding-bottom: 80px;
+}
+
 button label::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -87,6 +83,7 @@ button label::after {
 button:not([aria-label]):not([aria-labelledby]):empty::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -99,6 +96,7 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -111,6 +109,7 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -123,6 +122,7 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -135,6 +135,7 @@ h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::af
 h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -147,6 +148,7 @@ h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [a
 html:not([lang]) body::before {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -159,6 +161,7 @@ html:not([lang]) body::before {
 html[lang=""] body::before {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -168,9 +171,20 @@ html[lang=""] body::before {
   background-color: var(--bg-error);
 }
 
+img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
+  border: 0.4rem solid;
+  border-color: var(--border-warning);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
+}
+
 [style*="!important"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -183,6 +197,7 @@ html[lang=""] body::before {
 a[target="_blank"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -195,6 +210,7 @@ a[target="_blank"]::after {
 a button::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -207,6 +223,7 @@ a button::after {
 a details::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -219,6 +236,7 @@ a details::after {
 a label::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -231,6 +249,7 @@ a label::after {
 a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -243,6 +262,7 @@ a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
 ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -255,6 +275,7 @@ ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(
 dl > *:not(dt):not(dd)::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -267,6 +288,7 @@ dl > *:not(dt):not(dd)::after {
 nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -279,6 +301,7 @@ nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-l
 a[href][tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -291,6 +314,7 @@ a[href][tabindex="-1"]::after {
 area[href][tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -303,6 +327,7 @@ area[href][tabindex="-1"]::after {
 input:not([disabled])[tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -315,6 +340,7 @@ input:not([disabled])[tabindex="-1"]::after {
 select:not([disabled])[tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -327,6 +353,7 @@ select:not([disabled])[tabindex="-1"]::after {
 textarea:not([disabled])[tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -339,6 +366,7 @@ textarea:not([disabled])[tabindex="-1"]::after {
 button:not([disabled])[tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -351,6 +379,7 @@ button:not([disabled])[tabindex="-1"]::after {
 iframe[tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -363,6 +392,7 @@ iframe[tabindex="-1"]::after {
 [contentEditable="true"][tabindex="-1"]::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
@@ -375,6 +405,7 @@ iframe[tabindex="-1"]::after {
 u::after {
   display: block;
   font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;

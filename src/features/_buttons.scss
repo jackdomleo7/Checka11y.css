@@ -18,7 +18,7 @@ button {
 
   embed {
     @extend %voidError;
-    @extend %embedInsideButton;
+    @include vectorMessage(error, 350, "&lt;embed&gt; cannot", "be a child of &lt;button&gt;.");
   }
 
   iframe {
