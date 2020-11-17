@@ -259,7 +259,7 @@ html[lang=""] body::before {
 iframe:not([title]) {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: All &lt;iframe&gt;</text> <text x="15" y="60">must have a title;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: All &lt;iframe&gt;</text> <text x="15" y="60">must have a title.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -500,62 +500,50 @@ a[href][tabindex="-1"]::after {
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
-  content: "ERROR: Ensure that <a> with an href attribute doesn't have a tab index of -1." !important;
+  content: "ERROR: Ensure that &lt;a&gt; with an href attribute does not have a tab index of -1." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
   background-color: var(--bg-error);
 }
 
-area[href][tabindex="-1"]::after {
-  display: block;
-  font-size: 1.2rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
-  font-weight: 700;
-  padding: var(--space-4) var(--space-6);
-  border-radius: 0.75rem;
-  content: "ERROR: Ensure that <area> with an href attribute doesn't have a tab index of -1." !important;
-  color: var(--text-error);
-  border: 0.4rem solid var(--border-error);
-  background-color: var(--bg-error);
+area[href][tabindex="-1"] {
+  border: 0.4rem solid;
+  border-color: var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;area&gt; with an</text> <text x="15" y="60">href attribute does not have a tab index of -1.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
 }
 
-input:not([disabled])[tabindex="-1"]::after {
-  display: block;
-  font-size: 1.2rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
-  font-weight: 700;
-  padding: var(--space-4) var(--space-6);
-  border-radius: 0.75rem;
-  content: "ERROR: Ensure that <input> that is not disabled doesn't have a tab index of -1." !important;
-  color: var(--text-error);
-  border: 0.4rem solid var(--border-error);
-  background-color: var(--bg-error);
+input:not([disabled])[tabindex="-1"] {
+  border: 0.4rem solid;
+  border-color: var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
 }
 
-select:not([disabled])[tabindex="-1"]::after {
-  display: block;
-  font-size: 1.2rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
-  font-weight: 700;
-  padding: var(--space-4) var(--space-6);
-  border-radius: 0.75rem;
-  content: "ERROR: Ensure that <select> that is not disabled doesn't have a tab index of -1." !important;
-  color: var(--text-error);
-  border: 0.4rem solid var(--border-error);
-  background-color: var(--bg-error);
+select:not([disabled])[tabindex="-1"] {
+  border: 0.4rem solid;
+  border-color: var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
 }
 
-textarea:not([disabled])[tabindex="-1"]::after {
-  display: block;
-  font-size: 1.2rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
-  font-weight: 700;
-  padding: var(--space-4) var(--space-6);
-  border-radius: 0.75rem;
-  content: "ERROR: Ensure that <textarea> that is not disabled doesn't have a tab index of -1." !important;
-  color: var(--text-error);
-  border: 0.4rem solid var(--border-error);
-  background-color: var(--bg-error);
+textarea:not([disabled])[tabindex="-1"] {
+  border: 0.4rem solid;
+  border-color: var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
 }
 
 button:not([disabled])[tabindex="-1"]::after {
@@ -565,23 +553,20 @@ button:not([disabled])[tabindex="-1"]::after {
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
-  content: "ERROR: Ensure that <button> that is not disabled doesn't have a tab index of -1." !important;
+  content: "ERROR: Ensure that &lt;button&gt; that is not disabled does not have a tab index of -1." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
   background-color: var(--bg-error);
 }
 
-iframe[tabindex="-1"]::after {
-  display: block;
-  font-size: 1.2rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
-  font-weight: 700;
-  padding: var(--space-4) var(--space-6);
-  border-radius: 0.75rem;
-  content: "ERROR: Ensure that <iframe> doesn't have a tab index of -1." !important;
-  color: var(--text-error);
-  border: 0.4rem solid var(--border-error);
-  background-color: var(--bg-error);
+iframe[tabindex="-1"] {
+  border: 0.4rem solid;
+  border-color: var(--border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt;</text> <text x="15" y="60">does not have a tab index of -1.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
 }
 
 [contentEditable="true"][tabindex="-1"]::after {
