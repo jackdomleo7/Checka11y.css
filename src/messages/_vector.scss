@@ -12,10 +12,10 @@
   @else {
     $errorMessage: null;
     @if $errorType == error {
-      $errorMessage: "ERROR: ";
+      $errorMessage: "ERROR: "; // stylelint-disable-line scss/no-duplicate-dollar-variables
     }
     @else if $errorType == warning {
-      $errorMessage: "WARNING: ";
+      $errorMessage: "WARNING: "; // stylelint-disable-line scss/no-duplicate-dollar-variables
     }
 
     $lines: replace-nth($lines, 1, "#{$errorMessage}#{nth($lines, 1)}");
