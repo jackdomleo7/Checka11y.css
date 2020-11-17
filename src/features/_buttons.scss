@@ -1,58 +1,57 @@
 /* Invalid HTML nested inside <button> */
 button {
   audio[controls] {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;button&gt;.");
   }
 
   button {
     &::after {
-      @include contentMessage(error, "Ensure that <button> is not a child of <button> as it is an invalid HTML.");
+      @include contentMessage(error, "Ensure that <button> is not a child of <button>.");
     }
   }
 
   details {
     &::after {
-      @include contentMessage(error, "Ensure that <details> is not a child of <button> as it is an invalid HTML.");
+      @include contentMessage(error, "Ensure that <details> is not a child of <button>.");
     }
   }
 
   embed {
-    @extend %voidError;
     @include vectorMessage(error, 350, "&lt;embed&gt; cannot", "be a child of &lt;button&gt;.");
   }
 
   iframe {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;iframe&gt; is", "not a child of &lt;button&gt;.");
   }
 
   img[usemap] {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;button&gt;.");
   }
 
   input:not( [type = "hidden"] ) {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;input type=\"hidden\"&gt;", "is not a child of &lt;button&gt;.");
   }
 
   label {
     &::after {
-      @include contentMessage(error, "Ensure that <label> is not a child of <button> as it is an invalid HTML.");
+      @include contentMessage(error, "Ensure that <label> is not a child of <button>.");
     }
   }
 
   object[usemap] {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;object usemap&gt; is", "not a child of &lt;button&gt;.");
   }
 
   select {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;select&gt; is", "not a child of &lt;button&gt;.");
   }
 
   textarea {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;textarea&gt; is", "not a child of &lt;button&gt;.");
   }
 
   video[controls] {
-    @extend %voidError;
+    @include vectorMessage(error, 550, "Ensure that &lt;video controls&gt; is", "not a child of &lt;button&gt;.");
   }
 }
 

@@ -1,10 +1,9 @@
 /*! Checka11y.css v1.1.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
 
 @import "./customisation";
+@import "./helpers";
 @import "./messages/content";
 @import "./messages/vector";
-@import "./base";
-@import "./helpers";
 /* --- */
 @import "./features/accesskey";
 @import "./features/autoplay";

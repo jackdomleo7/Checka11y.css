@@ -1,6 +1,6 @@
 /* All images require an alt attribute */
 img:not( [alt] ) {
-  @extend %voidError;
+  @include vectorMessage(error, 350, "All &lt;img&gt; must", "have alternative text.");
 }
 
 /* Images should have a meaningful alt value */
