@@ -1,6 +1,6 @@
-![Checka11y.css logo](logo/checka11y1.png)
-
 <div align="center">
+
+  ![Checka11y.css logo](logo/checka11y1.png)
 
   <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a>
 
