@@ -1,4 +1,4 @@
-describe('CheckA11y.css Tests', () => {
+describe('Checka11y.css Tests', () => {
   // this is how Cypress reads the CSS. It will need to be changed if colors change!
   const ERROR_BOXSHADOW = 'rgb(255, 0, 0) 0px 0px 0px 4px';
   const WARNING_BOXSHADOW = 'rgb(255, 255, 102) 0px 0px 0px 4px';
@@ -22,11 +22,11 @@ describe('CheckA11y.css Tests', () => {
   })
 
   describe("[autoplay]", () => {
-    it('should show outline on elements with autoplay', () => {
+    it('should show warning outline on elements with autoplay', () => {
       cy.get("[autoplay]")
         .each(element => {
           cy.get(element)
-            .should('have.css', 'box-shadow', ERROR_BOXSHADOW)
+            .should('have.css', 'border-color', 'rgb(255, 255, 102)')
         });
     });
   });
@@ -45,7 +45,7 @@ describe('CheckA11y.css Tests', () => {
         cy.get(`button ${el}`)
           .each(element => {
             cy.get(element)
-              .should('have.css', 'box-shadow', ERROR_BOXSHADOW)
+              .should('have.css', 'border-color', 'rgb(255, 0, 0)')
           });
       });
 
@@ -55,7 +55,7 @@ describe('CheckA11y.css Tests', () => {
             if (element) {
               cy.get(element)
                 .after('content')
-                .should('eq', `ERROR: Ensure that <${el}> is not a child of <button> as it is an invalid HTML.`);
+                .should('eq', `ERROR: Ensure that <${el}> is not a child of <button>.`);
             }
           });
       });

@@ -6,13 +6,11 @@ h5,
 h6 {
   /* Headings should have (meaningful) content */
   &:empty::after {
-    @extend %contentError;
     @include contentMessage(error, "Headings must not be empty.");
   }
 
   /* Headings should be reachable by assistive technologies */
   [aria-hidden]::after {
-    @extend %contentError;
     @include contentMessage(error, "Headings should be reachable by assistive technologies (no aria-hidden).");
   }
 }

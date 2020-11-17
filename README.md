@@ -1,12 +1,16 @@
-![Checka11y.css logo](logo/checkally1.png)
+<div align="center">
 
-<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a>
+  ![Checka11y.css logo](logo/checka11y1.png)
 
-<a href="https://www.producthunt.com/posts/checka11y-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-checka11y-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269866&theme=light" alt="Checka11y.css - A CSS stylesheet to quickly highlight a11y concerns. | Product Hunt" style="width: 200px; height: auto;"/></a>
+  <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a>
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
+  <a href="https://www.producthunt.com/posts/checka11y-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-checka11y-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269866&theme=light" alt="Checka11y.css - A CSS stylesheet to quickly highlight a11y concerns. | Product Hunt" style="width: 200px; height: auto;"/></a>
 
-[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases) [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social)
+  ![Maintenance](https://img.shields.io/maintenance/yes/2020) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
+
+  [![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases) [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social)
+  
+</div>
 
 ---
 
@@ -147,3 +151,11 @@ Checka11y.css is licensed under MIT. As a minimum, you are required to KEEP AND 
 6. To add error/warning styles and messages to your features, `@extend` one of the placeholders and `@include contentMessage()` from `src/_base.scss`.
 7. Add tests to your features in Cypress (at `a11y_spec.js`)
 8. Run tests: `npm run cypress:open` or `npm run cypress:run` (headless)
+
+---
+
+<div align="center">
+
+  [GitHub](https://github.com/jackdomleo7/Checka11y.css "View the GitHub repo and maybe give us a star") &bull; [npm](https://www.npmjs.com/package/checka11y-css "View Checka11y.css on npmjs.com") &bull; [yarn](https://yarnpkg.com/package/checka11y-css "View Checka11y.css on yarnpkg.com") &bull; [docs](https://checka11y.jackdomleo.dev "Read the official documentation") &bull; [CHANGELOG](https://github.com/jackdomleo7/Checka11y.css/releases "Read all the releases") &bull; [License](https://github.com/jackdomleo7/Checka11y.css#license "MIT License")
+
+</div>

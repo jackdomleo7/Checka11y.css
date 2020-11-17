@@ -1,6 +1,6 @@
 /* All images require an alt attribute */
 img:not( [alt] ) {
-  @extend %voidError;
+  @include vectorMessage(error, 350, "All &lt;img&gt; must", "have alternative text.");
 }
 
 /* Images should have a meaningful alt value */
@@ -8,6 +8,10 @@ $suspiciousAltFull: "image", "graphic", "photo", "photograph", "drawing", "paint
   "button", "arrow", "more", "spacer", "blank", "chart", "table", "diagram", "graph", "*", " ";
 $suspiciousAltEnd: ".png", ".gif", ".jpg", ",jpeg", ".svg", ".bmp", "image", "graphic";
 $suspiciousAltStart: "graphic of", "bullet", "image of";
+
+%imageMeaningfulAlt {
+  @include vectorMessage(warning, 400, "Alt text must", "describe the content of the image.");
+}
 
 @each $alt in $suspiciousAltFull {
   img[alt="#{$alt}"i] {
