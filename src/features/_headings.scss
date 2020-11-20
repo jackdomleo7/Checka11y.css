@@ -10,7 +10,7 @@ h6 {
   }
 
   /* Headings should be reachable by assistive technologies */
-  [aria-hidden]::after {
+  &[aria-hidden]::after {
     @include contentMessage(error, "Headings should be reachable by assistive technologies (no aria-hidden).");
   }
 }

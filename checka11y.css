@@ -217,7 +217,7 @@ h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::af
   background-color: var(--bg-error);
 }
 
-h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after {
+h1[aria-hidden]::after, h2[aria-hidden]::after, h3[aria-hidden]::after, h4[aria-hidden]::after, h5[aria-hidden]::after, h6[aria-hidden]::after {
   display: block;
   font-size: 1.2rem;
   font-family: verdana,geneva,tahoma,sans-serif;
