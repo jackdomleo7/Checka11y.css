@@ -253,14 +253,25 @@
         <h5></h5>
         <h6></h6>
       </div>
-      <div>
-        <p>Headings should be reachable by assistive technologies (do not use <code>aria-hidden</code> or similars on a heading).</code></p>
-        <h1 aria-hidden="true">H1 with aria-hidden="true"</h1>
-        <h2 aria-hidden="true">H2 with aria-hidden="true"</h2>
-        <h3 aria-hidden="true">H3 with aria-hidden="true"</h3>
-        <h4 aria-hidden="true">H4 with aria-hidden="true"</h4>
-        <h5 aria-hidden="true">H5 with aria-hidden="true"</h5>
-        <h6 aria-hidden="true">H6 with aria-hidden="true"</h6>
+    </section>
+    <section>
+      <h2>Headings: reachable by assistive technologies</h2>
+      <p>Headings should be reachable by assistive technologies (do not use <code>aria-hidden</code> or similars on a heading).</code></p>
+      <h1 aria-hidden="true">H1 with aria-hidden="true"</h1>
+      <h2 aria-hidden="true">H2 with aria-hidden="true"</h2>
+      <h3 aria-hidden="true">H3 with aria-hidden="true"</h3>
+      <h4 aria-hidden="true">H4 with aria-hidden="true"</h4>
+      <h5 aria-hidden="true">H5 with aria-hidden="true"</h5>
+      <h6 aria-hidden="true">H6 with aria-hidden="true"</h6>
+    </section>
+    <section>
+        <h2>Headings: do not skip levels</p>
+        <h4>H4 (error: not in order)</h4>
+        <h1>H1 (error: not in order, should be unique)</h1>
+        <h2>H2 (correct: same level)</h2>
+        <h3>H3 (correct: after h2)</h3>
+        <h6>H6 (error: not in order)</h6>
+        <h5>H5 (error: not in order)</h5>
       </div>
     </section>
     <section>
