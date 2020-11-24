@@ -97,8 +97,8 @@ describe('Checka11y.css Tests', () => {
       cy.get("h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty")
         .each(element => {
           cy.get(element)
-            .after("content")
-            .should('eq', "ERROR: Headings must not be empty.")
+            .after("border-color")
+            .should('eq',  'rgb(255, 0, 0)') // they could have different error messages
         });
     });
 
@@ -106,8 +106,8 @@ describe('Checka11y.css Tests', () => {
       cy.get("h1[aria-hidden], h2[aria-hidden], h3[aria-hidden], h4[aria-hidden], h5[aria-hidden], h6[aria-hidden]")
         .each(element => {
           cy.get(element)
-            .after("content")
-            .should('eq', "ERROR: Headings should be reachable by assistive technologies (no aria-hidden).")
+            .after("border-color")
+            .should('eq',  'rgb(255, 0, 0)') // they could have different error messages
         });
     });
 
