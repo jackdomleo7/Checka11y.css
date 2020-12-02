@@ -217,7 +217,7 @@ h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::af
   background-color: var(--bg-error);
 }
 
-h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [aria-hidden]::after, h5 [aria-hidden]::after, h6 [aria-hidden]::after {
+h1[aria-hidden]::after, h2[aria-hidden]::after, h3[aria-hidden]::after, h4[aria-hidden]::after, h5[aria-hidden]::after, h6[aria-hidden]::after {
   display: block;
   font-size: 1.2rem;
   font-family: verdana,geneva,tahoma,sans-serif;
@@ -228,6 +228,23 @@ h1 [aria-hidden]::after, h2 [aria-hidden]::after, h3 [aria-hidden]::after, h4 [a
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
   background-color: var(--bg-error);
+}
+
+h2::after, h3::after, h4::after, h5::after, h6::after, h1 ~ h3::after, h1 ~ h4::after, h1 ~ h5::after, h1 ~ h6::after, h2 ~ h4::after, h2 ~ h5::after, h2 ~ h6::after, h3 ~ h5::after, h3 ~ h6::after, h4 ~ h6::after, h1 ~ * h3::after, h1 ~ * h4::after, h1 ~ * h5::after, h1 ~ * h6::after, h2 ~ * h4::after, h2 ~ * h5::after, h2 ~ * h6::after, h3 ~ * h5::after, h3 ~ * h6::after, h4 ~ * h6::after, h2 ~ h1::after, h2 ~ * h1::after, h3 ~ h1::after, h3 ~ * h1::after, h4 ~ h1::after, h4 ~ * h1::after, h5 ~ h1::after, h5 ~ * h1::after, h6 ~ h1::after, h6 ~ * h1::after, h2 ~ h1:first-of-type::after, h2 ~ * h1:first-of-type::after, h3 ~ h2:first-of-type::after, h3 ~ * h2:first-of-type::after, h4 ~ h2:first-of-type::after, h4 ~ * h2:first-of-type::after, h5 ~ h2:first-of-type::after, h5 ~ * h2:first-of-type::after, h6 ~ h2:first-of-type::after, h6 ~ * h2:first-of-type::after, h4 ~ h3:first-of-type::after, h4 ~ * h3:first-of-type::after, h5 ~ h3:first-of-type::after, h5 ~ * h3:first-of-type::after, h6 ~ h3:first-of-type::after, h6 ~ * h3:first-of-type::after, h5 ~ h4:first-of-type::after, h5 ~ * h4:first-of-type::after, h6 ~ h4:first-of-type::after, h6 ~ * h4:first-of-type::after, h6 ~ h5:first-of-type::after, h6 ~ * h5:first-of-type::after {
+  display: block;
+  font-size: 1.2rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-6);
+  border-radius: 0.75rem;
+  content: "ERROR: Headings should not skip levels." !important;
+  color: var(--text-error);
+  border: 0.4rem solid var(--border-error);
+  background-color: var(--bg-error);
+}
+
+h1 ~ h2::after, h1 ~ * h2::after, h1 ~ h2 ~ h3::after, h1 ~ h2 ~ * h3::after, h1 ~ * h2 ~ h3::after, h1 ~ * h2 ~ * h3::after, h1 ~ h2 ~ h3 ~ h4::after, h1 ~ h2 ~ h3 ~ * h4::after, h1 ~ h2 ~ * h3 ~ h4::after, h1 ~ h2 ~ * h3 ~ * h4::after, h1 ~ * h2 ~ h3 ~ h4::after, h1 ~ * h2 ~ h3 ~ * h4::after, h1 ~ * h2 ~ * h3 ~ h4::after, h1 ~ * h2 ~ * h3 ~ * h4::after, h1 ~ h2 ~ h3 ~ h4 ~ h5::after, h1 ~ h2 ~ h3 ~ h4 ~ * h5::after, h1 ~ h2 ~ h3 ~ * h4 ~ h5::after, h1 ~ h2 ~ h3 ~ * h4 ~ * h5::after, h1 ~ h2 ~ * h3 ~ h4 ~ h5::after, h1 ~ h2 ~ * h3 ~ h4 ~ * h5::after, h1 ~ h2 ~ * h3 ~ * h4 ~ h5::after, h1 ~ h2 ~ * h3 ~ * h4 ~ * h5::after, h1 ~ * h2 ~ h3 ~ h4 ~ h5::after, h1 ~ * h2 ~ h3 ~ h4 ~ * h5::after, h1 ~ * h2 ~ h3 ~ * h4 ~ h5::after, h1 ~ * h2 ~ h3 ~ * h4 ~ * h5::after, h1 ~ * h2 ~ * h3 ~ h4 ~ h5::after, h1 ~ * h2 ~ * h3 ~ h4 ~ * h5::after, h1 ~ * h2 ~ * h3 ~ * h4 ~ h5::after, h1 ~ * h2 ~ * h3 ~ * h4 ~ * h5::after, h1 ~ h2 ~ h3 ~ h4 ~ h5 ~ h6::after, h1 ~ h2 ~ h3 ~ h4 ~ h5 ~ * h6::after, h1 ~ h2 ~ h3 ~ h4 ~ * h5 ~ h6::after, h1 ~ h2 ~ h3 ~ h4 ~ * h5 ~ * h6::after, h1 ~ h2 ~ h3 ~ * h4 ~ h5 ~ h6::after, h1 ~ h2 ~ h3 ~ * h4 ~ h5 ~ * h6::after, h1 ~ h2 ~ h3 ~ * h4 ~ * h5 ~ h6::after, h1 ~ h2 ~ h3 ~ * h4 ~ * h5 ~ * h6::after, h1 ~ h2 ~ * h3 ~ h4 ~ h5 ~ h6::after, h1 ~ h2 ~ * h3 ~ h4 ~ h5 ~ * h6::after, h1 ~ h2 ~ * h3 ~ h4 ~ * h5 ~ h6::after, h1 ~ h2 ~ * h3 ~ h4 ~ * h5 ~ * h6::after, h1 ~ h2 ~ * h3 ~ * h4 ~ h5 ~ h6::after, h1 ~ h2 ~ * h3 ~ * h4 ~ h5 ~ * h6::after, h1 ~ h2 ~ * h3 ~ * h4 ~ * h5 ~ h6::after, h1 ~ h2 ~ * h3 ~ * h4 ~ * h5 ~ * h6::after, h1 ~ * h2 ~ h3 ~ h4 ~ h5 ~ h6::after, h1 ~ * h2 ~ h3 ~ h4 ~ h5 ~ * h6::after, h1 ~ * h2 ~ h3 ~ h4 ~ * h5 ~ h6::after, h1 ~ * h2 ~ h3 ~ h4 ~ * h5 ~ * h6::after, h1 ~ * h2 ~ h3 ~ * h4 ~ h5 ~ h6::after, h1 ~ * h2 ~ h3 ~ * h4 ~ h5 ~ * h6::after, h1 ~ * h2 ~ h3 ~ * h4 ~ * h5 ~ h6::after, h1 ~ * h2 ~ h3 ~ * h4 ~ * h5 ~ * h6::after, h1 ~ * h2 ~ * h3 ~ h4 ~ h5 ~ h6::after, h1 ~ * h2 ~ * h3 ~ h4 ~ h5 ~ * h6::after, h1 ~ * h2 ~ * h3 ~ h4 ~ * h5 ~ h6::after, h1 ~ * h2 ~ * h3 ~ h4 ~ * h5 ~ * h6::after, h1 ~ * h2 ~ * h3 ~ * h4 ~ h5 ~ h6::after, h1 ~ * h2 ~ * h3 ~ * h4 ~ h5 ~ * h6::after, h1 ~ * h2 ~ * h3 ~ * h4 ~ * h5 ~ h6::after, h1 ~ * h2 ~ * h3 ~ * h4 ~ * h5 ~ * h6::after {
+  display: none;
 }
 
 html:not([lang]) body::before {
