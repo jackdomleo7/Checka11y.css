@@ -5,10 +5,6 @@
   "homepage_url": "https://checka11y.jackdomleo.dev",
   "author": "Jack Domleo",
   "manifest_version": 2,
-  "permissions": [
-    "<all_urls>",
-    "tabs"
-  ],
   "browser_action": {
     "default_title": "Checka11y.css",
     "default_popup": "src/popup/popup.html",
