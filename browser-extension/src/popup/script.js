@@ -1,20 +1,25 @@
-function sendAction(action, checked) {
+window.browser = (function () {
+  return window.msBrowser ||
+    window.browser ||
+    window.chrome;
+})();
+
+function sendAction(type, checked) {
   browser.tabs.query({active: true, currentWindow: true}, tabs => {
       browser.browserAction.setBadgeText({text: checked ? 'On' : '', tabId: tabs[0].id});
-      browser.tabs.sendMessage(tabs[0].id, {action: action, checked: checked});
+      browser.tabs.sendMessage(tabs[0].id, {type: type, checked: checked});
   });
 }
 
-const toggle = document.getElementById('toggleStylesheet');
+window.addEventListener('load', (event) => {
+  const toggle = document.getElementById('toggleStylesheet');
 
-browser.browserAction.setBadgeBackgroundColor({color: '#f00'});
-browser.browserAction.setBadgeTextColor({color: '#fff'});
-
-browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
-  browser.tabs.sendMessage(tabs[0].id, {type: 'isStylesheetSet'}, function(isStylesheetSet) {
-      toggle.checked = isStylesheetSet;
-      browser.browserAction.setBadgeText({text: isStylesheetSet ? 'On' : '', tabId: tabs[0].id});
+  browser.tabs.query({active: true, currentWindow: true}, tabs => {
+    browser.tabs.sendMessage(tabs[0].id, {type: 'isStylesheetSet'}, isStylesheetSet => {
+        toggle.checked = isStylesheetSet;
+        browser.browserAction.setBadgeText({text: isStylesheetSet ? 'On' : '', tabId: tabs[0].id});
+    });
   });
-});
 
-toggle.onchange = () => sendAction('toggleStylesheet', toggle.checked);
+  toggle.onchange = () => sendAction('toggleStylesheet', toggle.checked);
+});

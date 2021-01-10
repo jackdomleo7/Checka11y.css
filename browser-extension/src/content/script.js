@@ -1,20 +1,19 @@
-const stylesheetId = 'checka11y-browser-extension-stylesheet';
+window.browser = (function () {
+    return window.msBrowser ||
+      window.browser ||
+      window.chrome;
+  })();
 
-browser.runtime.onMessage.addListener(message => {
-    switch(message.action) {
-        case 'toggleStylesheet':
-            applyChecka11y(message.checked);
-            break;
-        default:
-            console.error(`Unrecognised message: ${message}`);
-    }
-});
+const stylesheetId = 'checka11y-browser-extension-stylesheet';
 
 browser.runtime.onMessage.addListener(
     function(message, sender, sendResponse) {
         switch(message.type) {
             case "isStylesheetSet":
                 sendResponse(document.querySelector(`link#${stylesheetId}`) != null);
+                break;
+            case 'toggleStylesheet':
+                applyChecka11y(message.checked);
                 break;
             default:
                 console.error(`Unrecognised message: ${message}`);
