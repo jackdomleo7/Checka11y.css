@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checka11y.css test</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../checka11y.css" />
+  </head>
+  <body>
+    <h1>Checka11y.css playground</h1>
+    <p>The intention of this file is to test out the new a11y checks you are adding, so this web page should try to not comply with a11y as much as possible.</p>
+    <hr />
+    <section>
+      <h2>HTML: html tag should have a lang attribute</h2>
+      <p>See top of page.</p>
+    </section>
+    <section>
+      <h2>Images: All images require an alt attribute, whether it has a value or is null</h2>
+      <img src="./assets/a11y.png" />
+    </section>
+    <section>
+      <h2>Images: All images should have a meaningful and descriptive alt attribute.</h2>
+      <img alt=" " src="./assets/a11y.png" />
+      <img alt="*" src="./assets/a11y.png" />
+      <img alt="iMaGe" src="./assets/a11y.png" />
+      <img alt="graphic" src="./assets/a11y.png" />
+      <img alt="photo" src="./assets/a11y.png" />
+      <img alt="photograph" src="./assets/a11y.png" />
+      <img alt="drawing" src="./assets/a11y.png" />
+      <img alt="painting" src="./assets/a11y.png" />
+      <img alt="artwork" src="./assets/a11y.png" />
+      <img alt="logo" src="./assets/a11y.png" />
+      <img alt="bullet" src="./assets/a11y.png" />
+      <img alt="button" src="./assets/a11y.png" />
+      <img alt="arrow" src="./assets/a11y.png" />
+      <img alt="more" src="./assets/a11y.png" />
+      <img alt="spacer" src="./assets/a11y.png" />
+      <img alt="blank" src="./assets/a11y.png" />
+      <img alt="chart" src="./assets/a11y.png" />
+      <img alt="table" src="./assets/a11y.png" />
+      <img alt="diagram" src="./assets/a11y.png" />
+      <img alt="graph" src="./assets/a11y.png" />
+      <img alt="myfile.png" src="./assets/a11y.png" />
+      <img alt="myfile.jpg" src="./assets/a11y.png" />
+      <img alt="myfile.gif" src="./assets/a11y.png" />
+      <img alt="myfile.svg" src="./assets/a11y.png" />
+      <img alt="myfile.bmp" src="./assets/a11y.png" />
+      <img alt="image image" src="./assets/a11y.png" />
+      <img alt="image graphic" src="./assets/a11y.png" />
+      <img alt="graphic of a graphic" src="./assets/a11y.png" />
+      <img alt="image of an image" src="./assets/a11y.png" />
+      <img alt="bullet 1" src="./assets/a11y.png" />
+    </section>
+    <section>
+      <h2>iframe: iframe has title attribute</h2>
+      <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
+    </section>
+    <section>
+      <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;, &lt;template&gt; or &lt;script&gt;</h2>
+      <ol>
+        <template><span>Some text</span></template>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
+        <div>Hello, I'm a &lt;div&gt; inside a &lt;ol&gt;</div>
+        <li>Hello, I'm a &lt;li&gt; inside a &lt;ol&gt;</li>
+        <script>// silence</script>
+      </ol>
+    </section>
+    <section>
+      <h2>Lists: All children of &lt;ul&gt; must only be &lt;li&gt;, &lt;template&gt; or &lt;script&gt</h2>
+    <ul>
+      <template><span>Some text</span></template>
+      <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+      <div>Hello, I'm a &lt;div&gt; inside a &lt;ul&gt;</div>
+      <li>Hello, I'm a &lt;li&gt; inside a &lt;ul&gt;</li>
+      <script>// silence</script>
+    </ul>
+  </section>
+  <section>
+    <h2>Navigation: If more than one navigation exists, each navigation should be labelled.</h2>
+    <nav>This is the first navigation</nav>
+    <p>This is separating content</p>
+    <nav>This is the second navigation</nav>
+  </section>
+  <section>
+    <h2>Description list: Direct children of a &lt;dl&gt; can only be &lt;dt&gt; and &lt;dd&gt;</h2>
+    <dl>
+      <dt>Hello, I'm &lt;dt&gt; element inside &lt;dl&gt; element</dt>
+      <dd>Hello, I'm &lt;dd&gt; element inside &lt;dl&gt; element</dd>
+      <p>Hello, I'm &lt;p&gt; element inside &lt;dl&gt; element. </p>
+    </dl>
+  </section>
+  <section>
+    <h2>External Links: Provide advanced warning to a user when a link opens in a new window or tab</h2>
+    <a href="https://github.com/jackdomleo7/Checka11y.css" target="_blank">Checka11y Repo</a>
+  </section>
+    <section>
+      <h2>Checks for invalid HTML elements nested inside an &lt;a&gt;</h2>
+      <h3>Links: &lt;audio&gt; with controls attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <audio controls></audio>
+      </a>
+      <h3>Links: &lt;button&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <button>Hello, I am a button inside an &lt;a&gt;</button>
+      </a>
+      <h3>Links: &lt;details&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <details>Hello, I am a details inside an anchor tag</details>
+      </a>
+      <h3>Links: &lt;embed&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <embed src="./assets/a11y.png" />
+      </a>
+      <h3>Links: &lt;iframe&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <iframe src="https://checka11y.jackdomleo.dev" height="300" width="300" title="Test for anchor tag with iframe as a child"></iframe>
+      </a>
+      <h3>Links: &lt;img&gt; with usemap attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <img src="./assets/a11y.png" alt="Test for anchor tag with usemap attribute" usemap>
+      </a>
+      <h3>Links: &lt;input&gt; without type hidden attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <input type="text" placeholder="I am an input tag">
+      </a>
+      <h3>Links: &lt;label&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <label>Hello, I am a label inside an anchor tag</label>
+      </a>
+      <h3>Links: &lt;object&gt; with usemap attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <object data="./assets/a11y.png" width="500" height="500" usemap></object>
+      </a>
+      <h3>Links: &lt;select&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+      </a>
+      <h3>Links: &lt;textarea&gt; can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+          <textarea placeholder="Hello, I am a textarea"></textarea>
+      </a>
+      <h3>Links: &lt;video&gt; with controls attribute can not be a child of &lt;a&gt; as it is an invalid HTML</h3>
+      <a>
+        <video controls></video>
+      </a>
+    </section>
+    <section>
+      <h2>Checks for invalid HTML elements nested inside an &lt;button&gt;</h2>
+      <h3>Buttons: &lt;a&gt; with href attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <a href="#">Hello, I am a link inside a &lt;button&gt;</a>
+      </button>
+      <h3>Buttons: &lt;audio&gt; with controls attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <audio controls></audio>
+      </button>
+      <h3>Buttons: &lt;button&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <button>A &lt;button&gt;</button>
+      </button>
+      <h3>Buttons: &lt;details&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <details>Hello, I am a details inside a button tag</details>
+      </button>
+      <h3>Buttons: &lt;embed&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <embed src="./assets/a11y.png" />
+      </button>
+      <h3>Buttons: &lt;iframe&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <iframe src="https://checka11y.jackdomleo.dev" height="300" width="300" title="Test for button tag with iframe as a child"></iframe>
+      </button>
+      <h3>Buttons: &lt;img&gt; with usemap attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <img src="./assets/a11y.png" alt="Test for img tag with usemap attribute" usemap>
+      </button>
+      <h3>Buttons: &lt;input&gt; without type hidden attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <input type="text" placeholder="I am an input tag">
+      </button>
+      <h3>Buttons: &lt;label&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <label>Hello, I am a label inside a button tag</label>
+      </button>
+      <h3>Buttons: &lt;object&gt; with usemap attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <object data="./assets/a11y.png" width="500" height="500" usemap></object>
+      </button>
+      <h3>Buttons: &lt;select&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+      </button>
+      <h3>Buttons: &lt;textarea&gt; can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+          <textarea placeholder="Hello, I am a textarea"></textarea>
+      </button>
+      <h3>Buttons: &lt;video&gt; with controls attribute can not be a child of &lt;button&gt; as it is an invalid HTML</h3>
+      <button>
+        <video controls></video>
+      </button>
+    </section>
+    <section>
+      <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
+      <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr</p>
+    </section>
+    <section>
+      <h2>Check the tabindex of commonly tabbed to elements and show an error if it is -1</h2>
+      <h3>Links with an href attribute cannot have a tabindex of -1</h3>
+      <a href="https://checka11y.jackdomleo.dev" target="_self" tabindex="-1">I am an anchor tag ( with an href attribute ) having a tabindex of-1</a>
+      <h3>&lt;area&gt; elements with an href attribute cannot have a tabindex of -1</h3>
+      <img src="./assets/a11y.png" alt="Test for area elements with an href attribute" usemap="#workmap" width="400" height="379"/>
+      <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Clickable area" href="https://checka11y.jackdomleo.dev" tabindex="-1"/>
+      </map>
+      <h3>&lt;input&gt; elements that are not disabled cannot have a tabindex of-1</h3>
+      <label for="test-input"></label>
+      <input type="text" placeholder="I am input tag" name="test-input" id="test-input" tabindex="-1"/>
+      <h3>&lt;select&gt; elements that are not disabled cannot have a tabindex of-1</h3>
+      <select name="options" id="options" tabindex="-1">
+        <option value="first-option">First option</option>
+        <option value="second-option">Second option</option>
+      </select>
+      <h3>&lt;textarea&gt; elements that are not disabled cannot have a tabindex of -1</h3>
+      <textarea placeholder="Hello, I am a textarea" tabindex="-1"></textarea>
+      <h3>&lt;button&gt; elements that are not disabled cannot have a tabindex of-1</h3>
+      <button tabindex="-1">Hello, I am a button</button>
+      <h3>&lt;iframe&gt; elements cannot have a tabindex of -1</h3>
+      <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500" tabindex="-1" title="Test for tabindex of -1 on an iframe"></iframe>
+      <h3>HTML elements with editable content cannot have a tabindex of -1</h3>
+      <p contenteditable="true" tabindex="-1">I am a paragraph tag with editable content</p>
+    </section>
+    <section>
+      <h2>Autoplay enabled: Do not set video/audio on the page to autoplay</h2>
+      <video src="https://cdn.videvo.net/videvo_files/video/free/2016-11/small_watermarked/Smoke_Light_08_Videvo_preview.webm" autoplay controls muted></video>
+    </section>
+    <section>
+      <h2>Headings: all headings should have (meaningful) content</h2>
+      <div>
+        <p>An empty heading does not make sense from a semantic point of view and is a sign of an underlying problem</p>
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+      </div>
+    </section>
+    <section>
+      <h2>Headings: reachable by assistive technologies</h2>
+      <p>Headings should be reachable by assistive technologies (do not use <code>aria-hidden</code> or similars on a heading).</code></p>
+      <h1 aria-hidden="true">H1 with aria-hidden="true"</h1>
+      <h2 aria-hidden="true">H2 with aria-hidden="true"</h2>
+      <h3 aria-hidden="true">H3 with aria-hidden="true"</h3>
+      <h4 aria-hidden="true">H4 with aria-hidden="true"</h4>
+      <h5 aria-hidden="true">H5 with aria-hidden="true"</h5>
+      <h6 aria-hidden="true">H6 with aria-hidden="true"</h6>
+    </section>
+    <section id="heading-skip-levels">
+        <h2>Headings: do not skip levels</p>
+        <h4>H4 (error: not in order)</h4>
+        <h1>H1 (error: not in order, should be unique)</h1>
+        <h2>H2 (correct)</h2>
+        <h3>H3 (error: first h3 after h4)</h3>
+        <h6>H6 (error: not in order)</h6>
+        <h5>H5 (error: not in order)</h5>
+      </div>
+    </section>
+    <section>
+      <h2>Inline style: <code>!important</code> should be avoided so end-users can override the default styles</h2>
+      <div>
+        <p style="color: inherit;">This paragraph has inline style without <code>!important</code> (OK).</p>
+        <p style="color: inherit !important;">This paragraph has inline style with <code>!important</code> (Error).</p>
+      </div>
+    </section>
+    <section>
+      <h2>Accesskey attribute: avoid using attribute accesskey</h2>
+      <p>Accesskey attribute could interfere and conflict with screen readers and assistive technologies that use shortcuts or keyboard combinations to facilitate the users</p>
+      <div>
+        <p>Press <strong>S</strong> to save the changes</p>
+        <button accesskey="s">Save</button>
+      </div>
+    </section>
+    <section>
+      <h2>Links should have meaningful content or be labelled appropriately for assistive technologies</h2>
+      <div>
+        <a href="https://github.com/jackdomleo7/Checka11y.css"></a>
+        <a>Hello, I am an anchor</a>
+        <a href aria-label="I am empty but have an aria-label"></a>
+        <a href aria-labelledby="id-to-element"></a>
+      </div>
+    </section>
+    <section>
+      <h2>Buttons should have meaningful content or be labelled appropriately for assistive technologies</h2>
+      <div>
+        <button></button>
+        <button>Hello, I am a button</button>
+        <button aria-label="I am empty but have an aria-label"></button>
+        <button aria-labelledby="id-to-element"></button>
+      </div>
+    </section>
+    <section>
+      <h2>Avoid using <code>&lt;u&gt;</code> element as it could look like a link</h2>
+      <div>
+        <u>Hello, I am not a link, I am just underlined text</u>
+        <em><b>I am a bold <code>&lt;em&gt;</code> element to denote stress emphasis</b></em>
+      </div>
+    </section>
+    <section>
+      <h2>Avoide using mouse event handlers without the appropriate keyboard alternative on HTML Elements</h2>
+      <div>
+        <div onclick="">A div with onclick</div>
+        <div onclick="" onkeydown="">A div with onclick and onkeydown</div>
+        <div onclick="" onkeydown="" role="button">A div with with onclick, onkeydown and role=button</div>
+        <div onclick="" onkeydown="" role="button" tabindex="-1">A div with onclick, onkeydown, role=button and tabindex=-1</div>
+      </div>
+    </section>
+  </body>
+</html>

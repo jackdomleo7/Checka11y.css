@@ -1,5 +1,0 @@
-u {
-  &::after {
-    @include contentMessage(warning, "Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>.");
-  }
-}

@@ -1,5 +1,0 @@
-/* Media should not autoplay */
-
-[autoplay] {
-  @include vectorMessage(warning, 350, "Media should", "not autoplay.");
-}

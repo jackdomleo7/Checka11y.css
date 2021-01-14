@@ -1,0 +1,16 @@
+/* All direct children of <ul> and <ol> must only be <li> */
+ol,
+ul {
+  > *:not( li ):not( script ):not( template ) {
+    &::after {
+      @include contentMessage(error, "List markup invalid. Ensure <li>, <script> or <template> are the only direct child of <ul> or <ol>.");
+    }
+  }
+}
+
+/* All direct children of <dl> must only be <dt> or <dd> */
+dl > *:not( dt ):not( dd ) {
+  &::after {
+    @include contentMessage(error, "List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>.");
+  }
+}
