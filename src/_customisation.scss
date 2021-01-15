@@ -3,19 +3,20 @@
 :root {
   /* Colors */
 
-  --text-error: #{$text-error};
-  --bg-error: #{$bg-error};
-  --border-error: #{$border-error};
+  --checka11y-text-error: #{$text-error};
+  --checka11y-bg-error: #{$bg-error};
+  --checka11y-border-error: #{$border-error};
 
-  --text-warning: #{$text-warning};
-  --bg-warning: #{$bg-warning};
-  --border-warning: #{$border-warning};
+  --checka11y-text-warning: #{$text-warning};
+  --checka11y-bg-warning: #{$bg-warning};
+  --checka11y-border-warning: #{$border-warning};
+
 
   /* Scale */
-  --space: 0.25rem;
+  --checka11y-space: 0.25rem;
 
-  --space-0: calc(var(--space) * 0);
-  --space-2: calc(var(--space) * 2);
-  --space-4: calc(var(--space) * 4);
-  --space-6: calc(var(--space) * 6);
+  --checka11y-space-0: calc(var(--checka11y-space) * 0);
+  --checka11y-space-2: calc(var(--checka11y-space) * 2);
+  --checka11y-space-4: calc(var(--checka11y-space) * 4);
+  --checka11y-space-6: calc(var(--checka11y-space) * 6);
 }

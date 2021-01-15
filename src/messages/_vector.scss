@@ -53,13 +53,13 @@
   $height: length($textLines) * 25 + 30; // number of lines * 25 (line height) + 30 (padding top and bottom)
 
   @if $errorType == error {
-    border-color: var(--border-error);
+    border-color: var(--checka11y-border-error);
   }
   @else if $errorType == warning {
     $border-svg: $border-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
     $bg-svg: $bg-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
     $text-svg: $text-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
-    border-color: var(--border-warning);
+    border-color: var(--checka11y-border-warning);
   }
   @else {
     @error "The errorType must be either error or warning.";
