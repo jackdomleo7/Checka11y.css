@@ -6,6 +6,10 @@
   font-weight: $font-weight;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
 
   @if $errorType == error {
     content: "ERROR: #{$message}" !important;

@@ -15,11 +15,15 @@
 
 [accesskey]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies." !important;
   color: var(--text-warning);
   border: 0.4rem solid var(--border-warning);
@@ -29,7 +33,7 @@
 [autoplay] {
   border: 0.4rem solid;
   border-color: var(--border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -39,7 +43,7 @@
 button audio[controls] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -48,11 +52,15 @@ button audio[controls] {
 
 button button::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <button> is not a child of <button>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -61,11 +69,15 @@ button button::after {
 
 button details::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <details> is not a child of <button>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -75,7 +87,7 @@ button details::after {
 button embed {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: &lt;embed&gt; cannot</text> <text x="15" y="60">be a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: &lt;embed&gt; cannot</text> <text x="15" y="60">be a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -85,7 +97,7 @@ button embed {
 button iframe {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -95,7 +107,7 @@ button iframe {
 button img[usemap] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -105,7 +117,7 @@ button img[usemap] {
 button input:not([type="hidden"]) {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input type="hidden"&gt;</text> <text x="15" y="60">is not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input type="hidden"&gt;</text> <text x="15" y="60">is not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -114,11 +126,15 @@ button input:not([type="hidden"]) {
 
 button label::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <label> is not a child of <button>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -128,7 +144,7 @@ button label::after {
 button object[usemap] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -138,7 +154,7 @@ button object[usemap] {
 button select {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -148,7 +164,7 @@ button select {
 button textarea {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -158,7 +174,7 @@ button textarea {
 button video[controls] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -167,11 +183,15 @@ button video[controls] {
 
 button:not([aria-label]):not([aria-labelledby]):empty::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <button> has meaningful content or is labelled appropriately." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -180,11 +200,15 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 
 [dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: The dir attribute can only have the values, ltr, rtl and auto." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -193,11 +217,15 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 
 [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "WARNING: Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative." !important;
   color: var(--text-warning);
   border: 0.4rem solid var(--border-warning);
@@ -206,11 +234,15 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 
 h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Headings must not be empty." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -219,11 +251,15 @@ h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::af
 
 h1[aria-hidden]::after, h2[aria-hidden]::after, h3[aria-hidden]::after, h4[aria-hidden]::after, h5[aria-hidden]::after, h6[aria-hidden]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Headings should be reachable by assistive technologies (no aria-hidden)." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -232,11 +268,15 @@ h1[aria-hidden]::after, h2[aria-hidden]::after, h3[aria-hidden]::after, h4[aria-
 
 h2::after, h3::after, h4::after, h5::after, h6::after, h1 ~ h3::after, h1 ~ h4::after, h1 ~ h5::after, h1 ~ h6::after, h2 ~ h4::after, h2 ~ h5::after, h2 ~ h6::after, h3 ~ h5::after, h3 ~ h6::after, h4 ~ h6::after, h1 ~ * h3::after, h1 ~ * h4::after, h1 ~ * h5::after, h1 ~ * h6::after, h2 ~ * h4::after, h2 ~ * h5::after, h2 ~ * h6::after, h3 ~ * h5::after, h3 ~ * h6::after, h4 ~ * h6::after, h2 ~ h1::after, h2 ~ * h1::after, h3 ~ h1::after, h3 ~ * h1::after, h4 ~ h1::after, h4 ~ * h1::after, h5 ~ h1::after, h5 ~ * h1::after, h6 ~ h1::after, h6 ~ * h1::after, h2 ~ h1:first-of-type::after, h2 ~ * h1:first-of-type::after, h3 ~ h2:first-of-type::after, h3 ~ * h2:first-of-type::after, h4 ~ h2:first-of-type::after, h4 ~ * h2:first-of-type::after, h5 ~ h2:first-of-type::after, h5 ~ * h2:first-of-type::after, h6 ~ h2:first-of-type::after, h6 ~ * h2:first-of-type::after, h4 ~ h3:first-of-type::after, h4 ~ * h3:first-of-type::after, h5 ~ h3:first-of-type::after, h5 ~ * h3:first-of-type::after, h6 ~ h3:first-of-type::after, h6 ~ * h3:first-of-type::after, h5 ~ h4:first-of-type::after, h5 ~ * h4:first-of-type::after, h6 ~ h4:first-of-type::after, h6 ~ * h4:first-of-type::after, h6 ~ h5:first-of-type::after, h6 ~ * h5:first-of-type::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Headings should not skip levels." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -249,11 +289,15 @@ h1 ~ h2::after, h1 ~ * h2::after, h1 ~ h2 ~ h3::after, h1 ~ h2 ~ * h3::after, h1
 
 html:not([lang]) body::before {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: html has no lang attribute." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -262,11 +306,15 @@ html:not([lang]) body::before {
 
 html[lang=""] body::before {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: html lang attribute should not be empty." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -276,7 +324,7 @@ html[lang=""] body::before {
 iframe:not([title]) {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: All &lt;iframe&gt;</text> <text x="15" y="60">must have a title.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: All &lt;iframe&gt;</text> <text x="15" y="60">must have a title.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -286,7 +334,7 @@ iframe:not([title]) {
 img:not([alt]) {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: All &lt;img&gt; must</text> <text x="15" y="60">have alternative text.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: All &lt;img&gt; must</text> <text x="15" y="60">have alternative text.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -296,7 +344,7 @@ img:not([alt]) {
 img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
   border: 0.4rem solid;
   border-color: var(--border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -305,11 +353,15 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
 
 [style*="!important"]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "WARNING: !important inline styles should be avoided." !important;
   color: var(--text-warning);
   border: 0.4rem solid var(--border-warning);
@@ -318,11 +370,15 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
 
 a[target="_blank"]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior." !important;
   color: var(--text-warning);
   border: 0.4rem solid var(--border-warning);
@@ -332,7 +388,7 @@ a[target="_blank"]::after {
 a audio[controls] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -341,11 +397,15 @@ a audio[controls] {
 
 a button::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <button> is not a child of <a>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -354,11 +414,15 @@ a button::after {
 
 a details::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <details> is not a child of <a>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -368,7 +432,7 @@ a details::after {
 a embed {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;embed&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;embed&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -378,7 +442,7 @@ a embed {
 a iframe {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -388,7 +452,7 @@ a iframe {
 a img[usemap] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -398,7 +462,7 @@ a img[usemap] {
 a input:not([type="hidden"]) {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input type="hidden"&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input type="hidden"&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -407,11 +471,15 @@ a input:not([type="hidden"]) {
 
 a label::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <label> is not a child of <a>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -421,7 +489,7 @@ a label::after {
 a object[usemap] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -431,7 +499,7 @@ a object[usemap] {
 a select {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -441,7 +509,7 @@ a select {
 a textarea {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -451,7 +519,7 @@ a textarea {
 a video[controls] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -460,11 +528,15 @@ a video[controls] {
 
 a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that <a> has meaningful content or is labelled appropriately." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -473,11 +545,15 @@ a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
 
 ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: List markup invalid. Ensure <li>, <script> or <template> are the only direct child of <ul> or <ol>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -486,11 +562,15 @@ ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(
 
 dl > *:not(dt):not(dd)::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -499,11 +579,15 @@ dl > *:not(dt):not(dd)::after {
 
 nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -512,11 +596,15 @@ nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-l
 
 a[href][tabindex="-1"]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that &lt;a&gt; with an href attribute does not have a tab index of -1." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -526,7 +614,7 @@ a[href][tabindex="-1"]::after {
 area[href][tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;area&gt; with an</text> <text x="15" y="60">href attribute does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;area&gt; with an</text> <text x="15" y="60">href attribute does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -536,7 +624,7 @@ area[href][tabindex="-1"] {
 input:not([disabled])[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;input&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -546,7 +634,7 @@ input:not([disabled])[tabindex="-1"] {
 select:not([disabled])[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;select&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -556,7 +644,7 @@ select:not([disabled])[tabindex="-1"] {
 textarea:not([disabled])[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;textarea&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -565,11 +653,15 @@ textarea:not([disabled])[tabindex="-1"] {
 
 button:not([disabled])[tabindex="-1"]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that &lt;button&gt; that is not disabled does not have a tab index of -1." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -579,7 +671,7 @@ button:not([disabled])[tabindex="-1"]::after {
 iframe[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1.2rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt;</text> <text x="15" y="60">does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">ERROR: Ensure that &lt;iframe&gt;</text> <text x="15" y="60">does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -588,11 +680,15 @@ iframe[tabindex="-1"] {
 
 [contentEditable="true"][tabindex="-1"]::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "ERROR: Ensure that HTML elements with editable content don't have a tab index of -1." !important;
   color: var(--text-error);
   border: 0.4rem solid var(--border-error);
@@ -601,11 +697,15 @@ iframe[tabindex="-1"] {
 
 u::after {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: verdana,geneva,tahoma,sans-serif;
   font-weight: 700;
   padding: var(--space-4) var(--space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
   content: "WARNING: Using <u> -moz-element could be confused as a hyperlink, consider using a different -moz-element such as <em> or <b>." !important;
   content: "WARNING: Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
   color: var(--text-warning);
