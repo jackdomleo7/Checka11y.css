@@ -4,20 +4,24 @@
   font-size: $font-size;
   font-family: $font-family;
   font-weight: $font-weight;
-  padding: var(--space-4) var(--space-6);
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
   border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
 
   @if $errorType == error {
     content: "ERROR: #{$message}" !important;
-    color: var(--text-error);
-    border: 0.4rem solid var(--border-error);
-    background-color: var(--bg-error);
+    color: var(--checka11y-text-error);
+    border: 0.4rem solid var(--checka11y-border-error);
+    background-color: var(--checka11y-bg-error);
   }
   @else if $errorType == warning {
     content: "WARNING: #{$message}" !important;
-    color: var(--text-warning);
-    border: 0.4rem solid var(--border-warning);
-    background-color: var(--bg-warning);
+    color: var(--checka11y-text-warning);
+    border: 0.4rem solid var(--checka11y-border-warning);
+    background-color: var(--checka11y-bg-warning);
   }
   @else {
     @error "The errorType must be either 'error' or 'warning'.";
