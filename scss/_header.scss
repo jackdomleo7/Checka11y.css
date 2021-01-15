@@ -26,6 +26,14 @@
     gap: 1rem;
     justify-content: center;
 
+    &--larger {
+      flex-direction: column;
+
+      @media screen and (min-width: 40em) {
+        flex-direction: row;
+      }
+    }
+
     a {
       height: 1.5rem;
 
