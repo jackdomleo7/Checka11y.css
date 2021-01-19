@@ -47,6 +47,7 @@ A list of common a11y concerns Checka11y.css will check for and highlight :
 - Check for media that is set to `autoplay`
 - Check `<li>` is the **only** direct child of `<ol>` and `<ul>`
 - Check for programmable-only `tabindex` attributes on invalid HTML elements
+- Check for broken copy with `role="text"` 
 
 See a full list of features [here](./features.md).
 
