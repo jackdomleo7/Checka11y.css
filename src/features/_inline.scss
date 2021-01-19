@@ -2,3 +2,13 @@
 [style *= "!important"]::after {
   @include contentMessage(warning, "!important inline styles should be avoided.");
 }
+
+* {
+  &:not([role="text"]){
+    > em,span{
+      &:after{
+        @include contentMessage(warning, "Text broken by <span> or <em> elements must contain a [role='text'] tag");
+      }
+    }
+  }
+}
