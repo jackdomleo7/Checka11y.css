@@ -67,15 +67,19 @@ Other features:
 
 In the below CDN links:
 - Replace `:version` with a version [listed here](https://www.npmjs.com/package/checka11y-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@:version` completely (Not recommended).
+- Replace `:stylesheet` with one of the listed stylesheets below:
+  - `checka11y.css` <small>(errors & warnings, recommended)</small>
+  - `checka11y-errors.css` <small>(errors **only**)</small>
+  - `checka11y-warnings.css` <small>(errors **only**)</small>
 
 ```html
 <!-- HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/checka11y-css@:version/:stylesheet" />
 ```
 
 ```css
-/* Or CSS */
-@import url('https://cdn.jsdelivr.net/npm/checka11y-css@:version/checka11y.css');
+/* CSS */
+@import url('https://cdn.jsdelivr.net/npm/checka11y-css@:version/:stylesheet');
 ```
 
 ### Package manager (npm or yarn)
@@ -99,8 +103,11 @@ import 'checka11y-css';
 
 _Or_ import the SCSS or CSS into your Sass/SCSS
 In the below imports, replace `:file` with one of the options below:
-- `src/checka11y` <sub><sup>(.scss file)</sup></sub>
-- `checka11y.css` <sub><sup>(.css file)</sup></sub>
+- Errors & warnings <small>(recommended)</small>
+  - `src/checka11y` <small>(.scss file)</small>
+  - `checka11y.css` <small>(.css file)</small>
+- `src/errors/checka11y-errors` <small>(errors **only**)</small>
+- `src/warnings/checka11y-warnings` <small>(warnings **only**)</small>
 ```scss
 /* Webpack */
 @import '~checka11y-css/:file';
