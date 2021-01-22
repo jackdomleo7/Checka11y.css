@@ -57,11 +57,12 @@
     "CHANGELOG"
   ],
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "cypress": "^5.6.0",
+    "autoprefixer": "^10.2.3",
+    "cypress": "^6.3.0",
     "node-sass": "^5.0.0",
-    "postcss-cli": "^8.2.0",
-    "stylelint": "^13.7.2",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "stylelint": "^13.9.0",
     "stylelint-scss": "^3.18.0"
   }
 }
