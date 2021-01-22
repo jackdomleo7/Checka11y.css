@@ -1,22 +1,2 @@
-/*! Checka11y.css v1.2.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
-
-@import "./customisation";
-@import "./helpers";
-@import "./messages/content";
-@import "./messages/vector";
-/* --- */
-@import "./features/accesskey";
-@import "./features/autoplay";
-@import "./features/buttons";
-@import "./features/dir";
-@import "./features/handlers";
-@import "./features/headings";
-@import "./features/html";
-@import "./features/iframe";
-@import "./features/images";
-@import "./features/inline";
-@import "./features/links";
-@import "./features/lists";
-@import "./features/navigation";
-@import "./features/tabindex";
-@import "./features/underlinedtext";
+@import "./errors/checka11y-errors.scss";
+@import "./warnings/checka11y-warnings.scss";

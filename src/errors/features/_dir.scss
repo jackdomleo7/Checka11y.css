@@ -2,6 +2,6 @@
 
 [dir]:not( [dir = "rtl"] ):not( [dir = "ltr"] ):not( [dir = "auto"] ) {
   &::after {
-    @include contentMessage(error, "The dir attribute can only have the values, ltr, rtl and auto.");
+    @include contentMessage(error, "The dir attribute can only have the values, 'ltr', 'rtl' and 'auto'.");
   }
 }

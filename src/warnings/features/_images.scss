@@ -1,8 +1,3 @@
-/* All images require an alt attribute */
-img:not( [alt] ) {
-  @include vectorMessage(error, 350, "All &lt;img&gt; must", "have alternative text.");
-}
-
 /* Images should have a meaningful alt value */
 $suspiciousAltFull: "image", "graphic", "photo", "photograph", "drawing", "painting", "artwork", "logo", "bullet",
   "button", "arrow", "more", "spacer", "blank", "chart", "table", "diagram", "graph", "*", " ";
@@ -28,4 +23,3 @@ $suspiciousAltStart: "graphic of", "bullet", "image of";
     @extend %imageMeaningfulAlt;
   }
 }
-

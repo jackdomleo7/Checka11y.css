@@ -2,6 +2,7 @@
 * -- Vector processing --
 * To only ever be called from @mixin vectorMessage() {}
 */
+
 @function generate-vector-text($errorType, $lines) {
   $textLines: ();
 
@@ -43,16 +44,20 @@
 * - Avoid special characters (#, <, >) when possible, or replace them with HTML entities (< --> &lt; etc)
 * - lines needs to be an array of text otherwise it won't fit on one line (you may have to do a few attempts)
 */
+
 @mixin vectorMessage($errorType, $width: 400, $lines...) {
   border: 0.4rem solid;
 
-  $border-svg: $border-error;
-  $bg-svg: $bg-error;
-  $text-svg: $text-error;
+  $border-svg: #000;
+  $bg-svg: #fff;
+  $text-svg: #000;
   $textLines: generate-vector-text($errorType, $lines);
   $height: length($textLines) * 25 + 30; // number of lines * 25 (line height) + 30 (padding top and bottom)
 
   @if $errorType == error {
+    $border-svg: $border-error;
+    $bg-svg: $bg-error;
+    $text-svg: $text-error;
     border-color: var(--checka11y-border-error);
   }
   @else if $errorType == warning {
