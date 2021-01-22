@@ -1,10 +1,3 @@
-/* Warn when opening a link in a new tab or window */
-a[target = "_blank"] {
-  &::after {
-    @include contentMessage(warning, "Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.");
-  }
-}
-
 /* Invalid HTML nested inside <a> */
 a {
   audio[controls] {

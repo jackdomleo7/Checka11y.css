@@ -1,0 +1,136 @@
+:root {
+  --checka11y-text-warning: #856404;
+  --checka11y-bg-warning: #ffffd8;
+  --checka11y-border-warning: #ff6;
+}
+
+:root {
+  --checka11y-space: 0.25rem;
+  --checka11y-space-0: calc(var(--checka11y-space) * 0);
+  --checka11y-space-2: calc(var(--checka11y-space) * 2);
+  --checka11y-space-4: calc(var(--checka11y-space) * 4);
+  --checka11y-space-6: calc(var(--checka11y-space) * 6);
+}
+
+[accesskey]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[autoplay] {
+  border: 0.4rem solid;
+  border-color: var(--checka11y-border-warning);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 350px;
+  padding-bottom: 80px;
+}
+
+[onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING: Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$="image" i], img[alt$="graphic" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i] {
+  border: 0.4rem solid;
+  border-color: var(--checka11y-border-warning);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif"><text x="15" y="35">WARNING: Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 400px;
+  padding-bottom: 80px;
+}
+
+[style*="!important"]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING: !important inline styles should be avoided." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+*:not([role="text"]) > em::after, *:not([role="text"]) span::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING: Text broken by <span> or <em> elements might need a [role='text'] attribute." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+a[target="_blank"]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+u::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING: Using <u> -moz-element could be confused as a hyperlink, consider using a different -moz-element such as <em> or <b>." !important;
+  content: "WARNING: Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
