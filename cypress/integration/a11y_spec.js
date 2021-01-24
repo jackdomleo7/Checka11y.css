@@ -112,7 +112,7 @@ describe('Checka11y.css Tests', () => {
     });
 
     it('should be accessible to assistive technologies', () => {
-      cy.get("#heading-skip-levels h1, #heading-skip-levels h4, #heading-skip-levels h5, #heading-skip-levels h6")
+      cy.get("#heading-skip-levels h1, #heading-skip-levels h5, #heading-skip-levels h3")
         .each(element => {
           cy.get(element)
             .after("content")
