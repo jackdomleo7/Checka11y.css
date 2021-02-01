@@ -40,20 +40,19 @@ A great tool for:
 
 Our features are always checked against the W3C accessibility guidelines.
 
-A list of common a11y concerns Checka11y.css will check for and highlight :
+A list of some common a11y concerns Checka11y.css will check for and highlight :
 
 - Check for invalid HTML elements nested inside of `<a>` and `<button>`
 - Check for missing `alt` attributes on images
 - Check for media that is set to `autoplay`
 - Check `<li>` is the **only** direct child of `<ol>` and `<ul>`
 - Check for programmable-only `tabindex` attributes on invalid HTML elements
-- Check for broken copy with `role="text"` 
 
 See a full list of features [here](./features.md).
 
 Other features:
 
-- Clear a11y errors and warnings with informative messages
+- Clear a11y errors and warnings with informative messages and error codes (see [codes.md](./codes.md) for more details on the specific errors & warnings)
 - Options to import via CDN, npm or yarn
 - Customise the error and warning colors
 - No dependencies
@@ -160,6 +159,7 @@ Checka11y.css is licensed under MIT. As a minimum, you are required to KEEP AND 
 6. To add error/warning styles and messages to your features, `@extend` one of the placeholders and `@include contentMessage()` from `src/_base.scss`.
 7. Add tests to your features in Cypress (at `a11y_spec.js`)
 8. Run tests: `npm run cypress:open` or `npm run cypress:run` (headless)
+9. Add the feature to the [features.md](./features.md) & [codes.md](./codes.md) with a new error or warning code
 
 ---
 
