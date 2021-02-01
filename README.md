@@ -60,6 +60,18 @@ Other features:
 
 ---
 
+## Error/Warning Codes
+
+When using Checka11y.css, you will notice some codes prefixed with either "E" or "W". E.g.
+
+<div align="center">
+  <img src="./images/code-example.png" alt="E0006 error code for HTML element without a lang attribute" />
+</div>
+
+If you wanted more details on this error and how to resolve it, you can reference the [codes.md](./codes.md) file and find the code "E0006".
+
+---
+
 ## Usage
 
 ### CDN
