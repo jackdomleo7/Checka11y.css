@@ -1,4 +1,4 @@
-/* All images require an alt attribute */
+/* E0008: All images require an alt attribute */
 img:not( [alt] ) {
   @include vectorMessage(error, 350, "All &lt;img&gt; must", "have alternative text.");
 }

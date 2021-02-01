@@ -1,3 +1,5 @@
+/* W0007: Underlined text could be confused with a hyperlink */
+
 u {
   &::after {
     @include contentMessage(warning, "Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>.");

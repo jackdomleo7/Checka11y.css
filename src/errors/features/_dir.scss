@@ -1,4 +1,4 @@
-/* The dir attribute can only have the values, ltr, rtl and auto */
+/* E0002: The dir attribute can only have the values, ltr, rtl and auto */
 
 [dir]:not( [dir = "rtl"] ):not( [dir = "ltr"] ):not( [dir = "auto"] ) {
   &::after {

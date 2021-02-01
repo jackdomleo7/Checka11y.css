@@ -1,6 +1,5 @@
-/*
-  HTMLElements other than <a> and <button> that have mouse event handlers without the appropriate keyboard handlers are not accessible
-*/
+/* W0002: HTMLElements other than <a> and <button> that have mouse event handlers without the appropriate keyboard handlers are not accessible */
+
 [onclick]:not( a ):not( button ):not( [onkeydown] ):not( [onkeyup] ):not( [onkeypress] )::after,
 [onclick][onkeyup]:not( [tabindex] ):not( a ):not( button )::after,
 [onclick][onkeyup][tabindex = "-1"]:not( a ):not( button )::after,

@@ -1,4 +1,4 @@
-/* Invalid HTML nested inside <a> */
+/* E0009: Invalid HTML nested inside <a> */
 a {
   audio[controls] {
     @include vectorMessage(error, 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;a&gt;.");
@@ -55,7 +55,7 @@ a {
   }
 }
 
-/* Anchors used as links have meaningful content */
+/* E0010: Anchors used as links have meaningful content */
 a[href]:not( [aria-label] ):not( [aria-labelledby] ):empty {
   &::after {
     @include contentMessage(error, "Ensure that <a> has meaningful content or is labelled appropriately.");

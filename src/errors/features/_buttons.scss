@@ -1,4 +1,4 @@
-/* Invalid HTML nested inside <button> */
+/* E0000: Invalid HTML nested inside <button> */
 button {
   audio[controls] {
     @include vectorMessage(error, 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;button&gt;.");
@@ -55,7 +55,7 @@ button {
   }
 }
 
-/* Buttons have meaningful content */
+/* E0001: Buttons have meaningful content */
 button:not( [aria-label] ):not( [aria-labelledby] ):empty {
   &::after {
     @include contentMessage(error, "Ensure that <button> has meaningful content or is labelled appropriately.");
