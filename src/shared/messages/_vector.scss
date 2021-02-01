@@ -55,9 +55,9 @@
   $height: length($textLines) * 25 + 30; // number of lines * 25 (line height) + 30 (padding top and bottom)
 
   @if $errorType == error {
-    $border-svg: $border-error;
-    $bg-svg: $bg-error;
-    $text-svg: $text-error;
+    $border-svg: $border-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $bg-svg: $bg-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $text-svg: $text-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
     border-color: var(--checka11y-border-error);
   }
   @else if $errorType == warning {
