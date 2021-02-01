@@ -1,4 +1,4 @@
 /* W0000: Accesskey attribute could interfere and conflict with screen readers and assistive technologies */
 [accesskey]::after {
-  @include contentMessage(warning, "accesskey attribute could interfere and conflict with screen readers and assistive technologies.");
+  @include contentMessage(warning, "W0000", "accesskey attribute could interfere and conflict with screen readers and assistive technologies.");
 }

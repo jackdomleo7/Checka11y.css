@@ -5,7 +5,7 @@ $suspiciousAltEnd: ".png", ".gif", ".jpg", ",jpeg", ".svg", ".bmp", ".webp", ".i
 $suspiciousAltStart: "graphic of", "bullet", "image of", "logo of", "logo for";
 
 %imageMeaningfulAlt {
-  @include vectorMessage(warning, 400, "Alt text must", "describe the content of the image.");
+  @include vectorMessage(warning, "W0003", 400, "Alt text must", "describe the content of the image.");
 }
 
 @each $alt in $suspiciousAltFull {

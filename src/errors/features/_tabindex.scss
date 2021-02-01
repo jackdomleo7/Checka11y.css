@@ -1,33 +1,33 @@
 /* E0014: Ensure that the tab index of commonly tabbed to elements is not -1 */
 
 a[href][tabindex = "-1"]::after {
-  @include contentMessage(error, "Ensure that &lt;a&gt; with an href attribute does not have a tab index of -1.");
+  @include contentMessage(error, "E0014", "Ensure that &lt;a&gt; with an href attribute does not have a tab index of -1.");
 }
 
 area[href][tabindex = "-1"] {
-  @include vectorMessage(error, 400, "Ensure that &lt;area&gt; with an", "href attribute does not have a tab index of -1.");
+  @include vectorMessage(error, "E0014", 400, "Ensure that &lt;area&gt; with an", "href attribute does not have a tab index of -1.");
 }
 
 input:not( [disabled] )[tabindex = "-1"] {
-  @include vectorMessage(error, 400, "Ensure that &lt;input&gt; that", "is not disabled does not have a tab index of -1.");
+  @include vectorMessage(error, "E0014", 400, "Ensure that &lt;input&gt; that", "is not disabled does not have a tab index of -1.");
 }
 
 select:not( [disabled] )[tabindex = "-1"] {
-  @include vectorMessage(error, 400, "Ensure that &lt;select&gt; that", "is not disabled does not have a tab index of -1.");
+  @include vectorMessage(error, "E0014", 400, "Ensure that &lt;select&gt; that", "is not disabled does not have a tab index of -1.");
 }
 
 textarea:not( [disabled] )[tabindex = "-1"] {
-  @include vectorMessage(error, 400, "Ensure that &lt;textarea&gt; that", "is not disabled does not have a tab index of -1.");
+  @include vectorMessage(error, "E0014", 400, "Ensure that &lt;textarea&gt; that", "is not disabled does not have a tab index of -1.");
 }
 
 button:not( [disabled] )[tabindex = "-1"]::after {
-  @include contentMessage(error, "Ensure that &lt;button&gt; that is not disabled does not have a tab index of -1.");
+  @include contentMessage(error, "E0014", "Ensure that &lt;button&gt; that is not disabled does not have a tab index of -1.");
 }
 
 iframe[tabindex = "-1"] {
-  @include vectorMessage(error, 400, "Ensure that &lt;iframe&gt;", "does not have a tab index of -1.");
+  @include vectorMessage(error, "E0014", 400, "Ensure that &lt;iframe&gt;", "does not have a tab index of -1.");
 }
 
 [contentEditable = "true"][tabindex = "-1"]::after {
-  @include contentMessage(error, "Ensure that HTML elements with editable content don't have a tab index of -1.");
+  @include contentMessage(error, "E0014", "Ensure that HTML elements with editable content don't have a tab index of -1.");
 }

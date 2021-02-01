@@ -6,13 +6,14 @@ h5,
 h6 {
   /* E0003: Headings should have (meaningful) content */
   &:empty::after {
-    @include contentMessage(error, "Headings must not be empty.");
+    @include contentMessage(error, "E0003", "Headings must not be empty.");
   }
 
   /* E0004: Headings should be reachable by assistive technologies */
   &[aria-hidden]::after {
     @include contentMessage(
       error,
+      "E0004",
       "Headings should be reachable by assistive technologies (no aria-hidden)."
     );
   }
@@ -42,6 +43,6 @@ h6 ~ * h4:first-of-type,
 h6 ~ h5:first-of-type,
 h6 ~ * h5:first-of-type {
   &::after {
-    @include contentMessage(error, "Headings should not skip levels.");
+    @include contentMessage(error, "E0005", "Headings should not skip levels.");
   }
 }
