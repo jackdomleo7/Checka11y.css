@@ -16,7 +16,7 @@ describe('Checka11y.css Tests', () => {
         .each(element => {
           cy.get(element)
             .after('content')
-            .should('eq', 'WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies.')
+            .should('eq', 'WARNING (W0000): accesskey attribute could interfere and conflict with screen readers and assistive technologies.')
         });
     });
   })
@@ -55,7 +55,7 @@ describe('Checka11y.css Tests', () => {
             if (element) {
               cy.get(element)
                 .after('content')
-                .should('eq', `ERROR: Ensure that <${el}> is not a child of <button>.`);
+                .should('eq', `ERROR (E0000): Ensure that <${el}> is not a child of <button>.`);
             }
           });
       });
@@ -77,7 +77,7 @@ describe('Checka11y.css Tests', () => {
         .each(element => {
           cy.get(element)
             .after("content")
-            .should('eq', "ERROR: Ensure that <button> has meaningful content or is labelled appropriately.")
+            .should('eq', "ERROR (E0001): Ensure that <button> has meaningful content or is labelled appropriately.")
         });
     });
   });
@@ -88,7 +88,7 @@ describe('Checka11y.css Tests', () => {
         .should('not.exist');
       cy.get('body')
         .before('content')
-        .should("eq", "ERROR: html has no lang attribute.");
+        .should("eq", "ERROR (E0006): html has no lang attribute.");
     });
   });
 
@@ -116,7 +116,7 @@ describe('Checka11y.css Tests', () => {
         .each(element => {
           cy.get(element)
             .after("content")
-            .should('eq', "ERROR: Headings should not skip levels.")
+            .should('eq', "ERROR (E0005): Headings should not skip levels.")
         });
     });
   });

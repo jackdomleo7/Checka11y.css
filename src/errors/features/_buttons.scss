@@ -1,63 +1,63 @@
-/* Invalid HTML nested inside <button> */
+/* E0000: Invalid HTML nested inside <button> */
 button {
   audio[controls] {
-    @include vectorMessage(error, 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;button&gt;.");
   }
 
   button {
     &::after {
-      @include contentMessage(error, "Ensure that <button> is not a child of <button>.");
+      @include contentMessage(error, "E0000", "Ensure that <button> is not a child of <button>.");
     }
   }
 
   details {
     &::after {
-      @include contentMessage(error, "Ensure that <details> is not a child of <button>.");
+      @include contentMessage(error, "E0000", "Ensure that <details> is not a child of <button>.");
     }
   }
 
   embed {
-    @include vectorMessage(error, 350, "&lt;embed&gt; cannot", "be a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 350, "&lt;embed&gt; cannot", "be a child of &lt;button&gt;.");
   }
 
   iframe {
-    @include vectorMessage(error, 550, "Ensure that &lt;iframe&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;iframe&gt; is", "not a child of &lt;button&gt;.");
   }
 
   img[usemap] {
-    @include vectorMessage(error, 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;button&gt;.");
   }
 
   input:not( [type = "hidden"] ) {
-    @include vectorMessage(error, 550, "Ensure that &lt;input type=\"hidden\"&gt;", "is not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;input type=\"hidden\"&gt;", "is not a child of &lt;button&gt;.");
   }
 
   label {
     &::after {
-      @include contentMessage(error, "Ensure that <label> is not a child of <button>.");
+      @include contentMessage(error, "E0000", "Ensure that <label> is not a child of <button>.");
     }
   }
 
   object[usemap] {
-    @include vectorMessage(error, 550, "Ensure that &lt;object usemap&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;object usemap&gt; is", "not a child of &lt;button&gt;.");
   }
 
   select {
-    @include vectorMessage(error, 550, "Ensure that &lt;select&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;select&gt; is", "not a child of &lt;button&gt;.");
   }
 
   textarea {
-    @include vectorMessage(error, 550, "Ensure that &lt;textarea&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;textarea&gt; is", "not a child of &lt;button&gt;.");
   }
 
   video[controls] {
-    @include vectorMessage(error, 550, "Ensure that &lt;video controls&gt; is", "not a child of &lt;button&gt;.");
+    @include vectorMessage(error, "E0000", 550, "Ensure that &lt;video controls&gt; is", "not a child of &lt;button&gt;.");
   }
 }
 
-/* Buttons have meaningful content */
+/* E0001: Buttons have meaningful content */
 button:not( [aria-label] ):not( [aria-labelledby] ):empty {
   &::after {
-    @include contentMessage(error, "Ensure that <button> has meaningful content or is labelled appropriately.");
+    @include contentMessage(error, "E0001", "Ensure that <button> has meaningful content or is labelled appropriately.");
   }
 }

@@ -1,63 +1,63 @@
-/* Invalid HTML nested inside <a> */
+/* E0009: Invalid HTML nested inside <a> */
 a {
   audio[controls] {
-    @include vectorMessage(error, 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;audio controls&gt; is", "not a child of &lt;a&gt;.");
   }
 
   button {
     &::after {
-      @include contentMessage(error, "Ensure that <button> is not a child of <a>.");
+      @include contentMessage(error, "E0009", "Ensure that <button> is not a child of <a>.");
     }
   }
 
   details {
     &::after {
-      @include contentMessage(error, "Ensure that <details> is not a child of <a>.");
+      @include contentMessage(error, "E0009", "Ensure that <details> is not a child of <a>.");
     }
   }
 
   embed {
-    @include vectorMessage(error, 550, "Ensure that &lt;embed&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;embed&gt; is", "not a child of &lt;a&gt;.");
   }
 
   iframe {
-    @include vectorMessage(error, 550, "Ensure that &lt;iframe&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;iframe&gt; is", "not a child of &lt;a&gt;.");
   }
 
   img[usemap] {
-    @include vectorMessage(error, 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;a&gt;.");
   }
 
   input:not( [type = "hidden"] ) {
-    @include vectorMessage(error, 550, "Ensure that &lt;input type=\"hidden\"&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;input type=\"hidden\"&gt; is", "not a child of &lt;a&gt;.");
   }
 
   label {
     &::after {
-      @include contentMessage(error, "Ensure that <label> is not a child of <a>.");
+      @include contentMessage(error, "E0009", "Ensure that <label> is not a child of <a>.");
     }
   }
 
   object[usemap] {
-    @include vectorMessage(error, 550, "Ensure that &lt;object usemap&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;object usemap&gt; is", "not a child of &lt;a&gt;.");
   }
 
   select {
-    @include vectorMessage(error, 550, "Ensure that &lt;select&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;select&gt; is", "not a child of &lt;a&gt;.");
   }
 
   textarea {
-    @include vectorMessage(error, 550, "Ensure that &lt;textarea&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;textarea&gt; is", "not a child of &lt;a&gt;.");
   }
 
   video[controls] {
-    @include vectorMessage(error, 550, "Ensure that &lt;video controls&gt; is", "not a child of &lt;a&gt;.");
+    @include vectorMessage(error, "E0009", 550, "Ensure that &lt;video controls&gt; is", "not a child of &lt;a&gt;.");
   }
 }
 
-/* Anchors used as links have meaningful content */
+/* E0010: Anchors used as links have meaningful content */
 a[href]:not( [aria-label] ):not( [aria-labelledby] ):empty {
   &::after {
-    @include contentMessage(error, "Ensure that <a> has meaningful content or is labelled appropriately.");
+    @include contentMessage(error, "E0010", "Ensure that <a> has meaningful content or is labelled appropriately.");
   }
 }
