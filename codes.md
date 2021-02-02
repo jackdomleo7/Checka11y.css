@@ -112,3 +112,6 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0007
   The highlighted element is detected to be a `<u>` element. This can commonly be visually confused as a hyperlink. Consider using [other elements than `<u>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u#other_elements_to_consider_using).
+
+- ### W0008
+  The highlighted element has been detected to contain a `title` attribute. There many [accessibility concerns with the `title` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#accessibility_concerns). Consider using an [alternative method to using the `title` attribute](https://inclusive-components.design/tooltips-toggletips).

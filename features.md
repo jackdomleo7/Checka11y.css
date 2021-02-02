@@ -30,3 +30,4 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - [W0005](./codes.md#W0005): Checks for `<span>` and `<em>` elements that could potentially break up spoken text.
 - [W0006](./codes.md#W0006): Checks for `<a target="_blank">` and warns about links that open in a new window.
 - [W0007](./codes.md#W0007): Checks for `<u>` being confused as hyperlinks.
+- [W0008](./codes.md): Checks for the use of the `title` attribute due to accessibility concerns.
