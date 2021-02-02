@@ -69,7 +69,7 @@
   @else {
     @error "The $errorType must be either 'error' or 'warning' and the $code must start with either 'E' or 'W' respectively.";
   }
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="#{$width}px" height="#{$height}px" viewBox="0 0 #{$width} #{$height}"><rect class="box" x="4" y="4" width="#{$width - 8}" height="#{$height - 8}" rx="12" ry="12" fill="#{transparentize($bg-svg, 0.000001)}" stroke-width="0.4rem" stroke="#{transparentize($border-svg, 0.000001)}" /><g fill="#{transparentize($text-svg, 0.000001)}" font-size="#{$font-size}" font-weight="#{$font-weight}" font-family="#{$font-family}">#{$textLines}</g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="#{$width}px" height="#{$height}px" viewBox="0 0 #{$width} #{$height}"><rect class="box" x="4" y="4" width="#{$width - 8}" height="#{$height - 8}" rx="12" ry="12" fill="#{transparentize($bg-svg, 0.000001)}" stroke-width="0.4rem" stroke="#{transparentize($border-svg, 0.000001)}" /><g fill="#{transparentize($text-svg, 0.000001)}" font-size="#{$font-size}" font-weight="#{$font-weight}" font-family="#{$font-family}" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none">#{$textLines}</g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: #{$width}px;
