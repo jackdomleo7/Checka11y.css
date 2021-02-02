@@ -1,0 +1,21 @@
+/* W0009: Elements with aria-hidden should not have focusable descendants. */
+
+[aria-hidden = "true"] {
+  a,
+  button,
+  summary {
+    &::after {
+      @include contentMessage(warning, "W0009", "Focusable element in a aria-hidden element.");
+    }
+  }
+
+  area,
+  audio[controls],
+  iframe,
+  input,
+  select,
+  textarea,
+  video[controls] {
+    @include vectorMessage(warning, "W0009", 350, "Focusable", "element in a aria-hidden element.");
+  }
+}
