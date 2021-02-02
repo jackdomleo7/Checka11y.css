@@ -329,5 +329,40 @@
         I have a title attribute. Hover me.
       </p>
     </section>
+    <section>
+      <h2>Elements with aria-hidden should not have focusable descendants.</h2>
+      <div aria-hidden="true">
+        <a>Anchor</a>
+      </div>
+      <div aria-hidden="true">
+        <map>
+          <area />
+        </map>
+      </div>
+      <div aria-hidden="true">
+        <audio controls></audio>
+      </div>
+      <div aria-hidden="true">
+        <button>Button</button>
+      </div>
+      <div aria-hidden="true">
+        <iframe src="https://checka11y.jackdomleo.dev" title="Checka11y.css website"></iframe>
+      </div>
+      <div aria-hidden="true">
+        <input type="texr" />
+      </div>
+      <div aria-hidden="true">
+        <select><option>Option</option></select>
+      </div>
+      <div aria-hidden="true">
+        <details>Hello again<summary>Hello</summary></details>
+      </div>
+      <div aria-hidden="true">
+        <textarea></textarea>
+      </div>
+      <div aria-hidden="true">
+        <video controls></video>
+      </div>
+    </section>
   </body>
 </html>

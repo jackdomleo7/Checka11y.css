@@ -115,3 +115,6 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0008
   The highlighted element has been detected to contain a `title` attribute. There many [accessibility concerns with the `title` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#accessibility_concerns). Consider using an [alternative method to using the `title` attribute](https://inclusive-components.design/tooltips-toggletips).
+
+- ### W0009
+  The highlighted element is a focusable element that is nested within another element with `aria-hidden="true"`. This means the focusable element is inaccessible to assistive technologies. Either remove the `aria-hidden="true"`, or restructure the HTML so that the focusable element is not nested within the element with `aria-hidden="true"`. [Read more about this here](https://web.dev/aria-hidden-focus).
