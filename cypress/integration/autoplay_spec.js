@@ -1,5 +1,5 @@
 import { 
-  ERROR_WARNING_COLOR
+  WARNING_BORDER_COLOR
 } from "../support/constants";
 
 describe("[autoplay]", () => {
@@ -11,7 +11,7 @@ describe("[autoplay]", () => {
     cy.get("[autoplay]")
       .each(element => {
         cy.get(element)
-          .should('have.css', 'border-color', ERROR_WARNING_COLOR)
+          .should('have.css', 'border-color', WARNING_BORDER_COLOR)
       });
   });
 });
