@@ -25,7 +25,7 @@ describe("<headings>", () => {
       });
   });
 
-  it('should be accessible to assistive technologies', () => {
+  it('should not skip heading levels', () => {
     cy.get("#heading-skip-levels h1, #heading-skip-levels h4, #heading-skip-levels h5, #heading-skip-levels h6")
       .each(element => {
         cy.get(element)
