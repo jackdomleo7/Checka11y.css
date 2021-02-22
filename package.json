@@ -1,6 +1,6 @@
 {
   "name": "checka11y-css",
-  "version": "1.2.0",
+  "version": "1.3.2",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
@@ -51,6 +51,8 @@
   "files": [
     "src/*",
     "checka11y.css",
+    "checka11y-errors.css",
+    "checka11y-warnings.css",
     "postcss.config.js",
     "README.md",
     "LICENSE",

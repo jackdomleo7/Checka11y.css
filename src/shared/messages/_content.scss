@@ -1,10 +1,11 @@
 /* To only be used on ::before or ::after */
 
-@mixin contentMessage($errorType, $message) {
+@mixin contentMessage($errorType, $code, $message) {
   display: block;
   font-size: $font-size;
   font-family: $font-family;
   font-weight: $font-weight;
+  font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
@@ -12,19 +13,19 @@
   text-transform: initial;
   text-shadow: none;
 
-  @if $errorType == error {
-    content: "ERROR: #{$message}" !important;
+  @if $errorType == error and str-index($code, "E") {
+    content: "ERROR (#{$code}): #{$message}" !important;
     color: var(--checka11y-text-error);
     border: 0.4rem solid var(--checka11y-border-error);
     background-color: var(--checka11y-bg-error);
   }
-  @else if $errorType == warning {
-    content: "WARNING: #{$message}" !important;
+  @else if $errorType == warning and str-index($code, "W") {
+    content: "WARNING (#{$code}): #{$message}" !important;
     color: var(--checka11y-text-warning);
     border: 0.4rem solid var(--checka11y-border-warning);
     background-color: var(--checka11y-bg-warning);
   }
   @else {
-    @error "The errorType must be either 'error' or 'warning'.";
+    @error "The $errorType must be either 'error' or 'warning' and the $code must start with either 'E' or 'W' respectively.";
   }
 }

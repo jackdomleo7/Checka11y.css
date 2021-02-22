@@ -1,6 +1,6 @@
-/* Warn when opening a link in a new tab or window */
+/* W0006: Warn when opening a link in a new tab or window */
 a[target = "_blank"] {
   &::after {
-    @include contentMessage(warning, "Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.");
+    @include contentMessage(warning, "W0006", "Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.");
   }
 }

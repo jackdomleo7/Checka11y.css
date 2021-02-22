@@ -6,9 +6,11 @@
 @import "../shared/messages/content";
 @import "../shared/messages/vector";
 @import "./features/accesskey";
+@import "./features/aria-hidden";
 @import "./features/autoplay";
 @import "./features/handlers";
 @import "./features/images";
 @import "./features/inline";
 @import "./features/links";
+@import "./features/title";
 @import "./features/underline";

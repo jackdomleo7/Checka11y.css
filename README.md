@@ -40,24 +40,35 @@ A great tool for:
 
 Our features are always checked against the W3C accessibility guidelines.
 
-A list of common a11y concerns Checka11y.css will check for and highlight :
+A list of some common a11y concerns Checka11y.css will check for and highlight :
 
 - Check for invalid HTML elements nested inside of `<a>` and `<button>`
 - Check for missing `alt` attributes on images
 - Check for media that is set to `autoplay`
 - Check `<li>` is the **only** direct child of `<ol>` and `<ul>`
 - Check for programmable-only `tabindex` attributes on invalid HTML elements
-- Check for broken copy with `role="text"` 
 
 See a full list of features [here](./features.md).
 
 Other features:
 
-- Clear a11y errors and warnings with informative messages
+- Clear a11y errors and warnings with informative messages and error codes (see [codes.md](./codes.md) for more details on the specific errors & warnings)
 - Options to import via CDN, npm or yarn
 - Customise the error and warning colors
 - No dependencies
 - Also available on the [Chrome Web Store](https://chrome.google.com/webstore/detail/checka11ycss/npkoehgjmnffjdaelommnfjkflenbfaa) and as a [Firefox add-on](https://addons.mozilla.org/en-GB/firefox/addon/checka11y-css) (click [here](https://github.com/jackdomleo7/Checka11y.css-browser-extension) to view GitHub project)
+
+---
+
+## Error/Warning Codes
+
+When using Checka11y.css, you will notice some codes prefixed with either "E" or "W". E.g.
+
+<div align="center">
+  <img src="./images/code-example.png" alt="E0006 error code for HTML element without a lang attribute" />
+</div>
+
+If you wanted more details on this error and how to resolve it, you can reference the [codes.md](./codes.md) file and find the code "E0006".
 
 ---
 
@@ -161,6 +172,7 @@ Checka11y.css is licensed under MIT. As a minimum, you are required to KEEP AND 
 7. Add tests to your features in cypress folder (edit the element file or create a new one if needed)
 8. Run tests: `npm run cypress:open` or `npm run cypress:run` (headless)
   - You can also run tests for a specific tag/attribute by doing `npm run cypress:run -- --spec cypress/integration/{file-to-test}`
+9. Add the feature to the [features.md](./features.md) & [codes.md](./codes.md) with a new error or warning code
 
 ---
 
