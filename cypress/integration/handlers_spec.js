@@ -1,4 +1,4 @@
-describe("<handlers>", () => {
+describe("[handlers]", () => {
   before(() => {
     cy.visit("/test/index.html");
   });
