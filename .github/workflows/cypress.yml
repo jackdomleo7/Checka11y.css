@@ -17,4 +17,4 @@ jobs:
         with:
           browser: chrome
           headless: true
-          spec: cypress/integration/a11y_spec.js
+          spec: "cypress/integration/*"

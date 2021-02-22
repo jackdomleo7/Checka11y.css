@@ -55,6 +55,7 @@
     <section>
       <h2>iframe: iframe has title attribute</h2>
       <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
+      <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500" title="Test with title"></iframe>
     </section>
     <section>
       <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;, &lt;template&gt; or &lt;script&gt;</h2>
@@ -210,7 +211,8 @@
     </section>
     <section>
       <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
-      <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr</p>
+      <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr (invalid)</p>
+      <p dir="rtl">This is an &lt;p&gt; with dir attribute set to rtl (valid)</p>
     </section>
     <section>
       <h2>Check the tabindex of commonly tabbed to elements and show an error if it is -1</h2>
