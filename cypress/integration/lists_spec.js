@@ -11,7 +11,7 @@ describe("<lists>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "ERROR: List markup invalid. Ensure <li>, <script> or <template> are the only direct child of <ul> or <ol>.")
+          .should('eq', "ERROR (E0011): List markup invalid. Ensure <li>, <script> or <template> are the only direct children of <ul> or <ol>.")
       });
   });
 
@@ -20,7 +20,7 @@ describe("<lists>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "ERROR: List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>.")
+          .should('eq', "ERROR (E0012): List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>.")
       });
   });
 });

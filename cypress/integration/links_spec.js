@@ -29,7 +29,7 @@ describe("<a>", () => {
           if (element) {
             cy.get(element)
               .after('content')
-              .should('eq', `ERROR: Ensure that <${el}> is not a child of <a>.`);
+              .should('eq', `ERROR (E0009): Ensure that <${el}> is not a child of <a>.`);
           }
         });
     });
@@ -40,7 +40,7 @@ describe("<a>", () => {
           if (element) {
             cy.get(element)
               .before('content')
-              .should('eq', `ERROR: Ensure that <${el}> is not a child of <a>.`);
+              .should('eq', `ERROR (E0009): Ensure that <${el}> is not a child of <a>.`);
           }
         });
     })
@@ -51,7 +51,7 @@ describe("<a>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "ERROR: Ensure that <a> has meaningful content or is labelled appropriately.")
+          .should('eq', "ERROR (E0010): Ensure that <a> has meaningful content or is labelled appropriately.")
       });
   });
 
@@ -60,7 +60,7 @@ describe("<a>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "WARNING: Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.")
+          .should('eq', "WARNING (W0006): Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.")
       });
   });
 });

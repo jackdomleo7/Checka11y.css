@@ -8,7 +8,7 @@ describe("[dir]", () => {
       .each(element => {
         cy.get(element)
           .after('content')
-          .should('eq', "ERROR: The dir attribute can only have the values, 'ltr', 'rtl' and 'auto'.");
+          .should('eq', "ERROR (E0002): The dir attribute can only have the values, 'ltr', 'rtl' and 'auto'.");
       });
   });
 
@@ -17,7 +17,7 @@ describe("[dir]", () => {
       .each(element => {
         cy.get(element)
           .after('content')
-          .should('not.contain', "ERROR:");
+          .should('not.contain', "ERROR");
       });
   });
 });

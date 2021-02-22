@@ -20,7 +20,7 @@ describe("<button>", () => {
       cy.get(`button ${el}`)
         .each(element => {
           cy.get(element)
-            .should('have.css', 'border-color', ERROR_BORDER_COLOR)
+            .should('have.css', 'border-color', 'rgb(255, 0, 0)')
         });
     });
 
@@ -30,7 +30,7 @@ describe("<button>", () => {
           if (element) {
             cy.get(element)
               .after('content')
-              .should('eq', `ERROR: Ensure that <${el}> is not a child of <button>.`);
+              .should('eq', `ERROR (E0000): Ensure that <${el}> is not a child of <button>.`);
           }
         });
     });
@@ -52,7 +52,7 @@ describe("<button>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "ERROR: Ensure that <button> has meaningful content or is labelled appropriately.")
+          .should('eq', "ERROR (E0001): Ensure that <button> has meaningful content or is labelled appropriately.")
       });
   });
 });

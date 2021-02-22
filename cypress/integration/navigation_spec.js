@@ -11,7 +11,7 @@ describe("<nav>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "ERROR: <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> tags.")
+          .should('eq', "ERROR (E0013): <nav> indicates the primary navigation for the page. In cases where multiple primary navigations exist, an aria-label or aria-labelledby attribute must be present on both <nav> elements.")
       });
   });
 });

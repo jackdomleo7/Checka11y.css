@@ -8,7 +8,7 @@ describe("[accesskey]", () => {
       .each(element => {
         cy.get(element)
           .after('content')
-          .should('eq', 'WARNING: accesskey attribute could interfere and conflict with screen readers and assistive technologies.')
+          .should('eq', 'WARNING (W0000): accesskey attribute could interfere and conflict with screen readers and assistive technologies.')
       });
   });
 });

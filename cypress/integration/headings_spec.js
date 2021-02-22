@@ -1,7 +1,3 @@
-import { 
-  ERROR_BORDER_COLOR
-} from "../support/constants";
-
 describe("<headings>", () => {
   before(() => {
     cy.visit("/test/index.html");
@@ -12,7 +8,7 @@ describe("<headings>", () => {
       .each(element => {
         cy.get(element)
           .after("border-color")
-          .should('eq', ERROR_BORDER_COLOR) // they could have different error messages
+          .should('eq', 'rgb(255, 0, 0)') // they could have different error messages
       });
   });
 
@@ -21,16 +17,16 @@ describe("<headings>", () => {
       .each(element => {
         cy.get(element)
           .after("border-color")
-          .should('eq', ERROR_BORDER_COLOR) // they could have different error messages
+          .should('eq', 'rgb(255, 0, 0)') // they could have different error messages
       });
   });
 
-  it('should not skip heading levels', () => {
-    cy.get("#heading-skip-levels h1, #heading-skip-levels h4, #heading-skip-levels h5, #heading-skip-levels h6")
+  it('should be accessible to assistive technologies', () => {
+    cy.get("#heading-skip-levels h1, #heading-skip-levels h5, #heading-skip-levels h3")
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "ERROR: Headings should not skip levels.")
+          .should('eq', "ERROR (E0005): Headings should not skip levels.")
       });
   });
 });

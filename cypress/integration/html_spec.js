@@ -8,6 +8,6 @@ describe("<html>", () => {
       .should('not.exist');
     cy.get('body')
       .before('content')
-      .should("eq", "ERROR: html has no lang attribute.");
+      .should("eq", "ERROR (E0006): html has no lang attribute.");
   });
 });

@@ -8,7 +8,7 @@ describe("[inline]", () => {
       .each(element => {
         cy.get(element)
           .after('content')
-          .should('eq', "WARNING: !important inline styles should be avoided.");
+          .should('eq', "WARNING (W0004): !important inline styles should be avoided.");
       });
   });
 
@@ -17,7 +17,7 @@ describe("[inline]", () => {
       .each(element => {
         cy.get(element)
         .after('content')
-        .should('eq', "WARNING: Text broken by <span> or <em> elements might need a [role='text'] attribute.");
+        .should('eq', "WARNING (W0005): Text broken by <span> or <em> elements might need a [role='text'] attribute.");
       });
   });
 });

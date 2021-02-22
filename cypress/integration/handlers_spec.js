@@ -40,7 +40,7 @@ describe("[handlers]", () => {
       .each(element => {
         cy.get(element)
           .after('content')
-          .should('eq', "WARNING: Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative.");
+          .should('eq', "WARNING (W0002): Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative.");
       });
   });
 });
