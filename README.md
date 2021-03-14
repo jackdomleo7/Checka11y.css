@@ -95,7 +95,7 @@ In the below CDN links:
 
 ### Package manager (npm or yarn)
 
-It's best practice to install Checka11y.css as a dev dependency rather than a dependency and ensure you only use it in your local/developer environment (do not push this stylesheet to your production environment). You can install `checka11y-css` via **npm** or **yarn**.
+It is best practice to install Checka11y.css as a dev dependency rather than a dependency and ensure you only use it in your local/developer environment (do not push this stylesheet to your production environment). You can install `checka11y-css` via **npm** or **yarn**.
 
 _First_ install via **npm**
 ```
@@ -126,6 +126,10 @@ In the below imports, replace `:file` with one of the options below:
 /* Non-webpack */
 @import 'path/to/node_modules/checka11y-css/:file';
 ```
+
+### Using Angular?
+
+👉 [Go to ngx-checka11y](https://github.com/AlaaEl-DinAhmed/ngx-checka11y)
 
 ---
 
