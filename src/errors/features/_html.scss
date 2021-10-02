@@ -1,0 +1,13 @@
+/* E0006: html element requires a lang attribute */
+html:not( [lang] ) body {
+  &::before {
+    @include contentMessage(error, "E0006", "html has no lang attribute.");
+  }
+}
+
+/* E0006: html element lang attribute must not be empty */
+html[lang = ""] body {
+  &::before {
+    @include contentMessage(error, "E0006", "html lang attribute should not be empty.");
+  }
+}

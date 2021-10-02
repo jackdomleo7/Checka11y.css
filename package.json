@@ -1,11 +1,17 @@
 {
   "name": "checka11y-css",
-  "version": "1.0.0-beta.0",
+  "version": "1.3.3",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "lint": "stylelint \"**/*.css\" --fix"
+    "build": "npm run lint && npm run build:expanded && npm run build:errors:expanded && npm run build:warnings:expanded",
+    "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
+    "build:errors:expanded": "node-sass src/errors/checka11y-errors.scss ./checka11y-errors.css --output-style compressed && node-sass ./checka11y-errors.css ./checka11y-errors.css --output-style expanded && npx postcss checka11y-errors.css --use autoprefixer --replace --no-map",
+    "build:warnings:expanded": "node-sass src/warnings/checka11y-warnings.scss ./checka11y-warnings.css --output-style compressed && node-sass ./checka11y-warnings.css ./checka11y-warnings.css --output-style expanded && npx postcss checka11y-warnings.css --use autoprefixer --replace --no-map",
+    "lint": "stylelint \"**/*.scss\" --fix",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --headless"
   },
   "repository": {
     "type": "git",
@@ -20,9 +26,15 @@
     "Dan Spratling <dan@danspratling.dev> (https://github.com/danspratling)",
     "Savvas Stephanides (https://github.com/SavvasStephanides)",
     "Veeresh (https://github.com/veerreshr)",
-    "Devin Ford (https://github.com/devindford)",
+    "Devin Ford <devindford@outlook.com> (https://github.com/devindford)",
     "Shaurya Vardhan <gsshaurya@gmail.com> (https://github.com/wulforr)",
-    "Emma Dawson (https://github.com/emmalearnscode)"
+    "Emma Dawson (https://github.com/emmalearnscode)",
+    "Andrey Kudryavtsev (https://github.com/cat-street)",
+    "Alvaro Montoro <alvaromontoro@gmail.com> (https://github.com/alvaromontoro)",
+    "Manaswini Munuguri (https://github.com/Manaswini1832)",
+    "Shona McKenzie (https://github.com/shonamckenzie)",
+    "Ashar Setiawan (https://github.com/azhsetiawan)",
+    "Bogdan Lazar (https://github.com/tricinel)"
   ],
   "keywords": [
     "checka11y",
@@ -35,14 +47,24 @@
   "bugs": {
     "url": "https://github.com/jackdomleo7/Checka11y.css/issues"
   },
-  "homepage": "https://github.com/jackdomleo7/Checka11y.css#readme",
+  "homepage": "https://checka11y.jackdomleo.dev",
   "files": [
+    "src/*",
     "checka11y.css",
+    "checka11y-errors.css",
+    "checka11y-warnings.css",
+    "postcss.config.js",
     "README.md",
     "LICENSE",
     "CHANGELOG"
   ],
   "devDependencies": {
-    "stylelint": "^13.7.1"
+    "autoprefixer": "^10.2.5",
+    "cypress": "^6.6.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "stylelint": "^13.12.0",
+    "stylelint-scss": "^3.19.0"
   }
 }

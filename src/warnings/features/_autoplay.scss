@@ -1,0 +1,5 @@
+/* W0001: Media should not autoplay */
+
+[autoplay] {
+  @include vectorMessage(warning, "W0001", 350, "Media should", "not autoplay.");
+}
