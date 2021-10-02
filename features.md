@@ -32,4 +32,4 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - [W0007](./codes.md#W0007): Checks for `<u>` being confused as hyperlinks.
 - [W0008](./codes.md#W0008): Checks for the use of the `title` attribute due to accessibility concerns.
 - [W0009](./codes.md#W0009): Checks for focusable elements inside `aria-hidden="true"` elements.
-- [W0010](./codes.md#W0010): Checks for anchor tags that are used as buttons
+- [W0010](./codes.md#W0010): Checks for anchor tags that are used as buttons.
