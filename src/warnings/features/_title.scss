@@ -1,0 +1,8 @@
+/* W0008: Warn when using the title attribute due to its accessibility concerns */
+
+// TODO: This won't throw warnings for void elements that cannot show an ::after
+[title] {
+  &::after {
+    @include contentMessage(warning, "W0008", "The title attribute has many accessibility concerns, consider using an alternative method.");
+  }
+}

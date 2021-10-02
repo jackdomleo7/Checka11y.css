@@ -1,15 +1,17 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via an issue before making a change. Feel free to create a pull request to [resolve an issue](https://github.com/jackdomleo7/Checka11y.css/issues), with a solution to an item on our [project board](https://github.com/jackdomleo7/Checka11y.css/projects/1) or for any of your own ideas. Please provide as much detail and as many resources that will backup why you made the change.
+When contributing to this repository, please first discuss the change you wish to make via an issue before making a change. Feel free to create a pull request to [resolve an issue](https://github.com/jackdomleo7/Checka11y.css/issues) or for any of your own ideas. Please provide as much detail and as many resources that will backup why you made the change.
 
 When looking to contribute, please comment on issues asking if you can do that work, and only look at doing work that is **not labelled** as `question` or `needs more info` because these issues require more research and discussion before doing. Please also do not ask to do work that is already assigned to someone (you can see who is assigned to an issue by looking at the "assignee").
+
+You cannot be assigned to more than one issue at the same time (unless you are a collaborator). Please complete the issue you are working on before requesting to be assigned to another issue.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the [README.md Features section](./README.md#Features) and the [test.html](./test.html) with details of changes to the stylesheet and new a11y checks.
+2. Update the [features.md](./features.md), [codes.md](./codes.md) and the [test/index.html](./test/index.html) with details of changes to the stylesheet, new a11y check tests and a new error/warning code.
 3. Optionally, add your name, email address and GitHub profile URL to the `contributors` section in `package.json` in the format of `"Name <email@example.com> (https://github.com/username)"`. All fields are optional, so if you don't want to include your email, you can leave it out, for example `"Name (https://github.com/username)`.
 4. A collaborator will merge the Pull Request in once the Pull Request has been approved by a collaborator and no further modifications are needed.
 
