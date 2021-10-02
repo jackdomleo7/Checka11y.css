@@ -29,4 +29,12 @@ describe("<headings>", () => {
           .should('eq', "ERROR (E0005): Headings should not skip levels.")
       });
   });
+
+  it('should not have role=text', () => {
+    cy.get("h1[role='text'], h2[role='text'], h3[role='text'], h4[role='text'], h5[role='text'], h6[role='text']")
+      .each(element => {
+        cy.get(element)
+          .should('eq',  "WARNING (W0010): Using role='text' on a heading element causes it to lose semantic meaning for screen readers") // they could have different error messages
+      });
+  });
 });
