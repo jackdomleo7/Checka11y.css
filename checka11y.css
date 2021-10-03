@@ -666,6 +666,7 @@ iframe[tabindex="-1"] {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
+  content: "WARNING (W0009): Focusable -moz-element in a aria-hidden element." !important;
   content: "WARNING (W0009): Focusable element in a aria-hidden element." !important;
   color: var(--checka11y-text-warning);
   border: 0.4rem solid var(--checka11y-border-warning);
@@ -822,6 +823,7 @@ u::after {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
+  content: "WARNING (W0007): Using <u> -moz-element could be confused as a hyperlink, consider using a different -moz-element such as <em> or <b>." !important;
   content: "WARNING (W0007): Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
   color: var(--checka11y-text-warning);
   border: 0.4rem solid var(--checka11y-border-warning);
@@ -840,6 +842,7 @@ h1[role="text"]::after, h2[role="text"]::after, h3[role="text"]::after, h4[role=
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
+  content: "WARNING (W0010): Using role='text' on a heading -moz-element causes it to lose semantic meaning for screen readers" !important;
   content: "WARNING (W0010): Using role='text' on a heading element causes it to lose semantic meaning for screen readers" !important;
   color: var(--checka11y-text-warning);
   border: 0.4rem solid var(--checka11y-border-warning);
