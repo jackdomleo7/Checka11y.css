@@ -11,8 +11,8 @@
     "build:warnings-only": "sass --no-source-map src/warnings/checka11y-warnings.scss ./checka11y-warnings.css --style=compressed && sass --no-source-map ./checka11y-warnings.css ./checka11y-warnings.css --style=expanded && npx postcss checka11y-warnings.css --use autoprefixer --replace --no-map",
     "lint:check": "stylelint \"**/*.scss\"",
     "lint:fix": "stylelint \"**/*.scss\" --fix",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run --headless"
+    "test": "cypress run --headless",
+    "test:ui": "cypress open"
   },
   "repository": {
     "type": "git",
