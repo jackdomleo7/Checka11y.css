@@ -1,0 +1,23 @@
+name: Linting
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Clean install npm dependencies
+        run: npm ci
+      - name: Check project linting
+        run: npm run lint:check
