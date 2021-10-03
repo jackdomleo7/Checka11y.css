@@ -68,6 +68,7 @@
     "stylelint-scss": "^3.19.0"
   },
   "engines": {
-    "npm": ">=7"
+    "node": ">=14",
+    "npm": "6"
   }
 }
