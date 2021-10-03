@@ -15,7 +15,7 @@
 [accesskey]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -30,10 +30,10 @@
   background-color: var(--checka11y-bg-warning);
 }
 
-[aria-hidden="true"] a::after, [aria-hidden="true"] button::after, [aria-hidden="true"] summary::after {
+[aria-hidden=true] a::after, [aria-hidden=true] button::after, [aria-hidden=true] summary::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -49,10 +49,10 @@
   background-color: var(--checka11y-bg-warning);
 }
 
-[aria-hidden="true"] area, [aria-hidden="true"] audio[controls], [aria-hidden="true"] iframe, [aria-hidden="true"] input, [aria-hidden="true"] select, [aria-hidden="true"] textarea, [aria-hidden="true"] video[controls] {
+[aria-hidden=true] area, [aria-hidden=true] audio[controls], [aria-hidden=true] iframe, [aria-hidden=true] input, [aria-hidden=true] select, [aria-hidden=true] textarea, [aria-hidden=true] video[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0009): Focusable</text> <text x="15" y="60">element in a aria-hidden element.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0009): Focusable</text> <text x="15" y="60">element in a aria-hidden element.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -62,7 +62,7 @@
 [autoplay] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0001): Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0001): Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -72,7 +72,7 @@
 [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -87,10 +87,10 @@
   background-color: var(--checka11y-bg-warning);
 }
 
-img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$=".webp" i], img[alt$=".ivaf" i], img[alt$="image" i], img[alt$="graphic" i], img[alt$="logo" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i], img[alt^="logo of" i], img[alt^="logo for" i] {
+img[alt^="logo for" i], img[alt^="logo of" i], img[alt^="image of" i], img[alt^=bullet i], img[alt^="graphic of" i], img[alt$=logo i], img[alt$=graphic i], img[alt$=image i], img[alt$=".ivaf" i], img[alt$=".webp" i], img[alt$=".bmp" i], img[alt$=".svg" i], img[alt$=",jpeg" i], img[alt$=".jpg" i], img[alt$=".gif" i], img[alt$=".png" i], img[alt=" " i], img[alt="*" i], img[alt=graph i], img[alt=diagram i], img[alt=table i], img[alt=chart i], img[alt=blank i], img[alt=spacer i], img[alt=more i], img[alt=arrow i], img[alt=button i], img[alt=bullet i], img[alt=logo i], img[alt=artwork i], img[alt=painting i], img[alt=drawing i], img[alt=photograph i], img[alt=photo i], img[alt=graphic i], img[alt=image i] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0003): Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0003): Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -100,7 +100,7 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
 [style*="!important"]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -115,10 +115,10 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
   background-color: var(--checka11y-bg-warning);
 }
 
-*:not([role="text"]) > em::after, *:not([role="text"]) span::after {
+*:not([role=text]) > em::after, *:not([role=text]) span::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -133,10 +133,10 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
   background-color: var(--checka11y-bg-warning);
 }
 
-a[target="_blank"]::after {
+a[target=_blank]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -154,7 +154,7 @@ a[target="_blank"]::after {
 [title]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -172,7 +172,7 @@ a[target="_blank"]::after {
 u::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);

@@ -6,9 +6,9 @@
   "style": "checka11y.css",
   "scripts": {
     "build": "npm run lint && npm run build:expanded && npm run build:errors:expanded && npm run build:warnings:expanded",
-    "build:expanded": "node-sass src/checka11y.scss ./checka11y.css --output-style compressed && node-sass ./checka11y.css ./checka11y.css --output-style expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
-    "build:errors:expanded": "node-sass src/errors/checka11y-errors.scss ./checka11y-errors.css --output-style compressed && node-sass ./checka11y-errors.css ./checka11y-errors.css --output-style expanded && npx postcss checka11y-errors.css --use autoprefixer --replace --no-map",
-    "build:warnings:expanded": "node-sass src/warnings/checka11y-warnings.scss ./checka11y-warnings.css --output-style compressed && node-sass ./checka11y-warnings.css ./checka11y-warnings.css --output-style expanded && npx postcss checka11y-warnings.css --use autoprefixer --replace --no-map",
+    "build:expanded": "sass --no-source-map src/checka11y.scss ./checka11y.css --style=compressed && sass --no-source-map ./checka11y.css ./checka11y.css --style=expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
+    "build:errors:expanded": "sass --no-source-map src/errors/checka11y-errors.scss ./checka11y-errors.css --style=compressed && sass --no-source-map ./checka11y-errors.css ./checka11y-errors.css --style=expanded && npx postcss checka11y-errors.css --use autoprefixer --replace --no-map",
+    "build:warnings:expanded": "sass --no-source-map src/warnings/checka11y-warnings.scss ./checka11y-warnings.css --style=compressed && sass --no-source-map ./checka11y-warnings.css ./checka11y-warnings.css --style=expanded && npx postcss checka11y-warnings.css --use autoprefixer --replace --no-map",
     "lint": "stylelint \"**/*.scss\" --fix",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --headless"
@@ -61,9 +61,9 @@
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "cypress": "^6.6.0",
-    "node-sass": "^5.0.0",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
+    "sass": "^1.42.1",
     "stylelint": "^13.12.0",
     "stylelint-scss": "^3.19.0"
   },

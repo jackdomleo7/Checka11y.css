@@ -1,7 +1,7 @@
 :root {
   --checka11y-text-error: #721c24;
   --checka11y-bg-error: #ffc6c6;
-  --checka11y-border-error: red;
+  --checka11y-border-error: #f00;
 }
 
 :root {
@@ -15,7 +15,7 @@
 button audio[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -25,7 +25,7 @@ button audio[controls] {
 button button::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -43,7 +43,7 @@ button button::after {
 button details::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -61,7 +61,7 @@ button details::after {
 button embed {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): &lt;embed&gt; cannot</text> <text x="15" y="60">be a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): &lt;embed&gt; cannot</text> <text x="15" y="60">be a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -71,7 +71,7 @@ button embed {
 button iframe {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -81,17 +81,17 @@ button iframe {
 button img[usemap] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
   padding-bottom: 80px;
 }
 
-button input:not([type="hidden"]) {
+button input:not([type=hidden]) {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;input type="hidden"&gt;</text> <text x="15" y="60">is not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;input type="hidden"&gt;</text> <text x="15" y="60">is not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -101,7 +101,7 @@ button input:not([type="hidden"]) {
 button label::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -119,7 +119,7 @@ button label::after {
 button object[usemap] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -129,7 +129,7 @@ button object[usemap] {
 button select {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -139,7 +139,7 @@ button select {
 button textarea {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -149,7 +149,7 @@ button textarea {
 button video[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0000): Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;button&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -159,7 +159,7 @@ button video[controls] {
 button:not([aria-label]):not([aria-labelledby]):empty::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -174,10 +174,10 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
   background-color: var(--checka11y-bg-error);
 }
 
-[dir]:not([dir="rtl"]):not([dir="ltr"]):not([dir="auto"])::after {
+[dir]:not([dir=rtl]):not([dir=ltr]):not([dir=auto])::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -195,7 +195,7 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
 h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::after, h6:empty::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -213,7 +213,7 @@ h1:empty::after, h2:empty::after, h3:empty::after, h4:empty::after, h5:empty::af
 h1[aria-hidden]::after, h2[aria-hidden]::after, h3[aria-hidden]::after, h4[aria-hidden]::after, h5[aria-hidden]::after, h6[aria-hidden]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -231,7 +231,7 @@ h1[aria-hidden]::after, h2[aria-hidden]::after, h3[aria-hidden]::after, h4[aria-
 h2 ~ h1:first-of-type::after, h2 ~ * h1:first-of-type::after, h3 ~ h2:first-of-type::after, h3 ~ * h2:first-of-type::after, h4 ~ h2:first-of-type::after, h4 ~ * h2:first-of-type::after, h5 ~ h2:first-of-type::after, h5 ~ * h2:first-of-type::after, h6 ~ h2:first-of-type::after, h6 ~ * h2:first-of-type::after, h4 ~ h3:first-of-type::after, h4 ~ * h3:first-of-type::after, h5 ~ h3:first-of-type::after, h5 ~ * h3:first-of-type::after, h6 ~ h3:first-of-type::after, h6 ~ * h3:first-of-type::after, h5 ~ h4:first-of-type::after, h5 ~ * h4:first-of-type::after, h6 ~ h4:first-of-type::after, h6 ~ * h4:first-of-type::after, h6 ~ h5:first-of-type::after, h6 ~ * h5:first-of-type::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -249,7 +249,7 @@ h2 ~ h1:first-of-type::after, h2 ~ * h1:first-of-type::after, h3 ~ h2:first-of-t
 html:not([lang]) body::before {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -267,7 +267,7 @@ html:not([lang]) body::before {
 html[lang=""] body::before {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -285,7 +285,7 @@ html[lang=""] body::before {
 iframe:not([title]) {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0007): All &lt;iframe&gt; must</text> <text x="15" y="60">have a title.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0007): All &lt;iframe&gt; must</text> <text x="15" y="60">have a title.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -295,7 +295,7 @@ iframe:not([title]) {
 img:not([alt]) {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0008): All &lt;img&gt; must</text> <text x="15" y="60">have alternative text.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0008): All &lt;img&gt; must</text> <text x="15" y="60">have alternative text.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -305,7 +305,7 @@ img:not([alt]) {
 a audio[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;audio controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -315,7 +315,7 @@ a audio[controls] {
 a button::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -333,7 +333,7 @@ a button::after {
 a details::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -351,7 +351,7 @@ a details::after {
 a embed {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;embed&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;embed&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -361,7 +361,7 @@ a embed {
 a iframe {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;iframe&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -371,17 +371,17 @@ a iframe {
 a img[usemap] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;img usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
   padding-bottom: 80px;
 }
 
-a input:not([type="hidden"]) {
+a input:not([type=hidden]) {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;input type="hidden"&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;input type="hidden"&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -391,7 +391,7 @@ a input:not([type="hidden"]) {
 a label::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -409,7 +409,7 @@ a label::after {
 a object[usemap] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;object usemap&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -419,7 +419,7 @@ a object[usemap] {
 a select {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;select&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -429,7 +429,7 @@ a select {
 a textarea {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;textarea&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -439,7 +439,7 @@ a textarea {
 a video[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="550px" height="80px" viewBox="0 0 550 80"><rect class="box" x="4" y="4" width="542" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0009): Ensure that &lt;video controls&gt; is</text> <text x="15" y="60">not a child of &lt;a&gt;.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 550px;
@@ -449,7 +449,7 @@ a video[controls] {
 a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -467,7 +467,7 @@ a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
 ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -485,7 +485,7 @@ ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(
 dl > *:not(dt):not(dd)::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -503,7 +503,7 @@ dl > *:not(dt):not(dd)::after {
 nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -521,7 +521,7 @@ nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-l
 a[href][tabindex="-1"]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -539,7 +539,7 @@ a[href][tabindex="-1"]::after {
 area[href][tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;area&gt; with an</text> <text x="15" y="60">href attribute does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;area&gt; with an</text> <text x="15" y="60">href attribute does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -549,7 +549,7 @@ area[href][tabindex="-1"] {
 input:not([disabled])[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;input&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;input&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -559,7 +559,7 @@ input:not([disabled])[tabindex="-1"] {
 select:not([disabled])[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;select&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;select&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -569,7 +569,7 @@ select:not([disabled])[tabindex="-1"] {
 textarea:not([disabled])[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;textarea&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;textarea&gt; that</text> <text x="15" y="60">is not disabled does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -579,7 +579,7 @@ textarea:not([disabled])[tabindex="-1"] {
 button:not([disabled])[tabindex="-1"]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -597,17 +597,17 @@ button:not([disabled])[tabindex="-1"]::after {
 iframe[tabindex="-1"] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,198,198,0.999999)" stroke-width="0.4rem" stroke="rgba(255,0,0,0.999999)" /><g fill="rgba(114,28,36,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;iframe&gt;</text> <text x="15" y="60">does not have a tab index of -1.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0014): Ensure that &lt;iframe&gt;</text> <text x="15" y="60">does not have a tab index of -1.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
   padding-bottom: 80px;
 }
 
-[contentEditable="true"][tabindex="-1"]::after {
+[contentEditable=true][tabindex="-1"]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -639,7 +639,7 @@ iframe[tabindex="-1"] {
 [accesskey]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -654,10 +654,10 @@ iframe[tabindex="-1"] {
   background-color: var(--checka11y-bg-warning);
 }
 
-[aria-hidden="true"] a::after, [aria-hidden="true"] button::after, [aria-hidden="true"] summary::after {
+[aria-hidden=true] a::after, [aria-hidden=true] button::after, [aria-hidden=true] summary::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -673,10 +673,10 @@ iframe[tabindex="-1"] {
   background-color: var(--checka11y-bg-warning);
 }
 
-[aria-hidden="true"] area, [aria-hidden="true"] audio[controls], [aria-hidden="true"] iframe, [aria-hidden="true"] input, [aria-hidden="true"] select, [aria-hidden="true"] textarea, [aria-hidden="true"] video[controls] {
+[aria-hidden=true] area, [aria-hidden=true] audio[controls], [aria-hidden=true] iframe, [aria-hidden=true] input, [aria-hidden=true] select, [aria-hidden=true] textarea, [aria-hidden=true] video[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0009): Focusable</text> <text x="15" y="60">element in a aria-hidden element.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0009): Focusable</text> <text x="15" y="60">element in a aria-hidden element.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -686,7 +686,7 @@ iframe[tabindex="-1"] {
 [autoplay] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0001): Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0001): Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 350px;
@@ -696,7 +696,7 @@ iframe[tabindex="-1"] {
 [onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -711,10 +711,10 @@ iframe[tabindex="-1"] {
   background-color: var(--checka11y-bg-warning);
 }
 
-img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograph" i], img[alt="drawing" i], img[alt="painting" i], img[alt="artwork" i], img[alt="logo" i], img[alt="bullet" i], img[alt="button" i], img[alt="arrow" i], img[alt="more" i], img[alt="spacer" i], img[alt="blank" i], img[alt="chart" i], img[alt="table" i], img[alt="diagram" i], img[alt="graph" i], img[alt="*" i], img[alt=" " i], img[alt$=".png" i], img[alt$=".gif" i], img[alt$=".jpg" i], img[alt$=",jpeg" i], img[alt$=".svg" i], img[alt$=".bmp" i], img[alt$=".webp" i], img[alt$=".ivaf" i], img[alt$="image" i], img[alt$="graphic" i], img[alt$="logo" i], img[alt^="graphic of" i], img[alt^="bullet" i], img[alt^="image of" i], img[alt^="logo of" i], img[alt^="logo for" i] {
+img[alt^="logo for" i], img[alt^="logo of" i], img[alt^="image of" i], img[alt^=bullet i], img[alt^="graphic of" i], img[alt$=logo i], img[alt$=graphic i], img[alt$=image i], img[alt$=".ivaf" i], img[alt$=".webp" i], img[alt$=".bmp" i], img[alt$=".svg" i], img[alt$=",jpeg" i], img[alt$=".jpg" i], img[alt$=".gif" i], img[alt$=".png" i], img[alt=" " i], img[alt="*" i], img[alt=graph i], img[alt=diagram i], img[alt=table i], img[alt=chart i], img[alt=blank i], img[alt=spacer i], img[alt=more i], img[alt=arrow i], img[alt=button i], img[alt=bullet i], img[alt=logo i], img[alt=artwork i], img[alt=painting i], img[alt=drawing i], img[alt=photograph i], img[alt=photo i], img[alt=graphic i], img[alt=image i] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255,255,216,0.999999)" stroke-width="0.4rem" stroke="rgba(255,255,102,0.999999)" /><g fill="rgba(133,100,4,0.999999)" font-size="1rem" font-weight="700" font-family="verdana,geneva,tahoma,sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0003): Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0003): Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: 400px;
@@ -724,7 +724,7 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
 [style*="!important"]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -739,10 +739,10 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
   background-color: var(--checka11y-bg-warning);
 }
 
-*:not([role="text"]) > em::after, *:not([role="text"]) span::after {
+*:not([role=text]) > em::after, *:not([role=text]) span::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -757,10 +757,10 @@ img[alt="image" i], img[alt="graphic" i], img[alt="photo" i], img[alt="photograp
   background-color: var(--checka11y-bg-warning);
 }
 
-a[target="_blank"]::after {
+a[target=_blank]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -778,7 +778,7 @@ a[target="_blank"]::after {
 [title]::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
@@ -796,7 +796,7 @@ a[target="_blank"]::after {
 u::after {
   display: block;
   font-size: 1rem;
-  font-family: verdana,geneva,tahoma,sans-serif;
+  font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
