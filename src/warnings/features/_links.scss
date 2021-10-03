@@ -5,13 +5,13 @@ a[target = "_blank"] {
   }
 }
 
-/* W0010: Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons. */
+/* W0011: Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons. */
 a {
   &[href = "#"],
   &[role = "button"],
   &[href ^= "javascript:"] {
     &::after {
-      @include contentMessage(warning, "W0010", "Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.");
+      @include contentMessage(warning, "W0011", "Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.");
     }
   }
 }

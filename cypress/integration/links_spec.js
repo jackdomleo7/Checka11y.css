@@ -69,7 +69,7 @@ describe("<a>", () => {
       .each(element => {
         cy.get(element)
           .after("content")
-          .should('eq', "WARNING (W0010): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.")
+          .should('eq', "WARNING (W0011): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.")
       });
   });
 });

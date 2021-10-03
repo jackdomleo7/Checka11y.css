@@ -162,7 +162,7 @@ a[href="#"]::after, a[role="button"]::after, a[href^="javascript:"]::after {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
-  content: "WARNING (W0010): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons." !important;
+  content: "WARNING (W0011): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons." !important;
   color: var(--checka11y-text-warning);
   border: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
