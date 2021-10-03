@@ -121,3 +121,6 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0010
   The highlighted element has been detected to have a `role="text"`, however this causes the element to lose its semantic meaning as a heading element and will not be interpreted as a heading by a screenreader. [Read more about this and find suggested alternative here](https://openinclusion.com/blog/using-role-text-enhance-mobile-screen-reader-output/).
+
+- ### W0011
+  The highlighted element `<a>` has been detected to have `href="#"`, `role="button"` , `href="javascript:doSomething(0)"`. Those anchor elements are often used to trigger a click event on the page. This can be disorientating to a user, especially those with visual impairments and those with cognitive disabilities. Links should redirect to a resource/page. [Read more about this here](https://www.htmhell.dev/8-anchor-tag-used-as-button).
