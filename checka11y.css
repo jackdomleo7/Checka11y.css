@@ -774,6 +774,24 @@ a[target=_blank]::after {
   background-color: var(--checka11y-bg-warning);
 }
 
+a[href="#"]::after, a[role="button"]::after, a[href^="javascript:"]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0011): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
 [title]::after {
   display: block;
   font-size: 1rem;
@@ -805,6 +823,25 @@ u::after {
   text-transform: initial;
   text-shadow: none;
   content: "WARNING (W0007): Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+h1[role="text"]::after, h2[role="text"]::after, h3[role="text"]::after, h4[role="text"]::after, h5[role="text"]::after, h6[role="text"]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana,geneva,tahoma,sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0010): Using role='text' on a heading -moz-element causes it to lose semantic meaning for screen readers" !important;
+  content: "WARNING (W0010): Using role='text' on a heading element causes it to lose semantic meaning for screen readers" !important;
   color: var(--checka11y-text-warning);
   border: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);

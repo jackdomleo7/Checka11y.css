@@ -366,5 +366,19 @@
         <video controls></video>
       </div>
     </section>
+    <section>
+      <h1 role="text">This should not have role=text</h1>
+      <h2 role="text">This should not have role=text</h2>
+      <h3 role="text">This should not have role=text</h3>
+      <h4 role="text">This should not have role=text</h4>
+      <h5 role="text">This should not have role=text</h5>
+      <h6 role="text">This should not have role=text</h6>
+    </section>
+    <section>
+      <h2>Anchor tags should not be used as buttons</h2>
+      <a href="#">Do something</a>
+      <a href="javascript:void(0)" role="button">Do another thing</a>
+      <a href="javascript:doSomething(0)">Do another thing</a>
+    </section>
   </body>
 </html>

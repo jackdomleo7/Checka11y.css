@@ -63,4 +63,13 @@ describe("<a>", () => {
           .should('eq', "WARNING (W0006): Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior.")
       });
   });
+
+  it('should not be used as button', () => {
+    cy.get("a[href='#'], a[role='button'], a[href^='javascript:']")
+      .each(element => {
+        cy.get(element)
+          .after("content")
+          .should('eq', "WARNING (W0011): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.")
+      });
+  });
 });
