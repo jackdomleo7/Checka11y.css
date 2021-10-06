@@ -124,3 +124,6 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0011
   The highlighted element `<a>` has been detected to have `href="#"`, `role="button"` , `href="javascript:doSomething(0)"`. Those anchor elements are often used to trigger a click event on the page. This can be disorientating to a user, especially those with visual impairments and those with cognitive disabilities. Links should redirect to a resource/page. [Read more about this here](https://www.htmhell.dev/8-anchor-tag-used-as-button).
+
+- ### W0012
+  The `<section>` element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. This means `<section>` element should be identified, typically by including a heading (`<h1>`-`<h6>` element) as a child of the `<section>` element. [Read more about this here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
