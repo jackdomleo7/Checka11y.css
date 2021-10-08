@@ -24,7 +24,7 @@
     "url": "https://jackdomleo.dev"
   },
   "contributors": [
-    "Jack Domleo <jackdomleo7@gmail.com> (https://github.com/jackdomleo7)",
+    "Jack Domleo <jackdomleo7@gmail.com> (https://jackdomleo.dev)",
     "Dan Spratling <dan@danspratling.dev> (https://github.com/danspratling)",
     "Savvas Stephanides (https://github.com/SavvasStephanides)",
     "Veeresh (https://github.com/veerreshr)",
@@ -63,10 +63,10 @@
     "CHANGELOG"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.3.7",
     "cypress": "^6.9.1",
     "git-branch-is": "^4.0.0",
-    "postcss": "^8.3.8",
+    "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
     "sass": "^1.42.1",
     "stylelint": "^13.13.1",
@@ -74,6 +74,6 @@
   },
   "engines": {
     "node": ">=14",
-    "npm": "6"
+    "npm": "8"
   }
 }
