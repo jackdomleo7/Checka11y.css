@@ -168,6 +168,28 @@ a[href="#"]::after, a[role=button]::after, a[href^="javascript:"]::after {
   background-color: var(--checka11y-bg-warning);
 }
 
+section:empty::before, section > :not(h1, h2, h3, h4, h5, h6, img):last-child::before {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0012): A <section> should contain a heading element." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+section > :is(h1, h2, h3, h4, h5, h6) ~ :not(:is(h1, h2, h3, h4, h5, h6, img)):last-child::before {
+  content: none !important;
+}
+
 [title]::after {
   display: block;
   font-size: 1rem;

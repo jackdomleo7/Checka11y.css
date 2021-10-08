@@ -34,3 +34,4 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - [W0009](./codes.md#W0009): Checks for focusable elements inside `aria-hidden="true"` elements.
 - [W0010](./codes.md#W0010): Checks for heading elements containing `role="text"` attribute.
 - [W0011](./codes.md#W0011): Checks for anchor tags that are used as buttons.
+- [W0012](./codes.md#W0012): Checks for heading element inside `<section>` element.
