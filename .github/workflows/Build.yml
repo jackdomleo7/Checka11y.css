@@ -1,4 +1,4 @@
-name: Linting
+name: Build
 
 on:
   push:
@@ -19,5 +19,9 @@ jobs:
           node-version: '14.x'
       - name: Clean install npm dependencies
         run: npm ci
+      - name: Check project can build successfully
+        run: npm run build
+      - name: Check git is still clean after building
+        run: is-git-status-clean
       - name: Check project linting
         run: npm run lint:check
