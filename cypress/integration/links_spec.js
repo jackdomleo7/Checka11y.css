@@ -72,4 +72,44 @@ describe("<a>", () => {
           .should('eq', "WARNING (W0011): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.")
       });
   });
+
+  it('should have an anchor tag with a link to a PDF, Word, Excel, or PowerPoint document is present on the page.', () => {
+    const fileTypes = [
+      ".pdf",
+      ".docx",
+      ".doc",
+      ".xlsx",
+      ".xls",
+      ".pptx",
+      ".pptm",
+      ".ppt",
+      ".txt"
+    ];
+
+    fileTypes.forEach(ext => {
+      cy.get(`a[href*='${ext}']`)
+        .each(element => {
+          cy.get(element)
+            .after("content")
+            .should('eq', "WARNING (W0013): Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue.")
+        });
+      });
+  });
+
+  it('should have an anchor tag with link to a content site', () => {
+    const sites = [
+      "https://youtu.be",
+      "https://youtube.com",
+      "https://spotify.com/",
+      "https://www.spotify.com/"
+    ];
+    sites.forEach(site => {
+      cy.get(`a[href*='${site}']`)
+        .each(element => {
+          cy.get(element)
+            .after("content")
+            .should('eq', "WARNING (W0014): Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document.")
+        });
+      });
+  });
 });
