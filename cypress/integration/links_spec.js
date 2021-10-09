@@ -100,8 +100,7 @@ describe("<a>", () => {
     const sites = [
       "https://youtu.be",
       "https://youtube.com",
-      "https://spotify.com/",
-      "https://www.spotify.com/"
+      "https://spotify.com/"
     ];
     sites.forEach(site => {
       cy.get(`a[href*='${site}']`)
