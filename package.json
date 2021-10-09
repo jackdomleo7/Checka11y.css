@@ -5,7 +5,7 @@
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "prepublishOnly": "git-branch-is master && npm run test",
+    "prepublishOnly": "git-branch-is master && is-git-status-clean && npm run test",
     "build": "npm run lint:fix && npm run build:errors-and-warnings && npm run build:errors-only && npm run build:warnings-only",
     "build:errors-and-warnings": "sass --no-source-map src/checka11y.scss ./checka11y.css --style=compressed && sass --no-source-map ./checka11y.css ./checka11y.css --style=expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
     "build:errors-only": "sass --no-source-map src/errors/checka11y-errors.scss ./checka11y-errors.css --style=compressed && sass --no-source-map ./checka11y-errors.css ./checka11y-errors.css --style=expanded && npx postcss checka11y-errors.css --use autoprefixer --replace --no-map",
