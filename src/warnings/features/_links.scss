@@ -33,8 +33,7 @@ a {
   /* W0014: Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document. */
   &[href *= "https://youtu.be"],
   &[href *= "https://youtube.com"],
-  &[href *= "https://spotify.com/"],
-  &[href *= "https://www.spotify.com/"] {
+  &[href *= "https://spotify.com/"] {
     &::after {
       @include contentMessage(warning, "W0014", "Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document.");
     }
