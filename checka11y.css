@@ -795,6 +795,42 @@ a[href="#"]::after, a[role=button]::after, a[href^="javascript:"]::after {
   background-color: var(--checka11y-bg-warning);
 }
 
+a[href$=".pdf"]::after, a[href$=".docx"]::after, a[href$=".doc"]::after, a[href$=".xlsx"]::after, a[href$=".xls"]::after, a[href$=".pptx"]::after, a[href$=".pptm"]::after, a[href$=".ppt"]::after, a[href$=".txt"]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0013): Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+a[href*="https://youtu.be"]::after, a[href*="https://youtube.com"]::after, a[href*="https://spotify.com/"]::after, a[href*="https://www.spotify.com/"]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0014): Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
 section:empty::before, section > :not(h1, h2, h3, h4, h5, h6, img):last-child::before {
   display: block;
   font-size: 1rem;
