@@ -1,7 +1,7 @@
 /* W0012: A <section> should contain a heading element */
 
 /**
- * TODO: Investigate refactoring to use :has() when supported by major browsers
+ * TODO: Investigate refactoring to use :has() when supported by major browsers (https://caniuse.com/css-has)
  * Currently, the first selector below will give a warning to all last child element inside a section and then remove it with the second selector by selecting if there's a heading element inside a section.
  * This can be solved easily and more practical by using :has(h1 - h6) to check if a section contains heading element.
  */

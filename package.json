@@ -5,15 +5,16 @@
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
-    "prepublishOnly": "git-branch-is master && npm run test",
+    "prepublishOnly": "git-branch-is master && is-git-status-clean && npm run test",
     "build": "npm run lint:fix && npm run build:errors-and-warnings && npm run build:errors-only && npm run build:warnings-only",
     "build:errors-and-warnings": "sass --no-source-map src/checka11y.scss ./checka11y.css --style=compressed && sass --no-source-map ./checka11y.css ./checka11y.css --style=expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
     "build:errors-only": "sass --no-source-map src/errors/checka11y-errors.scss ./checka11y-errors.css --style=compressed && sass --no-source-map ./checka11y-errors.css ./checka11y-errors.css --style=expanded && npx postcss checka11y-errors.css --use autoprefixer --replace --no-map",
     "build:warnings-only": "sass --no-source-map src/warnings/checka11y-warnings.scss ./checka11y-warnings.css --style=compressed && sass --no-source-map ./checka11y-warnings.css ./checka11y-warnings.css --style=expanded && npx postcss checka11y-warnings.css --use autoprefixer --replace --no-map",
-    "lint:check": "stylelint \"**/*.scss\" --max-warnings=0",
-    "lint:fix": "stylelint \"**/*.scss\" --max-warnings=0 --fix",
+    "lint:check": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore",
+    "lint:fix": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore --fix",
     "test": "cypress run --headless",
-    "test:ui": "cypress open"
+    "test:ui": "cypress open",
+    "has-no-changes": "is-git-status-clean"
   },
   "repository": {
     "type": "git",
@@ -66,6 +67,7 @@
     "autoprefixer": "^10.3.7",
     "cypress": "^6.9.1",
     "git-branch-is": "^4.0.0",
+    "is-git-status-clean": "^1.0.0",
     "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
     "sass": "^1.42.1",
