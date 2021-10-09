@@ -35,3 +35,5 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - [W0010](./codes.md#W0010): Checks for heading elements containing `role="text"` attribute.
 - [W0011](./codes.md#W0011): Checks for anchor tags that are used as buttons.
 - [W0012](./codes.md#W0012): Checks for heading element inside `<section>` element.
+- [W0013](./codes.md#W0013): Checks for anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document.
+- [W0014](./codes.md#W0014): Checks for anchor tags that contain a link to content site.
