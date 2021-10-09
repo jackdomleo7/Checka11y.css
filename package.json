@@ -13,7 +13,8 @@
     "lint:check": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore",
     "lint:fix": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore --fix",
     "test": "cypress run --headless",
-    "test:ui": "cypress open"
+    "test:ui": "cypress open",
+    "has-no-changes": "is-git-status-clean"
   },
   "repository": {
     "type": "git",

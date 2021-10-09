@@ -22,6 +22,6 @@ jobs:
       - name: Check project can build successfully
         run: npm run build
       - name: Check git is still clean after building
-        run: is-git-status-clean
+        run: npm run has-no-changes
       - name: Check project linting
         run: npm run lint:check
