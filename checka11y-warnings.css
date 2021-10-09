@@ -187,7 +187,7 @@ a[href$=".pdf"]::after, a[href$=".docx"]::after, a[href$=".doc"]::after, a[href$
   background-color: var(--checka11y-bg-warning);
 }
 
-a[href*="https://youtu.be"]::after, a[href*="https://youtube.com"]::after, a[href*="https://spotify.com/"]::after, a[href*="https://www.spotify.com/"]::after {
+a[href*="https://youtu.be"]::after, a[href*="https://youtube.com"]::after, a[href*="https://spotify.com/"]::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
