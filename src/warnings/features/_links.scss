@@ -15,3 +15,29 @@ a {
     }
   }
 }
+
+/* W0013: Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue. */
+a {
+  &[href$=".pdf"],
+  &[href$=".docx"],
+  &[href$=".doc"],
+  &[href$=".xls"],
+  &[href$=".xlsx"],
+  &[href$=".txt"] {
+    &::after {
+      @include contentMessage(warning, "W0013", "Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue.");
+    }
+  }
+}
+
+/* W0014: Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document. */
+a {
+  &[href*="https://youtu.be"],
+  &[href*="https://youtube.com"],
+  &[href*="https://spotify.com/"],
+  &[href*="https://www.spotify.com/"] {
+    &::after {
+      @include contentMessage(warning, "W0014", "Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document.");
+    }
+  }
+}
