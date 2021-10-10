@@ -127,3 +127,9 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0012
   The `<section>` element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. This means `<section>` element should be identified, typically by including a heading (`<h1>`-`<h6>` element) as a child of the `<section>` element. [Read more about this here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
+
+- ### W0013
+  The highlighted element `<a>` has been detected to have `href=".pdf|.docx|.doc|.xlsx|.xls|.pptx|.pptm|.ppt|.txt"`. Those anchor elements often have accessibility issues and need to be created with accessibility in mind. This can mean sometimes the element will link to non-accessible content since we cannot guarantee the files will be served in an accessible fashion.
+
+- ### W0014
+  The highlighted element `<a>` has been detected to have `href="https://youtube.com|https://youtu.be|https://spotify.com"`. Those anchor elements often have accessibility issues and need to be created with accessibility in mind. This can mean sometimes the element will link to sites non-accessible content because captioning is often missing or not well generated.

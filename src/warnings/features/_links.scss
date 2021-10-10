@@ -14,4 +14,28 @@ a {
       @include contentMessage(warning, "W0011", "Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons.");
     }
   }
+
+  /* W0013: Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue. */
+  &[href $= ".pdf"],
+  &[href $= ".docx"],
+  &[href $= ".doc"],
+  &[href $= ".xlsx"],
+  &[href $= ".xls"],
+  &[href $= ".pptx"],
+  &[href $= ".pptm"],
+  &[href $= ".ppt"],
+  &[href $= ".txt"] {
+    &::after {
+      @include contentMessage(warning, "W0013", "Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue.");
+    }
+  }
+
+  /* W0014: Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document. */
+  &[href *= "https://youtu.be"],
+  &[href *= "https://youtube.com"],
+  &[href *= "https://spotify.com/"] {
+    &::after {
+      @include contentMessage(warning, "W0014", "Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document.");
+    }
+  }
 }
