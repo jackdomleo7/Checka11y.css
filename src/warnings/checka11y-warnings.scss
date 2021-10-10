@@ -1,19 +1,8 @@
 /*! Checka11y.css v1.3.3 | MIT License | github.com/jackdomleo7/Checka11y.css */
-@import "./variables";
-@import "./customisation";
-@import "../shared/variables";
-@import "../shared/customisation";
-@import "../shared/helpers";
-@import "../shared/messages/content";
-@import "../shared/messages/vector";
-@import "./features/accesskey";
-@import "./features/aria-hidden";
-@import "./features/autoplay";
-@import "./features/handlers";
-@import "./features/images";
-@import "./features/inline";
-@import "./features/links";
-@import "./features/section";
-@import "./features/title";
-@import "./features/underline";
-@import "./features/headings";
+@use "./variables" as *;
+@use "./customisation" as *;
+@use "../shared/variables" as *;
+@use "../shared/customisation" as *;
+@use "../shared/helpers" as *;
+@use "../shared/messages/" as *;
+@use "./features/" as *;
