@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0011: All direct children of <ul> and <ol> must only be <li>, <script> or <template> */
 ol,
 ul {

@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0006: html element requires a lang attribute */
 html:not( [lang] ) body {
   &::before {

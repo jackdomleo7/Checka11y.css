@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0014: Ensure that the tab index of commonly tabbed to elements is not -1 */
 
 a[href][tabindex = "-1"]::after {

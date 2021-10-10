@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0007: All iframe must have title attribute */
 iframe:not( [title] ) {
   @include vectorMessage(error, "E0007", 350, "All &lt;iframe&gt; must", "have a title.");

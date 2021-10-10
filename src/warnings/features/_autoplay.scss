@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0001: Media should not autoplay */
 
 [autoplay] {
