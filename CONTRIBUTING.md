@@ -6,6 +6,8 @@ When looking to contribute to Checka11y.css, please first look at the [Checka11y
 
 You cannot be assigned to more than one issue at the same time, unless you are an owner/collaborator or have had permission from an owner/collaborator. Please complete the issue you are working on before requesting to be assigned to another issue. This is to allow fair opportunity to those wanting to contribute. If you are assigned to an issue, but no longer want to be, just add a comment on the issue letting us know you want to be unassigned (no questions asked). You will automatically be unassigned from an issue after 3 months of inactivity.
 
+Try not to include mass work into a single pull request. We'd prefer one pull request for every issue, so we have a clean history of changes.
+
 This project is happy to take part in [Hacktoberfest](https://hacktoberfest.digitalocean.com) each year and is willing to help dedicated developers make contributions to qualify for their Hacktoberfest profile. We will automatically add the `Hacktoberfest` tag to any pull request in the month of October, unless we feel the pull request is spam, in which case we will mark the pull request as `spam` and the pull request will be closed meaning it will not qualify as a valid pull request for the Hacktoberfest event.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
