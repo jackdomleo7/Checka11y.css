@@ -2,9 +2,9 @@
 
 @mixin contentMessage($errorType, $code, $message) {
   display: block;
-  font-size: $font-size;
-  font-family: $font-family;
-  font-weight: $font-weight;
+  font-size: $checka11y-font-size;
+  font-family: $checka11y-font-family;
+  font-weight: $checka11y-font-weight;
   font-style: initial;
   padding: var(--checka11y-space-4) var(--checka11y-space-6);
   border-radius: 0.75rem;
