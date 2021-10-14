@@ -75,6 +75,14 @@
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
   },
+  "peerDependencies": {
+    "sass": "1.x"
+  },
+  "peerDependenciesMeta": {
+    "sass": {
+      "optional": true
+    }
+  },
   "engines": {
     "node": ">=14",
     "npm": "8"
