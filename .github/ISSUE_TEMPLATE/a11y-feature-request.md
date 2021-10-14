@@ -2,7 +2,7 @@
 name: ♿ A11y feature request
 about: Suggest an idea for a new a11y feature
 title: '[A11Y FEATURE]: <title>'
-labels: a11y-feature
+labels: 'a11y feature'
 
 ---
 

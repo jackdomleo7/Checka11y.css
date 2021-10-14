@@ -1,7 +1,7 @@
 ---
 name: 🚀 Project enhancement
 about: Submit an enhancement or maintenance
-labels: project-enhancement
+labels: 'project enhancement'
 title: '[ENHANCEMENT]: <title>'
 ---
 
@@ -16,7 +16,7 @@ title: '[ENHANCEMENT]: <title>'
 <!--
   Explain why this enhancement or maintenance is important to have in Checka11y.css.
   Provide any relevant links to back up your changes.
-  If this pull request resolves a `project-enhancement` issue, you can leave this section out and just put "This is described in the linked issue."
+  If this pull request resolves a `project enhancement` issue, you can leave this section out and just put "This is described in the linked issue."
 -->
 
 ## Covered test cases

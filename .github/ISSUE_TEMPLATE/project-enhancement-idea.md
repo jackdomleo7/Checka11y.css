@@ -2,7 +2,7 @@
 name: 💻 Project enhancement/maintenance idea
 about: Suggest an idea for a project enhancement or maintenance
 title: '[ENHANCEMENT]: <title>'
-labels: project-enhancement
+labels: 'project enhancement'
 
 ---
 
