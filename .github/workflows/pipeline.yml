@@ -25,7 +25,6 @@ jobs:
         run: npm run has-no-changes
       - name: Check project linting
         run: npm run lint:check
-
   tests:
     runs-on: ubuntu-latest
     steps:
@@ -35,7 +34,6 @@ jobs:
           browser: chrome
           headless: true
           spec: "cypress/integration/*"
-
   publish:
     needs: [build, tests]
     if: github.ref == 'refs/heads/master'
@@ -48,7 +46,7 @@ jobs:
           node-version: '14.x'
       - name: Clean install npm dependencies
         run: npm ci
-      - name: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           check-version: true
