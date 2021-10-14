@@ -25,8 +25,8 @@ labels: a11y-feature
 <!--
   Provide a bullet-pointed list of acceptance criteria.
 -->
-- 
-- 
+- [ ] 
+- [ ] 
 
 
 ## Why is this a11y feature important?
