@@ -1,7 +1,7 @@
 ---
 name: ♿ A11y feature
 about: Submit a new a11y feature
-labels: a11y-feature
+labels: 'a11y feature'
 title: '[A11Y FEATURE]: <title>'
 ---
 
@@ -16,7 +16,7 @@ title: '[A11Y FEATURE]: <title>'
 <!--
   Explain why this feature is important to have in Checka11y.css.
   Provide any relevant links to back up your reasoning.
-  If this pull request resolves an `a11y-feature` issue, you can leave this section out and just put "This is described in the linked issue."
+  If this pull request resolves an `a11y feature` issue, you can leave this section out and just put "This is described in the linked issue."
 -->
 
 ## Covered test cases
@@ -27,7 +27,7 @@ title: '[A11Y FEATURE]: <title>'
 ### Did you test on all major browsers?
 <!--
   Put an `x` in all the boxes that apply.
-  If not, please add a brief explanation as to why you couldn't (e.g. "I couldn't test Safari because I don't have access to an Apple device).
+  If not, please add a brief explanation as to why you couldn't (e.g. "I couldn't test Safari because I don't have access to an Apple device").
 -->
 - [ ] Chrome
 - [ ] Firefox

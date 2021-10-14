@@ -1,7 +1,7 @@
 ---
 name: 🚀 Project enhancement
 about: Submit an enhancement or maintenance
-labels: project-enhancement
+labels: 'project enhancement'
 title: '[ENHANCEMENT]: <title>'
 ---
 
@@ -16,7 +16,7 @@ title: '[ENHANCEMENT]: <title>'
 <!--
   Explain why this enhancement or maintenance is important to have in Checka11y.css.
   Provide any relevant links to back up your changes.
-  If this pull request resolves a `project-enhancement` issue, you can leave this section out and just put "This is described in the linked issue."
+  If this pull request resolves a `project enhancement` issue, you can leave this section out and just put "This is described in the linked issue."
 -->
 
 ## Covered test cases
@@ -27,7 +27,7 @@ title: '[ENHANCEMENT]: <title>'
 ### Did you test on all major browsers?
 <!--
   Put an `x` in all the boxes that apply.
-  If not, please add a brief explanation as to why you couldn't (e.g. "I couldn't test Safari because I don't have access to an Apple device).
+  If not, please add a brief explanation as to why you couldn't (e.g. "I couldn't test Safari because I don't have access to an Apple device").
 -->
 - [ ] Chrome
 - [ ] Firefox
