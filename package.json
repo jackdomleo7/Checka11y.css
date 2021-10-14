@@ -71,7 +71,7 @@
     "is-git-status-clean": "^1.0.0",
     "postcss": "^8.3.9",
     "postcss-cli": "^9.0.1",
-    "sass": "^1.42.1",
+    "sass": "^1.43.2",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
   },
