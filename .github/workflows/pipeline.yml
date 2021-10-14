@@ -1,0 +1,54 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Clean install npm dependencies
+        run: npm ci
+      - name: Check project can build successfully
+        run: npm run build
+      - name: Check git is still clean after building
+        run: npm run has-no-changes
+      - name: Check project linting
+        run: npm run lint:check
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          headless: true
+          spec: "cypress/integration/*"
+
+  publish:
+    needs: [build, tests]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Clean install npm dependencies
+        run: npm ci
+      - name: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          check-version: true
