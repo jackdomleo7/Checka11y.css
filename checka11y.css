@@ -1,5 +1,3 @@
-/*! Checka11y.css v1.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
-/*! Checka11y.css v1.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
   --checka11y-text-error: #721c24;
   --checka11y-bg-error: #ffc6c6;
@@ -624,19 +622,11 @@ iframe[tabindex="-1"] {
   background-color: var(--checka11y-bg-error);
 }
 
-/*! Checka11y.css v1.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
+/*! Checka11y.css v1.3.3 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
   --checka11y-text-warning: #856404;
   --checka11y-bg-warning: #ffffd8;
   --checka11y-border-warning: #ff6;
-}
-
-:root {
-  --checka11y-space: 0.25rem;
-  --checka11y-space-0: calc(var(--checka11y-space) * 0);
-  --checka11y-space-2: calc(var(--checka11y-space) * 2);
-  --checka11y-space-4: calc(var(--checka11y-space) * 4);
-  --checka11y-space-6: calc(var(--checka11y-space) * 6);
 }
 
 [accesskey]::after {
@@ -708,6 +698,24 @@ iframe[tabindex="-1"] {
   text-transform: initial;
   text-shadow: none;
   content: "WARNING (W0002): Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative." !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+h1[role=text]::after, h2[role=text]::after, h3[role=text]::after, h4[role=text]::after, h5[role=text]::after, h6[role=text]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0010): Using role='text' on a heading element causes it to lose semantic meaning for screen readers" !important;
   color: var(--checka11y-text-warning);
   border: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
@@ -889,20 +897,5 @@ u::after {
   background-color: var(--checka11y-bg-warning);
 }
 
-h1[role=text]::after, h2[role=text]::after, h3[role=text]::after, h4[role=text]::after, h5[role=text]::after, h6[role=text]::after {
-  display: block;
-  font-size: 1rem;
-  font-family: verdana, geneva, tahoma, sans-serif;
-  font-weight: 700;
-  font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
-  border-radius: 0.75rem;
-  letter-spacing: initial;
-  text-decoration: none;
-  text-transform: initial;
-  text-shadow: none;
-  content: "WARNING (W0010): Using role='text' on a heading element causes it to lose semantic meaning for screen readers" !important;
-  color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
-  background-color: var(--checka11y-bg-warning);
-}
+/*! Checka11y.css v1.3.3 | MIT License | github.com/jackdomleo7/Checka11y.css */
+/*! Checka11y.css v1.3.3 | MIT License | github.com/jackdomleo7/Checka11y.css */

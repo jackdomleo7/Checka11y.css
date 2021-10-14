@@ -1,4 +1,5 @@
 /* To only be used on ::before or ::after */
+@use "../../shared/variables" as *;
 
 @mixin contentMessage($errorType, $code, $message) {
   display: block;

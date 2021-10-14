@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0004: Inline styles with !important should be avoided to allow end-users to add their custom stylesheet */
 [style *= "!important"]::after {
   @include contentMessage(warning, "W0004", "!important inline styles should be avoided.");

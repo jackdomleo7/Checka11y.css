@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0008: All images require an alt attribute */
 img:not( [alt] ) {
   @include vectorMessage(error, "E0008", 350, "All &lt;img&gt; must", "have alternative text.");

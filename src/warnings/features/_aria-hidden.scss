@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0009: Elements with aria-hidden should not have focusable descendants. */
 
 [aria-hidden = "true"] {

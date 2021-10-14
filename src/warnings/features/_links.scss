@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0006: Warn when opening a link in a new tab or window */
 a[target = "_blank"] {
   &::after {

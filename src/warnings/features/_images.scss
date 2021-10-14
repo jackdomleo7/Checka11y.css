@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0003: Images should have a meaningful alt value */
 
 $suspiciousAltFull: "image", "graphic", "photo", "photograph", "drawing", "painting", "artwork", "logo", "bullet", "button", "arrow", "more", "spacer", "blank", "chart", "table", "diagram", "graph", "*", " ";

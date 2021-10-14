@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0013: If more than one primary navigation is available, all navigations must be clearly labelled. */
 nav:not( [aria-label] ):not( [aria-labelledby] ) ~ nav,
 nav ~ nav:not( [aria-label] ):not( [aria-labelledby] ) {

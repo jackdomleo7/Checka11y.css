@@ -1,18 +1,8 @@
-/*! Checka11y.css v1.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
-@import "./variables";
-@import "./customisation";
-@import "../shared/variables";
-@import "../shared/customisation";
-@import "../shared/helpers";
-@import "../shared/messages/content";
-@import "../shared/messages/vector";
-@import "./features/buttons";
-@import "./features/dir";
-@import "./features/headings";
-@import "./features/html";
-@import "./features/iframe";
-@import "./features/images";
-@import "./features/links";
-@import "./features/lists";
-@import "./features/navigation";
-@import "./features/tabindex";
+/*! Checka11y.css v1.3.3 | MIT License | github.com/jackdomleo7/Checka11y.css */
+@use "./variables" as *;
+@use "./customisation" as *;
+@use "../shared/variables" as *;
+@use "../shared/customisation" as *;
+@use "../shared/helpers" as *;
+@use "../shared/messages/" as *;
+@use "./features/" as *;

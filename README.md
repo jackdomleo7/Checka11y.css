@@ -123,10 +123,10 @@ In the below imports, replace `:file` with one of the options below:
 - `src/warnings/checka11y-warnings` <small>(warnings **only**)</small>
 ```scss
 /* Webpack */
-@import '~checka11y-css/:file';
+@use '~checka11y-css/:file' as *;
 
 /* Non-webpack */
-@import 'path/to/node_modules/checka11y-css/:file';
+@use 'path/to/node_modules/checka11y-css/:file' as *;
 ```
 
 ### Using Angular?

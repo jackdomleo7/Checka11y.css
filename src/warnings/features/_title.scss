@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0008: Warn when using the title attribute due to its accessibility concerns */
 
 // TODO: This won't throw warnings for void elements that cannot show an ::after

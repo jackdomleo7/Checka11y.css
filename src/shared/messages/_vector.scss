@@ -2,6 +2,10 @@
 * -- Vector processing --
 * To only ever be called from @mixin vectorMessage() {}
 */
+@use "../helpers" as *;
+@use "../../errors/variables" as *;
+@use "../../shared/variables" as *;
+@use "../../warnings/variables" as *;
 
 @function generate-vector-text($errorType, $code, $lines) {
   $textLines: ();

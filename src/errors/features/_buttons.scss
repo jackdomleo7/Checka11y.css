@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* E0000: Invalid HTML nested inside <button> */
 button {
   audio[controls] {

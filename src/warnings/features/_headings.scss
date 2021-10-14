@@ -1,3 +1,5 @@
+@use "../../shared/messages/" as *;
+
 /* W0010: Warn when using the role='text' attribute on headings due to its accessibility concerns */
 
 h1,
