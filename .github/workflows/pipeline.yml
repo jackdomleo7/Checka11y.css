@@ -46,7 +46,8 @@ jobs:
           node-version: '14.x'
       - name: Clean install npm dependencies
         run: npm ci
-      - uses: JS-DevTools/npm-publish@v1
+      - name: Publish to npm
+        uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           check-version: true
