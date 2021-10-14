@@ -27,7 +27,7 @@ title: '[ENHANCEMENT]: <title>'
 ### Did you test on all major browsers?
 <!--
   Put an `x` in all the boxes that apply.
-  If not, please add a brief explanation as to why you couldn't (e.g. "I couldn't test Safari because I don't have access to an Apple device).
+  If not, please add a brief explanation as to why you couldn't (e.g. "I couldn't test Safari because I don't have access to an Apple device").
 -->
 - [ ] Chrome
 - [ ] Firefox
