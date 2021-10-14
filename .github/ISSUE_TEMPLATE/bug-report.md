@@ -35,8 +35,8 @@ Checka11y.css version:
 <!--
   Provide a bullet-pointed list of acceptance criteria.
 -->
-- 
-- 
+- [ ] 
+- [ ] 
 
 ## Why is fixing this bug important?
 <!--

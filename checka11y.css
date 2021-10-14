@@ -1,3 +1,4 @@
+/*! Checka11y.css v1.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
   --checka11y-text-error: #721c24;
   --checka11y-bg-error: #ffc6c6;
@@ -622,7 +623,7 @@ iframe[tabindex="-1"] {
   background-color: var(--checka11y-bg-error);
 }
 
-/*! Checka11y.css v1.3.3 | MIT License | github.com/jackdomleo7/Checka11y.css */
+/*! Checka11y.css v1.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
   --checka11y-text-warning: #856404;
   --checka11y-bg-warning: #ffffd8;

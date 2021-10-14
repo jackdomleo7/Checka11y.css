@@ -59,21 +59,21 @@
   $height: length($textLines) * 25 + 30; // number of lines * 25 (line height) + 30 (padding top and bottom)
 
   @if $errorType == error {
-    $border-svg: $border-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
-    $bg-svg: $bg-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
-    $text-svg: $text-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $border-svg: $checka11y-border-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $bg-svg: $checka11y-bg-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $text-svg: $checka11y-text-error; // stylelint-disable-line scss/no-duplicate-dollar-variables
     border-color: var(--checka11y-border-error);
   }
   @else if $errorType == warning {
-    $border-svg: $border-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
-    $bg-svg: $bg-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
-    $text-svg: $text-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $border-svg: $checka11y-border-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $bg-svg: $checka11y-bg-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
+    $text-svg: $checka11y-text-warning; // stylelint-disable-line scss/no-duplicate-dollar-variables
     border-color: var(--checka11y-border-warning);
   }
   @else {
     @error "The $errorType must be either 'error' or 'warning' and the $code must start with either 'E' or 'W' respectively.";
   }
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="#{$width}px" height="#{$height}px" viewBox="0 0 #{$width} #{$height}"><rect class="box" x="4" y="4" width="#{$width - 8}" height="#{$height - 8}" rx="12" ry="12" fill="#{transparentize($bg-svg, 0.000001)}" stroke-width="0.4rem" stroke="#{transparentize($border-svg, 0.000001)}" /><g fill="#{transparentize($text-svg, 0.000001)}" font-size="#{$font-size}" font-weight="#{$font-weight}" font-family="#{$font-family}" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none">#{$textLines}</g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="#{$width}px" height="#{$height}px" viewBox="0 0 #{$width} #{$height}"><rect class="box" x="4" y="4" width="#{$width - 8}" height="#{$height - 8}" rx="12" ry="12" fill="#{transparentize($bg-svg, 0.000001)}" stroke-width="0.4rem" stroke="#{transparentize($border-svg, 0.000001)}" /><g fill="#{transparentize($text-svg, 0.000001)}" font-size="#{$checka11y-font-size}" font-weight="#{$checka11y-font-weight}" font-family="#{$checka11y-font-family}" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none">#{$textLines}</g></svg>');
   background-position: bottom center;
   background-repeat: no-repeat;
   min-width: #{$width}px;
