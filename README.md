@@ -76,6 +76,8 @@ If you wanted more details on this error and how to resolve it, you can referenc
 
 ## Usage
 
+Read our [migration guide on migrating from v1 to v2](https://github.com/jackdomleo7/Checka11y.css/wiki/How-to-migrate-from-v1-to-v2).
+
 ### CDN
 
 In the below CDN links:
