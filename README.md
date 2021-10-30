@@ -171,7 +171,7 @@ Checka11y.css is licensed under MIT. As a minimum, you are required to KEEP AND 
 
 ## Contributing
 
-_This project uses npm8 and Node >= 14 - however any project using this package **does not** need these versions, they can use any version of npm & Node._
+_This project uses npm ≥ 8 and Node ≥ 16 - however any project using this package **does not** need these versions, they can use any version of npm & Node._
 
 1. Read [CONTRIBUTING](./CONTRIBUTING.md) guidelines
 2. `git clone https://github.com/jackdomleo7/Checka11y.css.git` or fork the repo
