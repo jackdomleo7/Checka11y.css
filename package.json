@@ -10,6 +10,7 @@
     "build:errors-and-warnings": "sass --no-source-map src/checka11y.scss ./checka11y.css --style=compressed && sass --no-source-map ./checka11y.css ./checka11y.css --style=expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
     "build:errors-only": "sass --no-source-map src/errors/checka11y-errors.scss ./checka11y-errors.css --style=compressed && sass --no-source-map ./checka11y-errors.css ./checka11y-errors.css --style=expanded && npx postcss checka11y-errors.css --use autoprefixer --replace --no-map",
     "build:warnings-only": "sass --no-source-map src/warnings/checka11y-warnings.scss ./checka11y-warnings.css --style=compressed && sass --no-source-map ./checka11y-warnings.css ./checka11y-warnings.css --style=expanded && npx postcss checka11y-warnings.css --use autoprefixer --replace --no-map",
+    "build:minify": "npm run build && node minify.js",
     "lint:check": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore",
     "lint:fix": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore --fix",
     "test": "cypress run --headless",
