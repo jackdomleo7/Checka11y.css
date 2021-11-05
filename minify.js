@@ -4,7 +4,8 @@ const stylesheets = ["checka11y.css", "checka11y-errors.css", "checka11y-warning
 
 console.log("Running clean-css!");
 stylesheets.forEach(filename => {
-    console.log(`Generating ${filename.slice(0, -4)}-minified.css`);
+    let minifiedFile = `${filename.slice(0, -4)}-minified.css`;
+    console.log(`Generating ${minifiedFile}`);
     fs.readFile(`./${filename}`, "utf8", (err, data) => {
         if (err) {
             console.error(err);
@@ -17,8 +18,7 @@ stylesheets.forEach(filename => {
         let styles = new CleanCSS({}).minify(data).styles;
 
         // we can write the minified CSS to respective files, discuss this
-        let minifiedFile = `./${filename.slice(0, -4)}-minified.css`;
-        fs.writeFile(`${minifiedFile}`, styles, (err) => {
+        fs.writeFile(`./${minifiedFile}`, styles, (err) => {
             if (err) {
                 console.error(err);
                 return;
