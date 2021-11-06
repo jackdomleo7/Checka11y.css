@@ -1,13 +1,13 @@
-@import "../node_modules/normalize.css/normalize";
-@import "./global";
-@import "./button";
-@import "./header";
-@import "./footer";
-@import "./link";
-@import "./buy-me-a-coffee";
-@import "./helpers";
-@import "./sections";
-@import "./code";
+@use "../node_modules/normalize.css/normalize" as *;
+@use "./global" as *;
+@use "./button" as *;
+@use "./header" as *;
+@use "./footer" as *;
+@use "./link" as *;
+@use "./buy-me-a-coffee" as *;
+@use "./helpers" as *;
+@use "./sections" as *;
+@use "./code" as *;
 
 .main {
   display: flex;

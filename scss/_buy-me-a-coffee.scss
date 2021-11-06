@@ -3,7 +3,7 @@
   background-color: #ff813f;
   border: 1px solid transparent;
   border-radius: 0.3125rem;
-  box-shadow: 0 0.0625rem 0.125rem rgba(190, 190, 190, 0.5);
+  box-shadow: 0 0.0625rem 0.125rem rgb(190 190 190 / 50%);
   box-sizing: border-box;
   color: #fff;
   display: inline-flex;
@@ -14,20 +14,20 @@
   padding: 0.4375rem 0.9375rem 0.4375rem 0.625rem;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    svg {
-      transform-origin: bottom;
-      transform: rotate(-6deg);
-    }
-  }
-
   svg {
     border: none;
     box-shadow: none;
     height: 1.375rem;
     width: 1.375rem;
     transition: 160ms ease;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      transform-origin: bottom;
+      transform: rotate(-6deg);
+    }
   }
 
   span {
@@ -37,9 +37,9 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 0 0.0625rem 0.125rem 0.125rem rgba(190, 190, 190, 0.5);
+    box-shadow: 0 0.0625rem 0.125rem 0.125rem rgb(190 190 190 / 50%);
     color: #fff;
-    opacity: 0.85;
+    opacity: 85%;
     text-decoration: none;
   }
 }

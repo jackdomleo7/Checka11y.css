@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "./variables" as *;
+
 .button {
   background-color: $orange;
   color: #fff;
@@ -9,6 +12,6 @@
 
   &:hover,
   &:focus {
-    background-color: mix($orange, #fff, 80%);
+    background-color: color.mix($orange, #fff, 80%);
   }
 }
