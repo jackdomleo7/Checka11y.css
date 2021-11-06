@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "./variables" as *;
 
 .link {
@@ -7,7 +8,7 @@
 
   &:hover,
   &:focus {
-    color: mix($orange, #fff, 80%);
+    color: color.mix($orange, #fff, 80%);
   }
 
   @media (prefers-reduced-motion: reduce) {

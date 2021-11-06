@@ -45,7 +45,8 @@
 
       &:hover,
       &:focus {
-        filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)) invert(5%);
+        /* stylelint-disable-next-line scss/no-global-function-names */
+        filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem rgb(0 0 0 / 10%)) invert(5%);
       }
 
       img {
