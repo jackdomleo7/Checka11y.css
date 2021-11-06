@@ -5,7 +5,7 @@
   "description": "Documentation website for Checka11y.css.",
   "main": "index.js",
   "scripts": {
-    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/checka11y.scss css/checka11y.min.css && node-sass scss/prism.scss css/prism.min.css && npx postcss css --use autoprefixer cssnano --replace && npx sitemap-generator-cli https://checka11y.jackdomleo.dev --last-mod",
+    "docs": "stylelint \"**/*.scss\" --fix && sass --no-source-map scss/docs.scss css/docs.min.css && sass --no-source-map scss/checka11y.scss css/checka11y.min.css && sass --no-source-map scss/prism.scss css/prism.min.css && npx postcss css --use autoprefixer cssnano --replace && npx sitemap-generator-cli https://checka11y.jackdomleo.dev --last-mod",
     "serve": "http-server ./ --port 1234 -a localhost"
   },
   "repository": {
@@ -29,9 +29,9 @@
     "checka11y-css": "^1.3.3",
     "cssnano": "^4.1.11",
     "http-server": "^0.12.3",
-    "node-sass": "^5.0.0",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
+    "sass": "^1.43.4",
     "sitemap-generator-cli": "^7.5.0",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.19.0"
