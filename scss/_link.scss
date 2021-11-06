@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .link {
   color: $blue;
   font-weight: 700;

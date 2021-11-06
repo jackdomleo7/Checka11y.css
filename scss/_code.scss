@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .code {
   background-color: fade-out(#fafafa, 0.5);
   color: $orange;
