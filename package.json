@@ -67,7 +67,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^10.3.7",
-    "clean-css": "^5.2.2",
+    "clean-css-cli": "^5.4.2",
     "cypress": "^6.9.1",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
