@@ -9,9 +9,6 @@ describe("[autoplay]", () => {
   
   it('should show warning outline on elements with autoplay', () => {
     cy.get("[autoplay]")
-      .each(element => {
-        cy.get(element)
-          .should('have.css', 'border-color', WARNING_BORDER_COLOR)
-      });
+      .should('have.css', 'border-color', WARNING_BORDER_COLOR)
   });
 });
