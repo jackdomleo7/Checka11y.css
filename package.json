@@ -13,7 +13,7 @@
     "build:minify": "npm run build && cleancss --batch --batch-suffix '.min' checka11y.css checka11y-errors.css checka11y-warnings.css",
     "lint:check": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore",
     "lint:fix": "stylelint \"**/*.scss\" --max-warnings=0 --ignore-path .gitignore --fix",
-    "test": "cypress run --headless",
+    "test": "cypress run",
     "test:ui": "cypress open",
     "has-no-changes": "is-git-status-clean"
   },
@@ -68,7 +68,7 @@
   "devDependencies": {
     "autoprefixer": "^10.3.7",
     "clean-css-cli": "^5.4.2",
-    "cypress": "^6.9.1",
+    "cypress": "^8.7.0",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
     "postcss": "^8.3.9",
