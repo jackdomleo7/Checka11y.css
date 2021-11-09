@@ -126,12 +126,23 @@ In the below imports, replace `:file` with one of the options below:
   - `checka11y.css` <small>(.css file)</small>
 - `src/errors/checka11y-errors` <small>(errors **only**)</small>
 - `src/warnings/checka11y-warnings` <small>(warnings **only**)</small>
+
+Use as a Sass module <small>(recommended)</small>:
 ```scss
 /* Webpack */
 @use '~checka11y-css/:file' as *;
 
 /* Non-webpack */
 @use 'path/to/node_modules/checka11y-css/:file' as *;
+```
+
+Import generally <small>(not recommended, <a href="https://sass-lang.com/documentation/at-rules/import">read why</a>)</small>:
+```scss
+/* Webpack */
+@import '~checka11y-css/:file';
+
+/* Non-webpack */
+@import 'path/to/node_modules/checka11y-css/:file';
 ```
 
 ### Using Angular?
