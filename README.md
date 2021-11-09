@@ -84,8 +84,11 @@ In the below CDN links:
 - Replace `:version` with a version [listed here](https://www.npmjs.com/package/checka11y-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@:version` completely (Not recommended).
 - Replace `:stylesheet` with one of the listed stylesheets below:
   - `checka11y.css` <small>(errors & warnings, recommended)</small>
+  - `checka11y.min.css` <small>(minified errors & warnings, recommended)</small>
   - `checka11y-errors.css` <small>(errors **only**)</small>
+  - `checka11y-errors.min.css` <small>(minified errors **only**)</small>
   - `checka11y-warnings.css` <small>(errors **only**)</small>
+  - `checka11y-warnings.min.css` <small>(minified errors **only**)</small>
 
 ```html
 <!-- HTML -->
@@ -123,12 +126,23 @@ In the below imports, replace `:file` with one of the options below:
   - `checka11y.css` <small>(.css file)</small>
 - `src/errors/checka11y-errors` <small>(errors **only**)</small>
 - `src/warnings/checka11y-warnings` <small>(warnings **only**)</small>
+
+Use as a Sass module <small>(recommended)</small>:
 ```scss
 /* Webpack */
 @use '~checka11y-css/:file' as *;
 
 /* Non-webpack */
 @use 'path/to/node_modules/checka11y-css/:file' as *;
+```
+
+Import generally <small>(not recommended, <a href="https://sass-lang.com/documentation/at-rules/import">read why</a>)</small>:
+```scss
+/* Webpack */
+@import '~checka11y-css/:file';
+
+/* Non-webpack */
+@import 'path/to/node_modules/checka11y-css/:file';
 ```
 
 ### Using Angular?
