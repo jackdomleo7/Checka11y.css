@@ -84,8 +84,11 @@ In the below CDN links:
 - Replace `:version` with a version [listed here](https://www.npmjs.com/package/checka11y-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@:version` completely (Not recommended).
 - Replace `:stylesheet` with one of the listed stylesheets below:
   - `checka11y.css` <small>(errors & warnings, recommended)</small>
+  - `checka11y.min.css` <small>(minified errors & warnings, recommended)</small>
   - `checka11y-errors.css` <small>(errors **only**)</small>
+  - `checka11y-errors.min.css` <small>(minified errors **only**)</small>
   - `checka11y-warnings.css` <small>(errors **only**)</small>
+  - `checka11y-warnings.min.css` <small>(minified errors **only**)</small>
 
 ```html
 <!-- HTML -->
