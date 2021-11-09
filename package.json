@@ -69,14 +69,14 @@
     "CHANGELOG"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.0",
     "clean-css-cli": "^5.4.2",
     "cypress": "^8.7.0",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "postcss": "^8.3.9",
-    "postcss-cli": "^9.0.1",
-    "sass": "^1.43.2",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "sass": "^1.43.4",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
   },
