@@ -58,8 +58,11 @@
   "files": [
     "src/*",
     "checka11y.css",
+    "checka11y.min.css",
     "checka11y-errors.css",
+    "checka11y-errors.min.css",
     "checka11y-warnings.css",
+    "checka11y-warnings.min.css",
     "postcss.config.js",
     "README.md",
     "LICENSE",
