@@ -302,6 +302,26 @@ img:not([alt]) {
   padding-bottom: 80px;
 }
 
+img[longdesc$=".jpg" i], img[longdesc$=".jpeg" i], img[longdesc$=".png" i], img[longdesc$=".gif" i], img[longdesc$=".svg" i], img[longdesc$=".bmp" i], img[longdesc$=".tif" i], img[longdesc$=".tiff" i], img[longdesc$=".eps" i], img[longdesc$=".avif" i], img[longdesc$=".webp" i] {
+  border: 0.4rem solid;
+  border-color: var(--checka11y-border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="450px" height="80px" viewBox="0 0 450 80"><rect class="box" x="4" y="4" width="442" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0015): longdesc attribute cannot</text> <text x="15" y="60">point to an image.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 450px;
+  padding-bottom: 80px;
+}
+
+img[longdesc*=" "], img[longdesc=""] {
+  border: 0.4rem solid;
+  border-color: var(--checka11y-border-error);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="450px" height="80px" viewBox="0 0 450 80"><rect class="box" x="4" y="4" width="442" height="72" rx="12" ry="12" fill="rgba(255, 198, 198, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 0, 0, 0.999999)" /><g fill="rgba(114, 28, 36, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">ERROR (E0016): longdesc attribute should be</text> <text x="15" y="60">a valid URL instead of plain text.</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 450px;
+  padding-bottom: 80px;
+}
+
 a audio[controls] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-error);
