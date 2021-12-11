@@ -48,4 +48,41 @@ describe("<images>", () => {
           .should('have.css', 'border-color', WARNING_BORDER_COLOR)
       });
   });
+
+  it('should show an alert (warning or error) if images have a longdesc', () => {
+    cy.get(`img[longdesc]`)
+      .each(element => {
+        cy.get(element)
+          .should('have.css', 'border-color')
+      });
+  });
+
+  it('should show error if images have a longdesc linking to an image', () => {
+    cy.get(`
+        img[longdesc$=".png"i], img[longdesc$=".jpg"i], img[longdesc$=".jpeg"i],
+        img[longdesc$=".gif"i], img[longdesc$=".svg"i], img[longdesc$=".bmp"i],
+        img[longdesc$=".eps"i], img[longdesc$=".tif"i], img[longdesc$=".tiff"i],
+        img[longdesc$=".webp"i], img[longdesc$=".avif"i]
+      `)
+      .each(element => {
+        cy.get(element)
+          .should('have.css', 'border-color', ERROR_BORDER_COLOR)
+      });
+  });
+
+  it('should show error if images have a longdesc with spaces (invalid URL, possible plain text)', () => {
+    cy.get(`img[longdesc*=" "]`)
+      .each(element => {
+        cy.get(element)
+          .should('have.css', 'border-color', ERROR_BORDER_COLOR)
+      });
+  });
+
+  it('should show error if images have an empty longdesc', () => {
+    cy.get(`img[longdesc=""]`)
+      .each(element => {
+        cy.get(element)
+          .should('have.css', 'border-color', ERROR_BORDER_COLOR)
+      });
+  });
 });

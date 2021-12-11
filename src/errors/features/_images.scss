@@ -4,3 +4,23 @@
 img:not( [alt] ) {
   @include vectorMessage(error, "E0008", 350, "All &lt;img&gt; must", "have alternative text.");
 }
+
+/* E0015: the longdesc attribute contains an invalid value */
+img[longdesc $= ".jpg" i],
+img[longdesc $= ".jpeg" i],
+img[longdesc $= ".png" i],
+img[longdesc $= ".gif" i],
+img[longdesc $= ".svg" i],
+img[longdesc $= ".bmp" i],
+img[longdesc $= ".tif" i],
+img[longdesc $= ".tiff" i],
+img[longdesc $= ".eps" i],
+img[longdesc $= ".avif" i],
+img[longdesc $= ".webp" i] {
+  @include vectorMessage(error, "E0015", 450, "longdesc attribute cannot", "point to an image.");
+}
+
+img[longdesc *= " "],
+img[longdesc = ""] {
+  @include vectorMessage(error, "E0016", 450, "longdesc attribute should be", "a valid URL instead of plain text.");
+}

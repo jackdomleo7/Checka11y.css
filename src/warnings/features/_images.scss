@@ -25,3 +25,9 @@ $suspiciousAltStart: "graphic of", "bullet", "image of", "logo of", "logo for";
     @extend %imageMeaningfulAlt;
   }
 }
+
+/* W0015: longdesc attribute is deprecated */
+
+img[longdesc] {
+  @include vectorMessage(warning, "W0015", 450, "longdesc attribute is", "deprecated and should be avoided.");
+}

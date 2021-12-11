@@ -87,6 +87,12 @@ A list of every Checka11y.css error & warning code with details on what the issu
   - `<iframe>`
   - Any HTML element with `contentEditable`
 
+- ### E0015
+  The `longdesc` attribute has been detected in an `<img>` and it has an invalid value. The `longdesc` attribute must be a URL to a web page, but the detected `longdesc` is a link to an image which is an accessibility problem (because there won't be an image description.)
+
+- ### E0016
+  The `longdesc` attribute has been detected in an `<img>` and it has an invalid value. The `longdesc` attribute must be a URL to a web page, but the detected `longdesc` is empty or it contains blank spaces so it's not a valid URL.
+
 ## Warnings <small>(Wxxx)</small>
 
 - ### W0000
@@ -133,3 +139,6 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0014
   The highlighted element `<a>` has been detected to have `href="https://youtube.com|https://youtu.be|https://spotify.com"`. Those anchor elements often have accessibility issues and need to be created with accessibility in mind. This can mean sometimes the element will link to sites non-accessible content because captioning is often missing or not well generated.
+
+- ### W0015
+  The `longdesc` attribute has been detected in an `<img>`. The `longdesc` attribute in images is deprecated and should not be used. It is not fully supported by HTML5, browsers, or screen readers. When present, it is commonly misused (it should point to an URL that is not an image).

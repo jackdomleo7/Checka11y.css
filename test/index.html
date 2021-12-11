@@ -53,6 +53,17 @@
       <img alt="bullet 1" src="./assets/a11y.png" />
     </section>
     <section>
+      <h2>Images: Should avoid longdesc attribute and it must be an URL.</h2>
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.test" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.jpg" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.png" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.gif" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.avif" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.svg" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="This longdesc is invalid because it should be an URL instead of plain text" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="" />
+    </section>
+    <section>
       <h2>iframe: iframe has title attribute</h2>
       <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
       <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500" title="Test with title"></iframe>
