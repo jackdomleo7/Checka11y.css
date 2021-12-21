@@ -797,24 +797,6 @@ a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
   background-color: var(--checka11y-bg-error);
 }
 
-ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
-  display: block;
-  font-size: 1rem;
-  font-family: verdana, geneva, tahoma, sans-serif;
-  font-weight: 700;
-  font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
-  border-radius: 0.75rem;
-  letter-spacing: initial;
-  text-decoration: none;
-  text-transform: initial;
-  text-shadow: none;
-  content: "ERROR (E0011): List markup invalid. Ensure <li>, <script> or <template> are the only direct children of <ul> or <ol>." !important;
-  color: var(--checka11y-text-error);
-  border: 0.4rem solid var(--checka11y-border-error);
-  background-color: var(--checka11y-bg-error);
-}
-
 dl > *:not(dt):not(dd)::after {
   display: block;
   font-size: 1rem;
@@ -828,6 +810,24 @@ dl > *:not(dt):not(dd)::after {
   text-transform: initial;
   text-shadow: none;
   content: "ERROR (E0012): List markup invalid. Ensure that the only direct children of <dl> are <dt> and <dd>." !important;
+  color: var(--checka11y-text-error);
+  border: 0.4rem solid var(--checka11y-border-error);
+  background-color: var(--checka11y-bg-error);
+}
+
+ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "ERROR (E0011): List markup invalid. Ensure <li>, <script> or <template> are the only direct children of <ul> or <ol>." !important;
   color: var(--checka11y-text-error);
   border: 0.4rem solid var(--checka11y-border-error);
   background-color: var(--checka11y-bg-error);

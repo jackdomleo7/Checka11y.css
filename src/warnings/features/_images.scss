@@ -15,11 +15,13 @@ $suspiciousAltStart: "graphic of", "bullet", "image of", "logo of", "logo for";
     @extend %imageMeaningfulAlt;
   }
 }
+
 @each $alt in $suspiciousAltEnd {
   img[alt$="#{$alt}"i] {
     @extend %imageMeaningfulAlt;
   }
 }
+
 @each $alt in $suspiciousAltStart {
   img[alt^="#{$alt}"i] {
     @extend %imageMeaningfulAlt;
