@@ -71,13 +71,13 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "clean-css": "^5.2.2",
-    "clean-css-cli": "^5.4.2",
-    "cypress": "^8.7.0",
+    "clean-css-cli": "^5.5.0",
+    "cypress": "^9.1.1",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.2",
-    "sass": "^1.43.4",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.45.1",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
   },
