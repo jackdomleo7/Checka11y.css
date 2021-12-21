@@ -30,7 +30,7 @@ button {
     @include vectorMessage(error, "E0000", 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;button&gt;.");
   }
 
-  input:not( [type = "hidden"] ) {
+  input:not([type="hidden"]) {
     @include vectorMessage(error, "E0000", 550, "Ensure that &lt;input type=\"hidden\"&gt;", "is not a child of &lt;button&gt;.");
   }
 
@@ -58,7 +58,7 @@ button {
 }
 
 /* E0001: Buttons have meaningful content */
-button:not( [aria-label] ):not( [aria-labelledby] ):empty {
+button:not([aria-label]):not([aria-labelledby]):empty {
   &::after {
     @include contentMessage(error, "E0001", "Ensure that <button> has meaningful content or is labelled appropriately.");
   }

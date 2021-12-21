@@ -19,14 +19,12 @@
     color: var(--checka11y-text-error);
     border: 0.4rem solid var(--checka11y-border-error);
     background-color: var(--checka11y-bg-error);
-  }
-  @else if $errorType == warning and str-index($code, "W") {
+  } @else if $errorType == warning and str-index($code, "W") {
     content: "WARNING (#{$code}): #{$message}" !important;
     color: var(--checka11y-text-warning);
     border: 0.4rem solid var(--checka11y-border-warning);
     background-color: var(--checka11y-bg-warning);
-  }
-  @else {
+  } @else {
     @error "The $errorType must be either 'error' or 'warning' and the $code must start with either 'E' or 'W' respectively.";
   }
 }

@@ -1,3 +1,5 @@
+@use "sass:list";
+
 /**
 * -- Replace list value at index --
 *
@@ -11,23 +13,19 @@
 
   @if type-of($index) != number {
     @warn "$index: #{quote($index)} is not a number for `replace-nth`.";
-  }
-  @else if $index == 0 {
+  } @else if $index == 0 {
     @warn "List index 0 must be a non-zero integer for `replace-nth`.";
-  }
-  @else if abs($index) > length($list) {
-    @warn "List index is #{$index} but list is only #{length($list)} item long for `replace-nth`.";
-  }
-  @else {
+  } @else if abs($index) > list.length($list) {
+    @warn "List index is #{$index} but list is only #{list.length($list)} item long for `replace-nth`.";
+  } @else {
     $result: (); // stylelint-disable-line scss/no-duplicate-dollar-variables
-    $index: if($index < 0, length($list) + $index + 1, $index);
+    $index: if($index < 0, list.length($list) + $index + 1, $index);
 
-    @for $i from 1 through length($list) {
+    @for $i from 1 through list.length($list) {
       @if $i == $index {
-        $result: append($result, $value); // stylelint-disable-line scss/no-duplicate-dollar-variables
-      }
-      @else {
-        $result: append($result, nth($list, $i)); // stylelint-disable-line scss/no-duplicate-dollar-variables
+        $result: list.append($result, $value); // stylelint-disable-line scss/no-duplicate-dollar-variables
+      } @else {
+        $result: list.append($result, list.nth($list, $i)); // stylelint-disable-line scss/no-duplicate-dollar-variables
       }
     }
   }

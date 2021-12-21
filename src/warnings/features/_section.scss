@@ -10,11 +10,11 @@
 
 section {
   &:empty::before,
-  > :not( h1, h2, h3, h4, h5, h6, img ):last-child::before {
+  > :not(h1, h2, h3, h4, h5, h6, img):last-child::before {
     @include contentMessage(warning, "W0012", "A <section> should contain a heading element.");
   }
 
-  > :is( h1, h2, h3, h4, h5, h6 ) ~ :not( :is( h1, h2, h3, h4, h5, h6, img ) ):last-child::before {
+  > :is(h1, h2, h3, h4, h5, h6) ~ :not(:is(h1, h2, h3, h4, h5, h6, img)):last-child::before {
     content: none !important;
   }
 }

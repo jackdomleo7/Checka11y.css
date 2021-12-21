@@ -2,7 +2,7 @@
 
 /* W0009: Elements with aria-hidden should not have focusable descendants. */
 
-[aria-hidden = "true"] {
+[aria-hidden="true"] {
   a,
   button,
   summary {

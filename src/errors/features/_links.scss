@@ -30,7 +30,7 @@ a {
     @include vectorMessage(error, "E0009", 550, "Ensure that &lt;img usemap&gt; is", "not a child of &lt;a&gt;.");
   }
 
-  input:not( [type = "hidden"] ) {
+  input:not([type="hidden"]) {
     @include vectorMessage(error, "E0009", 550, "Ensure that &lt;input type=\"hidden\"&gt; is", "not a child of &lt;a&gt;.");
   }
 
@@ -58,7 +58,7 @@ a {
 }
 
 /* E0010: Anchors used as links have meaningful content */
-a[href]:not( [aria-label] ):not( [aria-labelledby] ):empty {
+a[href]:not([aria-label]):not([aria-labelledby]):empty {
   &::after {
     @include contentMessage(error, "E0010", "Ensure that <a> has meaningful content or is labelled appropriately.");
   }
