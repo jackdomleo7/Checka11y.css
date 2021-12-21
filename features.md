@@ -21,6 +21,8 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - [E0014](./codes.md#E0014): Checks for a tab index value of -1 on commonly tabbed to elements.
 - [E0015](./codes.md#E0015): Checks for an image with a `longdesc` pointing to an image.
 - [E0016](./codes.md#E0016): Checks for an image with an empty `longdesc`.
+- [E0017](./codes.md#E0017): Checks for an empty `<title>` in the `<head>`.
+- [E0018](./codes.md#E0018): Checks for an `<head>` without a `<title>` element inside.
 
 ## Warnings
 

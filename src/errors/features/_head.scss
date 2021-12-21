@@ -1,0 +1,23 @@
+@use "../../shared/messages/" as *;
+
+/* Make the head visible to show the title. This could have side effects but,
+in theory, all the elements in the head are non-visible. So we should be ok :P */
+head {
+  display: block;
+}
+
+/* E0017: title element must not be empty */
+head title:empty {
+  @include vectorMessage(error, "E0017", 458, "the page title tag must not", "be empty.");
+  display: block;
+  border: 0;
+}
+
+/* E0018: title element must be present in the header */
+/* Note that this is not supported in any browser yet */
+/* For more details about :has() - https://developer.mozilla.org/en-US/docs/Web/CSS/:has */
+head:not( :has( title ) ) {
+  @include vectorMessage(error, "E0018", 458, "a title tag must be present", "in the page head.");
+  display: block;
+  border: 0;
+}

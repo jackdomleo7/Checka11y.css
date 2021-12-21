@@ -93,6 +93,12 @@ A list of every Checka11y.css error & warning code with details on what the issu
 - ### E0016
   The `longdesc` attribute has been detected in an `<img>` and it has an invalid value. The `longdesc` attribute must be a URL to a web page, but the detected `longdesc` is empty or it contains blank spaces so it's not a valid URL.
 
+- ### E0017
+  An empty `<title>` element has been found within the page's `<head>`. An empty title would be an accessibility issue because it makes it more difficult for some users to orient themselves and navigate through the pages.
+
+- ### E0018
+  The `<head>` element does not contian a `<title>`. An missing title would be an accessibility issue because it makes it more difficult for some users to orient themselves and navigate through the pages.
+
 ## Warnings <small>(Wxxx)</small>
 
 - ### W0000
