@@ -6,11 +6,13 @@ head {
   display: block;
 }
 
-/* E0017: title element must not be empty */
-head meta[name="viewport"][content*="maximum-scale=1" i],
-head meta[name="viewport"][content*="user-scalable=no" i] {
-  @include vectorMessage(warning, "W0016", 458, "The display zoom/scale", "has been disabled.");
+/* W0016: title element must not be empty */
+head meta[name="viewport"] {
+  &[content*="maximum-scale=1" i],
+  &[content*="user-scalable=no" i] {
+    @include vectorMessage(warning, "W0016", 458, "The display zoom/scale", "has been disabled.");
 
-  display: block;
-  border: 0;
+    display: block;
+    border: 0;
+  }
 }

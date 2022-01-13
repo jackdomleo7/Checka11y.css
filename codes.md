@@ -150,4 +150,4 @@ A list of every Checka11y.css error & warning code with details on what the issu
   The `longdesc` attribute has been detected in an `<img>`. The `longdesc` attribute in images is deprecated and should not be used. It is not fully supported by HTML5, browsers, or screen readers. When present, it is commonly misused (it should point to an URL that is not an image).
 
 - ### W0016
-  The `viewport` meta tag contains a property that disables the zoom and/or the viewpot scale. Such a property may prevent users from interacting with the web page, and make it more difficult to view the content.
+  The `viewport` meta tag contains a property that disables the zoom and/or the viewport scale. Such a property may prevent users from interacting with the web page, and make it more difficult to view the content.
