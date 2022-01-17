@@ -1,6 +1,6 @@
 {
   "name": "checka11y-css",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
@@ -73,16 +73,16 @@
     "CHANGELOG"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.2",
     "clean-css": "^5.2.2",
     "clean-css-cli": "^5.5.0",
-    "cypress": "^9.1.1",
+    "cypress": "^9.2.1",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
-    "sass": "^1.45.1",
-    "stylelint": "^14.1.0",
+    "sass": "^1.48.0",
+    "stylelint": "^14.2.0",
     "stylelint-config-standard-scss": "^3.0.0"
   },
   "peerDependencies": {
