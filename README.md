@@ -6,7 +6,7 @@
 
   [![.github/workflows/pipeline.yml](https://github.com/jackdomleo7/Checka11y.css/actions/workflows/pipeline.yml/badge.svg?branch=master)](https://github.com/jackdomleo7/Checka11y.css/actions/workflows/pipeline.yml)
 
-  ![Maintenance](https://img.shields.io/maintenance/yes/2021) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
+  [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
 
   [![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/stargazers) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Checka11y.css?style=social)](https://github.com/jackdomleo7/Checka11y.css/releases) [![npm](https://img.shields.io/npm/dt/checka11y-css?logo=npm&style=social)](https://www.npmjs.com/package/checka11y-css) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/checka11y-css?label=JsDelivr&logo=jsdelivr&style=social)
 
