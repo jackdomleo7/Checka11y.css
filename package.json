@@ -6,6 +6,7 @@
   "style": "checka11y.css",
   "scripts": {
     "prepublishOnly": "git-branch-is master && is-git-status-clean",
+    "serve": "open-cli ./test/index.html",
     "build": "npm run build:expanded && npm run build:minify",
     "build:expanded": "concurrently \"npm run build:expanded:main\" \"npm run build:expanded:errors\" \"npm run build:expanded:warnings\"",
     "build:expanded:main": "sass --no-source-map src/checka11y.scss ./checka11y.css --style=compressed && sass --no-source-map ./checka11y.css ./checka11y.css --style=expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
@@ -80,6 +81,7 @@
     "cypress": "^9.7.0",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
+    "open-cli": "^7.1.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "sass": "^1.57.1",
