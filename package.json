@@ -1,11 +1,12 @@
 {
   "name": "checka11y-css",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
   "scripts": {
     "prepublishOnly": "git-branch-is master && is-git-status-clean",
+    "serve": "open-cli ./test/index.html",
     "build": "npm run build:expanded && npm run build:minify",
     "build:expanded": "concurrently \"npm run build:expanded:main\" \"npm run build:expanded:errors\" \"npm run build:expanded:warnings\"",
     "build:expanded:main": "sass --no-source-map src/checka11y.scss ./checka11y.css --style=compressed && sass --no-source-map ./checka11y.css ./checka11y.css --style=expanded && npx postcss checka11y.css --use autoprefixer --replace --no-map",
@@ -73,18 +74,19 @@
     "CHANGELOG"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "clean-css": "^5.2.2",
-    "clean-css-cli": "^5.5.0",
-    "concurrently": "^7.0.0",
-    "cypress": "^9.2.1",
+    "autoprefixer": "^10.4.13",
+    "clean-css": "^5.3.2",
+    "clean-css-cli": "^5.6.2",
+    "concurrently": "^7.6.0",
+    "cypress": "^9.7.0",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.48.0",
-    "stylelint": "^14.2.0",
-    "stylelint-config-standard-scss": "^3.0.0"
+    "open-cli": "^7.1.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard-scss": "^6.1.0"
   },
   "peerDependencies": {
     "sass": "1.x"
@@ -95,7 +97,7 @@
     }
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=18",
     "npm": "8"
   }
 }

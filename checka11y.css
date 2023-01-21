@@ -1,4 +1,4 @@
-/*! Checka11y.css v2.3.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
+/*! Checka11y.css v2.3.1 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
   --checka11y-text-warning: #856404;
   --checka11y-bg-warning: #ffffd8;
@@ -69,7 +69,7 @@
   padding-bottom: 80px;
 }
 
-[onclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [onclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [onclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [onclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [ondblclick]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [ondblclick][onkeyup]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeydown]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a):not(button)::after, [ondblclick][onkeypress]:not([tabindex]):not(a):not(button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmousedown]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmousedown][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmousedown][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseup]:not(a):not(button):not([onkeydown]):not([onkeyup]):not([onkeypress])::after, [onmouseup][onkeyup]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeydown]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a):not(button)::after, [onmouseup][onkeypress]:not([tabindex]):not(a):not(button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a):not(button)::after, [onmouseover]:not(a):not(button)::after, [onmouseenter]:not(a):not(button)::after, [onmouseleave]:not(a):not(button)::after {
+[onclick]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [onclick][onkeyup]:not([tabindex], a, button)::after, [onclick][onkeyup][tabindex="-1"]:not(a, button)::after, [onclick][onkeydown]:not([tabindex], a, button)::after, [onclick][onkeydown][tabindex="-1"]:not(a, button)::after, [onclick][onkeypress]:not([tabindex], a, button)::after, [onclick][onkeypress][tabindex="-1"]:not(a, button)::after, [ondblclick]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [ondblclick][onkeyup]:not([tabindex], a, button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a, button)::after, [ondblclick][onkeydown]:not([tabindex], a, button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a, button)::after, [ondblclick][onkeypress]:not([tabindex], a, button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a, button)::after, [onmousedown]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [onmousedown][onkeyup]:not([tabindex], a, button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a, button)::after, [onmousedown][onkeydown]:not([tabindex], a, button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a, button)::after, [onmousedown][onkeypress]:not([tabindex], a, button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a, button)::after, [onmouseup]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [onmouseup][onkeyup]:not([tabindex], a, button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a, button)::after, [onmouseup][onkeydown]:not([tabindex], a, button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a, button)::after, [onmouseup][onkeypress]:not([tabindex], a, button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a, button)::after, [onmouseover]:not(a, button)::after, [onmouseenter]:not(a, button)::after, [onmouseleave]:not(a, button)::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -457,7 +457,7 @@ button video[controls] {
   padding-bottom: 80px;
 }
 
-button:not([aria-label]):not([aria-labelledby]):empty::after {
+button:not([aria-label], [aria-labelledby]):empty::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -475,7 +475,7 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
   background-color: var(--checka11y-bg-error);
 }
 
-[dir]:not([dir=rtl]):not([dir=ltr]):not([dir=auto])::after {
+[dir]:not([dir=rtl], [dir=ltr], [dir=auto])::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -795,7 +795,7 @@ a video[controls] {
   padding-bottom: 80px;
 }
 
-a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
+a[href]:not([aria-label], [aria-labelledby]):empty::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -813,7 +813,7 @@ a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
   background-color: var(--checka11y-bg-error);
 }
 
-dl > *:not(dt):not(dd)::after {
+dl > *:not(dt, dd)::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -831,7 +831,7 @@ dl > *:not(dt):not(dd)::after {
   background-color: var(--checka11y-bg-error);
 }
 
-ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
+ol > *:not(li, script, template)::after, ul > *:not(li, script, template)::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -849,7 +849,7 @@ ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(
   background-color: var(--checka11y-bg-error);
 }
 
-nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
+nav:not([aria-label], [aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label], [aria-labelledby])::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -879,7 +879,7 @@ a[href][tabindex="-1"]::after {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
-  content: "ERROR (E0014): Ensure that &lt;a&gt; with an href attribute does not have a tab index of -1." !important;
+  content: "ERROR (E0014): Ensure that <a> with an href attribute does not have a tab index of -1." !important;
   color: var(--checka11y-text-error);
   border: 0.4rem solid var(--checka11y-border-error);
   background-color: var(--checka11y-bg-error);
@@ -937,7 +937,7 @@ button:not([disabled])[tabindex="-1"]::after {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
-  content: "ERROR (E0014): Ensure that &lt;button&gt; that is not disabled does not have a tab index of -1." !important;
+  content: "ERROR (E0014): Ensure that <button> that is not disabled does not have a tab index of -1." !important;
   color: var(--checka11y-text-error);
   border: 0.4rem solid var(--checka11y-border-error);
   background-color: var(--checka11y-bg-error);

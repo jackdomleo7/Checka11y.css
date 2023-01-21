@@ -58,7 +58,7 @@ a {
 }
 
 /* E0010: Anchors used as links have meaningful content */
-a[href]:not([aria-label]):not([aria-labelledby]):empty {
+a[href]:not([aria-label], [aria-labelledby]):empty {
   &::after {
     @include contentMessage(error, "E0010", "Ensure that <a> has meaningful content or is labelled appropriately.");
   }
