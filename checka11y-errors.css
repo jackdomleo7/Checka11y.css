@@ -156,7 +156,7 @@ button video[controls] {
   padding-bottom: 80px;
 }
 
-button:not([aria-label]):not([aria-labelledby]):empty::after {
+button:not([aria-label], [aria-labelledby]):empty::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -174,7 +174,7 @@ button:not([aria-label]):not([aria-labelledby]):empty::after {
   background-color: var(--checka11y-bg-error);
 }
 
-[dir]:not([dir=rtl]):not([dir=ltr]):not([dir=auto])::after {
+[dir]:not([dir=rtl], [dir=ltr], [dir=auto])::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -494,7 +494,7 @@ a video[controls] {
   padding-bottom: 80px;
 }
 
-a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
+a[href]:not([aria-label], [aria-labelledby]):empty::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -512,7 +512,7 @@ a[href]:not([aria-label]):not([aria-labelledby]):empty::after {
   background-color: var(--checka11y-bg-error);
 }
 
-dl > *:not(dt):not(dd)::after {
+dl > *:not(dt, dd)::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -530,7 +530,7 @@ dl > *:not(dt):not(dd)::after {
   background-color: var(--checka11y-bg-error);
 }
 
-ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(template)::after {
+ol > *:not(li, script, template)::after, ul > *:not(li, script, template)::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
@@ -548,7 +548,7 @@ ol > *:not(li):not(script):not(template)::after, ul > *:not(li):not(script):not(
   background-color: var(--checka11y-bg-error);
 }
 
-nav:not([aria-label]):not([aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label]):not([aria-labelledby])::after {
+nav:not([aria-label], [aria-labelledby]) ~ nav::after, nav ~ nav:not([aria-label], [aria-labelledby])::after {
   display: block;
   font-size: 1rem;
   font-family: verdana, geneva, tahoma, sans-serif;
