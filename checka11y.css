@@ -879,7 +879,7 @@ a[href][tabindex="-1"]::after {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
-  content: "ERROR (E0014): Ensure that &lt;a&gt; with an href attribute does not have a tab index of -1." !important;
+  content: "ERROR (E0014): Ensure that <a> with an href attribute does not have a tab index of -1." !important;
   color: var(--checka11y-text-error);
   border: 0.4rem solid var(--checka11y-border-error);
   background-color: var(--checka11y-bg-error);
@@ -937,7 +937,7 @@ button:not([disabled])[tabindex="-1"]::after {
   text-decoration: none;
   text-transform: initial;
   text-shadow: none;
-  content: "ERROR (E0014): Ensure that &lt;button&gt; that is not disabled does not have a tab index of -1." !important;
+  content: "ERROR (E0014): Ensure that <button> that is not disabled does not have a tab index of -1." !important;
   color: var(--checka11y-text-error);
   border: 0.4rem solid var(--checka11y-border-error);
   background-color: var(--checka11y-bg-error);
