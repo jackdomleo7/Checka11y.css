@@ -1,6 +1,6 @@
 {
   "name": "checka11y-css",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",
@@ -84,9 +84,9 @@
     "open-cli": "^7.1.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.57.1",
-    "stylelint": "^14.16.1",
-    "stylelint-config-standard-scss": "^6.1.0"
+    "sass": "^1.58.1",
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard-scss": "^7.0.1"
   },
   "peerDependencies": {
     "sass": "1.x"
@@ -97,7 +97,7 @@
     }
   },
   "engines": {
-    "node": ">=18",
-    "npm": "8"
+    "node": ">=14",
+    "npm": "9"
   }
 }
