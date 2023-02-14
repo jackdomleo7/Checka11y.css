@@ -1,7 +1,6 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
-    "max-line-length": 500,
     "scss/at-mixin-pattern": "(^[a-z]|[A-Z0-9])[a-z]*",
     "scss/dollar-variable-pattern": "(^[a-z]|[A-Z0-9])[a-z]*",
     "scss/percent-placeholder-pattern": "(^[a-z]|[A-Z0-9])[a-z]*"
