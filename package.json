@@ -96,8 +96,8 @@
       "optional": true
     }
   },
+  "packageManager": "npm@9.6.2",
   "engines": {
-    "node": ">=14",
-    "npm": "9"
+    "node": ">=14"
   }
 }
