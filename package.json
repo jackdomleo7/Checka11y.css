@@ -74,18 +74,18 @@
     "CHANGELOG"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "clean-css": "^5.3.2",
     "clean-css-cli": "^5.6.2",
     "concurrently": "^7.6.0",
     "cypress": "^9.7.0",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "open-cli": "^7.1.0",
+    "open-cli": "^7.2.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.58.1",
-    "stylelint": "^15.1.0",
+    "sass": "^1.60.0",
+    "stylelint": "^15.3.0",
     "stylelint-config-standard-scss": "^7.0.1"
   },
   "peerDependencies": {
