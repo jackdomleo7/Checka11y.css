@@ -4,9 +4,9 @@ import {
 } from "../support/constants";
 
 describe("<images>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should show error if images do not have alternative text', () => {
     cy.get("img:not([alt])")

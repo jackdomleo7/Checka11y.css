@@ -1,7 +1,7 @@
 describe("[accesskey]", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should show warning on elements with accesskey', () => {
     cy.get("[accesskey]")

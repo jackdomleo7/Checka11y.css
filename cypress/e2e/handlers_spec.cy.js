@@ -1,7 +1,7 @@
 describe("[handlers]", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+	})
 
   it('should show error if the iframe does not have a title', () => {
     cy.get(`

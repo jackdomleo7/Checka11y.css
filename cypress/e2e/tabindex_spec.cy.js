@@ -3,9 +3,9 @@ import {
 } from "../support/constants";
 
 describe("[tabindex]", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+beforeEach(() => {
+	cy.visit('/test/index.html')
+})
 
   it('should have a tab index different of -1 for commonly tabbed elements', () => {
     const noneElements = [

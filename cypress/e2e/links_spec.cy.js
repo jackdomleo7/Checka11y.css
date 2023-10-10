@@ -3,9 +3,9 @@ import {
 } from "../support/constants";
 
 describe("<a>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should not have links with interactive content inside', () => {
     const noneElements = [

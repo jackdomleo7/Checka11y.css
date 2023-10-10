@@ -1,7 +1,7 @@
 describe("[dir]", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should show error on elements with wrong values for dir attribute', () => {
     cy.get("[dir]:not([dir='rtl']):not([dir='ltr']):not([dir='auto'])")

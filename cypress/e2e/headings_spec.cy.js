@@ -1,7 +1,7 @@
 describe("<headings>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should not have empty headings', () => {
     cy.get("h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty")

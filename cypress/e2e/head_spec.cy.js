@@ -1,7 +1,7 @@
 describe("<head>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+beforeEach(() => {
+	cy.visit('/test/index.html')
+})
 
   it('should not have an empty title', () => {
     cy.get("head title:empty")

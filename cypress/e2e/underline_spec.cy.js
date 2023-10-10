@@ -1,7 +1,7 @@
 describe("<u>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should have aria-label or aria-labelledby if empty', () => {
     cy.get("u")

@@ -1,7 +1,7 @@
 describe("<lists>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+ beforeEach(() => {
+		cy.visit('/test/index.html')
+ })
 
   it('should have lists with only valid descendants', () => {
     cy.get(`

@@ -1,7 +1,7 @@
 describe("<nav>", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should have all navigations clearly labelled', () => {
     cy.get(`
