@@ -1,7 +1,7 @@
 describe("[inline]", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
 
   it('should not have inline styles with !important', () => {
     cy.get("[style*='!important']")

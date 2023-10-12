@@ -27,7 +27,7 @@
 /**
  * Code adapted from Victor Navarro: https://stackoverflow.com/a/57249958/3695983
  */
-const unquote = str => str.replace(/(^")|("$)/g, '');
+const unquote = (str) => str.replace(/(^")|("$)/g, '')
 
 /**
  * Add command "before" to Cypress.
@@ -36,26 +36,18 @@ const unquote = str => str.replace(/(^")|("$)/g, '');
  * Example of use: cy.get("button").before("content") will return the value of the
  * content property of the button element.
  */
-Cypress.Commands.add(
-  'before',
-  { prevSubject: 'element' },
-  (el, property) => {
-    const win = el[0].ownerDocument.defaultView;
-    const before = win.getComputedStyle(el[0], 'before');
-    return unquote(before.getPropertyValue(property));
-  },
-);
+Cypress.Commands.add('before', { prevSubject: 'element' }, (el, property) => {
+	const win = el[0].ownerDocument.defaultView
+	const before = win.getComputedStyle(el[0], 'before')
+	return unquote(before.getPropertyValue(property))
+})
 
 /**
  * Add command "after" to Cypress.
  * Same as above, but for the ::after pseudo-element.
  */
-Cypress.Commands.add(
-  'after',
-  { prevSubject: 'element' },
-  (el, property) => {
-    const win = el[0].ownerDocument.defaultView;
-    const before = win.getComputedStyle(el[0], 'after');
-    return unquote(before.getPropertyValue(property));
-  },
-);
+Cypress.Commands.add('after', { prevSubject: 'element' }, (el, property) => {
+	const win = el[0].ownerDocument.defaultView
+	const before = win.getComputedStyle(el[0], 'after')
+	return unquote(before.getPropertyValue(property))
+})

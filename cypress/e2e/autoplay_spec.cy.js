@@ -3,9 +3,9 @@ import {
 } from "../support/constants";
 
 describe("[autoplay]", () => {
-  before(() => {
-    cy.visit("/test/index.html");
-  });
+  beforeEach(() => {
+		cy.visit('/test/index.html')
+  })
   
   it('should show warning outline on elements with autoplay', () => {
     cy.get("[autoplay]")

@@ -12,3 +12,4 @@ cypress/videos
 cypress/fixtures
 cypress/screenshots
 *.tgz
+.vscode
