@@ -2,8 +2,6 @@
 
   ![Checka11y.css logo](logo/checka11y1.png)
 
-  <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a> <a href="https://www.producthunt.com/posts/checka11y-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-checka11y-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269866&theme=light" alt="Checka11y.css - A CSS stylesheet to quickly highlight a11y concerns. | Product Hunt" style="width: auto; height: 50px;"/></a>
-
   [![.github/workflows/pipeline.yml](https://github.com/jackdomleo7/Checka11y.css/actions/workflows/pipeline.yml/badge.svg?branch=master)](https://github.com/jackdomleo7/Checka11y.css/actions/workflows/pipeline.yml)
 
   [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE) [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Checka11y.css/master/checka11y.css)](https://github.com/jackdomleo7/Checka11y.css/blob/master/checka11y.css)
@@ -170,8 +168,6 @@ Type - **MIT**
 [Read license](https://github.com/jackdomleo7/Checka11y.css/blob/master/LICENSE)
 
 You have the right to use this library in **any** project FREE of charge for personal and commercial use.
-
-Commercial use should consider a small donation on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo7).
 
 You **do not** have the right to resell, sublicense or redistribute (even for free) this library.
 
