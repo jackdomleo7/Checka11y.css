@@ -33,7 +33,7 @@ jobs:
         with:
           browser: chrome
           headless: true
-          spec: "cypress/integration/*"
+          spec: "cypress/e2e/*"
   publish:
     needs: [build, tests]
     if: github.ref == 'refs/heads/master'

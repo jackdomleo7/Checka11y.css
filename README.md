@@ -191,7 +191,7 @@ _This project uses npm ≥ 8 and Node ≥ 18 - however any project using this pa
 6. To add error/warning styles and messages to your features, `@extend` one of the placeholders and `@include contentMessage()` from `src/_base.scss`.
 7. Add tests to your features in cypress folder (edit the element file or create a new one if needed)
 8. Run tests: `npm run test:ui` or `npm run test` (headless)
-  - You can also run tests for a specific tag/attribute by doing `npm run test -- --spec cypress/integration/{file-to-test}`
+  - You can also run tests for a specific tag/attribute by doing `npm run test -- --spec cypress/e2e/{file-to-test}`
 9. Add the feature to the [features.md](./features.md) & [codes.md](./codes.md) with a new error or warning code
 
 ---
