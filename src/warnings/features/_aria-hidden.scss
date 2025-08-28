@@ -3,21 +3,54 @@
 /* W0009: Elements with aria-hidden should not have focusable descendants. */
 
 [aria-hidden="true"] {
-  a,
-  button,
-  summary {
-    &::after {
-      @include contentMessage(warning, "W0009", "Focusable element in a aria-hidden element.");
-    }
-  }
+	a,
+	button,
+	summary {
+		&::after {
+			@include contentMessage(warning, "W0009", "Focusable element in a aria-hidden element.");
+		}
+	}
 
-  area,
-  audio[controls],
-  iframe,
-  input,
-  select,
-  textarea,
-  video[controls] {
-    @include vectorMessage(warning, "W0009", 350, "Focusable", "element in a aria-hidden element.");
-  }
+	area,
+	audio[controls],
+	iframe,
+	input,
+	select,
+	textarea,
+	video[controls] {
+		@include vectorMessage(warning, "W0009", 350, "Focusable", "element in a aria-hidden element.");
+	}
+}
+
+/* W0017: Interactive Elements should not have aria-hidden */
+
+$interactive-roles: ("button", "combobox", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "scrollbar", "searchbox", "slider", "spinbutton", "switch", "tab", "radio", "textbox", "treeitem");
+
+@each $role in $interactive-roles {
+	[role="#{$role}"][aria-hidden="true"]::after {
+		@include contentMessage(warning, "W0017", "Interactive element containing aria-hidden");
+	}
+}
+
+a,
+button,
+summary,
+[role="separator"][aria-valuenow],
+[role="separator"][aria-valuemin],
+[role="separator"][aria-valuemax] {
+	&[aria-hidden="true"]::after {
+		@include contentMessage(warning, "W0017", "Interactive element containing aria-hidden");
+	}
+}
+
+area,
+audio[controls],
+iframe,
+input,
+select,
+textarea,
+video[controls] {
+	&[aria-hidden="true"] {
+		@include vectorMessage(warning, "W0017", 350, "Interactive", "element containing aria-hidden");
+	}
 }

@@ -59,6 +59,322 @@
   padding-bottom: 80px;
 }
 
+[role=button][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=combobox][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=link][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=menuitem][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=menuitemcheckbox][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=menuitemradio][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=option][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=scrollbar][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=searchbox][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=slider][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=spinbutton][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=switch][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=tab][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=radio][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=textbox][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+[role=treeitem][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+a[aria-hidden=true]::after, button[aria-hidden=true]::after, summary[aria-hidden=true]::after, [role=separator][aria-valuenow][aria-hidden=true]::after, [role=separator][aria-valuemin][aria-hidden=true]::after, [role=separator][aria-valuemax][aria-hidden=true]::after {
+  display: block;
+  font-size: 1rem;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  font-weight: 700;
+  font-style: initial;
+  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  border-radius: 0.75rem;
+  letter-spacing: initial;
+  text-decoration: none;
+  text-transform: initial;
+  text-shadow: none;
+  content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
+  color: var(--checka11y-text-warning);
+  border: 0.4rem solid var(--checka11y-border-warning);
+  background-color: var(--checka11y-bg-warning);
+}
+
+area[aria-hidden=true], audio[controls][aria-hidden=true], iframe[aria-hidden=true], input[aria-hidden=true], select[aria-hidden=true], textarea[aria-hidden=true], video[controls][aria-hidden=true] {
+  border: 0.4rem solid;
+  border-color: var(--checka11y-border-warning);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-width: 350px;
+  padding-bottom: 80px;
+}
+
 [autoplay] {
   border: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
