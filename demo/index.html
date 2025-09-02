@@ -18,6 +18,10 @@
       <p>See top of page.</p>
     </section>
     <section>
+      <h2>Page title: the title tag should not be empty or missing</h2>
+      <p>See top of page.</p>
+    </section>
+    <section>
       <h2>Images: All images require an alt attribute, whether it has a value or is null</h2>
       <img src="../img/checka11y-icon.png" />
     </section>
@@ -55,8 +59,20 @@
       <img alt="bullet 1" src="../img/checka11y-icon.png" />
     </section>
     <section>
+      <h2>Images: Should avoid longdesc attribute and it must be an URL.</h2>
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.test" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.jpg" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.png" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.gif" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.avif" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="https://test.svg" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="This longdesc is invalid because it should be an URL instead of plain text" />
+      <img alt="accessibility icon" src="./assets/a11y.png" longdesc="" />
+    </section>
+    <section>
       <h2>iframe: iframe has title attribute</h2>
       <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500"></iframe>
+      <iframe src="https://checka11y.jackdomleo.dev" height="500" width="500" title="Test with title"></iframe>
     </section>
     <section>
       <h2>Lists: All children of &lt;ol&gt; must only be &lt;li&gt;, &lt;template&gt; or &lt;script&gt;</h2>
@@ -212,7 +228,8 @@
     </section>
     <section>
       <h2>Dir attribute: The dir attribute can only have the values, ltr, rtl and auto.</h2>
-      <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr</p>
+      <p dir="lr">This is an &lt;p&gt; with dir attribute set to lr (invalid)</p>
+      <p dir="rtl">This is an &lt;p&gt; with dir attribute set to rtl (valid)</p>
     </section>
     <section>
       <h2>Check the tabindex of commonly tabbed to elements and show an error if it is -1</h2>
@@ -258,7 +275,7 @@
     </section>
     <section>
       <h2>Headings: reachable by assistive technologies</h2>
-      <p>Headings should be reachable by assistive technologies (do not use <code>aria-hidden</code> or similars on a heading).</code></p>
+      <p>Headings should be reachable by assistive technologies (do not use <code>aria-hidden</code> or similars on a heading)</p>
       <h1 aria-hidden="true">H1 with aria-hidden="true"</h1>
       <h2 aria-hidden="true">H2 with aria-hidden="true"</h2>
       <h3 aria-hidden="true">H3 with aria-hidden="true"</h3>
@@ -321,7 +338,7 @@
       <div>
         <div onclick="">A div with onclick</div>
         <div onclick="" onkeydown="">A div with onclick and onkeydown</div>
-        <div onclick="" onkeydown="" role="button">A div with with onclick, onkeydown and role=button</div>
+        <div onclick="" onkeydown="" role="button">A div with onclick, onkeydown and role=button</div>
         <div onclick="" onkeydown="" role="button" tabindex="-1">A div with onclick, onkeydown, role=button and tabindex=-1</div>
       </div>
     </section>
@@ -365,6 +382,108 @@
       <div aria-hidden="true">
         <video controls></video>
       </div>
+    </section>
+    <section>
+      <h1 role="text">This should not have role=text</h1>
+      <h2 role="text">This should not have role=text</h2>
+      <h3 role="text">This should not have role=text</h3>
+      <h4 role="text">This should not have role=text</h4>
+      <h5 role="text">This should not have role=text</h5>
+      <h6 role="text">This should not have role=text</h6>
+    </section>
+    <section>
+      <h2>Anchor tags should not be used as buttons</h2>
+      <a href="#">Do something</a>
+      <a href="javascript:void(0)" role="button">Do another thing</a>
+      <a href="javascript:doSomething(0)">Do another thing</a>
+    </section>
+    <section>
+      <h2>A <code>&lt;section&gt;</code> should contain a heading element</h2>
+      <section>
+        <h2>This is a heading element.</h1>
+      </section>
+      <section><!-- This is an empty section --></section>
+      <section>
+        <p>this is not a heading element, just a cool paragraph.</p>
+      </section>
+    </section>
+    <section>
+      <h2>A <code>&lt;a&gt;</code> has an <code>href</code> linking to a PDF, Word, Excel, or PowerPoint document.</h2>
+      <ul>
+        <li><a href="/static/foo.pdf">.pdf (PDF)</a></li>
+        <li><a href="/static/foo.docx">.docx (Word)</a></li>
+        <li><a href="/static/foo.doc">.doc (Word)</a></li>
+        <li><a href="/static/foo.xls">.xls (Excel)</a></li>
+        <li><a href="/static/foo.xlsx">.xlsx (Excel)</a></li>
+        <li><a href="/static/foo.pptx">.pptx (PowerPoint)</a></li>
+        <li><a href="/static/foo.pptm">.pptm (PowerPoint)</a></li>
+        <li><a href="/static/foo.ppt">.ppt (PowerPoint)</a></li>
+        <li><a href="/static/foo.txt">.txt (Text)</a></li>
+      </ul>
+      <h2>A <code>&lt;a&gt;</code> has an <code>href</code> linking to a content site (Youtube, etc)</h2>
+      <ul>
+        <li><a href="https://youtube.com/foo">YouTube Link</a></li>
+        <li><a href="https://youtu.be/bar">YouTube Link</a></li>
+        <li><a href="https://spotify.com/en/">Spotify Link</a></li>
+      </ul>
+    </section>
+    <section id='interactive-elements'>
+      <h2>Interactive Elements: not reachable by assistive technologies</h2>
+      <p>Interactive Elements should be reachable by assistive technologies (do not use <code>aria-hidden</code> on a Interactive Elements.) </p> 
+      <a aria-hidden="true" href='https://github.com/jackdomleo7/Checka11y.css'>Anchor for Interactive purposes</a> 
+      <map name="workmap" aria-hidden="true">
+        <area shape="rect" coords="34,44,270,350" alt="Clickable area" href="https://checka11y.jackdomleo.dev"/>
+      </map>
+
+      <map name="workmap" >
+        <area shape="rect" coords="34,44,270,350" alt="Clickable area" href="https://checka11y.jackdomleo.dev" aria-hidden="true"/>
+      </map>
+
+      <audio aria-hidden="true" controls></audio>
+    
+      <button aria-hidden="true">Button</button>
+    
+      <iframe  aria-hidden="true" src="https://checka11y.jackdomleo.dev" title="Checka11y.css website"></iframe>
+    
+      <input aria-hidden="true" type="text" />
+    
+      <select aria-hidden="true"><option>Option</option></select>
+  
+      <details >Interactive details element<summary aria-hidden="true">Summary</summary></details>
+    
+      <textarea aria-hidden="true">textarea</textarea>
+    
+      <video aria-hidden="true" controls></video>
+
+      <div aria-hidden='true' role='button'>interactive custom button</div>
+      <div role="link" aria-hidden="true">Custom Link</div>
+      <div role="combobox" aria-hidden="true">ComboBox</div> 
+
+      <ul role="menu"> 
+        <li role="menuitem" aria-hidden="true">Menu Item 1</li>
+        <li role="menuitem" tabindex="0">Menu Item 2</li>
+      </ul>
+
+      <div role="menuitemcheckbox" aria-hidden="true">Menu Checkbox</div>
+      <div role="menuitemradio" aria-hidden="true">Menu Radio</div>
+      <div role="option" aria-hidden="true">Option</div>
+      <div role="radio" aria-hidden="true">Radio Button</div>
+      <div role="scrollbar" aria-hidden="true">Scroll Bar</div>
+      <div role="searchbox" aria-hidden="true">Search Box</div>
+      <div role="separator" aria-valuenow aria-hidden="true">Separator with aria-valuenow</div>
+      <div role="separator" aria-valuemax aria-hidden="true">Separator with aria-valuemax</div>
+      <div role="separator" aria-valuemin aria-hidden="true">Separator with aria-valuemin</div>
+      <div role="slider" aria-hidden="true">Slider</div>
+      <div role="spinbutton" aria-hidden="true">Spin Button</div>
+      <div role="switch" aria-hidden="true">Switch</div> 
+
+      <div role="tablist">
+        <div role="tab" aria-selected="true">Tab 1</div>
+        <div role="tab" aria-hidden='true'>Tab 2</div>
+      </div>
+
+      <div role="textbox" aria-hidden="true">Text Box</div>
+      <div role="treeitem" aria-hidden="true">Tree Item</div> 
     </section>
   </body>
 </html>
