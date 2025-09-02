@@ -43,3 +43,4 @@ A list of every a11y concern Checka11y.css will check for and highlight with lin
 - [W0014](./codes.md#W0014): Checks for anchor tags that contain a link to content site.
 - [W0015](./codes.md#W0015): Checks for images with the `longdesc` attribute.
 - [W0016](./codes.md#W0016): Checks for zoom/scale being disabled in the meta `viewport`.
+- [W0017](./codes.md#W0017): Checks if interactive elements contain `aria-hidden="true"`.

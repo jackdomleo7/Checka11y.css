@@ -151,3 +151,6 @@ A list of every Checka11y.css error & warning code with details on what the issu
 
 - ### W0016
   The `viewport` meta tag contains a property that disables the zoom and/or the viewport scale. Such a property may prevent users from interacting with the web page, and make it more difficult to view the content.
+
+- ### W0017
+  The highlighted element is an interactive element with `aria-hidden="true"`. This means the interactive element is inaccessible to assistive technologies. Either remove the `aria-hidden="true"`, or restructure the HTML in cases where the element is ment for decoration purposes or its a duplicate. [Read more about this here](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden).
