@@ -7,7 +7,8 @@
   font-family: $checka11y-font-family;
   font-weight: $checka11y-font-weight;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -17,12 +18,14 @@
   @if $errorType == error and str-index($code, "E") {
     content: "ERROR (#{$code}): #{$message}" !important;
     color: var(--checka11y-text-error);
-    border: 0.4rem solid var(--checka11y-border-error);
+    border-block: 0.4rem solid var(--checka11y-border-error);
+    border-inline: 0.4rem solid var(--checka11y-border-error);
     background-color: var(--checka11y-bg-error);
   } @else if $errorType == warning and str-index($code, "W") {
     content: "WARNING (#{$code}): #{$message}" !important;
     color: var(--checka11y-text-warning);
-    border: 0.4rem solid var(--checka11y-border-warning);
+    border-block: 0.4rem solid var(--checka11y-border-warning);
+    border-inline: 0.4rem solid var(--checka11y-border-warning);
     background-color: var(--checka11y-bg-warning);
   } @else {
     @error "The $errorType must be either 'error' or 'warning' and the $code must start with either 'E' or 'W' respectively.";

@@ -1,6 +1,6 @@
 {
   "name": "checka11y-css",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "A CSS stylesheet to quickly highlight a11y concerns.",
   "main": "checka11y.css",
   "style": "checka11y.css",

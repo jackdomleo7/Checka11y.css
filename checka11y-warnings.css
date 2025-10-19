@@ -1,4 +1,4 @@
-/*! Checka11y.css v2.4.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
+/*! Checka11y.css v2.5.0 | MIT License | github.com/jackdomleo7/Checka11y.css */
 :root {
   --checka11y-text-warning: #856404;
   --checka11y-bg-warning: #ffffd8;
@@ -19,7 +19,8 @@
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -27,7 +28,8 @@
   text-shadow: none;
   content: "WARNING (W0000): accesskey attribute could interfere and conflict with screen readers and assistive technologies." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -37,7 +39,8 @@
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -45,18 +48,21 @@
   text-shadow: none;
   content: "WARNING (W0009): Focusable element in a aria-hidden element." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
 [aria-hidden=true] area, [aria-hidden=true] audio[controls], [aria-hidden=true] iframe, [aria-hidden=true] input, [aria-hidden=true] select, [aria-hidden=true] textarea, [aria-hidden=true] video[controls] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0009): Focusable</text> <text x="15" y="60">element in a aria-hidden element.</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 a[aria-hidden=true]::after {
@@ -65,7 +71,8 @@ a[aria-hidden=true]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -73,7 +80,8 @@ a[aria-hidden=true]::after {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -83,7 +91,8 @@ button[aria-hidden=true]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -91,7 +100,8 @@ button[aria-hidden=true]::after {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -101,7 +111,8 @@ summary[aria-hidden=true]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -109,7 +120,8 @@ summary[aria-hidden=true]::after {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -119,7 +131,8 @@ summary[aria-hidden=true]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -127,7 +140,8 @@ summary[aria-hidden=true]::after {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -137,7 +151,8 @@ summary[aria-hidden=true]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -145,7 +160,8 @@ summary[aria-hidden=true]::after {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -155,7 +171,8 @@ summary[aria-hidden=true]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -163,78 +180,93 @@ summary[aria-hidden=true]::after {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
 area[aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 audio[controls][aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 iframe[aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 input[aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 select[aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 textarea[aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 video[controls][aria-hidden=true] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0017): Interactive</text> <text x="15" y="60">element containing aria-hidden</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 [role=button][aria-hidden=true]::after {
@@ -243,7 +275,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -251,7 +284,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -261,7 +295,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -269,7 +304,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -279,7 +315,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -287,7 +324,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -297,7 +335,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -305,7 +344,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -315,7 +355,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -323,7 +364,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -333,7 +375,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -341,7 +384,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -351,7 +395,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -359,7 +404,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -369,7 +415,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -377,7 +424,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -387,7 +435,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -395,7 +444,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -405,7 +455,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -413,7 +464,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -423,7 +475,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -431,7 +484,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -441,7 +495,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -449,7 +504,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -459,7 +515,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -467,7 +524,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -477,7 +535,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -485,7 +544,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -495,7 +555,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -503,7 +564,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -513,7 +575,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -521,18 +584,21 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0017): Interactive element containing aria-hidden" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
 [autoplay] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="350px" height="80px" viewBox="0 0 350 80"><rect class="box" x="4" y="4" width="342" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0001): Media should</text> <text x="15" y="60">not autoplay.</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 350px;
-  padding-bottom: 80px;
+  min-inline-size: 350px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 [onclick]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [onclick][onkeyup]:not([tabindex], a, button)::after, [onclick][onkeyup][tabindex="-1"]:not(a, button)::after, [onclick][onkeydown]:not([tabindex], a, button)::after, [onclick][onkeydown][tabindex="-1"]:not(a, button)::after, [onclick][onkeypress]:not([tabindex], a, button)::after, [onclick][onkeypress][tabindex="-1"]:not(a, button)::after, [ondblclick]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [ondblclick][onkeyup]:not([tabindex], a, button)::after, [ondblclick][onkeyup][tabindex="-1"]:not(a, button)::after, [ondblclick][onkeydown]:not([tabindex], a, button)::after, [ondblclick][onkeydown][tabindex="-1"]:not(a, button)::after, [ondblclick][onkeypress]:not([tabindex], a, button)::after, [ondblclick][onkeypress][tabindex="-1"]:not(a, button)::after, [onmousedown]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [onmousedown][onkeyup]:not([tabindex], a, button)::after, [onmousedown][onkeyup][tabindex="-1"]:not(a, button)::after, [onmousedown][onkeydown]:not([tabindex], a, button)::after, [onmousedown][onkeydown][tabindex="-1"]:not(a, button)::after, [onmousedown][onkeypress]:not([tabindex], a, button)::after, [onmousedown][onkeypress][tabindex="-1"]:not(a, button)::after, [onmouseup]:not(a, button, [onkeydown], [onkeyup], [onkeypress])::after, [onmouseup][onkeyup]:not([tabindex], a, button)::after, [onmouseup][onkeyup][tabindex="-1"]:not(a, button)::after, [onmouseup][onkeydown]:not([tabindex], a, button)::after, [onmouseup][onkeydown][tabindex="-1"]:not(a, button)::after, [onmouseup][onkeypress]:not([tabindex], a, button)::after, [onmouseup][onkeypress][tabindex="-1"]:not(a, button)::after, [onmouseover]:not(a, button)::after, [onmouseenter]:not(a, button)::after, [onmouseleave]:not(a, button)::after {
@@ -541,7 +607,8 @@ video[controls][aria-hidden=true] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -549,7 +616,8 @@ video[controls][aria-hidden=true] {
   text-shadow: none;
   content: "WARNING (W0002): Potentially inaccessible click event used on non-clickable element. Ensure you have an accessible alternative." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -558,13 +626,15 @@ head {
 }
 
 head meta[name=viewport][content*="maximum-scale=1" i], head meta[name=viewport][content*="user-scalable=no" i] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="458px" height="80px" viewBox="0 0 458 80"><rect class="box" x="4" y="4" width="450" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0016): The display zoom/scale</text> <text x="15" y="60">has been disabled.</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 458px;
-  padding-bottom: 80px;
+  min-inline-size: 458px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
   display: block;
   border: 0;
 }
@@ -575,7 +645,8 @@ h1[role=text]::after, h2[role=text]::after, h3[role=text]::after, h4[role=text]:
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -583,28 +654,33 @@ h1[role=text]::after, h2[role=text]::after, h3[role=text]::after, h4[role=text]:
   text-shadow: none;
   content: "WARNING (W0010): Using role='text' on a heading element causes it to lose semantic meaning for screen readers" !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
 img[alt^="logo for" i], img[alt^="logo of" i], img[alt^="image of" i], img[alt^=bullet i], img[alt^="graphic of" i], img[alt$=logo i], img[alt$=graphic i], img[alt$=image i], img[alt$=".ivaf" i], img[alt$=".webp" i], img[alt$=".bmp" i], img[alt$=".svg" i], img[alt$=",jpeg" i], img[alt$=".jpg" i], img[alt$=".gif" i], img[alt$=".png" i], img[alt=" " i], img[alt="*" i], img[alt=graph i], img[alt=diagram i], img[alt=table i], img[alt=chart i], img[alt=blank i], img[alt=spacer i], img[alt=more i], img[alt=arrow i], img[alt=button i], img[alt=bullet i], img[alt=logo i], img[alt=artwork i], img[alt=painting i], img[alt=drawing i], img[alt=photograph i], img[alt=photo i], img[alt=graphic i], img[alt=image i] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="80px" viewBox="0 0 400 80"><rect class="box" x="4" y="4" width="392" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0003): Alt text must</text> <text x="15" y="60">describe the content of the image.</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 400px;
-  padding-bottom: 80px;
+  min-inline-size: 400px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 img[longdesc] {
-  border: 0.4rem solid;
+  border-block: 0.4rem solid;
+  border-inline: 0.4rem solid;
   border-color: var(--checka11y-border-warning);
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="450px" height="80px" viewBox="0 0 450 80"><rect class="box" x="4" y="4" width="442" height="72" rx="12" ry="12" fill="rgba(255, 255, 216, 0.999999)" stroke-width="0.4rem" stroke="rgba(255, 255, 102, 0.999999)" /><g fill="rgba(133, 100, 4, 0.999999)" font-size="1rem" font-weight="700" font-family="verdana, geneva, tahoma, sans-serif" font-style="initial" letter-spacing="initial" text-decoration="none" text-transform="initial" text-shadow="none"><text x="15" y="35">WARNING (W0015): longdesc attribute is</text> <text x="15" y="60">deprecated and should be avoided.</text></g></svg>');
-  background-position: bottom center;
+  background-position: block-end center;
   background-repeat: no-repeat;
-  min-width: 450px;
-  padding-bottom: 80px;
+  min-inline-size: 450px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 [style*="!important"]::after {
@@ -613,7 +689,8 @@ img[longdesc] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -621,7 +698,8 @@ img[longdesc] {
   text-shadow: none;
   content: "WARNING (W0004): !important inline styles should be avoided." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -631,7 +709,8 @@ img[longdesc] {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -639,7 +718,8 @@ img[longdesc] {
   text-shadow: none;
   content: "WARNING (W0005): Text broken by <span> or <em> elements might need a [role='text'] attribute." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -649,7 +729,8 @@ a[target=_blank]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -657,7 +738,8 @@ a[target=_blank]::after {
   text-shadow: none;
   content: "WARNING (W0006): Links that open in a new tab or window should be communicated to the user, ensure the user knows of this behavior." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -667,7 +749,8 @@ a[href="#"]::after, a[role=button]::after, a[href^="javascript:"]::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -675,7 +758,8 @@ a[href="#"]::after, a[role=button]::after, a[href^="javascript:"]::after {
   text-shadow: none;
   content: "WARNING (W0011): Anchor tags should not be used as buttons. Links should redirect to a resource/page, if they don't they probably should be buttons." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -685,7 +769,8 @@ a[href$=".pdf"]::after, a[href$=".docx"]::after, a[href$=".doc"]::after, a[href$
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -693,7 +778,8 @@ a[href$=".pdf"]::after, a[href$=".docx"]::after, a[href$=".doc"]::after, a[href$
   text-shadow: none;
   content: "WARNING (W0013): Anchor tags that contain a link to a PDF, Word, Excel, or PowerPoint document is present on the page and could be a potential accessibility issue." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -703,7 +789,8 @@ a[href*="https://youtu.be"]::after, a[href*="https://youtube.com"]::after, a[hre
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -711,7 +798,8 @@ a[href*="https://youtu.be"]::after, a[href*="https://youtube.com"]::after, a[hre
   text-shadow: none;
   content: "WARNING (W0014): Anchor tags that contain a link to content site (Youtube, Spotify etc) is present on the document." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -721,7 +809,8 @@ section:empty::before, section > :not(h1, h2, h3, h4, h5, h6, img):last-child::b
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -729,7 +818,8 @@ section:empty::before, section > :not(h1, h2, h3, h4, h5, h6, img):last-child::b
   text-shadow: none;
   content: "WARNING (W0012): A <section> should contain a heading element." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -743,7 +833,8 @@ section > :is(h1, h2, h3, h4, h5, h6) ~ :not(:is(h1, h2, h3, h4, h5, h6, img)):l
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -751,7 +842,8 @@ section > :is(h1, h2, h3, h4, h5, h6) ~ :not(:is(h1, h2, h3, h4, h5, h6, img)):l
   text-shadow: none;
   content: "WARNING (W0008): The title attribute has many accessibility concerns, consider using an alternative method." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
 
@@ -761,7 +853,8 @@ u::after {
   font-family: verdana, geneva, tahoma, sans-serif;
   font-weight: 700;
   font-style: initial;
-  padding: var(--checka11y-space-4) var(--checka11y-space-6);
+  padding-block: var(--checka11y-space-4);
+  padding-inline: var(--checka11y-space-6);
   border-radius: 0.75rem;
   letter-spacing: initial;
   text-decoration: none;
@@ -769,6 +862,7 @@ u::after {
   text-shadow: none;
   content: "WARNING (W0007): Using <u> element could be confused as a hyperlink, consider using a different element such as <em> or <b>." !important;
   color: var(--checka11y-text-warning);
-  border: 0.4rem solid var(--checka11y-border-warning);
+  border-block: 0.4rem solid var(--checka11y-border-warning);
+  border-inline: 0.4rem solid var(--checka11y-border-warning);
   background-color: var(--checka11y-bg-warning);
 }
