@@ -1,7 +1,8 @@
+@use "sass:color";
 @use "./variables" as *;
 
 .code {
-  background-color: fade-out(#fafafa, 0.5);
+  background-color: color.scale(#fafafa, $alpha: -50%);
   color: $orange;
   font-family: "Courier New", Courier, monospace;
   font-size: 90%;
