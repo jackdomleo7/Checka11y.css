@@ -62,9 +62,10 @@
     gap: 2rem;
     grid-template: auto / 1fr 1fr;
     list-style-type: none;
-    margin: 2rem 0 0;
-    padding-left: 0;
-    margin-bottom: 0.5rem;
+    margin-block: 2rem 0;
+    margin-inline: 0;
+    padding-inline-start: 0;
+    margin-block-end: 0.5rem;
 
     @media screen and (min-width: 37.5em) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -81,6 +82,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
   }
 }

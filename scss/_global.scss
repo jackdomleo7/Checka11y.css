@@ -61,8 +61,9 @@ img {
 hr {
   border: 1px solid transparent;
   border-radius: 50%;
-  border-top-color: #222;
-  margin: 2rem 0;
+  border-block-start-color: #222;
+  margin-block: 2rem;
+  margin-inline: 0;
   width: 100%;
 }
 
@@ -72,15 +73,16 @@ p {
 
 ol,
 ul {
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 
   @media (min-width: 48rem) {
-    padding-left: 2.5rem;
+    padding-inline-start: 2.5rem;
   }
 }
 
 li {
-  margin: 0.4rem 0;
+  margin-block: 0.4rem;
+  margin-inline: 0;
 }
 
 svg {

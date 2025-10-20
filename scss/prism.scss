@@ -11,7 +11,7 @@ pre[class*="language-"] {
   hyphens: none;
   line-height: 1.5;
   tab-size: 4;
-  text-align: left;
+  text-align: start;
   text-shadow: 0 1px #fff;
   white-space: pre;
   word-break: normal;
@@ -29,7 +29,8 @@ pre {
 
     margin: 0;
     overflow-x: auto;
-    padding: 1.5em 1em 1em;
+    padding-block: 1.5em 1em;
+    padding-inline: 1em;
   }
 }
 
@@ -124,7 +125,8 @@ pre {
 
 div {
   &[class*="language-"] {
-    margin: 0.5em 0;
+    margin-block: 0.5em;
+    margin-inline: 0;
     overflow-x: hidden;
     position: relative;
 
@@ -133,8 +135,8 @@ div {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 0.7rem;
       position: absolute;
-      right: 0.5em;
-      top: 0.25em;
+      inset-inline-end: 0.5em;
+      inset-block-start: 0.25em;
     }
   }
 

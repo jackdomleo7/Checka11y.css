@@ -23,7 +23,7 @@
     "url": "https://github.com/jackdomleo7/Checka11y.css/issues"
   },
   "dependencies": {
-    "checka11y-css": "^2.4.0",
+    "checka11y-css": "^2.5.0",
     "normalize.css": "^8.0.1"
   },
   "homepage": "https://checka11y.jackdomleo.dev",
